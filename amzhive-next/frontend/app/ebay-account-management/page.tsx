@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -122,17 +123,23 @@ export default function EbayAccountManagement() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* Why Sellers Trust AMZ Pro Venture For eBay Account Management */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="text-center mb-14">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Why Sellers Trust AMZ Pro Venture For eBay<br /><span style={{ color: "#ff9900" }}>Account Management</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[720px] mx-auto">
-              We don&apos;t just run your eBay store, we build it to win. Our approach blends strategy, optimization, and hands-on execution to deliver long-term results.
-            </p>
+            <FadeIn direction="up">
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                Why Sellers Trust AMZ Pro Venture For eBay<br /><span style={{ color: "#ff9900" }}>Account Management</span>
+              </h2>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.1}>
+              <p className="text-[#67768e] text-[16px] max-w-[720px] mx-auto">
+                We don&apos;t just run your eBay store, we build it to win. Our approach blends strategy, optimization, and hands-on execution to deliver long-term results.
+              </p>
+            </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
@@ -186,12 +193,14 @@ export default function EbayAccountManagement() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="flex flex-col">
-                {item.icon}
-                <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                <div className="flex flex-col h-full">
+                  {item.icon}
+                  <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -212,7 +221,7 @@ export default function EbayAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-1">
+            <FadeIn direction="right" className="flex-1">
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Without Expert eBay Management, You Risk <span style={{ color: "#ff9900" }}>More Than Just Profits</span>
               </h2>
@@ -246,11 +255,11 @@ export default function EbayAccountManagement() {
                   <span className="svc-btn-bottom">MANAGE MY EBAY ACCOUNT →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image src="/Without-Expert-eBay-Management-You-Risk-More-Than-Just-Profits.webp" alt="Without Expert eBay Management" width={560} height={480} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -261,12 +270,16 @@ export default function EbayAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="text-center mb-14">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Scale Your eBay Store with Full-Service Monthly <span style={{ color: "#ff9900" }}>Management</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
-              Our monthly eBay Account Management plan includes everything you need to grow smart, safe, and sustainably.
-            </p>
+            <FadeIn direction="up">
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                Scale Your eBay Store with Full-Service Monthly <span style={{ color: "#ff9900" }}>Management</span>
+              </h2>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.1}>
+              <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
+                Our monthly eBay Account Management plan includes everything you need to grow smart, safe, and sustainably.
+              </p>
+            </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
@@ -367,11 +380,13 @@ export default function EbayAccountManagement() {
             ].map((item, i) => {
               const dark = i % 2 === 1;
               return (
-                <div key={item.title} className="rounded-2xl p-8" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
-                  {item.icon}
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
-                  <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
-                </div>
+                <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                  <div className="rounded-2xl p-8 h-full" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
+                    {item.icon}
+                    <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                    <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
+                  </div>
+                </FadeIn>
               );
             })}
           </div>
@@ -393,7 +408,7 @@ export default function EbayAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
                 src="/We-Help-You-Unlock-the-Power-of-Top-Rated-Seller-Top-Rated-Plus.webp"
                 alt="We Help You Unlock the Power of Top Rated Seller"
@@ -402,9 +417,9 @@ export default function EbayAccountManagement() {
                 unoptimized
                 className="w-full h-auto object-contain"
               />
-            </div>
+            </FadeIn>
 
-            <div className="flex-1">
+            <FadeIn direction="left" className="flex-1">
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 We Help You Unlock the Power of <span style={{ color: "#ff9900" }}>Top Rated Seller & Top Rated Plus</span>
               </h2>
@@ -437,7 +452,7 @@ export default function EbayAccountManagement() {
                   <span className="svc-btn-bottom">GET SELLER BADGE HELP →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -448,17 +463,21 @@ export default function EbayAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="text-center mb-14">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Level Up with Vital <span style={{ color: "#ff9900" }}>Add-Ons</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px]">
-              Supercharge your results with add-ons built for serious sellers.
-            </p>
+            <FadeIn direction="up">
+              <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                Level Up with Vital <span style={{ color: "#ff9900" }}>Add-Ons</span>
+              </h2>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.1}>
+              <p className="text-[#67768e] text-[16px]">
+                Supercharge your results with add-ons built for serious sellers.
+              </p>
+            </FadeIn>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
                 src="/Level-Up-with-Vital-Add-Ons.webp"
                 alt="Level Up with Vital Add-Ons"
@@ -467,9 +486,9 @@ export default function EbayAccountManagement() {
                 unoptimized
                 className="w-full h-auto object-contain"
               />
-            </div>
+            </FadeIn>
 
-            <div className="flex-1 space-y-10">
+            <FadeIn direction="left" className="flex-1 space-y-10">
               <div>
                 <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>
                   eBay Ads <span style={{ color: "#ff9900" }}>(Promoted Listings)</span>
@@ -492,7 +511,7 @@ export default function EbayAccountManagement() {
                   <span className="svc-btn-bottom">GET ADD-ONS →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -503,7 +522,7 @@ export default function EbayAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
                 src="/What-we-need-from-you-.webp"
                 alt="What We Need From You to Deliver Maximum Results"
@@ -512,9 +531,9 @@ export default function EbayAccountManagement() {
                 unoptimized
                 className="w-full h-auto object-contain"
               />
-            </div>
+            </FadeIn>
 
-            <div className="flex-1">
+            <FadeIn direction="left" className="flex-1">
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What We Need From You to Deliver <span style={{ color: "#ff9900" }}>Maximum Results</span>
               </h2>
@@ -549,7 +568,7 @@ export default function EbayAccountManagement() {
                   <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -558,6 +577,7 @@ export default function EbayAccountManagement() {
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Don&apos;t Wait Until Sales Drop or Your Account&apos;s at Risk
@@ -572,6 +592,7 @@ export default function EbayAccountManagement() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

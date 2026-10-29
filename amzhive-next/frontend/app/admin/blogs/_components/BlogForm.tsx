@@ -73,7 +73,8 @@ export default function BlogForm({ onSubmit, saving, initialData }: Props) {
         body: formData,
       });
       const data = await res.json();
-      setImage(`http://localhost:5000${data.url}`);
+      if (!res.ok) throw new Error(data.message || "Upload failed");
+      setImage(data.url);
     } catch {
       alert("Image upload failed");
     } finally {

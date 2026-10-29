@@ -1,8 +1,8 @@
 ﻿"use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
+import ExpensesCard from "./ExpensesCard";
 
 function ArrowIcon() {
   return (
@@ -48,7 +48,7 @@ export default function UnlockSection() {
 
           {/* Links row */}
           <div className="flex items-center gap-3 mb-8 text-sm font-semibold">
-            <Link href="/social-media-marketing" className="text-[#ff9900] hover:underline transition-colors">
+            <Link href="/amazon-influencer-marketing-service" className="text-[#ff9900] hover:underline transition-colors">
               Marketing
             </Link>
             <span className="text-[#67768e]">I</span>
@@ -88,14 +88,7 @@ export default function UnlockSection() {
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
           className="flex-shrink-0 w-full lg:w-[580px]"
         >
-          <Image
-            src="/sec6.gif"
-            alt="Growth Analytics"
-            width={580}
-            height={420}
-            unoptimized
-            className="w-full h-auto object-contain"
-          />
+          <ExpensesCard />
         </motion.div>
 
       </div>

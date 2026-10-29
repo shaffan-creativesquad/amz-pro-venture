@@ -1,6 +1,7 @@
-import AnnouncementBar from "../components/AnnouncementBar";
+﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import CheckoutAnimation from "./CheckoutAnimation";
@@ -100,10 +101,12 @@ export default function AccountManagementForAmazon() {
       {/* Spacer */}
       <div className="bg-white pt-[200px]" />
 
+      <PartnersBar />
+
       {/* Who Is This For? */}
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">Struggling to Manage Your </span>
               <span className="text-[#ff9900]">Amazon Seller Account?</span>
@@ -126,10 +129,10 @@ export default function AccountManagementForAmazon() {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/second-01-scaled.png" alt="Who Is This For" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -137,7 +140,7 @@ export default function AccountManagementForAmazon() {
       <section className="bg-white py-20 w-full max-w-[1659px] mx-auto">
         <div className="px-10 flex flex-col lg:flex-row gap-14 items-center">
 
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2
               className="font-bold leading-tight mb-10"
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
@@ -177,9 +180,8 @@ export default function AccountManagementForAmazon() {
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="flex-shrink-0 w-full lg:w-[630px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[630px]">
             <Image
               src="/Amazon-3-01-scaled.png"
               alt="Amazon Account Management"
@@ -188,7 +190,7 @@ export default function AccountManagementForAmazon() {
               unoptimized
               className="w-full h-auto object-contain"
             />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -197,16 +199,20 @@ export default function AccountManagementForAmazon() {
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2
-            className="text-center font-bold mb-4"
-            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
-          >
-            <span className="text-[#000000]">Built for Sellers Who Want to </span>
-            <span className="text-[#ff9900]">Thrive, Not Just Survive</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[620px] mx-auto">
-            We&apos;re not here to maintain, we&apos;re here to multiply. If you&apos;re aiming for real scale, you&apos;re in the right place.
-          </p>
+          <FadeIn direction="up">
+            <h2
+              className="text-center font-bold mb-4"
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
+            >
+              <span className="text-[#000000]">Built for Sellers Who Want to </span>
+              <span className="text-[#ff9900]">Thrive, Not Just Survive</span>
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[620px] mx-auto">
+              We&apos;re not here to maintain, we&apos;re here to multiply. If you&apos;re aiming for real scale, you&apos;re in the right place.
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
             {[
@@ -268,12 +274,14 @@ export default function AccountManagementForAmazon() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -292,10 +300,10 @@ export default function AccountManagementForAmazon() {
       {/* Plans & Pricing Intro */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
-          <div className="flex-shrink-0 w-full lg:w-[50%]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/first-01-scaled.png" alt="Account Management Plans" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
-          </div>
-          <div className="flex-1 px-10 py-10">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#ff9900]">Account Management </span>
               <span className="text-[#000000]">Plans &amp;<br />Pricing</span>
@@ -304,7 +312,7 @@ export default function AccountManagementForAmazon() {
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px]">
               We offer <strong className="text-[#000000]">tailored management packages</strong> designed to fit your store size and goals — from startups to established brands scaling to seven figures.
             </p>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -333,8 +341,9 @@ export default function AccountManagementForAmazon() {
               { title: "PPC & Ad Management", desc: "Data-driven ad campaigns that lower ACoS and boost revenue." },
               { title: "Brand Registry Support", desc: "Full assistance with Amazon Brand Registry, A+ content, and Brand Store." },
               { title: "Multi-Marketplace Expansion", desc: "Expand your reach to Amazon US, UK, CA, AE, and more." },
-            ].map((item) => (
-              <div key={item.title} className="flex flex-col gap-3 p-6 border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.07} direction="up">
+              <div className="flex flex-col gap-3 p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-[27px] h-[27px]" fill="none">
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -342,23 +351,26 @@ export default function AccountManagementForAmazon() {
                 <h3 className="font-bold text-[16px] leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#000000] text-[14px] leading-relaxed">{item.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex items-center justify-center gap-4">
-            <a href="/contact-us" className="svc-btn">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">Contact Us</span>
-                <span className="svc-btn-bottom">Contact Us</span>
-              </span>
-            </a>
-            <a href="tel:2067046094" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">Call Now</span>
-                <span className="svc-btn-bottom">Call Now</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <div className="flex items-center justify-center gap-4">
+              <a href="/contact-us" className="svc-btn">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">Contact Us</span>
+                  <span className="svc-btn-bottom">Contact Us</span>
+                </span>
+              </a>
+              <a href="tel:2067046094" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">Call Now</span>
+                  <span className="svc-btn-bottom">Call Now</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -377,11 +389,11 @@ export default function AccountManagementForAmazon() {
           </div>
 
           <div className="flex flex-col lg:flex-row gap-14 items-center">
-            <div className="flex-shrink-0 w-full lg:w-[480px]">
+            <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[480px]">
               <Image src="/27.webp" alt="Amazon Add-Ons" width={480} height={420} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
 
-            <div className="flex-1 space-y-8">
+            <FadeIn direction="left" className="flex-1 space-y-8">
               <div>
                 <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Pay-Per-Click (PPC) Campaign Management</h3>
                 <p className="text-[#67768e] text-[16px] leading-relaxed">Our experts craft and manage targeted ad campaigns to maximize your advertising budget and drive more sales.</p>
@@ -398,7 +410,7 @@ export default function AccountManagementForAmazon() {
                   </span>
                 </a>
               </div>
-            </div>
+            </FadeIn>
           </div>
 
         </div>
@@ -418,7 +430,7 @@ export default function AccountManagementForAmazon() {
           </div>
 
           <div className="flex flex-col lg:flex-row gap-14 items-center">
-            <div className="flex-1 space-y-6">
+            <FadeIn direction="right" className="flex-1 space-y-6">
               {[
                 {
                   title: "Auto & Catalog Backup",
@@ -460,11 +472,11 @@ export default function AccountManagementForAmazon() {
                   </span>
                 </a>
               </div>
-            </div>
+            </FadeIn>
 
-            <div className="flex-shrink-0 w-full lg:w-[440px]">
+            <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[440px]">
               <Image src="/banner-image-9-991x1024.webp" alt="Additional Support" width={440} height={460} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
           </div>
 
         </div>
@@ -533,6 +545,7 @@ export default function AccountManagementForAmazon() {
       {/* CTA Banner */}
       <section className="w-full bg-white py-10">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div
             className="rounded-2xl px-14 py-12 flex flex-col lg:flex-row items-center justify-between gap-8"
             style={{ backgroundColor: "#ff9900" }}
@@ -558,6 +571,7 @@ export default function AccountManagementForAmazon() {
               </a>
             </div>
           </div>
+          </FadeIn>
         </div>
       </section>
 

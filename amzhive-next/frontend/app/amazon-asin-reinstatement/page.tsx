@@ -1,6 +1,7 @@
-import AnnouncementBar from "../components/AnnouncementBar";
+﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -123,10 +124,12 @@ export default function AmazonAccountSuspended() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* Who Is This For? */}
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">We Resolve A Complete Range of </span>
               <span className="text-[#ff9900]">Amazon ASIN Suspensions</span>
@@ -159,10 +162,10 @@ export default function AmazonAccountSuspended() {
                 </span>
               </a>
             </div>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/We-Resolve-A-Complete-Range-of-Amazon-ASIN-Suspensions.webp" alt="We Resolve Amazon ASIN Suspensions" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -170,6 +173,7 @@ export default function AmazonAccountSuspended() {
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <h2
             className="text-center font-bold mb-4"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
@@ -177,9 +181,12 @@ export default function AmazonAccountSuspended() {
             <span className="text-[#000000]">Why Amazon Sellers Count on Us For </span>
             <span className="text-[#ff9900]">Listing/ASIN Reinstatement</span>
           </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
             As a leading Amazon seller reinstatement service in the USA, AMZ Pro Venture has helped hundreds of sellers recover their suspended listings with speed, precision, and proven expertise.
           </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
@@ -256,12 +263,14 @@ export default function AmazonAccountSuspended() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 {item.icon}
                 <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -284,10 +293,10 @@ export default function AmazonAccountSuspended() {
       {/* What We Need From You */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
-          <div className="flex-shrink-0 w-full lg:w-[50%]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/document.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
-          </div>
-          <div className="flex-1 px-10 py-10">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">What We Need From You to Deliver the </span>
               <span className="text-[#ff9900]">Best Results</span>
@@ -319,7 +328,7 @@ export default function AmazonAccountSuspended() {
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -370,21 +379,23 @@ export default function AmazonAccountSuspended() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <div className="text-center mb-10">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">Our Listing & ASIN </span>
               <span className="text-[#ff9900]">Reinstatement Process</span>
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[700px] mx-auto">
-              Dealing with Amazon ASIN suspension isn’t just about submitting a form; it requires strategy, documentation, and a deep understanding of Amazon’s policies. At SPCTEK, we follow a clear, proven process to maximize your chances of reinstatement while keeping you informed every step of the way.
+              Dealing with Amazon ASIN suspension isn&apos;t just about submitting a form; it requires strategy, documentation, and a deep understanding of Amazon&apos;s policies. At SPCTEK, we follow a clear, proven process to maximize your chances of reinstatement while keeping you informed every step of the way.
             </p>
           </div>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
             {[
               {
                 title: "Initial Case Assessment & Documentation",
-                items: ["We begin by reviewing your suspended ASIN and Amazon’s performance notifications to assess reinstatement potential. If we see a strong chance of success, we proceed.",
+                items: ["We begin by reviewing your suspended ASIN and Amazon's performance notifications to assess reinstatement potential. If we see a strong chance of success, we proceed.",
                    "Once accepted, we guide you in gathering the required documents, like invoices, authorization letters, or certifications, for a compliant appeal."],
                 note: null,
                 icon: (
@@ -397,8 +408,8 @@ export default function AmazonAccountSuspended() {
               },
               {
                 title: "Plan of Action (POA) Creation",
-                items: ["Our team drafts a custom, case-specific POA that directly addresses Amazon’s concerns.",
-                  "We ensure that the plan is aligned with Amazon’s policies and structured to meet their expectations for reinstatement.",],
+                items: ["Our team drafts a custom, case-specific POA that directly addresses Amazon's concerns.",
+                  "We ensure that the plan is aligned with Amazon's policies and structured to meet their expectations for reinstatement.",],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -409,7 +420,7 @@ export default function AmazonAccountSuspended() {
               },
               {
                 title: "Submission & Tracking",
-                items: ["We submit your appeal via the appropriate Seller Central channel or escalate it when needed.", "Our team closely monitors the appeal’s progress, communicates with Amazon, and keeps you updated throughout."],
+                items: ["We submit your appeal via the appropriate Seller Central channel or escalate it when needed.", "Our team closely monitors the appeal's progress, communicates with Amazon, and keeps you updated throughout."],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -420,7 +431,7 @@ export default function AmazonAccountSuspended() {
               },
               {
                 title: "Free One-Time Re-Appeal",
-                items: ["If the first appeal is denied but the case is still valid, we revise the POA based on Amazon’s feedback and resubmit, at no additional cost."],
+                items: ["If the first appeal is denied but the case is still valid, we revise the POA based on Amazon's feedback and resubmit, at no additional cost."],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -429,8 +440,9 @@ export default function AmazonAccountSuspended() {
                   </svg>
                 ),
               },
-            ].map((card) => (
-              <div key={card.title} className="flex flex-col gap-4 p-6 border border-gray-200 bg-white" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+            ].map((card, i) => (
+              <FadeIn key={card.title} direction="up" delay={i * 0.08}>
+              <div className="flex flex-col gap-4 p-6 border border-gray-200 bg-white h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 {card.icon ? card.icon : (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-[27px] h-[27px]" fill="none">
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
@@ -451,6 +463,7 @@ export default function AmazonAccountSuspended() {
                 </div>
                 {card.note && <p className="text-[#67768e] text-[13px] leading-relaxed">{card.note}</p>}
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -461,6 +474,7 @@ export default function AmazonAccountSuspended() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Let&apos;s Get Your Listing Back Online
@@ -475,6 +489,7 @@ export default function AmazonAccountSuspended() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

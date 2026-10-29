@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import HeroAnimation from "./HeroAnimation";
 
 function ArrowIcon() {
   return (
@@ -91,7 +92,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="flex items-center gap-3 mb-8 text-sm font-semibold"
           >
-            <Link href="/social-media-marketing" className="text-[#ff9900] hover:underline transition-colors">
+            <Link href="/amazon-influencer-marketing-service" className="text-[#ff9900] hover:underline transition-colors">
               Marketing
             </Link>
             <span className="text-[#67768e]">I</span>
@@ -118,7 +119,7 @@ export default function HeroSection() {
               </span>
             </Link>
             <Link
-              href="/creative"
+              href="/account-management-for-amazon"
               className="group relative inline-flex items-center gap-2 bg-black text-white text-sm font-semibold px-6 py-3 rounded-md overflow-hidden transition-colors duration-300"
             >
               <span className="absolute inset-0 bg-[#ff9900] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
@@ -137,15 +138,7 @@ export default function HeroSection() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="flex-shrink-0 w-full lg:w-[680px] flex flex-col items-center"
         >
-          <Image
-            src="/ezgif-5-597edf765e.gif"
-            alt="E-Commerce Animation"
-            width={680}
-            height={620}
-            unoptimized
-            className="w-full h-auto object-contain"
-            priority
-          />
+          <HeroAnimation />
           {/* Stats Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pb-10">
             {stats.map((s, i) => (

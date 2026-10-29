@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -122,22 +123,28 @@ export default function EtsyAccountManagement() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* Why Top Etsy Sellers Trust AMZ Pro Venture */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="text-center mb-12">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Why Top Etsy Sellers Trust AMZ Pro Venture for Expert <span style={{ color: "#ff9900" }}>Account Management</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto">
-              We manage every aspect of your Etsy shop for optimum performance. Our approach is tailored specifically to the unique, creative nature of Etsy.
-            </p>
+            <FadeIn direction="up">
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                Why Top Etsy Sellers Trust AMZ Pro Venture for Expert <span style={{ color: "#ff9900" }}>Account Management</span>
+              </h2>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.1}>
+              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto">
+                We manage every aspect of your Etsy shop for optimum performance. Our approach is tailored specifically to the unique, creative nature of Etsy.
+              </p>
+            </FadeIn>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-1 space-y-6">
+            <FadeIn direction="right" className="flex-1 space-y-6">
               {[
                 { title: "Data-Driven and Proactive Management", desc: "We plan ahead, forecasting promotions, optimizing seasonal cycles, and refining listings for long-term success on Etsy's search and discovery ecosystem." },
                 { title: "Etsy-Specific SEO & Listing Optimization", desc: "Optimized titles, tags, item descriptions, attributes, and high-quality images that improve visibility in Etsy search and appeal to buyers." },
@@ -161,9 +168,9 @@ export default function EtsyAccountManagement() {
                   <span className="svc-btn-bottom">MANAGE MY ETSY ACCOUNT →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
                 src="/Why-Top-Etsy-Sellers-Trust-SPCTEK-for-Expert-Account-Management.webp"
                 alt="Why Top Etsy Sellers Trust AMZ Pro Venture"
@@ -172,7 +179,7 @@ export default function EtsyAccountManagement() {
                 unoptimized
                 className="w-full h-auto object-contain"
               />
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -183,11 +190,11 @@ export default function EtsyAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image src="/Dont-Let-Poor-Account-Management-Cost-You-Sales.webp" alt="What You Risk Without Expert Etsy Management" width={560} height={480} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
 
-            <div className="flex-1">
+            <FadeIn direction="left" className="flex-1">
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What You Risk Without Expert <span style={{ color: "#ff9900" }}>Etsy Management</span>
               </h2>
@@ -224,7 +231,7 @@ export default function EtsyAccountManagement() {
                   <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -235,12 +242,16 @@ export default function EtsyAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="text-center mb-14">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              What&apos;s Included in Our Monthly Etsy Account <span style={{ color: "#ff9900" }}>Management Plan</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
-              Our service offers everything you need to run a thriving Etsy shop.
-            </p>
+            <FadeIn direction="up">
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                What&apos;s Included in Our Monthly Etsy Account <span style={{ color: "#ff9900" }}>Management Plan</span>
+              </h2>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.1}>
+              <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
+                Our service offers everything you need to run a thriving Etsy shop.
+              </p>
+            </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
@@ -330,11 +341,13 @@ export default function EtsyAccountManagement() {
             ].map((item, i) => {
               const dark = i % 2 === 1;
               return (
-                <div key={item.title} className="rounded-2xl p-8" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
-                  {item.icon}
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
-                  <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
-                </div>
+                <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                  <div className="rounded-2xl p-8 h-full" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
+                    {item.icon}
+                    <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                    <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
+                  </div>
+                </FadeIn>
               );
             })}
           </div>
@@ -356,17 +369,21 @@ export default function EtsyAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="text-center mb-12">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Built for Etsy Sellers Who Want to <span style={{ color: "#ff9900" }}>Thrive, Not Just Get By</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
-              Our Etsy account management services are the perfect match for you if you&apos;re looking to dominate.
-            </p>
+            <FadeIn direction="up">
+              <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                Built for Etsy Sellers Who Want to <span style={{ color: "#ff9900" }}>Thrive, Not Just Get By</span>
+              </h2>
+            </FadeIn>
+            <FadeIn direction="up" delay={0.1}>
+              <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
+                Our Etsy account management services are the perfect match for you if you&apos;re looking to dominate.
+              </p>
+            </FadeIn>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-1 space-y-8">
+            <FadeIn direction="right" className="flex-1 space-y-8">
               {[
                 { title: "Artisans & Handmade Sellers", desc: "Focus on creativity and let us handle optimization, listings, policy compliance, and all the heavy lifting." },
                 { title: "Print-on-Demand or Vintage Sellers", desc: "Save time with expert catalog management and image workflows." },
@@ -384,9 +401,9 @@ export default function EtsyAccountManagement() {
                   <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
                 src="/Built-for-Etsy-Sellers-Who-Want-to-Thrive-Not-Just-Get-By.webp"
                 alt="Built for Etsy Sellers Who Want to Thrive"
@@ -395,7 +412,7 @@ export default function EtsyAccountManagement() {
                 unoptimized
                 className="w-full h-auto object-contain"
               />
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -407,7 +424,7 @@ export default function EtsyAccountManagement() {
         <div className="max-w-[1140px] mx-auto px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
-            <div className="flex-shrink-0 w-full lg:w-[45%]">
+            <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
                 src="/What-We-Need-from-You-to-Deliver-the-Best-Results.webp"
                 alt="What We Need from You to Deliver the Best Results"
@@ -416,9 +433,9 @@ export default function EtsyAccountManagement() {
                 unoptimized
                 className="w-full h-auto object-contain"
               />
-            </div>
+            </FadeIn>
 
-            <div className="flex-1">
+            <FadeIn direction="left" className="flex-1">
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What We Need from You to Deliver the <span style={{ color: "#ff9900" }}>Best Results</span>
               </h2>
@@ -453,7 +470,7 @@ export default function EtsyAccountManagement() {
                   <span className="svc-btn-bottom">CONTACT US TO GET STARTED →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
           </div>
         </div>
@@ -500,6 +517,7 @@ export default function EtsyAccountManagement() {
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Get a 15-Day Trial for Just $1 &ndash; No Commitment Needed
@@ -514,6 +532,7 @@ export default function EtsyAccountManagement() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

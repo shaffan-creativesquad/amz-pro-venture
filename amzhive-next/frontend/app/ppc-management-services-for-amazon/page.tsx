@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
@@ -8,7 +9,7 @@ import FadeIn from "../components/FadeIn";
 
 export const metadata = {
   title: "Amazon Account Suspended | AMZ Pro Venture",
-  description: "Expert Amazon account suspension reinstatement services â€” appeals, Plan of Action, and full account recovery by AMZ Pro Venture.",
+  description: "Expert Amazon account suspension reinstatement services â€" appeals, Plan of Action, and full account recovery by AMZ Pro Venture.",
 };
 
 export default function AmazonAccountSuspended() {
@@ -68,20 +69,26 @@ export default function AmazonAccountSuspended() {
 
       <HeroSection />
 
-      {/* What's Included Section */}
+      <PartnersBar />
+
+      {/* Why Amazon Sellers Trust Us */}
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2
-            className="text-center font-bold mb-4"
-            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
-          >
-            <span className="text-[#000000]">Why Amazon Sellers Trust Us For </span>
-            <span className="text-[#ff9900]">PPC Campaign Management</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
-            As a leading Amazon PPC management agency, AMZ Pro Venture has helped hundreds of sellers maximize their ad spend, boost visibility, and scale their business profitably.
-          </p>
+          <FadeIn>
+            <h2
+              className="text-center font-bold mb-4"
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
+            >
+              <span className="text-[#000000]">Why Amazon Sellers Trust Us For </span>
+              <span className="text-[#ff9900]">PPC Campaign Management</span>
+            </h2>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+              As a leading Amazon PPC management agency, AMZ Pro Venture has helped hundreds of sellers maximize their ad spend, boost visibility, and scale their business profitably.
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
@@ -152,20 +159,24 @@ export default function AmazonAccountSuspended() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.09} direction="up">
+                <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex justify-center mt-4">
-            <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              GET YOUR FREE AMAZON PPC AUDIT →
-            </a>
-          </div>
+          <FadeIn delay={0.1}>
+            <div className="flex justify-center mt-4">
+              <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
+                GET YOUR FREE AMAZON PPC AUDIT →
+              </a>
+            </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -173,7 +184,7 @@ export default function AmazonAccountSuspended() {
       {/* Why Most Sellers Struggle Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Why Most Sellers Struggle With <span style={{ color: "#ff9900" }}>Amazon PPC</span>
             </h2>
@@ -200,22 +211,26 @@ export default function AmazonAccountSuspended() {
             <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
               OPTIMIZE MY AMAZON PPC →
             </a>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/Why-Most-Sellers-Struggle-With-Amazon-PPC.webp" alt="Why Sellers Struggle With Amazon PPC" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Complete Amazon Advertising Management Services */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-            Complete Amazon Advertising Management Services:<br /><span style={{ color: "#ff9900" }}>Everything You Need to Succeed</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
-            Our full-service approach takes the guesswork out of Amazon PPC, helping you stay ahead of the competition. Here&apos;s what&apos;s included in your monthly management:
-          </p>
+          <FadeIn>
+            <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              Complete Amazon Advertising Management Services:<br /><span style={{ color: "#ff9900" }}>Everything You Need to Succeed</span>
+            </h2>
+          </FadeIn>
+          <FadeIn delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+              Our full-service approach takes the guesswork out of Amazon PPC, helping you stay ahead of the competition. Here&apos;s what&apos;s included in your monthly management:
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             {[
@@ -269,30 +284,34 @@ export default function AmazonAccountSuspended() {
                 desc: "We grow your reach with remarketing and new keyword opportunities to capture fresh audiences.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-4"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><polyline points="17 6 23 6 23 12" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="bg-white p-6 border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.06} direction="up">
+                <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex justify-center mt-6">
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">OPTIMIZE MY AMAZON PPC →</span>
-                <span className="svc-btn-bottom">OPTIMIZE MY AMAZON PPC →</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn delay={0.1}>
+            <div className="flex justify-center mt-6">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">OPTIMIZE MY AMAZON PPC →</span>
+                  <span className="svc-btn-bottom">OPTIMIZE MY AMAZON PPC →</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Smarter Keyword Strategies Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row items-center gap-14">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">Smarter Keyword Strategies for </span>
               <span className="text-[#ff9900]">Smarter Ad Spend</span>
@@ -330,10 +349,10 @@ export default function AmazonAccountSuspended() {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/broad-match.webp" alt="Smarter Keyword Strategies for Amazon PPC" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -341,14 +360,17 @@ export default function AmazonAccountSuspended() {
       <section className="w-full py-20" style={{ backgroundColor: "#f7f7f7" }}>
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-start">
 
-          {/* Left: heading + cards */}
           <div className="flex-1">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Level Up Your Performance With <span style={{ color: "#ff9900" }}>Powerful Add-Ons</span>
-            </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[620px]">
-              Give your Amazon PPC campaigns the extra support they need with optional add-ons, designed to increase visibility, conversions, and finally. From high-converting copy to data-driven strategies, these additions help you grow in a rounded marketplace.
-            </p>
+            <FadeIn>
+              <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+                Level Up Your Performance With <span style={{ color: "#ff9900" }}>Powerful Add-Ons</span>
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[620px]">
+                Give your Amazon PPC campaigns the extra support they need with optional add-ons, designed to increase visibility, conversions, and finally. From high-converting copy to data-driven strategies, these additions help you grow in a rounded marketplace.
+              </p>
+            </FadeIn>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
@@ -382,20 +404,21 @@ export default function AmazonAccountSuspended() {
                   desc: "Running outside traffic to Amazon listings using Meta ads, Google, and other platforms to boost sales velocity.",
                   icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-8 h-8 mb-3"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><polyline points="15 3 21 3 21 9" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><line x1="10" y1="14" x2="21" y2="3" stroke="#ff9900" strokeWidth="2" strokeLinecap="round"/></svg>,
                 },
-              ].map((item) => (
-                <div key={item.title} className="bg-white p-6 border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
-                  {item.icon}
-                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
-                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-                </div>
+              ].map((item, i) => (
+                <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                  <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
+                    {item.icon}
+                    <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                    <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                  </div>
+                </FadeIn>
               ))}
             </div>
           </div>
 
-          {/* Right: image */}
-          <div className="flex-shrink-0 w-full lg:w-[420px] lg:sticky lg:top-24">
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[420px] lg:sticky lg:top-24">
             <Image src="/16.webp" alt="Amazon PPC Add-Ons" width={420} height={520} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -403,25 +426,26 @@ export default function AmazonAccountSuspended() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
-          <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
-              Ready to Transform Your Amazon Ads Performance?
-            </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
-              Get started now with our Free Amazon PPC Audit.
-            </p>
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">GET A FREE AMAZON PPC AUDIT</span>
-                <span className="svc-btn-bottom">GET A FREE AMAZON PPC AUDIT</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up">
+            <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+                Ready to Transform Your Amazon Ads Performance?
+              </h2>
+              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+                Get started now with our Free Amazon PPC Audit.
+              </p>
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">GET A FREE AMAZON PPC AUDIT</span>
+                  <span className="svc-btn-bottom">GET A FREE AMAZON PPC AUDIT</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       <FAQSection />
-
 
       <Footer />
     </main>

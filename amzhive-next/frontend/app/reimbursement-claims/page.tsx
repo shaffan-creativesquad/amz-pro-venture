@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
@@ -68,16 +69,22 @@ export default function ReimbursementClaims() {
 
       <HeroSection />
 
+      <PartnersBar />
+
       {/* Here's What We Help You Achieve Section */}
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-            Here&apos;s What We Help You <span style={{ color: "#ff9900" }}>Achieve</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-14">
-            We help get back your Amazon FBA funds by digging up the missed reimbursement opportunities and expediting the claims process.
-          </p>
+          <FadeIn direction="up">
+            <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              Here&apos;s What We Help You <span style={{ color: "#ff9900" }}>Achieve</span>
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-14">
+              We help get back your Amazon FBA funds by digging up the missed reimbursement opportunities and expediting the claims process.
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
             {[
@@ -96,12 +103,14 @@ export default function ReimbursementClaims() {
                 desc: "Our reimbursements create a passive, recurring revenue stream from money you're already owed.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 300 300" className="w-12 h-12 mb-4"><defs><style>{`.cls-1sv3{fill:#ff9900;}`}</style></defs><path className="cls-1sv3" d="M27.67,202.4,7.33,182.76l105-105.16,54.4,55.07,74.15-74.5-17-13.88c.32-.9.64-1.81,1-2.71l67.81-12.79c-4.27,23.26-8.32,45.31-12.82,69.77l-18.2-17.1-93.48,94-57-57.57C82.67,146.7,55,174.75,27.67,202.4Z"/><path className="cls-1sv3" d="M260.13,112.18v159H228.18c-.17-2.58-.49-5.22-.5-7.86,0-37.7-.23-75.41.25-113.1.07-4.79,2.86-10.32,6-14.14,7.4-8.91,15.8-17,23.79-25.4Z"/><path className="cls-1sv3" d="M109.1,271.21H76.84c0-25.56.65-50.61-.28-75.6-.45-12,2.44-21,11.85-28.72,6.92-5.66,12.6-12.84,18.83-19.34l1.86,1.35Z"/><path className="cls-1sv3" d="M210.38,159.47V271.08H177.71c0-25.47,0-50.77.06-76.07a6.37,6.37,0,0,1,1.37-4.15C188.9,180.89,198.79,171.06,210.38,159.47Z"/><path className="cls-1sv3" d="M128.14,271V165.53l2.16-1.59c9.37,9.84,18.81,19.63,28,29.6a8.14,8.14,0,0,1,1.59,5.1c.1,23.85.06,47.71.06,72.34Z"/><path className="cls-1sv3" d="M59.42,196.26v74.88H26.77c0-13.37-.05-26.45.07-39.54a6.42,6.42,0,0,1,1.51-4.1C38.09,217.55,48,207.74,59.42,196.26Z"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title}>
-                {item.icon}
-                <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                <div>
+                  {item.icon}
+                  <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -117,12 +126,14 @@ export default function ReimbursementClaims() {
                 desc: "With real-time audits and active monitoring, your FBA account is under expert watch.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 300 300" className="w-12 h-12 mb-4"><defs><style>{`.cls-1sv5{fill:#ff9900;}`}</style></defs><path className="cls-1sv5" d="M100.49,243.84V194.6c21.45-6.74,32.81-20.18,32.41-38.6-1.72-.15-3.49-.36-5.27-.45-1.55-.08-3.11,0-4.49,0-6,20.37-14.85,28.15-30.51,27.35-14.37-.74-23.37-9.85-26.29-26.95H56.49c-2,17.42,10.17,32.24,31.84,38.47v49.65c-6.29,0-12.75.23-19.17-.19-1.33-.09-3.18-2.43-3.62-4.05-3.29-12-10.53-20.67-20.83-27.58a87.85,87.85,0,0,1-35.09-99.7C21.26,75,55.81,49.07,95.05,50.42c12.74.43,25.34,5.61,38,8.72,4.2,1,5.74,3.83,5.39,8.2s-.07,8.94-.07,13.42c0,21.92,5.82,28.56,28.13,31.3,0,3.77-.41,7.71.12,11.52.44,3.12,1.2,7,3.32,8.77,1.36,1.12,5.46-1,8.29-1.84,1-.27,1.83-.93,5.28-2.76-1.25,14-2.36,26.32-3.45,38.46-8,.36-14.15-.14-20,1a33.08,33.08,0,0,0-24.75,44.07c1.6,4.42.6,6.62-2,10.18-4.83,6.68-8.42,14.27-13,22.34ZM115.17,75.18c1.11-3.82,2-6.75,2.78-9.61C86.34,51.52,39,71,26,103.32l8.89,4.76C53.71,78,80.36,67.25,115.17,75.18ZM17.62,126.67l10.6,2.26,2.59-10.61L20.06,115Z"/><path className="cls-1sv5" d="M179,116.38c-.81-.93-1.08-1.1-1.09-1.29-1.31-14.29-1.31-14.29-15.23-15-8.42-.43-12.24-4.31-12.27-12.93q-.12-31.56,0-63.11c.05-9.17,3.27-12.42,12.28-12.43q59.55-.09,119.12,0c8.32,0,12.51,4.13,12.57,12.58q.19,31.15,0,62.32c-.05,9.29-4.22,13.49-13.51,13.53-21.83.12-43.66.33-65.48-.11-8.27-.16-15.35,1.43-21.85,6.67C189.08,110.22,184,113,179,116.38ZM166.76,60.52H277.23V50.23H166.76ZM277.59,72.45H167V82.9H277.59Zm-.17-44.28H189.21V38.46h88.21ZM177.11,38.64V28.14H167v10.5Z"/><path className="cls-1sv5" d="M271.81,242.53l-71.65-19.14V176.64l71.65-19.1Z"/><path className="cls-1sv5" d="M188.4,177.73v43.45c-9.35,0-18.83,1.15-27.9-.31-10.12-1.61-16.84-12.39-16.07-22.37.84-10.77,9.3-19.36,20.46-20.68a41.4,41.4,0,0,1,4.73-.08Z"/><path className="cls-1sv5" d="M283.43,199.75q0-22.86,0-45.72c0-4.27-.39-9.45,5.57-9.21,5.6.22,5.43,5.28,5.42,9.62q0,45.72,0,91.45c0,4.29.26,9.16-5.8,9.12-5.77,0-5.16-4.81-5.16-8.75Q283.41,223,283.43,199.75Z"/><path className="cls-1sv5" d="M122,256.21v9.58H67.45v-9.58Z"/><path className="cls-1sv5" d="M177.64,233.6h11v32.71c0,5.25.53,10.58-.24,15.71-.35,2.33-3.27,4.27-5,6.39-1.9-2-5.38-4-5.44-6.13C177.44,266.33,177.64,250.37,177.64,233.6Z"/><path className="cls-1sv5" d="M122,278.6v9.2H67.18v-9.2Z"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title}>
-                {item.icon}
-                <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                <div>
+                  {item.icon}
+                  <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -142,12 +153,16 @@ export default function ReimbursementClaims() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-            What&apos;s Included in Our <span style={{ color: "#ff9900" }}>Amazon Reimbursement Claims & Recovery Service</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
-            Our end-to-end service is built to maximize your recoveries while keeping your account safe and compliant.
-          </p>
+          <FadeIn direction="up">
+            <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              What&apos;s Included in Our <span style={{ color: "#ff9900" }}>Amazon Reimbursement Claims & Recovery Service</span>
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+              Our end-to-end service is built to maximize your recoveries while keeping your account safe and compliant.
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
             {[
@@ -165,12 +180,14 @@ export default function ReimbursementClaims() {
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-12 h-12 mb-5"><circle cx="24" cy="24" r="24" fill="#ff9900"/><path d="M24 11l9 4v7c0 6-4 11-9 13-5-2-9-7-9-13v-7l9-4z" stroke="#fff" strokeWidth="2" fill="none" strokeLinejoin="round"/><path d="M19 24l3 3 6-6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg> },
               { title: "Fast Turnaround Time", desc: "We complete the deep audit of your account within 3-5 business days of account access being granted.", dark: false,
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-12 h-12 mb-5"><circle cx="24" cy="24" r="24" fill="#ff9900"/><circle cx="24" cy="24" r="10" stroke="#fff" strokeWidth="2" fill="none"/><path d="M24 17v7l4 4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-            ].map((item) => (
-              <div key={item.title} className="p-8" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
-                {item.icon}
-                <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
-                <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                <div className="p-8 h-full" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -242,7 +259,7 @@ export default function ReimbursementClaims() {
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left */}
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Simple, <span style={{ color: "#ff9900" }}>Performance-Based Pricing</span>
             </h2>
@@ -271,12 +288,12 @@ export default function ReimbursementClaims() {
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
           {/* Right — image */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/Simple-Performance-Based-Pricing.webp" alt="Performance-Based Pricing" width={500} height={460} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -286,7 +303,7 @@ export default function ReimbursementClaims() {
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row-reverse gap-14 items-center">
 
           {/* Right — text */}
-          <div className="flex-1">
+          <FadeIn direction="left" className="flex-1">
             <h2 className="font-bold leading-tight mb-8" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               What We Need to Secure Your <span style={{ color: "#ff9900" }}>Amazon Reimbursements</span>
             </h2>
@@ -315,12 +332,12 @@ export default function ReimbursementClaims() {
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
           {/* Left — image */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/what-we-need-from-you-4.webp" alt="What We Need to Secure Your Amazon Reimbursements" width={500} height={460} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -329,15 +346,19 @@ export default function ReimbursementClaims() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2 className="text-center font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
-            Every Discrepancy Discovered. Every Dollar Recovered.
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-3">
-            At AMZ Pro Venture, our approach is rooted in continuous R&amp;D. We&apos;re not just running standard checks; we&apos;re constantly analyzing Amazon&apos;s ever-evolving FBA systems to uncover new types of discrepancies.
-          </p>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-14">
-            Here are some of the key reimbursement types we recover for:
-          </p>
+          <FadeIn direction="up">
+            <h2 className="text-center font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
+              Every Discrepancy Discovered. Every Dollar Recovered.
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-3">
+              At AMZ Pro Venture, our approach is rooted in continuous R&amp;D. We&apos;re not just running standard checks; we&apos;re constantly analyzing Amazon&apos;s ever-evolving FBA systems to uncover new types of discrepancies.
+            </p>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-14">
+              Here are some of the key reimbursement types we recover for:
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
@@ -390,12 +411,14 @@ export default function ReimbursementClaims() {
                 dark: true,
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-12 h-12 mb-5"><circle cx="24" cy="24" r="24" fill="#ff9900"/><rect x="12" y="14" width="24" height="20" rx="2" stroke="#fff" strokeWidth="2" fill="none"/><path d="M12 20h24" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/><path d="M19 17v3M24 17v3M29 17v3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/><path d="M17 27h5M26 27h5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
-                {item.icon}
-                <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
-                <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+                <div className="p-8 h-full" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -405,6 +428,7 @@ export default function ReimbursementClaims() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Act Fast: Amazon&apos;s Reimbursement Window Has Shrunk
@@ -419,6 +443,7 @@ export default function ReimbursementClaims() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

@@ -50,7 +50,7 @@ export default function AboutSection() {
           </p>
 
           <div className="flex items-center gap-3 mb-6 text-sm font-semibold">
-            <Link href="/social-media-marketing" className="text-[#ffcd57] hover:text-white transition-colors">
+            <Link href="/amazon-influencer-marketing-service" className="text-[#ffcd57] hover:text-white transition-colors">
               Marketing
             </Link>
             <span className="w-px h-4 bg-white/40" />

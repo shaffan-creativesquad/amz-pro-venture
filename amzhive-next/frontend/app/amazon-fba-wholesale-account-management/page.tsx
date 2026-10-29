@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -117,10 +118,13 @@ export default function FBAWholesaleManagement() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* What's Included Section */}
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <h2
             className="text-center font-bold mb-4"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
@@ -128,9 +132,12 @@ export default function FBAWholesaleManagement() {
             <span className="text-[#000000]">Why Amazon Wholesale is the </span>
             <span className="text-[#ff9900]">Smartest Way to Scale Fast</span>
           </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
             Build a 6–7 Figure Amazon Business by Selling What People Already Trust
           </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
@@ -214,12 +221,14 @@ export default function FBAWholesaleManagement() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 {item.icon}
                 <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -238,12 +247,16 @@ export default function FBAWholesaleManagement() {
       {/* What's Included Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
             What&apos;s Included in Our FBA Wholesale <span style={{ color: "#ff9900" }}>Account Management Plan</span>
           </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
             We simplify the complex Amazon FBA reimbursements with a transparent, effective workflow. Here&apos;s how we get your money back:
           </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
             {[
@@ -292,8 +305,9 @@ export default function FBAWholesaleManagement() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div className="p-8 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
                 <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5" style={{ backgroundColor: "#fde8ef" }}>
                   {item.icon}
                 </div>
@@ -311,6 +325,7 @@ export default function FBAWholesaleManagement() {
                   ))}
                 </div>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -329,10 +344,10 @@ export default function FBAWholesaleManagement() {
       {/* Ungating Service Section */}
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <Image src="/Expand-Your-Product-Range-with-Brand-Category-Approvals-1536x1536.webp" alt="Amazon Brand & Category Ungating" width={700} height={700} unoptimized className="w-full h-auto object-contain" />
-          </div>
-          <div className="flex-1">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-1">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Amazon Brand &amp; Category <span style={{ color: "#ff9900" }}>Ungating Service</span>
             </h2>
@@ -364,14 +379,14 @@ export default function FBAWholesaleManagement() {
                 <span className="svc-btn-bottom">UNGATE RESTRICTED BRANDS →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Who This Service Is For */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Who This Service <span style={{ color: "#ff9900" }}>Is For</span>
             </h2>
@@ -402,10 +417,10 @@ export default function FBAWholesaleManagement() {
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
               </span>
             </a>
-          </div>
-          <div className="flex-1">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-1">
             <Image src="/Who-This-Service-Is-For.webp" alt="Who This Service Is For" width={700} height={700} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -452,6 +467,7 @@ export default function FBAWholesaleManagement() {
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Don&apos;t Let Account Issues Stall Your Wholesale Growth
@@ -466,6 +482,7 @@ export default function FBAWholesaleManagement() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

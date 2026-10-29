@@ -15,7 +15,7 @@ function ArrowIcon({ color = "white" }: { color?: string }) {
 
 const createServices = [
   {
-    href: "/brand-creative",
+    href: "/amazon-a-content-that-converts",
     title: "Brand & Creative",
     description: "Collaborate with us to elevate your brand's performance and engagement to new heights.",
     icon: (
@@ -114,7 +114,7 @@ export default function ServicesSection() {
 
           <div className="flex flex-wrap gap-3">
             <Link
-              href="/creative"
+              href="/account-management-for-amazon"
               className="inline-flex items-center gap-2 border border-white/30 text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-white/10 transition-all"
             >
               <ArrowIcon color="white" />

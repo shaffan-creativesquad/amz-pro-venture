@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -117,10 +118,13 @@ export default function AIPoweredVendorCentralManagement() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* What's Included Section */}
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <h2
             className="text-center font-bold mb-4"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
@@ -128,9 +132,12 @@ export default function AIPoweredVendorCentralManagement() {
             <span className="text-[#000000]">Is Vendor Central Costing</span>
             <span className="text-[#ff9900]">You More Than It Makes?</span>
           </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
             Amazon Vendor Central is complex and costly if mismanaged. From chargebacks to compliance headaches and inventory chaos, it can quickly drain profits and stall growth.
           </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
@@ -192,12 +199,14 @@ export default function AIPoweredVendorCentralManagement() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 {item.icon}
                 <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -216,12 +225,16 @@ export default function AIPoweredVendorCentralManagement() {
       {/* What's Included Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
             What&apos;s Included in Our End-to-End <span style={{ color: "#ff9900" }}>Vendor Central Management</span>
           </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
             Our end-to-end management is designed to protect your margins, simplify operations, and scale your wholesale channel.
           </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mb-12">
             {[
@@ -259,8 +272,9 @@ export default function AIPoweredVendorCentralManagement() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div className="p-8 h-full" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
                 <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5" style={{ backgroundColor: "#ff9900" }}>
                   {item.icon}
                 </div>
@@ -277,6 +291,7 @@ export default function AIPoweredVendorCentralManagement() {
                   ))}
                 </div>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -295,10 +310,10 @@ export default function AIPoweredVendorCentralManagement() {
       {/* What We Need From You */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
-          <div className="flex-shrink-0 w-full lg:w-[50%]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/what-we-need-from-you-3-1024x1024.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
-          </div>
-          <div className="flex-1 px-10 py-10">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               What We Need From You
             </h2>
@@ -328,7 +343,7 @@ export default function AIPoweredVendorCentralManagement() {
                 <span className="svc-btn-bottom">TALK TO A VENDOR CENTRAL EXPERT →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -375,6 +390,7 @@ export default function AIPoweredVendorCentralManagement() {
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Ready to Scale Your <span style={{ color: "#ff9900" }}>Ready to Take Control of Vendor Central?</span>
@@ -389,6 +405,7 @@ export default function AIPoweredVendorCentralManagement() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

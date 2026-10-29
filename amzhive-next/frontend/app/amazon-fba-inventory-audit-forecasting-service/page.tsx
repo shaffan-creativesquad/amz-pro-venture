@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -128,12 +129,14 @@ export default function FBAInventoryAudit() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* What Is FBA Inventory Audit & Forecasting Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — text */}
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
               What Is <span style={{ color: "#ff9900" }}>FBA Inventory Audit<br />&amp; Forecasting?</span>
             </h2>
@@ -152,12 +155,12 @@ export default function FBAInventoryAudit() {
                 <span className="svc-btn-bottom">GET YOUR FREE FBA INVENTORY AUDIT →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
           {/* Right — image */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/What-Is-FBA-Inventory-Audit-Forecasting.webp" alt="FBA Inventory Audit & Forecasting" width={500} height={460} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -167,17 +170,17 @@ export default function FBAInventoryAudit() {
         <div className="max-w-[1140px] mx-auto px-10">
 
           <div className="flex flex-col lg:flex-row gap-14 items-center mb-14">
-            <div className="flex-1">
+            <FadeIn direction="right" className="flex-1">
               <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why You Need an Expert Amazon <span style={{ color: "#ff9900" }}>Inventory Management Service</span>
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed">
                 Poor inventory performance damages your Amazon business on multiple fronts. Overstocking and stockouts kill ranking, drain storage costs, tie up capital, and damage customer trust. Here&apos;s why you need an expert Amazon inventory optimization service:
               </p>
-            </div>
-            <div className="flex-shrink-0 w-full lg:w-[480px]">
+            </FadeIn>
+            <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[480px]">
               <Image src="/Why-You-Need-an-Expert-Amazon-Inventory-Management-Service.webp" alt="Why You Need an Expert Amazon Inventory Management Service" width={480} height={400} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -207,14 +210,16 @@ export default function FBAInventoryAudit() {
                 desc: "Sustainable growth can't happen without data-backed, smart forecasting and restocking decisions. Proper inventory management lets you scale confidently without drowning in stock problems.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" className="w-11 h-11 flex-shrink-0"><circle cx="22" cy="22" r="22" fill="#ff9900"/><path d="M13 32V26M18 32V20M23 32V17M28 32V12M33 32V18" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="flex items-start gap-5 bg-white rounded-xl p-6 border border-gray-100" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div className="flex items-start gap-5 bg-white rounded-xl p-6 border border-gray-100 h-full" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
                 {item.icon}
                 <div>
                   <h3 className="font-bold text-[16px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -235,6 +240,7 @@ export default function FBAInventoryAudit() {
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-[1400px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What&apos;s Included in Our Monthly Amazon FBA<br />Inventory Audit &amp; Forecasting Service
@@ -243,6 +249,7 @@ export default function FBAInventoryAudit() {
               Our Amazon seller inventory solutions ensure you always have the right products in the right quantities at the right times. Here&apos;s what&apos;s included in your monthly subscription plan.
             </p>
           </div>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
             {[
@@ -319,8 +326,9 @@ export default function FBAInventoryAudit() {
                   </svg>
                 ),
               },
-            ].map((card) => (
-              <div key={card.title} className="bg-white rounded-2xl p-8 flex flex-col gap-1">
+            ].map((card, i) => (
+              <FadeIn key={card.title} direction="up" delay={i * 0.08}>
+              <div className="bg-white rounded-2xl p-8 flex flex-col gap-1 h-full">
                 {card.icon}
                 <h3 className="font-bold text-[16px] leading-snug mb-3" style={{ color: "#000000" }}>{card.title}</h3>
                 <div className="space-y-2.5">
@@ -335,6 +343,7 @@ export default function FBAInventoryAudit() {
                   ))}
                 </div>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -353,7 +362,7 @@ export default function FBAInventoryAudit() {
       {/* What We Need From You */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
-          <div className="flex-1 px-10 py-10">
+          <FadeIn direction="right" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               What We Need From You?
             </h2>
@@ -386,16 +395,17 @@ export default function FBAInventoryAudit() {
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
               </span>
             </a>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[50%]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/what-we-need-from-you-5.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Take Control of Your Amazon FBA Inventory
@@ -410,6 +420,7 @@ export default function FBAInventoryAudit() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

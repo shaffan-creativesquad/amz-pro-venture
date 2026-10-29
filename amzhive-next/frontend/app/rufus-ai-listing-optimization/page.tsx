@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
@@ -68,20 +69,26 @@ export default function RufusAIListingOptimization() {
 
       <HeroSection />
 
+      <PartnersBar />
+
       {/* Why Listing Optimization Section */}
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2
-            className="text-center font-bold mb-4"
-            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
-          >
-            <span className="text-[#000000]">Why Listing Optimization is The Backbone of </span>
-            <span className="text-[#ff9900]">Your Amazon Business?</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
-            Since the Amazon algorithm is constantly evolving, ranking on page 1 isn&apos;t luck; it&apos;s constant optimization and strategy. Here are the key reasons to optimize your Amazon listings:
-          </p>
+          <FadeIn direction="up">
+            <h2
+              className="text-center font-bold mb-4"
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
+            >
+              <span className="text-[#000000]">Why Listing Optimization is The Backbone of </span>
+              <span className="text-[#ff9900]">Your Amazon Business?</span>
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
+              Since the Amazon algorithm is constantly evolving, ranking on page 1 isn&apos;t luck; it&apos;s constant optimization and strategy. Here are the key reasons to optimize your Amazon listings:
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
@@ -115,20 +122,24 @@ export default function RufusAIListingOptimization() {
                 desc: "Adapt to how Amazon's AI (including Rufus) interprets product content and images. Stay ahead as machine learning changes search behavior.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-4"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#ff9900" strokeWidth="2"/><path d="M8 21h8M12 17v4" stroke="#ff9900" strokeWidth="2" strokeLinecap="round"/><path d="M9 8l2 2 4-4" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex justify-center mt-4">
-            <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              OPTIMIZE MY AMAZON LISTINGS →
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <div className="flex justify-center mt-4">
+              <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
+                OPTIMIZE MY AMAZON LISTINGS →
+              </a>
+            </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -136,7 +147,7 @@ export default function RufusAIListingOptimization() {
       {/* What Is Amazon Listing Optimization Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               What Is Amazon Listing <span style={{ color: "#ff9900" }}>Optimization?</span>
             </h2>
@@ -146,22 +157,26 @@ export default function RufusAIListingOptimization() {
             <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
               OPTIMIZE MY AMAZON LISTINGS →
             </a>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/banner-image.webp" alt="What Is Amazon Listing Optimization" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* What's Included in Our Amazon Listing Optimization Service */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-            What&apos;s Included in Our <span style={{ color: "#ff9900" }}>Amazon Listing Optimization Service</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
-            We deliver full-scope listing optimization tailored to your product, category, and customer base, designed to boost rankings and convert traffic into revenue.
-          </p>
+          <FadeIn direction="up">
+            <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              What&apos;s Included in Our <span style={{ color: "#ff9900" }}>Amazon Listing Optimization Service</span>
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+              We deliver full-scope listing optimization tailored to your product, category, and customer base, designed to boost rankings and convert traffic into revenue.
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
             {[
@@ -200,23 +215,27 @@ export default function RufusAIListingOptimization() {
                 desc: "You'll receive 6 fully optimized listing images designed to sell, ranging from lifestyle shots to infographics that highlight features, benefits, and key differentiators. These visuals are tailored to your audience and crafted to increase time on page and conversion rates.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-4"><rect x="3" y="3" width="18" height="18" rx="2" stroke="#ff9900" strokeWidth="2"/><circle cx="8.5" cy="8.5" r="1.5" stroke="#ff9900" strokeWidth="2"/><path d="M21 15l-5-5L5 21" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="bg-white p-6 border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.07} direction="up">
+                <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex justify-center mt-6">
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">OPTIMIZE MY AMAZON LISTINGS →</span>
-                <span className="svc-btn-bottom">OPTIMIZE MY AMAZON LISTINGS →</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <div className="flex justify-center mt-6">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">OPTIMIZE MY AMAZON LISTINGS →</span>
+                  <span className="svc-btn-bottom">OPTIMIZE MY AMAZON LISTINGS →</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -243,7 +262,7 @@ export default function RufusAIListingOptimization() {
           alt: "Add-On A+ Content Creation",
           heading: <>Add-On: <span style={{ color: "#ff9900" }}>A+ Content Creation</span></>,
           desc: "Take your Amazon listing to the next level with professionally designed A+ Content that enhances brand trust, tells a compelling product story, and drives more conversions.",
-          desc2: "We’ll design and audit your A+ Content to ensure it aligns with best practices, incorporating crawlable text along with engaging visuals, comparison charts, and feature callouts. The goal? To not just look good, but to perform.",
+          desc2: "We'll design and audit your A+ Content to ensure it aligns with best practices, incorporating crawlable text along with engaging visuals, comparison charts, and feature callouts. The goal? To not just look good, but to perform.",
           bullets: [],
           btn: "GET A+ CONTENT NOW →",
         },
@@ -254,14 +273,14 @@ export default function RufusAIListingOptimization() {
           heading: <>Why A+ Content <span style={{ color: "#ff9900" }}>Matters</span></>,
           desc: "In competitive niches, A+ Content often makes the difference between a shopper choosing your listing or going with your competitor.",
           desc2: "Professionally designed A+ Content increases customer engagement and helps convert hesitant shoppers into confident buyers. Beyond just visuals, it adds another layer of keyword-rich, indexable content that can boost your organic rankings.",
-          quote: "According to Amazon: ‘Basic A+ Content can increase sales by up to 8%—and well-implemented Premium A+ Content can increase sales by up to 20%.’",
+          quote: "According to Amazon: 'Basic A+ Content can increase sales by up to 8%—and well-implemented Premium A+ Content can increase sales by up to 20%.'",
           bullets: [],
           btn: "UPGRADE TO A+ CONTENT NOW →",
         },
       ].map((row, i) => (
         <section key={i} className="w-full py-20 bg-white">
           <div className={`max-w-[1440px] mx-auto px-10 flex flex-col gap-14 items-center ${row.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
-            <div className="flex-1">
+            <FadeIn direction={row.reverse ? "left" : "right"} className="flex-1">
               <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
                 {row.heading}
               </h2>
@@ -287,10 +306,10 @@ export default function RufusAIListingOptimization() {
                   <span className="svc-btn-bottom">{row.btn}</span>
                 </span>
               </a>
-            </div>
-            <div className="flex-shrink-0 w-full lg:w-[500px]">
+            </FadeIn>
+            <FadeIn direction={row.reverse ? "right" : "left"} className="flex-shrink-0 w-full lg:w-[500px]">
               <Image src={row.image} alt={row.alt} width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
           </div>
         </section>
       ))}
@@ -298,20 +317,22 @@ export default function RufusAIListingOptimization() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
-          <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
-              Don’t Let a Poor Listing Cost You Sales
-            </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
-              Top performing listings drive $200K+ in monthly sales. Let us make your listing the next top seller!
-            </p>
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">optimize Amazon listings now</span>
-                <span className="svc-btn-bottom">optimize Amazon listings now</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up">
+            <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+                Don't Let a Poor Listing Cost You Sales
+              </h2>
+              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+                Top performing listings drive $200K+ in monthly sales. Let us make your listing the next top seller!
+              </p>
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">optimize Amazon listings now</span>
+                  <span className="svc-btn-bottom">optimize Amazon listings now</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

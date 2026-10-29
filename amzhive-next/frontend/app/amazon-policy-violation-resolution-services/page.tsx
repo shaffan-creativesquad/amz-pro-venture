@@ -1,6 +1,7 @@
-import AnnouncementBar from "../components/AnnouncementBar";
+﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import ServicesSection from "./ServicesSection";
 import PartnersSection from "./PartnersSection";
@@ -77,6 +78,8 @@ export default function PolicyViolationResolution() {
 
       {/* Spacer */}
       <div className="bg-white pt-[180px]" />
+
+      <PartnersBar />
 
       <ServicesSection />
       <PartnersSection />

@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -122,6 +123,8 @@ export default function WalmartAdsManagement() {
 
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
+
+      <PartnersBar />
 
       {/* Why Walmart Ads Matter More Than Ever */}
       <section className="w-full py-20 bg-white">

@@ -23,6 +23,7 @@ export default function AuditFormSection() {
   const [primaryPlatform, setPrimaryPlatform] = useState("");
   const [selectedHurdles, setSelectedHurdles] = useState<string[]>([]);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   function toggleCheckbox(list: string[], setList: (v: string[]) => void, value: string) {
@@ -41,11 +42,30 @@ export default function AuditFormSection() {
     return e;
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     const errs = validate();
     setErrors(errs);
-    if (Object.keys(errs).length === 0) setSubmitted(true);
+    if (Object.keys(errs).length > 0) return;
+    setSending(true);
+    try {
+      await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "audit",
+          "Full Name": fullName,
+          "Email": email,
+          "Phone": phone,
+          "Has Store": hasStore,
+          "Platforms Used": selectedPlatforms,
+          "Primary Platform": primaryPlatform,
+          "Operational Hurdles": selectedHurdles,
+        }),
+      });
+    } catch { /* still show success */ }
+    setSending(false);
+    setSubmitted(true);
   }
 
   function handleReset() {
@@ -243,9 +263,9 @@ export default function AuditFormSection() {
               className="mt-4 px-6 py-2.5 rounded-[7px] border border-[#e2e6ed] text-[#67768e] text-sm font-semibold hover:border-[#ff9900]/50 hover:text-[#ff9900] transition-colors">
               Cancel
             </button>
-            <button type="submit"
-              className="mt-4 px-8 py-2.5 rounded-[7px] bg-[#ff9900] text-white text-sm font-semibold hover:bg-black transition-colors">
-              Send my details
+            <button type="submit" disabled={sending}
+              className="mt-4 px-8 py-2.5 rounded-[7px] bg-[#ff9900] text-white text-sm font-semibold hover:bg-black transition-colors disabled:opacity-70">
+              {sending ? "Sending..." : "Send my details"}
             </button>
           </div>
 

@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
@@ -128,12 +129,14 @@ export default function InfluencerMarketing() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* Creator Connection Program Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — text */}
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
               What Is Amazon&apos;s <span style={{ color: "#ff9900" }}>Creator<br />Connection Program?</span>
             </h2>
@@ -146,12 +149,12 @@ export default function InfluencerMarketing() {
                 <span className="svc-btn-bottom">START INFLUENCER CAMPAIGN →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
           {/* Right — image */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/What-We-Offer-in-Our-Amazon-Influencer-Marketing-Service-1.webp" alt="Amazon Influencer Marketing Service" width={500} height={460} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -160,12 +163,12 @@ export default function InfluencerMarketing() {
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+          <FadeIn direction="up"><h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             Why Influencer Marketing Matters for <span style={{ color: "#ff9900" }}>Amazon Sellers</span>
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto mb-14">
+          </h2></FadeIn>
+          <FadeIn direction="up" delay={0.1}><p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto mb-14">
             If you want to stand out, build trust quickly, and reach ready-to-buy shoppers, influencer marketing gives you a serious edge.
-          </p>
+          </p></FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
             {[
@@ -184,12 +187,14 @@ export default function InfluencerMarketing() {
                 desc: "External traffic is a major ranking signal for Amazon. When influencers drive clicks and conversions, your organic rankings improve, without increasing your ad spend.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-12 h-12 mb-4"><circle cx="24" cy="24" r="24" fill="#ff9900"/><path d="M14 34V28M20 34V22M26 34V18M32 34V13" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"/><path d="M24 14l5-3 5 3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div>
                 {item.icon}
                 <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -205,12 +210,14 @@ export default function InfluencerMarketing() {
                 desc: "Influencers bring more than reach; they bring feedback. Their audience reactions give you a direct window into what real buyers think, helping you refine your product positioning and marketing strategy.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-12 h-12 mb-4"><circle cx="24" cy="24" r="24" fill="#ff9900"/><circle cx="24" cy="18" r="4" stroke="#fff" strokeWidth="2" fill="none"/><path d="M16 34c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round"/><circle cx="14" cy="20" r="3" stroke="#fff" strokeWidth="1.5" fill="none"/><path d="M9 32c0-3 2.2-5 5-5" stroke="#fff" strokeWidth="1.5" fill="none" strokeLinecap="round"/><circle cx="34" cy="20" r="3" stroke="#fff" strokeWidth="1.5" fill="none"/><path d="M39 32c0-3-2.2-5-5-5" stroke="#fff" strokeWidth="1.5" fill="none" strokeLinecap="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title}>
+            ].map((item, i) => (
+              <FadeIn key={item.title} direction="up" delay={i * 0.08}>
+              <div>
                 {item.icon}
                 <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -231,6 +238,7 @@ export default function InfluencerMarketing() {
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What We Offer in Our Amazon Influencer<br />Marketing Service
@@ -239,6 +247,7 @@ export default function InfluencerMarketing() {
               From creator selection to full campaign management, we handle the heavy lifting so you get authentic content, targeted traffic, and performance you can track.
             </p>
           </div>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {[
@@ -315,8 +324,9 @@ export default function InfluencerMarketing() {
                   </svg>
                 ),
               },
-            ].map((card) => (
-              <div key={card.title} className="bg-white rounded-2xl p-8 flex flex-col gap-1">
+            ].map((card, i) => (
+              <FadeIn key={card.title} direction="up" delay={i * 0.08}>
+              <div className="bg-white rounded-2xl p-8 flex flex-col gap-1 h-full">
                 {card.icon}
                 <h3 className="font-bold text-[16px] leading-snug mb-3" style={{ color: "#000000" }}>{card.title}</h3>
                 <div className="space-y-2.5">
@@ -331,6 +341,7 @@ export default function InfluencerMarketing() {
                   ))}
                 </div>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -349,7 +360,7 @@ export default function InfluencerMarketing() {
       {/* What We Need From You */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
-          <div className="flex-1 px-10 py-10">
+          <FadeIn direction="right" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               What We&apos;ll Need to Start<br /><span style={{ color: "#ff9900" }}>Your Influencer Campaign</span>
             </h2>
@@ -406,10 +417,10 @@ export default function InfluencerMarketing() {
                 </span>
               </a>
             </div>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[50%]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/What-Is-Amazons-Creator-Connection-Program-1.webp" alt="Amazon Creator Connection Program" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -460,6 +471,7 @@ export default function InfluencerMarketing() {
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Why Choose AMZ Pro Venture for Influencer<br />Collaborations?
@@ -468,6 +480,7 @@ export default function InfluencerMarketing() {
               We connect your brand with creators who drive real visibility, engagement, and sales. Here&apos;s why sellers trust us:
             </p>
           </div>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mb-10">
             {[
@@ -547,16 +560,17 @@ export default function InfluencerMarketing() {
                 ),
                 dark: true,
               },
-            ].map((card) => (
+            ].map((card, i) => (
+              <FadeIn key={card.title} direction="up" delay={i * 0.07}>
               <div
-                key={card.title}
-                className="p-8"
+                className="p-8 h-full"
                 style={{ backgroundColor: card.dark ? "#000000" : "#f4f4f4" }}
               >
                 {card.icon}
                 <h3 className="font-bold text-[17px] mb-3" style={{ color: card.dark ? "#ffffff" : "#000000" }}>{card.title}</h3>
                 <p className="text-[14px] leading-relaxed" style={{ color: card.dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{card.desc}</p>
               </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -575,6 +589,7 @@ export default function InfluencerMarketing() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Influencers Are Already Promoting Your Competitors
@@ -589,6 +604,7 @@ export default function InfluencerMarketing() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 

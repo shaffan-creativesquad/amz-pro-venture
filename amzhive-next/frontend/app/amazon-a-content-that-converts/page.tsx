@@ -1,6 +1,7 @@
 ﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
@@ -68,6 +69,8 @@ export default function AmazonAContentThatConverts() {
 
       <HeroSection />
 
+      <PartnersBar />
+
       {/* Why A+ Content Section */}
       <section className="bg-white py-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
@@ -109,20 +112,24 @@ export default function AmazonAContentThatConverts() {
                 desc: "Over 50% of Amazon traffic is mobile. A+ Content ensures your visuals and layout perform across all screen sizes.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-12 h-12 mb-4"><circle cx="24" cy="24" r="24" fill="#ff9900"/><rect x="17" y="11" width="14" height="26" rx="2" stroke="#fff" strokeWidth="2" fill="none"/><circle cx="24" cy="33" r="1.5" fill="#fff"/><path d="M20 15h8" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="p-6 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                <div className="p-6 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex justify-center mt-4">
-            <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              GET MY FREE A+ CONTENT GRADING →
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <div className="flex justify-center mt-4">
+              <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
+                GET MY FREE A+ CONTENT GRADING →
+              </a>
+            </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -132,7 +139,7 @@ export default function AmazonAContentThatConverts() {
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left */}
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               What&apos;s Included in Our <span style={{ color: "#ff9900" }}>A+ Content Service</span>
             </h2>
@@ -184,12 +191,12 @@ export default function AmazonAContentThatConverts() {
                 <span className="svc-btn-bottom">GET MY FREE A+ CONTENT GRADING →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
           {/* Right — image placeholder */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/Why-Aplus-Content-Matters-More-Than-Ever.webp" alt="What's Included in Our A+ Content Service" width={500} height={520} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -199,12 +206,12 @@ export default function AmazonAContentThatConverts() {
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — image */}
-          <div className="flex-shrink-0 w-full lg:w-[480px]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[480px]">
             <Image src="/Stop-the-Scroll-with-Scroll-Stopping-Visuals.webp" alt="A+ Content Add-Ons" width={480} height={480} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
           {/* Right */}
-          <div className="flex-1">
+          <FadeIn direction="left" className="flex-1">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Need More? We&apos;ve Got You Covered With Our <span style={{ color: "#ff9900" }}>Add-Ons</span>
             </h2>
@@ -236,7 +243,7 @@ export default function AmazonAContentThatConverts() {
                 <span className="svc-btn-bottom">GET STARTED</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -246,7 +253,7 @@ export default function AmazonAContentThatConverts() {
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left */}
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Premium A+ Content <span style={{ color: "#ff9900" }}>Design</span>
             </h2>
@@ -282,12 +289,12 @@ export default function AmazonAContentThatConverts() {
                 <span className="svc-btn-bottom">REQUEST PREMIUM A+ QUOTE →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
           {/* Right — image */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/Premium-Aplus-Content-Be-the-Brand-That-Stands-Out.webp" alt="Premium A+ Content Design" width={500} height={520} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -297,12 +304,12 @@ export default function AmazonAContentThatConverts() {
         <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — image */}
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/Why-Upgrade-to-Premium-A-Content.webp" alt="Why Upgrade to Premium A+ Content" width={500} height={520} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
 
           {/* Right */}
-          <div className="flex-1">
+          <FadeIn direction="left" className="flex-1">
             <h2 className="font-bold leading-tight mb-8" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Why Upgrade to <span style={{ color: "#ff9900" }}>Premium A+ Content?</span>
             </h2>
@@ -333,7 +340,7 @@ export default function AmazonAContentThatConverts() {
                 <span className="svc-btn-bottom">REQUEST PREMIUM A+ QUOTE →</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -343,12 +350,16 @@ export default function AmazonAContentThatConverts() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-            Why Top Amazon Brands Trust <span style={{ color: "#ff9900" }}>AMZ Pro Venture</span> for A+ Content
-          </h2>
-          <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto mb-14">
-            We create high-performing A+ Content rooted in Amazon best practices, consumer psychology, and algorithmic intelligence. Every layout, word, and image is designed to convert and rank.
-          </p>
+          <FadeIn direction="up">
+            <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              Why Top Amazon Brands Trust <span style={{ color: "#ff9900" }}>AMZ Pro Venture</span> for A+ Content
+            </h2>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.1}>
+            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto mb-14">
+              We create high-performing A+ Content rooted in Amazon best practices, consumer psychology, and algorithmic intelligence. Every layout, word, and image is designed to convert and rank.
+            </p>
+          </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {[
@@ -370,12 +381,14 @@ export default function AmazonAContentThatConverts() {
                 dark: false,
                 icon: <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 300 300" className="w-12 h-12 mb-5"><defs><style>{`.cls-1c{fill:#ff9900;}`}</style></defs><path className="cls-1c" d="M201,56.8,184.7,72.45a92.79,92.79,0,0,0-43.58-23.09c-39-8.49-81.59,14.3-96.33,51.48-3.79,9.57,5.54,10.29,8.74,16.6l40-41.08,50.11,50.45,97.58-97.66H209.91V5.47h75.27v77H261.82v-34L147.59,162.79l-52.79-53-41,41.42L39.65,137.8C37.54,157,50.84,184.24,69.22,199.19c27.88,22.69,65.6,26.35,96.18,9.34A85.83,85.83,0,0,0,209,121.34c-.74-5.32.32-8.45,4-11.93,4.3-4.09,7.92-8.91,13.05-14.81,11,31.32,9.6,59.37-4,86.2-4.39,8.67-3.28,13.13,3.49,19.41,16.25,15.09,31.69,31.07,47.35,46.8,12.57,12.62,13,27.05,1.28,38.76-11.9,11.93-26.07,11.69-38.7-.81-17.4-17.25-34.81-34.5-52-51.94-3.46-3.51-6-4.41-10.9-2-67.89,32.83-145.3-8.42-156.57-83.19C7.33,90.72,49.57,34.1,106.86,25.93,143.31,20.73,178.33,32.11,201,56.8Z"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
-                {item.icon}
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
-                <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                <div className="p-8 h-full" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[17px] mb-3" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -391,23 +404,27 @@ export default function AmazonAContentThatConverts() {
                 desc: "You don't need to manage freelancers, piece together creatives, or guess which modules work best. We take care of everything, from planning and design to formatting and implementation support.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 300 300" className="w-12 h-12 mb-5"><defs><style>{`.cls-1e{fill:#ff9900;}`}</style></defs><path className="cls-1e" d="M184.82,168c-33,26.15-79.49,18.24-103.13-12.24a73.25,73.25,0,0,1,6.73-97.54c26.36-25.77,68.51-27.47,97.28-3.92,29.61,24.24,36.35,69.46,10.5,102.35,1.86,1.74,3.81,3.49,5.68,5.31,2.93,2.88,5.84,5.79,8.7,8.74a1.8,1.8,0,0,0,2.37.5c10.79-4.65,21.63-2.61,30,5.69,13.53,13.46,27.13,26.86,40.45,40.52,7.41,7.59,9.37,16.88,6,26.9s-10.51,15.83-20.82,17.57c-8.88,1.5-16.67-1.09-23.06-7.43Q225.68,234.82,206,215c-8.83-8.84-11-19.06-6.3-30.69a2,2,0,0,0-.12-1.75c-4.78-4.86-9.62-9.65-14.45-14.45C185.07,168.05,184.93,168,184.82,168Zm-45.47-.4a56.9,56.9,0,1,0-57-56.77A56.84,56.84,0,0,0,139.35,167.6Z"/><path className="cls-1e" d="M68.9,75.94c-9.05,19.44-10.34,38.86-4.23,59.19-3.32.85-6.57,1.89-9.9,2.5a57.11,57.11,0,0,1-28.32-2,2.27,2.27,0,0,1-1.86-2.6c.07-9.87,0-19.75.05-29.63,0-1.46-.36-2.44-2-2.47s-1.91,1.07-1.9,2.47c0,9.21,0,18.41,0,27.61v2.26a48.41,48.41,0,0,1-11.32-6.94c-.33-.27-.38-1-.38-1.52,0-11.48-.09-23,0-34.42A14.7,14.7,0,0,1,23.73,75.86c5.11-.13,10.07.16,15,2S48.5,79,53.26,77.05C58.25,75,63.38,76.08,68.9,75.94Z"/><path className="cls-1e" d="M257.64,132.85q0-8.35,0-16.73c0-4.17,0-8.34,0-12.51,0-1.42-.11-2.67-1.9-2.71s-2,1.28-2,2.76c0,9.88,0,19.75,0,29.63,0,1.11-.2,1.79-1.38,2.18a57.5,57.5,0,0,1-37.54-.15c-.29-.1-.55-.24-1-.44a79,79,0,0,0,3.6-29.58,77.73,77.73,0,0,0-7.62-28.79c.23-.16.37-.33.51-.34,4.95-.39,9.94-1,14.72.86a23.68,23.68,0,0,0,17.56,0,26.92,26.92,0,0,1,16.65-.29c6.08,1.69,10,7.17,10,13.73.15,11.47.05,23,0,34.42,0,.5-.13,1.24-.47,1.47-3.51,2.4-7.08,4.71-10.64,7Z"/><path className="cls-1e" d="M61,57.42A16.3,16.3,0,0,1,44.52,73.67,16.36,16.36,0,1,1,44.82,41,16.58,16.58,0,0,1,61,57.42Z"/><path className="cls-1e" d="M217.43,57.27A16.32,16.32,0,0,1,233.84,41,16.58,16.58,0,0,1,250,57.38a16.28,16.28,0,0,1-16.23,16.29A16.48,16.48,0,0,1,217.43,57.27Z"/><path className="cls-1e" d="M163.08,154.18V129.12c0-1.66-.05-3.32,0-5,.07-1.43-.46-2.31-1.92-2.32s-1.95.81-1.94,2.27c0,9.88,0,19.76.06,29.64a2.45,2.45,0,0,1-2,2.84,58.14,58.14,0,0,1-36.53-.1c-1.33-.43-1.62-1.11-1.61-2.39,0-9.94,0-19.88,0-29.82,0-1.8-.87-2.68-2.34-2.43s-1.56,1.3-1.56,2.5q0,13.71,0,27.43v2.36a19.47,19.47,0,0,1-2.27-1c-2.76-1.71-5.53-3.41-8.2-5.25a2.92,2.92,0,0,1-1.11-2.06c-.07-11.59-.11-23.19,0-34.79a14.38,14.38,0,0,1,14.14-14.11,82.07,82.07,0,0,1,11,.54c2.52.33,4.91,1.53,7.42,2a20.06,20.06,0,0,0,11.18-1.31c5.54-2.11,11.27-1.91,16.84-.63,6.21,1.43,10.49,7.35,10.52,13.74,0,11.47,0,23,0,34.42a2.43,2.43,0,0,1-.49,1.65A48.91,48.91,0,0,1,163.08,154.18Z"/><path className="cls-1e" d="M122.86,78.2a16.37,16.37,0,0,1,16.46-16.29,16.66,16.66,0,0,1,16.26,16.42,16.36,16.36,0,1,1-32.72-.13Z"/></svg>,
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8" style={{ backgroundColor: "#f4f4f4" }}>
-                {item.icon}
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                <div className="p-8 h-full" style={{ backgroundColor: "#f4f4f4" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex justify-center">
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">BOOK A FREE CONSULTATION →</span>
-                <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <div className="flex justify-center">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">BOOK A FREE CONSULTATION →</span>
+                  <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -415,20 +432,22 @@ export default function AmazonAContentThatConverts() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
-          <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
-              Your Competitors Are Already Investing in A+ Content. Are You?
-            </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
-              Every day you delay is another day your listing underperforms. In a marketplace this competitive, generic content won’t cut it, and buyers won’t wait.
-            </p>
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">Upgrade to A+ Content Now</span>
-                <span className="svc-btn-bottom">Upgrade to A+ Content Now</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up">
+            <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+                Your Competitors Are Already Investing in A+ Content. Are You?
+              </h2>
+              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+                Every day you delay is another day your listing underperforms. In a marketplace this competitive, generic content won't cut it, and buyers won't wait.
+              </p>
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">Upgrade to A+ Content Now</span>
+                  <span className="svc-btn-bottom">Upgrade to A+ Content Now</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 

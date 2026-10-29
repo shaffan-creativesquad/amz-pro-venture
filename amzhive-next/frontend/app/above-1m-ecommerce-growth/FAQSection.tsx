@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import { useState } from "react";
-
+//faq
 const stats = [
   { value: "340+", label: "Brands Audited" },
   { value: "40%", label: "Avg. Ad Waste Found" },
@@ -38,7 +38,7 @@ export default function FAQSection() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <motion.section initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }} className="w-full py-20 bg-white">
+    <motion.section id="faq" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-80px" }} transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }} className="w-full py-20 bg-white">
       <div className="max-w-[860px] mx-auto px-10">
 
         {/* Header */}

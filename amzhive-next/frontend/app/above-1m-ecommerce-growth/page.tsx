@@ -1,9 +1,9 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+﻿import LandingNavbar from "../components/LandingNavbar";
+import LandingFooter from "../components/LandingFooter";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import FadeIn from "../components/FadeIn";
+import GrowthAuditForm from "./GrowthAuditForm";
 
 export const metadata = {
   title: "Above $1M Ecommerce Growth | AMZ Pro Venture",
@@ -62,11 +62,10 @@ export default function Above1MEcommerceGrowth() {
         .svc-btn-hover-white::before { background-color: #ffffff !important; }
         .svc-btn-hover-white:hover { color: #000000 !important; }
       `}</style>
-      <AnnouncementBar />
-      <Navbar />
+      <LandingNavbar />
 
       {/* Hero Section */}
-      <section className="w-full py-20" style={{ backgroundColor: "#000000" }}>
+      <section id="hero" className="w-full py-20" style={{ backgroundColor: "#000000" }}>
         <div className="max-w-[900px] mx-auto px-10 flex flex-col items-center text-center">
 
           {/* Top Tag */}
@@ -168,7 +167,7 @@ export default function Above1MEcommerceGrowth() {
       </section>
 
       {/* Growth Audit Section */}
-      <section className="w-full pt-0 pb-0 overflow-hidden" style={{ backgroundColor: "#000000" }}>
+      <section id="audit" className="w-full pt-0 pb-0 overflow-hidden" style={{ backgroundColor: "#000000" }}>
         <div className="max-w-[1100px] mx-auto px-4 sm:px-10 mb-[-100px] relative z-10">
           <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             <div className="flex flex-col lg:flex-row">
@@ -195,29 +194,7 @@ export default function Above1MEcommerceGrowth() {
 
               {/* Right — Form */}
               <div className="flex-1 p-12">
-                <form action="/contact-us" method="GET" className="flex flex-col gap-5">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                    <div className="flex flex-col gap-1">
-                      <label className="text-[14px] font-semibold" style={{ color: "#000000" }}>Name</label>
-                      <input type="text" name="name" className="border border-gray-200 rounded-lg px-4 py-3 text-[14px] bg-gray-50 focus:outline-none focus:border-[#ff9900]" />
-                    </div>
-                    <div className="flex flex-col gap-1">
-                      <label className="text-[14px] font-semibold" style={{ color: "#000000" }}>Email</label>
-                      <input type="email" name="email" className="border border-gray-200 rounded-lg px-4 py-3 text-[14px] bg-gray-50 focus:outline-none focus:border-[#ff9900]" />
-                    </div>
-                    <div className="flex flex-col gap-1">
-                      <label className="text-[14px] font-semibold" style={{ color: "#000000" }}>Phone</label>
-                      <input type="tel" name="phone" className="border border-gray-200 rounded-lg px-4 py-3 text-[14px] bg-gray-50 focus:outline-none focus:border-[#ff9900]" />
-                    </div>
-                    <div className="flex flex-col gap-1">
-                      <label className="text-[14px] font-semibold" style={{ color: "#000000" }}>Store Or Brand URL</label>
-                      <input type="url" name="store_url" className="border border-gray-200 rounded-lg px-4 py-3 text-[14px] bg-gray-50 focus:outline-none focus:border-[#ff9900]" />
-                    </div>
-                  </div>
-                  <button type="submit" className="w-full font-bold uppercase tracking-widest text-white rounded-lg py-4 text-[14px] hover:bg-black transition-colors" style={{ backgroundColor: "#ff9900" }}>
-                    NEXT
-                  </button>
-                </form>
+                <GrowthAuditForm />
               </div>
 
             </div>
@@ -226,10 +203,11 @@ export default function Above1MEcommerceGrowth() {
       </section>
 
       {/* Revenue Leaks Section */}
-      <section className="bg-white pt-[160px] pb-20 w-full">
+      <section id="revenue-leaks" className="bg-white pt-[160px] pb-20 w-full">
         <div className="max-w-[1140px] mx-auto px-10">
 
-          <p className="text-center text-[12px] font-bold uppercase tracking-widest mb-4" style={{ color: "#ff9900" }}>What&apos;s Quietly Draining Your Revenue</p>
+          <FadeIn direction="up"><p className="text-center text-[12px] font-bold uppercase tracking-widest mb-4" style={{ color: "#ff9900" }}>What&apos;s Quietly Draining Your Revenue</p></FadeIn>
+          <FadeIn direction="up" delay={0.08}>
           <h2
             className="text-center font-bold mb-2 uppercase"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 50px)", color: "#000000" }}
@@ -239,9 +217,12 @@ export default function Above1MEcommerceGrowth() {
           <div className="flex justify-center mb-6">
             <div className="h-[3px] w-24 rounded-full" style={{ backgroundColor: "#ff9900" }} />
           </div>
+          </FadeIn>
+          <FadeIn direction="up" delay={0.14}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
             Growth doesn&apos;t die from one big failure. It leaks away through a handful of small ones. If these feel familiar, the problem isn&apos;t effort. It&apos;s the system underneath.
           </p>
+          </FadeIn>
 
           <div className="rounded-2xl border border-gray-200 overflow-hidden mb-12">
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -289,7 +270,8 @@ export default function Above1MEcommerceGrowth() {
                 ),
               },
             ].map((item, i) => (
-              <div key={item.title} className={`flex items-start gap-4 p-8 border-gray-200 ${i % 2 === 0 ? "border-r" : ""} ${i < 4 ? "border-b" : ""}`}>
+              <FadeIn key={item.title} direction="up" delay={i * 0.07}>
+              <div className={`flex items-start gap-4 p-8 border-gray-200 h-full ${i % 2 === 0 ? "border-r" : ""} ${i < 4 ? "border-b" : ""}`}>
                 <div className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#fde8ef" }}>
                   {item.icon}
                 </div>
@@ -298,10 +280,12 @@ export default function Above1MEcommerceGrowth() {
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </div>
+              </FadeIn>
             ))}
             </div>
           </div>
 
+          <FadeIn direction="up">
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink" style={{ borderRadius: "9999px", padding: "14px 40px" }}>
               <span className="svc-btn-inner">
@@ -310,15 +294,17 @@ export default function Above1MEcommerceGrowth() {
               </span>
             </a>
           </div>
+          </FadeIn>
 
         </div>
       </section>
 
       {/* $1 Million Roadmap Section */}
-      <section className="w-full py-24" style={{ backgroundColor: "#000000" }}>
+      <section id="roadmap" className="w-full py-24" style={{ backgroundColor: "#000000" }}>
         <div className="max-w-[1140px] mx-auto px-10">
 
           {/* Header */}
+          <FadeIn direction="up">
           <div className="text-center mb-16">
             <span className="inline-block mb-5 text-[11px] font-bold uppercase tracking-widest border rounded-full px-5 py-2" style={{ color: "#ff9900", borderColor: "rgba(233,28,89,0.3)" }}>
               One Team, One System, One Channel
@@ -333,6 +319,7 @@ export default function Above1MEcommerceGrowth() {
               One team, one system, every channel. Built to take your brand from a stubborn plateau to dominating your niche.
             </p>
           </div>
+          </FadeIn>
 
           {/* Phases + Image */}
           <div className="flex flex-col lg:flex-row gap-10 items-center">
@@ -380,10 +367,10 @@ export default function Above1MEcommerceGrowth() {
                     "Revenue no algorithm change can take away overnight",
                   ],
                 },
-              ].map((item) => (
+              ].map((item, i) => (
+                <FadeIn key={item.phase} direction="up" delay={i * 0.08}>
                 <div
-                  key={item.phase}
-                  className="relative p-7 rounded-2xl overflow-hidden"
+                  className="relative p-7 rounded-2xl overflow-hidden h-full"
                   style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
                 >
                   {/* Phase number — large watermark */}
@@ -417,11 +404,12 @@ export default function Above1MEcommerceGrowth() {
                     ))}
                   </div>
                 </div>
+                </FadeIn>
               ))}
             </div>
 
             {/* Right: Image */}
-            <div className="flex-shrink-0 lg:w-[380px] flex flex-col items-center">
+            <FadeIn direction="left" className="flex-shrink-0 lg:w-[380px] flex flex-col items-center">
               <div className="rounded-2xl overflow-hidden w-full" style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
                 <Image
                   src="/Expansion-New-Marketplaces_-1.webp"
@@ -438,15 +426,62 @@ export default function Above1MEcommerceGrowth() {
                   <span className="svc-btn-bottom" style={{ left: 0, right: 0, textAlign: "center" }}>START MY ROADMAP →</span>
                 </span>
               </a>
-            </div>
+            </FadeIn>
 
           </div>
         </div>
       </section>
 
+      {/* Eggs In One Basket Section */}
+      <section id="multi-channel" className="w-full overflow-hidden" style={{ background: "linear-gradient(135deg, #fff8f0 0%, #ffffff 60%)" }}>
+        <div className="w-full flex flex-col lg:flex-row items-center">
+
+          {/* Left: Text */}
+          <FadeIn direction="right" className="flex-1 py-16 pl-10 pr-8 lg:pl-16">
+            <h2
+              className="font-black leading-tight mb-6 uppercase"
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 3.5vw, 54px)", color: "#000000" }}
+            >
+              ONLY SELLING ON AMAZON =<br />
+              <span style={{
+                color: "#ff9900",
+                textDecoration: "underline",
+                textDecorationStyle: "wavy",
+                textDecorationColor: "#000000",
+                textDecorationThickness: "3px",
+                textUnderlineOffset: "8px",
+              }}>ALL EGGS IN ONE BASKET…</span>
+              <br />A BEAUTIFUL WAY TO LOSE EVERYTHING AT ONCE.
+            </h2>
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 max-w-[480px]">
+              We move your products onto other marketplaces, your own DTC store, and TikTok Shop, so one rough day on Amazon stays a tough day instead of the whole story.
+            </p>
+            <a href="/contact-us" className="svc-btn svc-btn-pink" style={{ borderRadius: "9999px", padding: "14px 40px" }}>
+              <span className="svc-btn-inner">
+                <span className="svc-btn-top">TRY MULTI-CHANNEL NOW →</span>
+                <span className="svc-btn-bottom">TRY MULTI-CHANNEL NOW →</span>
+              </span>
+            </a>
+          </FadeIn>
+
+          {/* Right: GIF — fills to edge */}
+          <FadeIn direction="left" className="flex-1 flex items-end justify-end self-stretch">
+            <Image
+              src="/eggs.gif"
+              alt="All eggs in one basket"
+              width={800}
+              height={500}
+              unoptimized
+              className="w-full h-full object-cover object-left"
+            />
+          </FadeIn>
+
+        </div>
+      </section>
+
       <FAQSection />
 
-      <Footer />
+      <LandingFooter />
     </main>
   );
 }

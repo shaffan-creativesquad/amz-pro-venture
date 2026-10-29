@@ -1,6 +1,7 @@
-import AnnouncementBar from "../components/AnnouncementBar";
+﻿import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import FadeIn from "../components/FadeIn";
@@ -106,10 +107,12 @@ export default function AmazonAccountSuspended() {
       {/* Spacer */}
       <div className="bg-white pt-[240px]" />
 
+      <PartnersBar />
+
       {/* Who Is This For? */}
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
         <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">Struggling to Reinstate </span>
               <span className="text-[#ff9900]">Amazon Account?</span>
@@ -140,10 +143,10 @@ export default function AmazonAccountSuspended() {
                 </span>
               </a>
             </div>
-          </div>
-          <div className="flex-shrink-0 w-full lg:w-[500px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/second-01-scaled.png" alt="Who Is This For" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -151,7 +154,7 @@ export default function AmazonAccountSuspended() {
       <section className="bg-white py-20 w-full max-w-[1659px] mx-auto">
         <div className="px-10 flex flex-col lg:flex-row gap-14 items-center">
 
-          <div className="flex-1">
+          <FadeIn direction="right" className="flex-1">
             <h2
               className="font-bold leading-tight mb-10"
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
@@ -191,9 +194,8 @@ export default function AmazonAccountSuspended() {
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="flex-shrink-0 w-full lg:w-[630px]">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[630px]">
             <Image
               src="/Amazon-3-01-scaled.png"
               alt="Amazon Account Management"
@@ -202,7 +204,7 @@ export default function AmazonAccountSuspended() {
               unoptimized
               className="w-full h-auto object-contain"
             />
-          </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -313,12 +315,14 @@ export default function AmazonAccountSuspended() {
                   </svg>
                 ),
               },
-            ].map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
-                {item.icon}
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
-                <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
-              </div>
+            ].map((item, i) => (
+              <FadeIn key={item.title} delay={i * 0.08} direction="up">
+                <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                  {item.icon}
+                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                </div>
+              </FadeIn>
             ))}
           </div>
 
@@ -337,10 +341,10 @@ export default function AmazonAccountSuspended() {
       {/* What We Need From You */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
-          <div className="flex-shrink-0 w-full lg:w-[50%]">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/what-we-need-from-you-1.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
-          </div>
-          <div className="flex-1 px-10 py-10">
+          </FadeIn>
+          <FadeIn direction="left" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
               <span className="text-[#000000]">What We Need </span>
               <span className="text-[#ff9900]">from You</span>
@@ -371,7 +375,7 @@ export default function AmazonAccountSuspended() {
                 <span className="svc-btn-bottom">Book a Free Consultation</span>
               </span>
             </a>
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -447,8 +451,9 @@ export default function AmazonAccountSuspended() {
                   </svg>
                 ),
               },
-            ].map((card) => (
-              <div key={card.title} className="flex flex-col gap-4 p-6 border border-gray-200 bg-white" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+            ].map((card, i) => (
+              <FadeIn key={card.title} delay={i * 0.08} direction="up">
+              <div className="flex flex-col gap-4 p-6 border border-gray-200 bg-white h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 {card.icon ? card.icon : (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-[27px] h-[27px]" fill="none">
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
@@ -469,23 +474,26 @@ export default function AmazonAccountSuspended() {
                 </div>
                 {card.note && <p className="text-[#67768e] text-[13px] leading-relaxed">{card.note}</p>}
               </div>
+              </FadeIn>
             ))}
           </div>
 
-          <div className="flex items-center justify-center gap-4">
-            <a href="/contact-us" className="svc-btn">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">Contact Us</span>
-                <span className="svc-btn-bottom">Contact Us</span>
-              </span>
-            </a>
-            <a href="tel:2067046094" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">Call Now</span>
-                <span className="svc-btn-bottom">Call Now</span>
-              </span>
-            </a>
-          </div>
+          <FadeIn direction="up" delay={0.1}>
+            <div className="flex items-center justify-center gap-4">
+              <a href="/contact-us" className="svc-btn">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">Contact Us</span>
+                  <span className="svc-btn-bottom">Contact Us</span>
+                </span>
+              </a>
+              <a href="tel:2067046094" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">Call Now</span>
+                  <span className="svc-btn-bottom">Call Now</span>
+                </span>
+              </a>
+            </div>
+          </FadeIn>
 
         </div>
       </section>
@@ -493,6 +501,7 @@ export default function AmazonAccountSuspended() {
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Don&apos;t Let Downtime Destroy<br />Your Momentum
@@ -507,6 +516,7 @@ export default function AmazonAccountSuspended() {
               </span>
             </a>
           </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -514,6 +524,7 @@ export default function AmazonAccountSuspended() {
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
         <div className="max-w-[1140px] mx-auto px-10">
 
+          <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-bold mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
               Additional Support That Sets Us Apart
@@ -522,9 +533,10 @@ export default function AmazonAccountSuspended() {
               While others focus on the big picture, we drive deeper to ensure nothing slips through the cracks. Here&apos;s how we go above and beyond to support your success.
             </p>
           </div>
+          </FadeIn>
 
           <div className="flex flex-col lg:flex-row gap-14 items-center">
-            <div className="flex-1 space-y-6">
+            <FadeIn direction="right" className="flex-1 space-y-6">
               {[
                 {
                   title: "Auto & Catalog Backup",
@@ -566,11 +578,11 @@ export default function AmazonAccountSuspended() {
                   </span>
                 </a>
               </div>
-            </div>
+            </FadeIn>
 
-            <div className="flex-shrink-0 w-full lg:w-[440px]">
+            <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[440px]">
               <Image src="/banner-image-9-991x1024.webp" alt="Additional Support" width={440} height={460} unoptimized className="w-full h-auto object-contain" />
-            </div>
+            </FadeIn>
           </div>
 
         </div>
@@ -639,6 +651,7 @@ export default function AmazonAccountSuspended() {
       {/* CTA Banner */}
       <section className="w-full bg-white py-10">
         <div className="max-w-[1140px] mx-auto px-10">
+          <FadeIn direction="up">
           <div
             className="rounded-2xl px-14 py-12 flex flex-col lg:flex-row items-center justify-between gap-8"
             style={{ backgroundColor: "#ff9900" }}
@@ -664,6 +677,7 @@ export default function AmazonAccountSuspended() {
               </a>
             </div>
           </div>
+          </FadeIn>
         </div>
       </section>
 
