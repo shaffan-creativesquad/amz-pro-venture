@@ -9,7 +9,7 @@ import FadeIn from "../components/FadeIn";
 
 export const metadata = {
   title: "Amazon Account Suspended | AMZ Pro Venture",
-  description: "Expert Amazon account suspension reinstatement services â€" appeals, Plan of Action, and full account recovery by AMZ Pro Venture.",
+  description: "Expert Amazon account suspension reinstatement services - appeals, Plan of Action, and full account recovery by AMZ Pro Venture.",
 };
 
 export default function AmazonAccountSuspended() {
