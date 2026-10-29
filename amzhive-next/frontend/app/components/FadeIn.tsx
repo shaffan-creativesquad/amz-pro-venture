@@ -11,12 +11,12 @@ interface FadeInProps {
   style?: React.CSSProperties;
 }
 
-export default function FadeIn({ children, delay = 0, direction = "up", className, style }: FadeInProps) {
+export default function FadeIn({ children, delay = 0, direction = "up", className = "", style }: FadeInProps) {
   const directionOffset = {
-    up: { y: 40, x: 0 },
-    down: { y: -40, x: 0 },
-    left: { y: 0, x: 40 },
-    right: { y: 0, x: -40 },
+    up: { y: 25, x: 0 },
+    down: { y: -25, x: 0 },
+    left: { y: 0, x: 15 },
+    right: { y: 0, x: -15 },
     none: { y: 0, x: 0 },
   };
 
@@ -24,9 +24,9 @@ export default function FadeIn({ children, delay = 0, direction = "up", classNam
     <motion.div
       initial={{ opacity: 0, ...directionOffset[direction] }}
       whileInView={{ opacity: 1, y: 0, x: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.6, delay, ease: [0.25, 0.1, 0.25, 1] }}
-      className={className}
+      viewport={{ once: true, margin: "0px" }}
+      transition={{ duration: 0.5, delay, ease: [0.25, 0.1, 0.25, 1] }}
+      className={`max-w-full ${className}`}
       style={style}
     >
       {children}

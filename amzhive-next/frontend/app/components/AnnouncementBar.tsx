@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -20,25 +20,25 @@ export default function AnnouncementBar() {
   }, []);
 
   return (
-    <div className="bg-black text-white py-2 px-4 border-b border-white/10">
-      <div className="max-w-[1247px] mx-auto flex items-center justify-between">
+    <div className="bg-black text-white py-2 px-3 sm:px-4 border-b border-white/10 overflow-hidden w-full max-w-full">
+      <div className="max-w-[1247px] mx-auto flex items-center justify-between gap-2">
         {/* Left: 24/7 Support */}
         <Link
           href="/contact-us"
-          className="flex items-center gap-2 font-medium text-white hover:text-[#ff9900] transition-colors flex-shrink-0 text-[17px]"
+          className="flex items-center gap-1.5 font-medium text-white hover:text-[#ff9900] transition-colors flex-shrink-0 text-xs sm:text-sm md:text-[15px]"
         >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="flex-shrink-0">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
           </svg>
-          24/7 Support
+          <span>24/7 Support</span>
         </Link>
 
         {/* Center: Rotating announcement */}
-        <div className="flex-1 text-center text-[17px] font-medium overflow-hidden h-6 relative mx-6">
+        <div className="flex-1 text-center text-xs sm:text-sm md:text-[15px] font-medium overflow-hidden h-5 sm:h-6 relative mx-1 sm:mx-6 min-w-0">
           {announcements.map((text, i) => (
             <span
               key={i}
-              className="absolute inset-0 flex items-center justify-center transition-all duration-500"
+              className="absolute inset-0 flex items-center justify-center truncate px-1 transition-all duration-500 whitespace-nowrap"
               style={{
                 opacity: i === current ? 1 : 0,
                 transform: i === current ? "translateY(0)" : i < current ? "translateY(-100%)" : "translateY(100%)",

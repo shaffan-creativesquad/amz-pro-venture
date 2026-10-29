@@ -1,7 +1,13 @@
-﻿import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import ScrollAnimations from "./components/ScrollAnimations";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,8 +41,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable} ${poppins.variable}`}>
-      <body className="min-h-full flex flex-col antialiased">
+    <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable} ${poppins.variable} overflow-x-clip max-w-full`}>
+      <body className="min-h-full flex flex-col antialiased overflow-x-clip max-w-full w-full">
         <ScrollAnimations />
         {children}
       </body>

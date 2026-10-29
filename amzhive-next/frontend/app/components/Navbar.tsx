@@ -92,8 +92,8 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="bg-white border-b border-gray-100 relative">
-      <div className="w-full px-10 flex items-center justify-between h-[90px]">
+    <header className="bg-white border-b border-gray-100 relative w-full max-w-full">
+      <div className="w-full px-4 sm:px-6 md:px-10 flex items-center justify-between h-[70px] sm:h-[80px] md:h-[90px]">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
           <Image
@@ -102,7 +102,7 @@ export default function Navbar() {
             width={240}
             height={60}
             priority
-            className="h-16 w-auto"
+            className="h-10 sm:h-12 md:h-16 w-auto object-contain"
             unoptimized
           />
         </Link>

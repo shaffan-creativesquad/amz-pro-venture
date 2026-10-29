@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -55,10 +55,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="inline-flex items-center mb-6 overflow-hidden rounded-sm"
+            className="flex flex-wrap sm:inline-flex items-center mb-6 overflow-hidden rounded-sm max-w-full"
           >
-            <span className="bg-[#ff9900] text-white text-sm font-semibold px-4 py-2">Marketing &amp; eCommerce</span>
-            <span className="bg-black text-white text-sm font-semibold px-4 py-2">Web Design Agency</span>
+            <span className="bg-[#ff9900] text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2">Marketing &amp; eCommerce</span>
+            <span className="bg-black text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2">Web Design Agency</span>
           </motion.div>
 
           {/* Heading */}
@@ -133,10 +133,10 @@ export default function HeroSection() {
 
         {/* RIGHT: GIF + Stats Cards */}
         <motion.div
-          initial={{ opacity: 0, x: 40 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
-          className="flex-shrink-0 w-full lg:w-[680px] flex flex-col items-center"
+          className="flex-shrink-0 w-full lg:w-[680px] flex flex-col items-center max-w-full"
         >
           <HeroAnimation />
           {/* Stats Cards */}
