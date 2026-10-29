@@ -14,7 +14,7 @@ export default function GrowthAuditForm() {
     e.preventDefault();
     setSending(true);
     try {
-      await fetch("/api/send-email", {
+      await fetch("http://localhost:5000/api/email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

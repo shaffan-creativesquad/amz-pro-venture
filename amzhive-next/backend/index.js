@@ -6,6 +6,7 @@ import connectDataBase from "./config/database.js";
 import blogRoutes from "./routes/blogRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
+import emailRoutes from "./routes/emailRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 dotenv.config();
@@ -20,6 +21,7 @@ app.use(express.json({ limit: "10mb" }));
 app.use("/api/blogs", blogRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/upload", uploadRoutes);
+app.use("/api/email", emailRoutes);
 app.use("/uploads", express.static(path.join(path.resolve(), "/uploads/")));
 
 // ─── Health Check ─────────────────────────────────────────────

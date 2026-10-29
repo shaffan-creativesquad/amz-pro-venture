@@ -49,7 +49,7 @@ export default function AuditFormSection() {
     if (Object.keys(errs).length > 0) return;
     setSending(true);
     try {
-      await fetch("/api/send-email", {
+      await fetch("http://localhost:5000/api/email", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
