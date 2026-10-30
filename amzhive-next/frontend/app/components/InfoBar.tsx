@@ -31,8 +31,8 @@ export default function InfoBar() {
           <Link href="mailto:info@amzproventure.com" className="text-[#000000] text-lg sm:text-2xl font-bold hover:text-[#ff9900] transition-colors break-all text-center lg:text-right">
             info@amzproventure.com
           </Link>
-          <Link href="tel:2067046094" className="text-[#000000] text-lg sm:text-2xl font-bold hover:text-[#ff9900] transition-colors">
-            (206) 704-6094
+          <Link href="tel:+18022096796" className="text-[#000000] text-lg sm:text-2xl font-bold hover:text-[#ff9900] transition-colors">
+            +1 (802) 209-6796
           </Link>
         </motion.div>
 

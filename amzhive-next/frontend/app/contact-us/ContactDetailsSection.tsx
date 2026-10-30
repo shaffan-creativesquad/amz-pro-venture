@@ -18,7 +18,7 @@ export default function ContactDetailsSection() {
             className="font-bold leading-tight"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 4vw, 42px)", color: "#ffffff" }}
           >
-            Telephone : (206) 704-6094
+            Telephone : +1 (802) 209-6796
           </h2>
           <h2
             className="font-bold leading-tight"

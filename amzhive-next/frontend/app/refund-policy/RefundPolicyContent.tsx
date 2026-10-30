@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 
@@ -173,7 +173,7 @@ export default function RefundPolicyContent() {
             <UList
               items={[
                 `All payments made to AMZ Pro Venture for its services shall be processed by its designated payment processor. In the event that a refund is requested, claims must be submitted in writing to AMZ Pro Venture within 30 days of the original payment date.`,
-                `Dial our number +1 (206) 704-6094 and speak with your respective Project Manager to initiate a refund.`,
+                `Dial our number +1 (802) 209-6796 and speak with your respective Project Manager to initiate a refund.`,
                 `Send an Email to your Project Manager to initiate a refund.`,
                 `If a client subscribes for a service bundle and happens to be dissatisfied with a particular service, refund will only be applicable on that particular service and not the entire bundle.`,
                 `The client may be entitled to claim 50% of the refund after discussion with their Project Manager.`,

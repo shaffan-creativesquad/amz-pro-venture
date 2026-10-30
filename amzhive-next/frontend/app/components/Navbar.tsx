@@ -289,7 +289,7 @@ export default function Navbar() {
               GET STARTED
             </Link>
             <Link
-              href="tel:2067046094"
+              href="tel:+18022096796"
               className="bg-black text-white rounded-[7px] text-[15px] font-medium uppercase hover:bg-[#ff9900] transition-colors whitespace-nowrap"
               style={{ padding: "10px", width: "190px", textAlign: "center" }}
             >
@@ -434,7 +434,7 @@ export default function Navbar() {
                   GET STARTED
                 </Link>
                 <Link
-                  href="tel:2067046094"
+                  href="tel:+18022096796"
                   className="flex-1 text-center bg-black text-white rounded-[7px] text-[15px] font-medium uppercase hover:bg-[#333] transition-colors"
                   style={{ padding: "10px" }}
                   onClick={() => setMobileOpen(false)}

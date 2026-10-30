@@ -63,7 +63,7 @@ export default function LandingNavbar() {
             GET FREE AUDIT
           </a>
           <a
-            href="tel:2067046094"
+            href="tel:+18022096796"
             className="bg-black text-white rounded-[7px] text-[13px] font-semibold uppercase hover:bg-[#ff9900] transition-colors whitespace-nowrap"
             style={{ padding: "10px 20px" }}
           >
@@ -105,7 +105,7 @@ export default function LandingNavbar() {
               GET FREE AUDIT
             </a>
             <a
-              href="tel:2067046094"
+              href="tel:+18022096796"
               className="flex-1 text-center bg-black text-white rounded-[7px] text-[13px] font-semibold uppercase hover:bg-[#ff9900] transition-colors py-3"
             >
               CALL NOW
