@@ -1,4 +1,4 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
+import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
@@ -69,7 +69,7 @@ export default function AIPoweredVendorCentralManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
 
           {/* Heading */}
           <h1
@@ -97,11 +97,11 @@ export default function AIPoweredVendorCentralManagement() {
           </div>
 
           <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
-            GET A FREE VENDOR ACCOUNT AUDIT →
+            GET A FREE VENDOR ACCOUNT AUDIT ?
           </a>
 
           {/* Hero Image */}
-          <div className="w-full max-w-[700px] relative z-10 mb-[-180px] self-center">
+          <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
             <Image
               src="/Banner-1-1.webp"
               alt="AI-Powered Vendor Central Management"
@@ -122,12 +122,12 @@ export default function AIPoweredVendorCentralManagement() {
 
       {/* What's Included Section */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
           <h2
             className="text-center font-bold mb-4"
-            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
+            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
           >
             <span className="text-[#000000]">Is Vendor Central Costing</span>
             <span className="text-[#ff9900]">You More Than It Makes?</span>
@@ -224,9 +224,9 @@ export default function AIPoweredVendorCentralManagement() {
 
       {/* What's Included Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
-          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+          <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
             What&apos;s Included in Our End-to-End <span style={{ color: "#ff9900" }}>Vendor Central Management</span>
           </h2>
           </FadeIn>
@@ -298,8 +298,8 @@ export default function AIPoweredVendorCentralManagement() {
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">OPTIMIZE MY VENDOR CENTRAL ACCOUNT →</span>
-                <span className="svc-btn-bottom">OPTIMIZE MY VENDOR CENTRAL ACCOUNT →</span>
+                <span className="svc-btn-top">OPTIMIZE MY VENDOR CENTRAL ACCOUNT ?</span>
+                <span className="svc-btn-bottom">OPTIMIZE MY VENDOR CENTRAL ACCOUNT ?</span>
               </span>
             </a>
           </div>
@@ -314,7 +314,7 @@ export default function AIPoweredVendorCentralManagement() {
             <Image src="/what-we-need-from-you-3-1024x1024.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
           </FadeIn>
           <FadeIn direction="left" className="flex-1 px-10 py-10">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What We Need From You
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[520px]">
@@ -339,8 +339,8 @@ export default function AIPoweredVendorCentralManagement() {
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">TALK TO A VENDOR CENTRAL EXPERT →</span>
-                <span className="svc-btn-bottom">TALK TO A VENDOR CENTRAL EXPERT →</span>
+                <span className="svc-btn-top">TALK TO A VENDOR CENTRAL EXPERT ?</span>
+                <span className="svc-btn-bottom">TALK TO A VENDOR CENTRAL EXPERT ?</span>
               </span>
             </a>
           </FadeIn>
@@ -349,10 +349,10 @@ export default function AIPoweredVendorCentralManagement() {
 
       {/* Trusted By Stats Section */}
       <section className="w-full bg-white py-14">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-12" style={{ backgroundColor: "#f4f4f4" }}>
 
-            <h2 className="text-center font-bold mb-10" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "36px", color: "#000000" }}>
+            <h2 className="text-center font-bold mb-10" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3.5vw, 36px)", color: "#000000" }}>
               Trusted by 1,200+ Amazon Sellers
             </h2>
 
@@ -389,19 +389,19 @@ export default function AIPoweredVendorCentralManagement() {
 
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Ready to Scale Your <span style={{ color: "#ff9900" }}>Ready to Take Control of Vendor Central?</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
-              Partner with SPCTEK and turn Amazon Vendor Central into your most profitable sales channel.
+              Partner with AMZ Pro Venture and turn Amazon Vendor Central into your most profitable sales channel.
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">get a free account audit →</span>
-                <span className="svc-btn-bottom">get a free account audit →</span>
+                <span className="svc-btn-top">get a free account audit ?</span>
+                <span className="svc-btn-bottom">get a free account audit ?</span>
               </span>
             </a>
           </div>

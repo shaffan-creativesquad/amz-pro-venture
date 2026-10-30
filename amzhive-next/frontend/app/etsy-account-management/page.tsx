@@ -1,4 +1,4 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
+import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
@@ -69,7 +69,7 @@ export default function EtsyAccountManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
 
           {/* Heading */}
           <h1
@@ -102,11 +102,11 @@ export default function EtsyAccountManagement() {
           </div>
 
           <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
-            LET&apos;S BUILD YOUR ETSY GROWTH PLAN →
+            LET&apos;S BUILD YOUR ETSY GROWTH PLAN ?
           </a>
 
           {/* Hero Image */}
-          <div className="w-full max-w-[700px] relative z-10 mb-[-180px] self-center">
+          <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
             <Image
               src="/Main-Banner-5.webp"
               alt="Etsy Account Management"
@@ -127,7 +127,7 @@ export default function EtsyAccountManagement() {
 
       {/* Why Top Etsy Sellers Trust AMZ Pro Venture */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-12">
             <FadeIn direction="up">
@@ -164,15 +164,15 @@ export default function EtsyAccountManagement() {
               ))}
               <a href="/contact-us" className="svc-btn svc-btn-pink inline-block mt-4">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">MANAGE MY ETSY ACCOUNT →</span>
-                  <span className="svc-btn-bottom">MANAGE MY ETSY ACCOUNT →</span>
+                  <span className="svc-btn-top">MANAGE MY ETSY ACCOUNT ?</span>
+                  <span className="svc-btn-bottom">MANAGE MY ETSY ACCOUNT ?</span>
                 </span>
               </a>
             </FadeIn>
 
             <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[45%]">
               <Image
-                src="/Why-Top-Etsy-Sellers-Trust-SPCTEK-for-Expert-Account-Management.webp"
+                src="/Why-Top-Etsy-Sellers-Trust-AMZ-Pro-Venture-for-Expert-Account-Management.webp"
                 alt="Why Top Etsy Sellers Trust AMZ Pro Venture"
                 width={560}
                 height={560}
@@ -187,7 +187,7 @@ export default function EtsyAccountManagement() {
 
       {/* What You Risk Without Expert Etsy Management */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
@@ -227,8 +227,8 @@ export default function EtsyAccountManagement() {
 
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">GET ETSY ACCOUNT MANAGEMENT →</span>
-                  <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT →</span>
+                  <span className="svc-btn-top">GET ETSY ACCOUNT MANAGEMENT ?</span>
+                  <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -239,7 +239,7 @@ export default function EtsyAccountManagement() {
 
       {/* What's Included in Our Monthly Etsy Account Management Plan */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
             <FadeIn direction="up">
@@ -355,8 +355,8 @@ export default function EtsyAccountManagement() {
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">BOOK A FREE CONSULTATION →</span>
-                <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
+                <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
+                <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
               </span>
             </a>
           </div>
@@ -366,7 +366,7 @@ export default function EtsyAccountManagement() {
 
       {/* Built for Etsy Sellers Who Want to Thrive */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-12">
             <FadeIn direction="up">
@@ -397,8 +397,8 @@ export default function EtsyAccountManagement() {
               ))}
               <a href="/contact-us" className="svc-btn svc-btn-pink inline-block mt-4">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">GET ETSY ACCOUNT MANAGEMENT →</span>
-                  <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT →</span>
+                  <span className="svc-btn-top">GET ETSY ACCOUNT MANAGEMENT ?</span>
+                  <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -421,7 +421,7 @@ export default function EtsyAccountManagement() {
 
       {/* What We Need From You to Deliver the Best Results */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
@@ -466,8 +466,8 @@ export default function EtsyAccountManagement() {
 
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">CONTACT US TO GET STARTED →</span>
-                  <span className="svc-btn-bottom">CONTACT US TO GET STARTED →</span>
+                  <span className="svc-btn-top">CONTACT US TO GET STARTED ?</span>
+                  <span className="svc-btn-bottom">CONTACT US TO GET STARTED ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -478,7 +478,7 @@ export default function EtsyAccountManagement() {
 
       {/* Stats Section */}
       <section className="w-full py-16 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-14" style={{ backgroundColor: "#f4f4f4" }}>
 
             <h2 className="font-bold text-center mb-12" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(24px,3vw,38px)", color: "#000000" }}>
@@ -503,8 +503,8 @@ export default function EtsyAccountManagement() {
                 <p className="text-[12px] mb-4" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
                 <a href="/contact-us" className="svc-btn svc-btn-pink text-[12px]" style={{ padding: "10px 20px" }}>
                   <span className="svc-btn-inner">
-                    <span className="svc-btn-top">BOOK A CALL →</span>
-                    <span className="svc-btn-bottom">BOOK A CALL →</span>
+                    <span className="svc-btn-top">BOOK A CALL ?</span>
+                    <span className="svc-btn-bottom">BOOK A CALL ?</span>
                   </span>
                 </a>
               </div>
@@ -516,7 +516,7 @@ export default function EtsyAccountManagement() {
 
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
@@ -527,8 +527,8 @@ export default function EtsyAccountManagement() {
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">GET ETSY ACCOUNT MANAGEMENT →</span>
-                <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT →</span>
+                <span className="svc-btn-top">GET ETSY ACCOUNT MANAGEMENT ?</span>
+                <span className="svc-btn-bottom">GET ETSY ACCOUNT MANAGEMENT ?</span>
               </span>
             </a>
           </div>

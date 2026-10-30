@@ -1,4 +1,4 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
+import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
@@ -16,7 +16,7 @@ export default function PolicyViolationResolution() {
 
       {/* Hero Section */}
       <FadeIn><section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
 
           {/* Label */}
           <FadeIn>
@@ -29,7 +29,7 @@ export default function PolicyViolationResolution() {
           <FadeIn delay={0.15}>
           <h1
             className="font-bold leading-tight mb-6"
-            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "48px", color: "#ffffff" }}
+            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
             Want to Resolve Amazon{" "}
             <span style={{ color: "#ff9900" }}>Violations Fast?</span>
@@ -58,11 +58,11 @@ export default function PolicyViolationResolution() {
           </div>
 
           <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors" style={{ padding: "14px 28px" }}>
-            Get My Free Violation Risk Report →
+            Get My Free Violation Risk Report ?
           </a>
 
           {/* Hero Image */}
-          <div className="w-full max-w-[700px] relative z-10 mb-[-180px] self-center">
+          <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
             <Image
               src="/Banner-Image-4.webp"
               alt="Policy Violation Resolution"
@@ -101,7 +101,7 @@ export default function PolicyViolationResolution() {
             className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors"
             style={{ padding: "14px 32px" }}
           >
-            GET ACCOUNT ASSESSMENT →
+            GET ACCOUNT ASSESSMENT ?
           </a>
         </div>
       </section></FadeIn>

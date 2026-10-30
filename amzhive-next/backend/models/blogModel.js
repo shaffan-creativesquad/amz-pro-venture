@@ -12,7 +12,7 @@ const blogSchema = mongoose.Schema(
     published_date: { type: String, required: true },
     category: { type: String, default: "General" },
     tags: [{ type: String }],
-    author: { type: String, default: "AMZHive Team" },
+    author: { type: String, default: "AMZ Pro Venture Team" },
     featured: { type: Boolean, default: false },
     blogs_content: [
       {

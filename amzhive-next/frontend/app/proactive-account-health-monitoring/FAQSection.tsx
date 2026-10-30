@@ -42,7 +42,7 @@ const faqs = [
     answer: "Transparency is key. You'll receive weekly Account Health Reports that provide a detailed snapshot of your current metrics, key risk areas, and a summary of all active policy cases. These reports include performance snapshots, actionable next steps, and performance trend summaries for critical metrics like ODR, LSR, and VTR, keeping you fully informed about your account's status and ongoing improvements.",
   },
   {
-    question: "What makes SPCTEK's Account Health service stand out from others?",
+    question: "What makes AMZ Pro Venture's Account Health service stand out from others?",
     answer: "Our service is distinguished by its Compliance-Centric, Proactive by Design, and Strategic Growth Partner approach. We speak Amazon's language, leverage 24/7 real-time monitoring to catch issues before they escalate, and go beyond surface fixes with root cause analysis. We aim to keep you ahead of Amazon's enforcement curve, allowing you to focus on scaling your business while we manage the compliance and backend complexities, ensuring your account stays healthy, active, and profitable.",
   },
 ];

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { TrendingUp } from "lucide-react";
@@ -64,7 +64,7 @@ const tags = ["WooCommerce Agency", "Shopify Agency", "Social Media Marketing Ag
 export default function ExpertSection() {
   return (
     <section className="py-20 w-full" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
-      <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-start">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-start">
 
         {/* LEFT */}
         <motion.div

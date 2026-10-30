@@ -11,7 +11,7 @@ export default function LandingFooter() {
 
       {/* Bottom bar */}
       <div className="bg-white py-4">
-        <div className="max-w-[1440px] mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[#000000] text-sm">Copyright 2026 AMZ Pro Venture</p>
           <div className="flex items-center gap-4">
             <Link href="/privacy-policy" className="text-[#000000] text-sm hover:text-[#ff9900] transition-colors">Privacy Policy</Link>

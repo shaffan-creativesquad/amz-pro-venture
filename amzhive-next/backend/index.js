@@ -26,7 +26,7 @@ app.use("/uploads", express.static(path.join(path.resolve(), "/uploads/")));
 
 // ─── Health Check ─────────────────────────────────────────────
 app.get("/api", (req, res) => {
-  res.json({ message: "AMZHive API Running ✅" });
+  res.json({ message: "AMZ Pro Venture API Running ✅" });
 });
 
 app.use(notFound);

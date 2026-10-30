@@ -12,7 +12,7 @@ const partners = [
 export default function PartnersBar() {
   return (
     <div className="w-full bg-white" style={{ borderTop: "1px solid #f0f0f0", borderBottom: "1px solid #f0f0f0" }}>
-      <div className="max-w-[1440px] mx-auto px-10 py-8 flex flex-col items-center gap-6">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 flex flex-col items-center gap-6">
         <span className="text-[15px] font-black uppercase tracking-[0.2em] text-[#000000]">
           PARTNERS WITH
         </span>

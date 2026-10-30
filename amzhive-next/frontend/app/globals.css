@@ -28,6 +28,34 @@
   box-sizing: border-box;
 }
 
+/* Custom Yellow Scrollbar (Webkit & Standard) */
+html,
+body,
+:root,
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: #ff9900 #f1f3f5 !important;
+}
+
+::-webkit-scrollbar {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f3f5 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff9900 !important;
+  border-radius: 9999px !important;
+  border: 2px solid #f1f3f5 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #e68a00 !important;
+}
+
 html {
   scroll-behavior: smooth;
   max-width: 100%;

@@ -26,7 +26,7 @@ const faqs = [
     answer: "While results can vary based on your specific products and market, our goal is to drive concrete improvements in profitability, operational efficiency, and overall growth. Our \"Success By Numbers\" section showcases typical outcomes like increased revenue, better PPC performance, and enhanced account health. We focus on protecting your margins, reducing costs (like chargebacks), and optimizing your strategy to maximize your wholesale potential with Amazon.",
   },
   {
-    question: "What is the typical onboarding process like when I start working with SPCTEK?",
+    question: "What is the typical onboarding process like when I start working with AMZ Pro Venture?",
     answer: "Our onboarding process is designed to be smooth and efficient. After an initial strategy call to understand your specific needs, we'll request child access to your Vendor Central account. From there, our team conducts a comprehensive audit to identify immediate opportunities and pain points. We then develop a tailored action plan and begin implementing our strategies, keeping you informed every step of the way with transparent communication.",
   },
   {
@@ -34,7 +34,7 @@ const faqs = [
     answer: "We provide comprehensive catalog and content optimization services, which include ASIN setup and launch support. For new products, we ensure proper setup, compliance, and optimization for discoverability. For existing catalogs, we focus on fixing listing errors, removing suppressions, and enhancing A+ Content and Brand Stories to improve conversion rates and overall product performance within the Amazon ecosystem.",
   },
   {
-    question: "How does SPCTEK ensure our Vendor Central account remains compliant and avoids suspensions?",
+    question: "How does AMZ Pro Venture ensure our Vendor Central account remains compliant and avoids suspensions?",
     answer: "Compliance is paramount. We offer 24/7 Account Health Monitoring to detect any potential flags or performance notifications early. In case of issues, we promptly draft and submit effective Plans of Action (POAs) and provide guidance on necessary product safety and documentation support. Our proactive approach aims to prevent minor issues from escalating into costly suspensions or widespread listing suppressions.",
   },
   {

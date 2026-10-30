@@ -13,7 +13,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: "amzhive-blogs",
+    folder: "amz-pro-venture-blogs",
     allowed_formats: ["jpg", "jpeg", "png", "webp", "gif"],
     transformation: [{ quality: "auto", fetch_format: "auto" }],
   },

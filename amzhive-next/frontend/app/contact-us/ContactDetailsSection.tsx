@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function ContactDetailsSection() {
   return (
     <section className="w-full" style={{ backgroundColor: "#000000" }}>
-      <div className="max-w-[1440px] mx-auto px-10 py-16 flex flex-col gap-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-16 flex flex-col gap-10">
 
         {/* Top */}
         <motion.div className="flex flex-col gap-3"

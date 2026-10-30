@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -87,7 +87,7 @@ export default function TestimonialsSection() {
 
   return (
     <section className="bg-white py-16">
-      <div className="max-w-[1247px] mx-auto px-10">
+      <div className="max-w-[1247px] mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -96,8 +96,8 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl font-bold text-[#000000]" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif" }}>What People Say</h2>
-          <h2 className="text-5xl font-bold" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#ff9900" }}>About Our Services</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#000000]" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif" }}>What People Say</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#ff9900" }}>About Our Services</h2>
         </motion.div>
 
         {/* Content */}

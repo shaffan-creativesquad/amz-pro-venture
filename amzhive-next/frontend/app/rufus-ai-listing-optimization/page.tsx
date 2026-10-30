@@ -1,4 +1,4 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
+import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
@@ -73,12 +73,12 @@ export default function RufusAIListingOptimization() {
 
       {/* Why Listing Optimization Section */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
             <h2
               className="text-center font-bold mb-4"
-              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
             >
               <span className="text-[#000000]">Why Listing Optimization is The Backbone of </span>
               <span className="text-[#ff9900]">Your Amazon Business?</span>
@@ -136,7 +136,7 @@ export default function RufusAIListingOptimization() {
           <FadeIn direction="up" delay={0.1}>
             <div className="flex justify-center mt-4">
               <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-                OPTIMIZE MY AMAZON LISTINGS →
+                OPTIMIZE MY AMAZON LISTINGS ?
               </a>
             </div>
           </FadeIn>
@@ -146,16 +146,16 @@ export default function RufusAIListingOptimization() {
 
       {/* What Is Amazon Listing Optimization Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What Is Amazon Listing <span style={{ color: "#ff9900" }}>Optimization?</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px]">
               Amazon listing optimization is the process of improving your product listings, both front and back end, to rank higher in search results, attract more views, and drive conversions. It directly impacts your visibility, traffic, and sales performance on Amazon.
             </p>
             <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              OPTIMIZE MY AMAZON LISTINGS →
+              OPTIMIZE MY AMAZON LISTINGS ?
             </a>
           </FadeIn>
           <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
@@ -166,7 +166,7 @@ export default function RufusAIListingOptimization() {
 
       {/* What's Included in Our Amazon Listing Optimization Service */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What&apos;s Included in Our <span style={{ color: "#ff9900" }}>Amazon Listing Optimization Service</span>
@@ -230,8 +230,8 @@ export default function RufusAIListingOptimization() {
             <div className="flex justify-center mt-6">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">OPTIMIZE MY AMAZON LISTINGS →</span>
-                  <span className="svc-btn-bottom">OPTIMIZE MY AMAZON LISTINGS →</span>
+                  <span className="svc-btn-top">OPTIMIZE MY AMAZON LISTINGS ?</span>
+                  <span className="svc-btn-bottom">OPTIMIZE MY AMAZON LISTINGS ?</span>
                 </span>
               </a>
             </div>
@@ -254,7 +254,7 @@ export default function RufusAIListingOptimization() {
             "Agencies & aggregators managing large catalogs and scaling across SKUs",
             "Any seller who wants fast, data-backed improvements to boost ranking and revenue",
           ],
-          btn: "BOOK A FREE CONSULTATION →",
+          btn: "BOOK A FREE CONSULTATION ?",
         },
         {
           reverse: true,
@@ -264,7 +264,7 @@ export default function RufusAIListingOptimization() {
           desc: "Take your Amazon listing to the next level with professionally designed A+ Content that enhances brand trust, tells a compelling product story, and drives more conversions.",
           desc2: "We'll design and audit your A+ Content to ensure it aligns with best practices, incorporating crawlable text along with engaging visuals, comparison charts, and feature callouts. The goal? To not just look good, but to perform.",
           bullets: [],
-          btn: "GET A+ CONTENT NOW →",
+          btn: "GET A+ CONTENT NOW ?",
         },
         {
           reverse: false,
@@ -275,11 +275,11 @@ export default function RufusAIListingOptimization() {
           desc2: "Professionally designed A+ Content increases customer engagement and helps convert hesitant shoppers into confident buyers. Beyond just visuals, it adds another layer of keyword-rich, indexable content that can boost your organic rankings.",
           quote: "According to Amazon: 'Basic A+ Content can increase sales by up to 8%—and well-implemented Premium A+ Content can increase sales by up to 20%.'",
           bullets: [],
-          btn: "UPGRADE TO A+ CONTENT NOW →",
+          btn: "UPGRADE TO A+ CONTENT NOW ?",
         },
       ].map((row, i) => (
         <section key={i} className="w-full py-20 bg-white">
-          <div className={`max-w-[1440px] mx-auto px-10 flex flex-col gap-14 items-center ${row.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+          <div className={`max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col gap-14 items-center ${row.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
             <FadeIn direction={row.reverse ? "left" : "right"} className="flex-1">
               <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
                 {row.heading}
@@ -316,10 +316,10 @@ export default function RufusAIListingOptimization() {
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
                 Don't Let a Poor Listing Cost You Sales
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">

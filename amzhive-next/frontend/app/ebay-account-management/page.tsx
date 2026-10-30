@@ -1,4 +1,4 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
+import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
@@ -69,7 +69,7 @@ export default function EbayAccountManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
 
           {/* Heading */}
           <h1
@@ -102,11 +102,11 @@ export default function EbayAccountManagement() {
           </div>
 
           <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
-            LET&apos;S BUILD YOUR EBAY GROWTH PLAN →
+            LET&apos;S BUILD YOUR EBAY GROWTH PLAN ?
           </a>
 
           {/* Hero Image */}
-          <div className="w-full max-w-[700px] relative z-10 mb-[-180px] self-center">
+          <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
             <Image
               src="/Main-Banner-3-1.webp"
               alt="eBay Account Management"
@@ -127,7 +127,7 @@ export default function EbayAccountManagement() {
 
       {/* Why Sellers Trust AMZ Pro Venture For eBay Account Management */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
             <FadeIn direction="up">
@@ -207,8 +207,8 @@ export default function EbayAccountManagement() {
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">MANAGE MY EBAY ACCOUNT →</span>
-                <span className="svc-btn-bottom">MANAGE MY EBAY ACCOUNT →</span>
+                <span className="svc-btn-top">MANAGE MY EBAY ACCOUNT ?</span>
+                <span className="svc-btn-bottom">MANAGE MY EBAY ACCOUNT ?</span>
               </span>
             </a>
           </div>
@@ -218,7 +218,7 @@ export default function EbayAccountManagement() {
 
       {/* Without Expert eBay Management */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-1">
@@ -251,8 +251,8 @@ export default function EbayAccountManagement() {
 
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">MANAGE MY EBAY ACCOUNT →</span>
-                  <span className="svc-btn-bottom">MANAGE MY EBAY ACCOUNT →</span>
+                  <span className="svc-btn-top">MANAGE MY EBAY ACCOUNT ?</span>
+                  <span className="svc-btn-bottom">MANAGE MY EBAY ACCOUNT ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -267,7 +267,7 @@ export default function EbayAccountManagement() {
 
       {/* Scale Your eBay Store with Full-Service Monthly Management */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
             <FadeIn direction="up">
@@ -394,8 +394,8 @@ export default function EbayAccountManagement() {
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">BOOK A FREE CONSULTATION →</span>
-                <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
+                <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
+                <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
               </span>
             </a>
           </div>
@@ -405,7 +405,7 @@ export default function EbayAccountManagement() {
 
       {/* Top Rated Seller Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
@@ -448,8 +448,8 @@ export default function EbayAccountManagement() {
 
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">GET SELLER BADGE HELP →</span>
-                  <span className="svc-btn-bottom">GET SELLER BADGE HELP →</span>
+                  <span className="svc-btn-top">GET SELLER BADGE HELP ?</span>
+                  <span className="svc-btn-bottom">GET SELLER BADGE HELP ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -460,7 +460,7 @@ export default function EbayAccountManagement() {
 
       {/* Level Up with Vital Add-Ons */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
             <FadeIn direction="up">
@@ -507,8 +507,8 @@ export default function EbayAccountManagement() {
               </div>
               <a href="/contact-us" className="svc-btn svc-btn-pink inline-block">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">GET ADD-ONS →</span>
-                  <span className="svc-btn-bottom">GET ADD-ONS →</span>
+                  <span className="svc-btn-top">GET ADD-ONS ?</span>
+                  <span className="svc-btn-bottom">GET ADD-ONS ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -519,7 +519,7 @@ export default function EbayAccountManagement() {
 
       {/* What We Need From You to Deliver Maximum Results */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
@@ -564,8 +564,8 @@ export default function EbayAccountManagement() {
 
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">BOOK A FREE CONSULTATION →</span>
-                  <span className="svc-btn-bottom">BOOK A FREE CONSULTATION →</span>
+                  <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
+                  <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
                 </span>
               </a>
             </FadeIn>
@@ -576,7 +576,7 @@ export default function EbayAccountManagement() {
 
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
@@ -587,8 +587,8 @@ export default function EbayAccountManagement() {
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">GET EBAY ACCOUNT MANAGEMENT →</span>
-                <span className="svc-btn-bottom">GET EBAY ACCOUNT MANAGEMENT →</span>
+                <span className="svc-btn-top">GET EBAY ACCOUNT MANAGEMENT ?</span>
+                <span className="svc-btn-bottom">GET EBAY ACCOUNT MANAGEMENT ?</span>
               </span>
             </a>
           </div>

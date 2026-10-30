@@ -51,22 +51,16 @@ export default function AnnouncementBar() {
 
         {/* Right: Social icons */}
         <div className="hidden sm:flex items-center gap-2 flex-shrink-0">
-          <Link
-            href="https://www.facebook.com/amzhivellc"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
+          <span
+            aria-hidden="true"
             className="w-[35px] h-[35px] flex items-center justify-center rounded-full border border-white/40 hover:border-white hover:text-white transition-colors"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
-          </Link>
-          <Link
-            href="https://www.instagram.com/amzhivellc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
+          </span>
+          <span
+            aria-hidden="true"
             className="w-[35px] h-[35px] flex items-center justify-center rounded-full border border-white/40 hover:border-white hover:text-white transition-colors"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -74,12 +68,9 @@ export default function AnnouncementBar() {
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
             </svg>
-          </Link>
-          <Link
-            href="https://www.linkedin.com/company/amz-hive-llc/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
+          </span>
+          <span
+            aria-hidden="true"
             className="w-[35px] h-[35px] flex items-center justify-center rounded-full border border-white/40 hover:border-white hover:text-white transition-colors"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
@@ -87,7 +78,7 @@ export default function AnnouncementBar() {
               <rect x="2" y="9" width="4" height="12" />
               <circle cx="4" cy="4" r="2" />
             </svg>
-          </Link>
+          </span>
         </div>
       </div>
     </div>

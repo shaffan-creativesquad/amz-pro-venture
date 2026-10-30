@@ -15,7 +15,7 @@ export default function EggsSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
-          className="flex-1 py-16 pl-10 pr-8 lg:pl-16"
+          className="flex-1 py-16 px-4 sm:px-8 lg:pl-16 lg:pr-8"
         >
           <h2
             className="font-black leading-tight mb-6 uppercase"

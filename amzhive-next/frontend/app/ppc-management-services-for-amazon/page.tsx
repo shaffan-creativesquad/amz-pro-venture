@@ -1,4 +1,4 @@
-﻿import AnnouncementBar from "../components/AnnouncementBar";
+import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
@@ -73,12 +73,12 @@ export default function AmazonAccountSuspended() {
 
       {/* Why Amazon Sellers Trust Us */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn>
             <h2
               className="text-center font-bold mb-4"
-              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
             >
               <span className="text-[#000000]">Why Amazon Sellers Trust Us For </span>
               <span className="text-[#ff9900]">PPC Campaign Management</span>
@@ -173,7 +173,7 @@ export default function AmazonAccountSuspended() {
           <FadeIn delay={0.1}>
             <div className="flex justify-center mt-4">
               <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-                GET YOUR FREE AMAZON PPC AUDIT →
+                GET YOUR FREE AMAZON PPC AUDIT ?
               </a>
             </div>
           </FadeIn>
@@ -183,9 +183,9 @@ export default function AmazonAccountSuspended() {
 
       {/* Why Most Sellers Struggle Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Why Most Sellers Struggle With <span style={{ color: "#ff9900" }}>Amazon PPC</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[560px]">
@@ -209,7 +209,7 @@ export default function AmazonAccountSuspended() {
               ))}
             </div>
             <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              OPTIMIZE MY AMAZON PPC →
+              OPTIMIZE MY AMAZON PPC ?
             </a>
           </FadeIn>
           <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
@@ -220,7 +220,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Complete Amazon Advertising Management Services */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn>
             <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Complete Amazon Advertising Management Services:<br /><span style={{ color: "#ff9900" }}>Everything You Need to Succeed</span>
@@ -299,8 +299,8 @@ export default function AmazonAccountSuspended() {
             <div className="flex justify-center mt-6">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">OPTIMIZE MY AMAZON PPC →</span>
-                  <span className="svc-btn-bottom">OPTIMIZE MY AMAZON PPC →</span>
+                  <span className="svc-btn-top">OPTIMIZE MY AMAZON PPC ?</span>
+                  <span className="svc-btn-bottom">OPTIMIZE MY AMAZON PPC ?</span>
                 </span>
               </a>
             </div>
@@ -310,9 +310,9 @@ export default function AmazonAccountSuspended() {
 
       {/* Smarter Keyword Strategies Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1659px] mx-auto px-10 flex flex-col lg:flex-row items-center gap-14">
+        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-14">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px" }}>
+            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
               <span className="text-[#000000]">Smarter Keyword Strategies for </span>
               <span className="text-[#ff9900]">Smarter Ad Spend</span>
             </h2>
@@ -358,7 +358,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Level Up Add-Ons Section */}
       <section className="w-full py-20" style={{ backgroundColor: "#f7f7f7" }}>
-        <div className="max-w-[1440px] mx-auto px-10 flex flex-col lg:flex-row gap-14 items-start">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-start">
 
           <div className="flex-1">
             <FadeIn>
@@ -425,10 +425,10 @@ export default function AmazonAccountSuspended() {
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-10">
+        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
                 Ready to Transform Your Amazon Ads Performance?
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
