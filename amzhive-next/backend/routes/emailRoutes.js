@@ -2,10 +2,10 @@ import express from "express";
 import { Resend } from "resend";
 
 const router = express.Router();
-const resend = new Resend(process.env.RESEND_API_KEY);
-const TO_EMAIL = process.env.TO_EMAIL || "info@amzproventure.com";
 
 router.post("/", async (req, res) => {
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  const TO_EMAIL = process.env.TO_EMAIL || "info@amzproventure.com";
   try {
     const { formType, ...fields } = req.body;
 

@@ -15,8 +15,6 @@ const importData = async () => {
       await new User(u).save();
     }
     console.log("✅ Data Imported! Admin user created.");
-    console.log("   Email: info@amzproventure.com");
-    console.log("   Password: admin123");
     process.exit();
   } catch (error) {
     console.error("❌ Error:", error);
