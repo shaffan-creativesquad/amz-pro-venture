@@ -6,7 +6,7 @@ const logos = [
   {
     alt: "WooCommerce",
     svg: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="white" className="h-8 w-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 40" fill="white" className="h-8 w-auto">
         <text x="0" y="30" fontSize="28" fontWeight="700" fontFamily="Arial, sans-serif" fill="white">(woo) COMMERCE</text>
       </svg>
     ),
