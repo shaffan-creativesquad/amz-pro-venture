@@ -27,7 +27,7 @@ const haStyles = `
   .ha-dl{left:12px;right:12px;top:72px;border-top:2px dotted #111}
   .ha-tag{left:78px;top:64px;background:#111;color:#fff;border-radius:8px;padding:0 7px;font-weight:700;font-size:8px;line-height:16px}
   .ha-chip{left:18px;top:158px;width:195px;height:60px;border-radius:14px;animation-name:haChipIn}
-  .ha-chip .ha-ic{position:absolute;left:16px;top:11px;width:38px;height:38px;object-fit:contain;inset:auto}
+  .ha-chip .ha-ic{position:absolute;left:16px;top:11px;width:38px;height:38px;object-fit:contain}
   .ha-chip b{position:absolute;left:67px;top:0;line-height:60px;font-size:17px;font-weight:600;color:#111;white-space:nowrap}
   .ha-data{left:119px;top:392px;width:199px;height:127px;border-radius:14px;animation-name:haDataIn}
   .ha-data h4{left:14px;top:11px;font-size:9px;font-weight:700;color:#111;font-family:Poppins,sans-serif}

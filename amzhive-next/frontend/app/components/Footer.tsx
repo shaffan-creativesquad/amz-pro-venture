@@ -29,14 +29,14 @@ export default function Footer() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 sm:grid-cols-3 gap-10">
 
           {/* Logo */}
-          <div>
+          <div className="flex justify-center sm:justify-start">
             <Link href="/">
               <Image src="/amz-logo-without-background.png" alt="AMZ Pro Venture" width={220} height={70} className="h-16 w-auto" unoptimized />
             </Link>
           </div>
 
           {/* Company */}
-          <div>
+          <div className="text-center sm:text-left">
             <h4 className="text-[#000000] font-bold text-base mb-5">Company</h4>
             <ul className="space-y-3">
               <li><Link href="/" className="text-[#ff9900] text-sm hover:underline transition-colors">Home</Link></li>
@@ -46,9 +46,9 @@ export default function Footer() {
           </div>
 
           {/* Follow */}
-          <div>
+          <div className="text-center sm:text-left">
             <h4 className="text-[#000000] font-bold text-base mb-5">Follow</h4>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 justify-center sm:justify-start">
               {[
                 {
                   label: "Facebook",
@@ -118,12 +118,12 @@ export default function Footer() {
       <div className="bg-white py-4">
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[#000000] text-sm">Copyright 2026 AMZ Pro Venture</p>
-          <div className="flex items-center gap-4">
-            <Link href="/privacy-policy" className="text-[#000000] text-sm hover:text-[#ff9900] transition-colors">Privacy Policy</Link>
-            <span className="text-[#bfbfbf]">|</span>
-            <Link href="/terms-condition" className="text-[#000000] text-sm hover:text-[#ff9900] transition-colors">Terms &amp; Condition</Link>
-            <span className="text-[#bfbfbf]">|</span>
-            <Link href="/refund-policy" className="text-[#000000] text-sm hover:text-[#ff9900] transition-colors">Refund policy</Link>
+          <div className="flex items-center gap-2 sm:gap-4">
+            <Link href="/privacy-policy" className="text-[#000000] text-[10px] sm:text-sm hover:text-[#ff9900] transition-colors whitespace-nowrap">Privacy Policy</Link>
+            <span className="text-[#bfbfbf] text-[10px] sm:text-sm">|</span>
+            <Link href="/terms-condition" className="text-[#000000] text-[10px] sm:text-sm hover:text-[#ff9900] transition-colors whitespace-nowrap">Terms &amp; Condition</Link>
+            <span className="text-[#bfbfbf] text-[10px] sm:text-sm">|</span>
+            <Link href="/refund-policy" className="text-[#000000] text-[10px] sm:text-sm hover:text-[#ff9900] transition-colors whitespace-nowrap">Refund policy</Link>
           </div>
         </div>
       </div>

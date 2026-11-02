@@ -155,14 +155,14 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Award badges */}
-            <div className="flex items-center gap-5 mt-8 flex-wrap">
+            <div className="flex items-center gap-5 mt-8 flex-wrap justify-center lg:justify-start">
               {badges.map((b) => (
                 <Image key={b.alt} src={b.src} alt={b.alt} width={140} height={140} className="object-contain h-32 w-auto" unoptimized />
               ))}
             </div>
 
             {/* Platform review images */}
-            <div className="flex flex-wrap gap-5 mt-6 items-center">
+            <div className="flex flex-wrap gap-5 mt-6 items-center justify-center lg:justify-start">
               <Image src="/3-7.png" alt="Google Reviews" width={180} height={50} className="h-16 w-auto object-contain" unoptimized />
               <Image src="/4-6.png" alt="Clutch" width={180} height={50} className="h-16 w-auto object-contain" unoptimized />
               <Image src="/1-5.png" alt="Shopify Reviews" width={180} height={50} className="h-16 w-auto object-contain" unoptimized />
@@ -176,10 +176,10 @@ export default function TestimonialsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "0px" }}
             transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
-            className="flex-shrink-0"
+            className="flex-shrink-0 w-full lg:w-auto"
           >
             {/* Slider: 1 phone on mobile, 2 on desktop */}
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center lg:justify-start gap-3">
               <button
                 onClick={prevPhone}
                 className="flex-shrink-0 w-9 h-9 rounded-full border border-gray-200 flex items-center justify-center hover:border-[#ff9900] hover:text-[#ff9900] transition-colors"

@@ -86,7 +86,7 @@ export default function UnlockSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
-          className="flex-shrink-0 w-full lg:w-[580px]"
+          className="flex-shrink-0 w-full max-w-[480px] mx-auto lg:mx-0 lg:max-w-none lg:w-[580px]"
         >
           <ExpensesCard />
         </motion.div>
