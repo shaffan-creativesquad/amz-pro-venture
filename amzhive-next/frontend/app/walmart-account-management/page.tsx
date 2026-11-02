@@ -6,12 +6,10 @@ import Image from "next/image";
 import FAQSection from "./FAQSection";
 import StatsCounter from "./StatsCounter";
 import FadeIn from "../components/FadeIn";
-
 export const metadata = {
   title: "Walmart Account Management | AMZ Pro Venture",
   description: "AI-powered Walmart account management service by AMZ Pro Venture. Grow your Walmart marketplace presence with expert listing, inventory, and ads management.",
 };
-
 export default function WalmartAccountManagement() {
   return (
     <main>
@@ -66,25 +64,21 @@ export default function WalmartAccountManagement() {
       `}</style>
       <AnnouncementBar />
       <Navbar />
-
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
-
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
           {/* Heading */}
           <h1
-            className="font-bold leading-tight mb-6 uppercase"
+            className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(36px, 5vw, 58px)", color: "#ffffff" }}
           >
             Need Expert Management To<br />Grow <span style={{ color: "#ff9900" }}>Walmart Sales?</span>
           </h1>
-
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
             We manage every part of your Walmart seller account: listings, inventory, compliance, and more, so you can grow consistently without the stress.
           </p>
-
-          <div className="space-y-3 mb-8">
+          <div className="space-y-3 mb-8 text-left">
             {[
               "Expert listing and inventory management",
               "Enhanced visibility and brand positioning",
@@ -100,11 +94,11 @@ export default function WalmartAccountManagement() {
               </div>
             ))}
           </div>
-
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
+          <div className="flex justify-center lg:justify-start">
+          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors mb-6" style={{ padding: "12px 24px" }}>
             LET'S BUILD YOUR WALMART GROWTH PLAN ?
           </a>
-
+          </div>
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
             <Image
@@ -116,32 +110,25 @@ export default function WalmartAccountManagement() {
               className="w-full h-auto object-contain"
             />
           </div>
-
         </div>
       </section>
-
       {/* Spacer */}
-      <div className="bg-white pt-[240px]" />
-
+      <div className="bg-white pt-[40px] sm:pt-[150px] lg:pt-[240px]" />
       <PartnersBar />
-
       {/* Why Top Sellers Rely on AMZ Pro Venture Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
-
           <div className="text-center mb-14">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Why Top Sellers Rely on AMZ Pro Venture for Walmart Account Management
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[640px] mx-auto">
               We don&apos;t just maintain your Walmart store; we turn it into a high-performing channel. Here&apos;s what sets us apart:
             </p>
           </div>
-
           <div className="flex flex-col lg:flex-row gap-14 items-center">
-
             {/* Left — features */}
-            <div className="flex-1 space-y-8">
+            <div className="flex-1 space-y-8 text-center lg:text-left">
               {[
                 {
                   title: "Proactive and Strategic Management",
@@ -160,20 +147,18 @@ export default function WalmartAccountManagement() {
                   desc: "We provide real results with smarter planning for higher ROI, expert support for peace of mind, and Walmart SEO for greater reach and sales.",
                 },
               ].map((item) => (
-                <div key={item.title}>
+                <div key={item.title} className="text-center lg:text-left">
                   <h3 className="font-bold text-[18px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
-
-              <a href="/contact-us" className="inline-block svc-btn svc-btn-pink">
+              <div className="flex justify-center lg:justify-start"><a href="/contact-us" className="inline-block svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
                   <span className="svc-btn-top">WALMART ACCOUNT MANAGEMENT ?</span>
                   <span className="svc-btn-bottom">WALMART ACCOUNT MANAGEMENT ?</span>
                 </span>
               </a>
             </div>
-
             {/* Right — image */}
             <div className="flex-shrink-0 w-full lg:w-[500px]">
               <Image
@@ -185,15 +170,13 @@ export default function WalmartAccountManagement() {
                 className="w-full h-auto object-contain"
               />
             </div>
-
           </div>
         </div>
+        </div>
       </section>
-
       {/* What You Risk Section */}
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
-
           {/* Left — image */}
           <div className="flex-shrink-0 w-full lg:w-[480px]">
             <Image
@@ -205,16 +188,14 @@ export default function WalmartAccountManagement() {
               className="w-full h-auto object-contain"
             />
           </div>
-
           {/* Right — content */}
           <div className="flex-1">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What You Risk With Poor Account Management
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               Running a Walmart store without expert help can lead to lost revenue and account risks. Here&apos;s what to avoid:
             </p>
-
             <div className="space-y-4 mb-7">
               {[
                 "Missed sales from weak SEO or poor listing optimization",
@@ -234,35 +215,31 @@ export default function WalmartAccountManagement() {
                 </div>
               ))}
             </div>
-
             <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
               AMZ Pro Venture keeps your Walmart account healthy, updated, and in full compliance, so you can grow without worry.
             </p>
-
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">GET WALMART ACCOUNT MANAGEMENT ?</span>
                 <span className="svc-btn-bottom">GET WALMART ACCOUNT MANAGEMENT ?</span>
               </span>
             </a>
+            </div>
           </div>
-
         </div>
       </section>
-
       {/* Everything You Need Section */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-[1200px] mx-auto px-10">
-
           <div className="text-center mb-12">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,42px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,42px)", color: "#000000" }}>
               Everything You Need for Walmart Success<br />in One Complete Plan
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
               AMZ Pro Venture handles every moving part of your Walmart account — so you can focus on growing your business, not managing the platform.
             </p>
           </div>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
@@ -317,12 +294,12 @@ export default function WalmartAccountManagement() {
               const dark = i % 2 === 1;
               return (
                 <div key={item.title} className="rounded-2xl p-7 flex flex-col gap-4" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0" style={{ backgroundColor: "#ff9900" }}>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 mx-auto sm:mx-0" style={{ backgroundColor: "#ff9900" }}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="text-center sm:text-left">
                     <h3 className="font-bold text-[15px] leading-snug mb-2" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                     <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                   </div>
@@ -330,7 +307,6 @@ export default function WalmartAccountManagement() {
               );
             })}
           </div>
-
           <div className="flex justify-center mt-12">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
@@ -339,21 +315,16 @@ export default function WalmartAccountManagement() {
               </span>
             </a>
           </div>
-
         </div>
       </section>
-
       {/* Optional Add-On Services */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
-
           <h2 className="font-bold text-center mb-14" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             Optional Add-On Services
           </h2>
-
           <div className="flex flex-col lg:flex-row gap-16 items-center">
-
-            <div className="flex-1">
+            <div className="flex-1 text-center lg:text-left">
               <div className="mb-10">
                 <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Walmart PPC Management</h3>
                 <p className="text-[#67768e] text-[16px] leading-relaxed">
@@ -366,43 +337,38 @@ export default function WalmartAccountManagement() {
                   We handle customer messages and feedback to protect your brand reputation and maintain high seller ratings.
                 </p>
               </div>
+              <div className="flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
                   <span className="svc-btn-top">GET ADD-ONS ?</span>
                   <span className="svc-btn-bottom">GET ADD-ONS ?</span>
                 </span>
               </a>
+              </div>
             </div>
-
             <div className="flex-shrink-0 w-full lg:w-[50%]">
               <Image src="/Add-ons.webp" alt="Optional Add-On Services" width={600} height={480} unoptimized className="w-full h-auto object-contain" />
             </div>
-
           </div>
         </div>
       </section>
-
       {/* Walmart Seller Account Setup */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
-
           <h2 className="font-bold text-center leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             Need Help Setting Up Your Walmart Seller<br />Account The Right Way
           </h2>
           <p className="text-center text-[#67768e] text-[16px] max-w-[680px] mx-auto mb-14">
             Want to sell to millions on Walmart.com? Setting up your Walmart Seller Central account is the first step. We guide you through the entire process, helping you meet Walmart&apos;s requirements without delays.
           </p>
-
           <div className="flex flex-col lg:flex-row gap-16 items-center">
-
             <div className="flex-shrink-0 w-full lg:w-[45%]">
               <Image src="/Need-Help-Setting-Up-Your-Walmart-Seller-Account-The-Right-Way.webp" alt="Walmart Seller Account Setup" width={560} height={480} unoptimized className="w-full h-auto object-contain" />
             </div>
-
-            <div className="flex-1">
+            <div className="flex-1 text-center lg:text-left">
               <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>What You&apos;ll Need</h3>
               <p className="text-[#67768e] text-[15px] mb-5">To register successfully, Walmart requires the following:</p>
-              <div className="space-y-3 mb-8">
+              <div className="space-y-3 mb-8 text-left">
                 {[
                   "Business Tax ID or Business License",
                   "Proof of Business Address",
@@ -420,35 +386,31 @@ export default function WalmartAccountManagement() {
                   </div>
                 ))}
               </div>
-
               <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>How We Help</h3>
               <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
                 You provide the documents, and we provide our expert guidance every step of the way. From documentation checks to catalog formatting and compliance prep, we make sure your account setup is smooth, accurate, and ready for approval.
               </p>
-
+              <div className="flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
                   <span className="svc-btn-top">CONTACT US TO GET STARTED ?</span>
                   <span className="svc-btn-bottom">CONTACT US TO GET STARTED ?</span>
                 </span>
               </a>
+              </div>
             </div>
-
           </div>
         </div>
       </section>
-
       {/* What Sets AMZ Pro Venture Apart */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
-
           <h2 className="font-bold text-center leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             What Sets <span style={{ color: "#ff9900" }}>AMZ Pro Venture Apart</span>
           </h2>
           <p className="text-center text-[#67768e] text-[16px] max-w-[620px] mx-auto mb-12">
             We&apos;re not here to maintain, we&apos;re here to multiply. If you&apos;re aiming for real scale, you&apos;re in the right place.
           </p>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             {[
               {
@@ -515,15 +477,14 @@ export default function WalmartAccountManagement() {
             ].map((item, i) => {
               const dark = i % 2 === 1;
               return (
-                <div key={item.title} className="rounded-2xl p-8" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
-                  {item.icon}
+                <div key={item.title} className="rounded-2xl p-8 text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
+                  <div className="flex justify-center md:justify-start">{item.icon}</div>
                   <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                 </div>
               );
             })}
           </div>
-
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
@@ -532,22 +493,17 @@ export default function WalmartAccountManagement() {
               </span>
             </a>
           </div>
-
         </div>
       </section>
-
       {/* Stats Section */}
       <section className="w-full py-16 bg-white">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-3xl px-10 py-12" style={{ backgroundColor: "#f4f4f4" }}>
-
             <h2 className="font-bold text-center mb-10" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px,3vw,36px)", color: "#000000" }}>
               Trusted by Walmart Sellers Worldwide
             </h2>
-
             <div className="flex flex-col lg:flex-row items-center gap-10">
               <StatsCounter />
-
               {/* Right CTA card */}
               <div className="flex-shrink-0 bg-white rounded-2xl px-8 py-8 flex flex-col items-center text-center gap-3 w-full lg:w-[220px]" style={{ boxShadow: "0 4px 20px rgba(0,0,0,0.07)" }}>
                 <div className="w-14 h-14 rounded-full flex items-center justify-center mb-1" style={{ backgroundColor: "#ff9900" }}>
@@ -567,33 +523,31 @@ export default function WalmartAccountManagement() {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Get a Free Walmart Account Audit
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
               Start your Walmart success journey with a free Walmart account audit and experience our account management expertise in action.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">Get Free Account Audit Now ?</span>
                 <span className="svc-btn-bottom">Get Free Account Audit Now ?</span>
               </span>
             </a>
+            </div>
           </div>
         </div>
       </section>
-
       <FAQSection />
-
       <Footer />
     </main>
   );

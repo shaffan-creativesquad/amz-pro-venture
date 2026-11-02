@@ -69,18 +69,18 @@ export default function AIPoweredVendorCentralManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Heading */}
           <h1
-            className="font-bold leading-tight mb-6 uppercase"
+            className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#ffffff" }}
           >
             Is Vendor Central Management <span style={{ color: "#ff9900" }}>Overwhelming?</span>
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[560px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[560px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Maximize efficiency, compliance, and profits with end-to-end Vendor Central management.
           </p>
 
@@ -96,9 +96,11 @@ export default function AIPoweredVendorCentralManagement() {
             ))}
           </div>
 
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
+          <div className="flex justify-center lg:justify-start">
+          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors mb-6" style={{ padding: "12px 24px" }}>
             GET A FREE VENDOR ACCOUNT AUDIT ?
           </a>
+          </div>
 
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
@@ -116,7 +118,7 @@ export default function AIPoweredVendorCentralManagement() {
       </section>
 
       {/* Spacer */}
-      <div className="bg-white pt-[240px]" />
+      <div className="bg-white pt-[80px] sm:pt-[150px] lg:pt-[240px]" />
 
       <PartnersBar />
 
@@ -201,8 +203,8 @@ export default function AIPoweredVendorCentralManagement() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-              <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
-                {item.icon}
+              <div className="p-8 bg-white border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                <div className="flex justify-center md:justify-start">{item.icon}</div>
                 <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
@@ -314,10 +316,10 @@ export default function AIPoweredVendorCentralManagement() {
             <Image src="/what-we-need-from-you-3-1024x1024.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
           </FadeIn>
           <FadeIn direction="left" className="flex-1 px-10 py-10">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What We Need From You
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[520px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[520px] text-center lg:text-left mx-auto lg:mx-0">
               We&apos;re committed to helping you succeed, but great outcomes start with the right inputs. To ensure a smooth and effective engagement, please provide:
             </p>
             <div className="space-y-4 mb-6">
@@ -334,15 +336,17 @@ export default function AIPoweredVendorCentralManagement() {
                 </div>
               ))}
             </div>
-            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
               Don&apos;t worry, we are committed to guiding you through every step of the process.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">TALK TO A VENDOR CENTRAL EXPERT ?</span>
                 <span className="svc-btn-bottom">TALK TO A VENDOR CENTRAL EXPERT ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -392,18 +396,20 @@ export default function AIPoweredVendorCentralManagement() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Ready to Scale Your <span style={{ color: "#ff9900" }}>Ready to Take Control of Vendor Central?</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
               Partner with AMZ Pro Venture and turn Amazon Vendor Central into your most profitable sales channel.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">get a free account audit ?</span>
                 <span className="svc-btn-bottom">get a free account audit ?</span>
               </span>
             </a>
+            </div>
           </div>
           </FadeIn>
         </div>

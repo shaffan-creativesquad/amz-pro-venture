@@ -69,22 +69,22 @@ export default function FBAWholesaleManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Heading */}
           <h1
-            className="font-bold leading-tight mb-6 uppercase"
+            className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#ffffff" }}
           >
             NEED HELP SCALING AMAZON <span style={{ color: "#ff9900" }}>FBA WHOLESALE?</span>
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[560px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[560px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Running a wholesale business on Amazon requires more than just sourcing products. From listing compliance to inventory management, we handle the complexities so you can focus on selling and scaling.
           </p>
 
-          <div className="space-y-3 mb-8">
+          <div className="space-y-3 mb-8 text-left">
             {["Optimized product listings", "24/7 account health monitoring", "Dynamic pricing management", "Restricted category ungating", "Data-driven inventory management and forecasting"].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -96,9 +96,11 @@ export default function FBAWholesaleManagement() {
             ))}
           </div>
 
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
+          <div className="flex justify-center lg:justify-start">
+          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors mb-6" style={{ padding: "12px 24px" }}>
             MANAGE MY FBA WHOLESALE BUSINESS ?
           </a>
+          </div>
 
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
@@ -116,7 +118,7 @@ export default function FBAWholesaleManagement() {
       </section>
 
       {/* Spacer */}
-      <div className="bg-white pt-[240px]" />
+      <div className="bg-white pt-[80px] sm:pt-[150px] lg:pt-[240px]" />
 
       <PartnersBar />
 
@@ -223,8 +225,8 @@ export default function FBAWholesaleManagement() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-              <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
-                {item.icon}
+              <div className="p-8 bg-white border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                <div className="flex justify-center md:justify-start">{item.icon}</div>
                 <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
@@ -307,13 +309,13 @@ export default function FBAWholesaleManagement() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-              <div className="p-8 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
-                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5" style={{ backgroundColor: "#fde8ef" }}>
+              <div className="p-8 border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
+                <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 mx-auto md:mx-0" style={{ backgroundColor: "#fde8ef" }}>
                   {item.icon}
                 </div>
                 <h3 className="font-bold text-[18px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] mb-4">{item.desc}</p>
-                <div className="space-y-2">
+                <div className="space-y-2 text-left">
                   {item.items.map((point) => (
                     <div key={point} className="flex items-start gap-3">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-5 h-5 mt-0.5" fill="none">
@@ -348,10 +350,10 @@ export default function FBAWholesaleManagement() {
             <Image src="/Expand-Your-Product-Range-with-Brand-Category-Approvals-1536x1536.webp" alt="Amazon Brand & Category Ungating" width={700} height={700} unoptimized className="w-full h-auto object-contain" />
           </FadeIn>
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Amazon Brand &amp; Category <span style={{ color: "#ff9900" }}>Ungating Service</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               Selling popular, in-demand products often means getting ungated in restricted categories or brands. We help you cut through the red tape and gain access fast and reliably.
             </p>
             <p className="font-bold text-[17px] mb-4" style={{ color: "#000000" }}>What We Handle:</p>
@@ -373,12 +375,14 @@ export default function FBAWholesaleManagement() {
             <p className="text-[#67768e] text-[14px] leading-relaxed mb-8 max-w-[500px]">
               <strong className="text-[#000000]">Note:</strong> The documents must be provided by you. We do not create invoices, certifications, or authorization letters. But don&apos;t worry, our team will guide you through exactly what&apos;s needed.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">UNGATE RESTRICTED BRANDS ?</span>
                 <span className="svc-btn-bottom">UNGATE RESTRICTED BRANDS ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
         </div>
       </section>
@@ -387,10 +391,10 @@ export default function FBAWholesaleManagement() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Who This Service <span style={{ color: "#ff9900" }}>Is For</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               Our FBA Wholesale Account Management plan is built for sellers who are ready to grow, not just get started.
             </p>
             <div className="space-y-4 mb-6">
@@ -411,12 +415,14 @@ export default function FBAWholesaleManagement() {
             <p className="text-[#67768e] text-[14px] leading-relaxed mb-8 max-w-[500px]">
               <strong className="text-[#000000]">Note:</strong> This plan is for sellers who have already sourced products. Sourcing and supplier negotiation can be provided as an add-on.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
           <FadeIn direction="left" className="flex-1">
             <Image src="/Who-This-Service-Is-For.webp" alt="Who This Service Is For" width={700} height={700} unoptimized className="w-full h-auto object-contain" />
@@ -469,18 +475,20 @@ export default function FBAWholesaleManagement() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Don&apos;t Let Account Issues Stall Your Wholesale Growth
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
               The longer you wait, the more sales (and buy box) you risk losing. Start fixing what&apos;s holding you back.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">TALK TO AN FBA WHOLESALE EXPERT ?</span>
                 <span className="svc-btn-bottom">TALK TO AN FBA WHOLESALE EXPERT ?</span>
               </span>
             </a>
+            </div>
           </div>
           </FadeIn>
         </div>

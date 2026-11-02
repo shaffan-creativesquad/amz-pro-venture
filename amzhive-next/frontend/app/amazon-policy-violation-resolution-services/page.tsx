@@ -20,7 +20,7 @@ export default function PolicyViolationResolution() {
 
           {/* Label */}
           <FadeIn>
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
             Policy Violation Resolution
           </p>
           </FadeIn>

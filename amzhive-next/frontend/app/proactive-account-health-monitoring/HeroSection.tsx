@@ -18,14 +18,14 @@ export default function HeroSection() {
 
         <motion.h1
           variants={itm}
-          className="font-bold leading-tight mb-6 uppercase"
+          className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
           Is Your Amazon Account <br />
           <span style={{ color: "#ff9900" }}>Health at Risk?</span>
         </motion.h1>
 
-        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8">
+        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
           Protect, preserve, and grow your Amazon business with 24/7 compliance support.
         </motion.p>
 
@@ -46,14 +46,15 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
-        <motion.a
-          variants={itm}
-          href="/contact-us"
-          className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-full hover:bg-black transition-colors"
-          style={{ padding: "14px 32px" }}
-        >
-          Get My Free Health Scorecard →
-        </motion.a>
+        <motion.div variants={itm} className="flex justify-center lg:justify-start">
+          <a
+            href="/contact-us"
+            className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors"
+            style={{ padding: "12px 24px" }}
+          >
+            Get My Free Health Scorecard →
+          </a>
+        </motion.div>
 
       </motion.div>
     </section>

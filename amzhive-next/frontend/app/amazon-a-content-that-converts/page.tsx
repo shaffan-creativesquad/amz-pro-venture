@@ -140,10 +140,10 @@ export default function AmazonAContentThatConverts() {
 
           {/* Left */}
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               What&apos;s Included in Our <span style={{ color: "#ff9900" }}>A+ Content Service</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
               Everything you need to turn your listing into a high-converting brand asset.
             </p>
 
@@ -185,12 +185,14 @@ export default function AmazonAContentThatConverts() {
               ))}
             </div>
 
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">GET MY FREE A+ CONTENT GRADING ?</span>
-                <span className="svc-btn-bottom">GET MY FREE A+ CONTENT GRADING ?</span>
-              </span>
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">GET MY FREE A+ CONTENT GRADING ?</span>
+                  <span className="svc-btn-bottom">GET MY FREE A+ CONTENT GRADING ?</span>
+                </span>
+              </a>
+            </div>
           </FadeIn>
 
           {/* Right — image placeholder */}
@@ -212,10 +214,10 @@ export default function AmazonAContentThatConverts() {
 
           {/* Right */}
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Need More? We&apos;ve Got You Covered With Our <span style={{ color: "#ff9900" }}>Add-Ons</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
               Make your A+ Content even more effective with our Branded Add-Ons.
             </p>
 
@@ -237,12 +239,14 @@ export default function AmazonAContentThatConverts() {
               ))}
             </div>
 
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">GET STARTED</span>
-                <span className="svc-btn-bottom">GET STARTED</span>
-              </span>
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">GET STARTED</span>
+                  <span className="svc-btn-bottom">GET STARTED</span>
+                </span>
+              </a>
+            </div>
           </FadeIn>
 
         </div>
@@ -254,14 +258,14 @@ export default function AmazonAContentThatConverts() {
 
           {/* Left */}
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Premium A+ Content <span style={{ color: "#ff9900" }}>Design</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[540px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
               Premium A+ Content is Amazon&apos;s most advanced content format, designed for brands that want to go beyond basic product listings and create a rich, engaging, and high-converting shopping experience.
             </p>
 
-            <h3 className="font-bold text-[20px] mb-6" style={{ color: "#000000" }}>Key Features of Premium A+ Content</h3>
+            <h3 className="font-bold text-[20px] mb-6 text-center lg:text-left" style={{ color: "#000000" }}>Key Features of Premium A+ Content</h3>
 
             <div className="space-y-4 mb-10">
               {[
@@ -283,12 +287,14 @@ export default function AmazonAContentThatConverts() {
               ))}
             </div>
 
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">REQUEST PREMIUM A+ QUOTE ?</span>
-                <span className="svc-btn-bottom">REQUEST PREMIUM A+ QUOTE ?</span>
-              </span>
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">REQUEST PREMIUM A+ QUOTE ?</span>
+                  <span className="svc-btn-bottom">REQUEST PREMIUM A+ QUOTE ?</span>
+                </span>
+              </a>
+            </div>
           </FadeIn>
 
           {/* Right — image */}
@@ -310,7 +316,7 @@ export default function AmazonAContentThatConverts() {
 
           {/* Right */}
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-8" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-8 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Why Upgrade to <span style={{ color: "#ff9900" }}>Premium A+ Content?</span>
             </h2>
 
@@ -330,16 +336,18 @@ export default function AmazonAContentThatConverts() {
               ))}
             </div>
 
-            <p className="text-[#67768e] text-[14px] leading-relaxed italic mb-10 max-w-[500px]">
+            <p className="text-[#67768e] text-[14px] leading-relaxed italic mb-10 max-w-[500px] text-center lg:text-left mx-auto lg:mx-0">
               &quot;Basic A+ Content can increase sales by up to 8%—and well-implemented Premium A+ Content can <span className="font-semibold not-italic text-[#000000]">increase sales by up to 20%</span>&quot; – Amazon
             </p>
 
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">REQUEST PREMIUM A+ QUOTE ?</span>
-                <span className="svc-btn-bottom">REQUEST PREMIUM A+ QUOTE ?</span>
-              </span>
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">REQUEST PREMIUM A+ QUOTE ?</span>
+                  <span className="svc-btn-bottom">REQUEST PREMIUM A+ QUOTE ?</span>
+                </span>
+              </a>
+            </div>
           </FadeIn>
 
         </div>

@@ -1,6 +1,6 @@
 import AnnouncementBar from "../components/AnnouncementBar";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
@@ -67,8 +67,8 @@ export default function ProactiveAccountHealthMonitoring() {
       <AnnouncementBar />
       <Navbar />
 
-      <HeroSection />
-
+      <HeroSection />
+
       <PartnersBar />
 
       {/* Here's What We Help You Achieve Section */}
@@ -116,8 +116,8 @@ export default function ProactiveAccountHealthMonitoring() {
               
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-                <div>
-                  {item.icon}
+                <div className="text-center md:text-left">
+                  <div className="flex justify-center md:justify-start">{item.icon}</div>
                   <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
@@ -198,11 +198,11 @@ export default function ProactiveAccountHealthMonitoring() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-                <div className="p-8 h-full" style={{ backgroundColor: item.dark ? "#000000" : "#ffffff" }}>
-                  {item.icon}
+                <div className="p-8 h-full text-center md:text-left" style={{ backgroundColor: item.dark ? "#000000" : "#ffffff" }}>
+                  <div className="flex justify-center md:justify-start">{item.icon}</div>
                   <h3 className="font-bold text-[17px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed mb-4" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
-                  <div className="space-y-2">
+                  <div className="space-y-2 text-left">
                     {item.bullets.map((b) => (
                       <div key={b} className="flex items-start gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[18px] h-[18px] mt-0.5" fill="none">
@@ -242,11 +242,11 @@ export default function ProactiveAccountHealthMonitoring() {
 
           {/* Right — text */}
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               What We Need From You to <span style={{ color: "#ff9900" }}>Deliver the Best Results</span>
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               We&apos;re committed to helping you succeed, but great outcomes start with the right inputs. To ensure a smooth and effective engagement, please provide:
             </p>
 
@@ -270,12 +270,14 @@ export default function ProactiveAccountHealthMonitoring() {
               <span className="font-semibold text-[#000000]">Note:</span> All documentation must be supplied by the seller. We do not create invoices, certifications, or product photography. Don&apos;t worry, our team will guide you through exactly what&apos;s needed.
             </p>
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
 
         </div>
@@ -287,11 +289,11 @@ export default function ProactiveAccountHealthMonitoring() {
 
           {/* Left — text */}
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Onboarding <span style={{ color: "#ff9900" }}>Checklist</span>
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               To ensure a smooth start, please confirm the following before we begin:
             </p>
 
@@ -311,12 +313,14 @@ export default function ProactiveAccountHealthMonitoring() {
               ))}
             </div>
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">OPTIMIZE AMAZON ACCOUNT HEALTH ?</span>
                 <span className="svc-btn-bottom">OPTIMIZE AMAZON ACCOUNT HEALTH ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
 
           {/* Right — image */}
@@ -338,11 +342,11 @@ export default function ProactiveAccountHealthMonitoring() {
 
           {/* Right — text */}
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               What&apos;s Not Included in <span style={{ color: "#ff9900" }}>This Service</span>
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               These services are handled separately and require a different engagement scope.
             </p>
 
@@ -365,12 +369,14 @@ export default function ProactiveAccountHealthMonitoring() {
               ))}
             </div>
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">AVAIL ADDITIONAL SERVICES ?</span>
                 <span className="svc-btn-bottom">AVAIL ADDITIONAL SERVICES ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
 
         </div>
@@ -387,7 +393,7 @@ export default function ProactiveAccountHealthMonitoring() {
 
           {/* Right — text */}
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-8" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-8 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Why Top Amazon Brands <span style={{ color: "#ff9900" }}>Trust AMZ Pro Venture?</span>
             </h2>
 
@@ -409,12 +415,14 @@ export default function ProactiveAccountHealthMonitoring() {
               ))}
             </div>
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
 
         </div>
@@ -425,18 +433,20 @@ export default function ProactiveAccountHealthMonitoring() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Don&apos;t Wait for a <span style={{ color: "#ff9900" }}>Red Flag to Act</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
               Amazon rarely gives second chances, and account health issues often snowball if ignored. Protect your revenue. Safeguard your account.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">OPTIMIZE AMAZON ACCOUNT HEALTH ?</span>
                 <span className="svc-btn-bottom">OPTIMIZE AMAZON ACCOUNT HEALTH ?</span>
               </span>
             </a>
+            </div>
           </div>
           </FadeIn>
         </div>

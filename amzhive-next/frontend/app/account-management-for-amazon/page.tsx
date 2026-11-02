@@ -146,7 +146,7 @@ export default function AccountManagementForAmazon() {
 
           {/* Label */}
 
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
 
             Account Management for Amazon
 
@@ -554,9 +554,9 @@ export default function AccountManagementForAmazon() {
 
               <FadeIn key={item.title} delay={i * 0.08} direction="up">
 
-                <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                <div className="p-8 bg-white border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
 
-                  {item.icon}
+                  <div className="flex justify-center md:justify-start">{item.icon}</div>
 
                   <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
 
@@ -610,7 +610,7 @@ export default function AccountManagementForAmazon() {
 
           <FadeIn direction="left" className="flex-1 px-4 py-6 lg:px-10 lg:py-10 text-center lg:text-left">
 
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
               <span className="text-[#ff9900]">Account Management </span>
 
@@ -644,7 +644,7 @@ export default function AccountManagementForAmazon() {
 
           <div className="text-center mb-10">
 
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 5vw, 52px)" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 5vw, 52px)" }}>
 
               <span className="text-[#ff9900]">Account Management </span>
 

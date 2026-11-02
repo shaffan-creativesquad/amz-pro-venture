@@ -72,7 +72,7 @@ export default function ExpertSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
-          className="flex-1"
+          className="flex-1 text-center lg:text-left"
         >
           <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 45px)" }}>
             <span className="text-[#000000]">You&apos;ve Got Business, </span>
@@ -92,7 +92,7 @@ export default function ExpertSection() {
           </div>
 
           {/* Tags */}
-          <div className="flex flex-wrap items-center gap-0">
+          <div className="flex flex-wrap items-center gap-0 justify-center lg:justify-start">
             {tags.map((tag, i) => (
               <span key={tag} className="flex items-center">
                 <span className="text-[#ff9900] text-sm font-medium">{tag}</span>

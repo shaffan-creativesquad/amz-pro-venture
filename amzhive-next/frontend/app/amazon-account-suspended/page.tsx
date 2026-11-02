@@ -144,7 +144,7 @@ export default function AmazonAccountSuspended() {
 
           {/* Label */}
 
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
 
             Amazon Account Suspended
 
@@ -636,9 +636,9 @@ export default function AmazonAccountSuspended() {
 
               <FadeIn key={item.title} delay={i * 0.08} direction="up">
 
-                <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
+                <div className="p-8 bg-white border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
 
-                  {item.icon}
+                  <div className="flex justify-center md:justify-start">{item.icon}</div>
 
                   <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
 
@@ -772,7 +772,7 @@ export default function AmazonAccountSuspended() {
 
           <div className="text-center mb-10">
 
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
               <span className="text-[#000000]">We Resolve the Full Range of </span>
 
@@ -1010,7 +1010,7 @@ export default function AmazonAccountSuspended() {
 
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
 
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
 
               Don&apos;t Let Downtime Destroy<br />Your Momentum
 
@@ -1022,6 +1022,7 @@ export default function AmazonAccountSuspended() {
 
             </p>
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
 
               <span className="svc-btn-inner">
@@ -1033,6 +1034,7 @@ export default function AmazonAccountSuspended() {
               </span>
 
             </a>
+            </div>
 
           </div>
 

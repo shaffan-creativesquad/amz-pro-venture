@@ -69,16 +69,16 @@ export default function FBAInventoryAudit() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
             Amazon FBA Inventory Management
           </p>
 
           {/* Heading */}
           <h1
-            className="font-bold leading-tight mb-6 uppercase"
+            className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
             Are Stockouts Hurting<br />Your Amazon{" "}
@@ -86,7 +86,7 @@ export default function FBAInventoryAudit() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Amazon FBA inventory management is key to running a successful Amazon business. We help you with:
           </p>
 
@@ -107,9 +107,11 @@ export default function FBAInventoryAudit() {
             ))}
           </div>
 
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
-            GET YOUR FREE FBA INVENTORY AUDIT ?
+          <div className="flex justify-center lg:justify-start">
+          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors mb-6" style={{ padding: "12px 24px" }}>
+            GET YOUR FREE FBA INVENTORY AUDIT →
           </a>
+          </div>
 
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
@@ -127,7 +129,7 @@ export default function FBAInventoryAudit() {
       </section>
 
       {/* Spacer */}
-      <div className="bg-white pt-[240px]" />
+      <div className="bg-white pt-[80px] sm:pt-[150px] lg:pt-[240px]" />
 
       <PartnersBar />
 
@@ -137,24 +139,26 @@ export default function FBAInventoryAudit() {
 
           {/* Left — text */}
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
               What Is <span style={{ color: "#ff9900" }}>FBA Inventory Audit<br />&amp; Forecasting?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
               Amazon inventory auditing is the process of reviewing and analyzing your FBA stock to spot problems and opportunities. It covers things like excess or stranded inventory, slow movers, items at risk of going out of stock, and overall inventory health.
             </p>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
               Amazon inventory forecasting is about predicting how much stock you&apos;ll need in the future. This prediction is based on data, such as past sales, seasonality, trends, and supplier lead times.
             </p>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
               Deep audits and accurate forecasting help you avoid stockouts, costly overage fees, and maintain healthy cash flows. So, you&apos;re always ready to provide your customers with what they order.
             </p>
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">GET YOUR FREE FBA INVENTORY AUDIT ?</span>
                 <span className="svc-btn-bottom">GET YOUR FREE FBA INVENTORY AUDIT ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
 
           {/* Right — image */}
@@ -171,10 +175,10 @@ export default function FBAInventoryAudit() {
 
           <div className="flex flex-col lg:flex-row gap-14 items-center mb-14">
             <FadeIn direction="right" className="flex-1">
-              <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why You Need an Expert Amazon <span style={{ color: "#ff9900" }}>Inventory Management Service</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed">
+              <p className="text-[#67768e] text-[16px] leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
                 Poor inventory performance damages your Amazon business on multiple fronts. Overstocking and stockouts kill ranking, drain storage costs, tie up capital, and damage customer trust. Here&apos;s why you need an expert Amazon inventory optimization service:
               </p>
             </FadeIn>
@@ -212,7 +216,7 @@ export default function FBAInventoryAudit() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-              <div className="flex items-start gap-5 bg-white rounded-xl p-6 border border-gray-100 h-full" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-5 bg-white rounded-xl p-6 border border-gray-100 h-full text-center md:text-left" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
                 {item.icon}
                 <div>
                   <h3 className="font-bold text-[16px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
@@ -329,8 +333,8 @@ export default function FBAInventoryAudit() {
             ].map((card, i) => (
               <FadeIn key={card.title} direction="up" delay={i * 0.08}>
               <div className="bg-white rounded-2xl p-8 flex flex-col gap-1 h-full">
-                {card.icon}
-                <h3 className="font-bold text-[16px] leading-snug mb-3" style={{ color: "#000000" }}>{card.title}</h3>
+                <div className="flex justify-center md:justify-start">{card.icon}</div>
+                <h3 className="font-bold text-[16px] leading-snug mb-3 text-center md:text-left" style={{ color: "#000000" }}>{card.title}</h3>
                 <div className="space-y-2.5">
                   {card.items.map((item) => (
                     <div key={item} className="flex items-start gap-3">
@@ -363,10 +367,10 @@ export default function FBAInventoryAudit() {
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
           <FadeIn direction="right" className="flex-1 px-10 py-10">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What We Need From You?
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               To deliver our services with the best results, we need you to provide us with the following things:
             </p>
 
@@ -385,16 +389,18 @@ export default function FBAInventoryAudit() {
               ))}
             </div>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               You&apos;ll get guidance every step of the way to ensure a seamless collaboration. If anything else is needed for optimum results, we&apos;ll inform you duly for timely management.
             </p>
 
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
                 <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
           <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/what-we-need-from-you-5.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />

@@ -69,16 +69,16 @@ export default function ProductHuntingAndSourcing() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
             Data-Driven Product Hunting & Sourcing
           </p>
 
           {/* Heading */}
           <h1
-            className="font-bold leading-tight mb-6 uppercase"
+            className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
             Looking for the Best Products  
@@ -87,7 +87,7 @@ export default function ProductHuntingAndSourcing() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Our data-driven Amazon FBA product hunting and sourcing services help you uncover high-demand, low-competition private label products to scale your Amazon business.
           </p>
 
@@ -108,9 +108,11 @@ export default function ProductHuntingAndSourcing() {
             ))}
           </div>
 
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
+          <div className="flex justify-center lg:justify-start">
+          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[9.5px] rounded-full hover:bg-black transition-colors mb-6" style={{ padding: "11px 20px" }}>
             Let’s Hunt & Source the Right One for You ?
           </a>
+          </div>
 
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
@@ -128,7 +130,7 @@ export default function ProductHuntingAndSourcing() {
       </section>
 
       {/* Spacer */}
-      <div className="bg-white pt-[240px]" />
+      <div className="bg-white pt-[80px] sm:pt-[150px] lg:pt-[240px]" />
 
       <PartnersBar />
 
@@ -138,22 +140,24 @@ export default function ProductHuntingAndSourcing() {
 
           {/* Left — text */}
           <div className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
               What Is Amazon FBA  <span style={{ color: "#ff9900" }}> Product Hunting and Sourcing?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
               Amazon product hunting means finding “winning” products to sell on your Amazon store. These products have high demand, low competition, and good profit potential. Finding the right products involves factors like sales history, market trends, seasonal demand, and margins, using research tools and manual research. 
             </p>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
              Once the best product is selected, product sourcing comes next. It involves finding trustworthy suppliers or manufacturers to supply the products at the best prices.
             </p>
             
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">Start My Product Hunt Now ?</span>
                 <span className="svc-btn-bottom">Start My Product Hunt Now ?</span>
               </span>
             </a>
+            </div>
           </div>
 
           {/* Right — image */}
@@ -170,10 +174,10 @@ export default function ProductHuntingAndSourcing() {
 
           <div className="flex flex-col lg:flex-row gap-14 items-center">
             <div className="flex-1">
-              <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why Expert Product Hunting and Sourcing <span style={{ color: "#ff9900" }}>is Crucial for Amazon</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+              <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
                 Product hunting and Sourcing are the backbone of your Amazon business. Without expert research and sourcing, you might be putting your entire business at risk. Here&apos;s how going solo can hurt you:
               </p>
               <div className="space-y-3 mb-8">
@@ -194,12 +198,14 @@ export default function ProductHuntingAndSourcing() {
                   </div>
                 ))}
               </div>
+              <div className="flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
                   <span className="svc-btn-top">Get Expert Hunting & Sourcing ?</span>
                   <span className="svc-btn-bottom">Get Expert Hunting & Sourcing ?</span>
                 </span>
               </a>
+              </div>
             </div>
             <div className="flex-shrink-0 w-full lg:w-[480px]">
               <Image src="/Why-Expert-Product-Hunting-and-Sourcing-is-Crucial-for-Amazon.webp" alt="Why You Need an Expert Amazon Product Hunting & Sourcing Service" width={480} height={400} unoptimized className="w-full h-auto object-contain" />
@@ -215,7 +221,7 @@ export default function ProductHuntingAndSourcing() {
         <div className="max-w-[1400px] mx-auto px-10">
 
           <div className="text-center mb-12">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What’s Included in Our Amazon <br />Product Hunting &amp; Sourcing Service
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
@@ -303,8 +309,8 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
             ].map((card) => (
-              <div key={card.title} className="bg-white rounded-2xl p-8 flex flex-col gap-1">
-                {card.icon}
+              <div key={card.title} className="bg-white rounded-2xl p-8 flex flex-col gap-1 text-center md:text-left">
+                <div className="flex justify-center md:justify-start">{card.icon}</div>
                 <h3 className="font-bold text-[16px] leading-snug mb-3" style={{ color: "#000000" }}>{card.title}</h3>
                 <div className="space-y-2.5">
                   {card.items.map((item) => (
@@ -338,7 +344,7 @@ export default function ProductHuntingAndSourcing() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Why Count on Us for Amazon Inventory <br />Optimization Service
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
@@ -402,7 +408,7 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
             ].map((item) => (
-              <div key={item.title} className="flex flex-col p-6 rounded-lg border border-gray-200" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.07)" }}>
+              <div key={item.title} className="flex flex-col items-center md:items-start p-6 rounded-lg border border-gray-200 text-center md:text-left" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.07)" }}>
                 <div className="w-16 h-16 rounded-lg flex items-center justify-center mb-4 flex-shrink-0" style={{ backgroundColor: "#fff0f4", border: "1px solid #fcd5e0" }}>
                   {item.icon}
                 </div>
@@ -428,10 +434,10 @@ export default function ProductHuntingAndSourcing() {
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
           <div className="flex-1 px-10 py-10">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Why Sellers Trust AMZ Pro Venture for Amazon Product Hunting & Sourcing
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               Product hunting for Amazon is more than just acquiring products to sell on your store. It’s about building a strong brand and a reliable relationship with your suppliers.
             </p>
 
@@ -452,12 +458,14 @@ export default function ProductHuntingAndSourcing() {
             </div>
 
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">Find Winning Products Now ?</span>
                 <span className="svc-btn-bottom">Find Winning Products Now ?</span>
               </span>
             </a>
+            </div>
           </div>
           <div className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/Why-Sellers-Trust-AMZ-Pro-Venture-for-Amazon-Product-Hunting-Sourcing.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
@@ -476,10 +484,10 @@ export default function ProductHuntingAndSourcing() {
 
           {/* Right — content */}
           <div className="flex-1 px-10 lg:px-16 py-16">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Is This Service <span style={{ color: "#ff9900" }}>Right for You?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               Our Amazon private label hunting and sourcing services are designed for sellers who want to thrive on Amazon. Our services are an ideal fit for:
             </p>
             <div className="space-y-4 mb-8">
@@ -498,12 +506,14 @@ export default function ProductHuntingAndSourcing() {
                 </div>
               ))}
             </div>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">Start My Product Hunt Now ?</span>
                 <span className="svc-btn-bottom">Start My Product Hunt Now ?</span>
               </span>
             </a>
+            </div>
           </div>
 
         </div>
@@ -515,10 +525,10 @@ export default function ProductHuntingAndSourcing() {
 
           {/* Left — content */}
           <div className="flex-1 px-10 lg:px-16 py-16">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What We Need From You <span style={{ color: "#ff9900" }}>For Ideal Results</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               The stronger the input and collaboration, the better the results. Here&apos;s what we&apos;ll need from you to deliver the best results:
             </p>
             <div className="space-y-4 mb-5">
@@ -540,12 +550,14 @@ export default function ProductHuntingAndSourcing() {
             <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
               Don&apos;t have a category in mind? No problem, we&apos;ll help you pick the best category.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">Start My Product Hunt Now ?</span>
                 <span className="svc-btn-bottom">Start My Product Hunt Now ?</span>
               </span>
             </a>
+            </div>
           </div>
 
           {/* Right — image */}
@@ -560,18 +572,20 @@ export default function ProductHuntingAndSourcing() {
       <section className="w-full bg-white py-20">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Outperform Your Competition <br />With the Winning Products
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
               Every day you wait is an opportunity lost. Move fast and secure the products that customers are demanding now.
             </p>
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">Find Winning Products Now ?</span>
                 <span className="svc-btn-bottom">Find Winning Products Now ?</span>
               </span>
             </a>
+            </div>
           </div>
         </div>
       </section>

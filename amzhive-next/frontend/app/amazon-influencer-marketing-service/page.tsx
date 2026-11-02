@@ -69,16 +69,16 @@ export default function InfluencerMarketing() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
             Amazon Influencer Marketing
           </p>
 
           {/* Heading */}
           <h1
-            className="font-bold leading-tight mb-6 uppercase"
+            className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
             Need the Right Amazon<br />Influencers for Your{" "}
@@ -86,7 +86,7 @@ export default function InfluencerMarketing() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Partner with the right creators to showcase your products and drive high-intent traffic that leads to real sales.
           </p>
 
@@ -107,9 +107,11 @@ export default function InfluencerMarketing() {
             ))}
           </div>
 
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
-            START INFLUENCER CAMPAIGN NOW ?
+          <div className="flex justify-center lg:justify-start">
+          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors mb-6" style={{ padding: "12px 24px" }}>
+            START INFLUENCER CAMPAIGN NOW →
           </a>
+          </div>
 
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
@@ -127,7 +129,7 @@ export default function InfluencerMarketing() {
       </section>
 
       {/* Spacer */}
-      <div className="bg-white pt-[240px]" />
+      <div className="bg-white pt-[80px] sm:pt-[150px] lg:pt-[240px]" />
 
       <PartnersBar />
 
@@ -137,18 +139,20 @@ export default function InfluencerMarketing() {
 
           {/* Left — text */}
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
               What Is Amazon&apos;s <span style={{ color: "#ff9900" }}>Creator<br />Connection Program?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
               Creator Connection is a service from Amazon that helps brands connect with Amazon influencers (called Creators). As a brand, you choose which products you want to promote, set a bonus commission for each sale, decide how long the campaign will run, and set a budget. Once your campaign is live, Amazon shares it with Creators, who then make content like videos, posts, and reviews to help promote your products and drive sales.
             </p>
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
                 <span className="svc-btn-top">START INFLUENCER CAMPAIGN ?</span>
                 <span className="svc-btn-bottom">START INFLUENCER CAMPAIGN ?</span>
               </span>
             </a>
+            </div>
           </FadeIn>
 
           {/* Right — image */}
@@ -189,8 +193,8 @@ export default function InfluencerMarketing() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-              <div>
-                {item.icon}
+              <div className="text-center md:text-left">
+                <div className="flex justify-center md:justify-start">{item.icon}</div>
                 <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
@@ -212,8 +216,8 @@ export default function InfluencerMarketing() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
-              <div>
-                {item.icon}
+              <div className="text-center md:text-left">
+                <div className="flex justify-center md:justify-start">{item.icon}</div>
                 <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
@@ -327,8 +331,8 @@ export default function InfluencerMarketing() {
             ].map((card, i) => (
               <FadeIn key={card.title} direction="up" delay={i * 0.08}>
               <div className="bg-white rounded-2xl p-8 flex flex-col gap-1 h-full">
-                {card.icon}
-                <h3 className="font-bold text-[16px] leading-snug mb-3" style={{ color: "#000000" }}>{card.title}</h3>
+                <div className="flex justify-center md:justify-start">{card.icon}</div>
+                <h3 className="font-bold text-[16px] leading-snug mb-3 text-center md:text-left" style={{ color: "#000000" }}>{card.title}</h3>
                 <div className="space-y-2.5">
                   {card.items.map((item) => (
                     <div key={item} className="flex items-center gap-3">
@@ -361,10 +365,10 @@ export default function InfluencerMarketing() {
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
           <FadeIn direction="right" className="flex-1 px-10 py-10">
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What We&apos;ll Need to Start<br /><span style={{ color: "#ff9900" }}>Your Influencer Campaign</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               To ensure a seamless setup and successful execution, here&apos;s what we need from your side:
             </p>
 
@@ -394,7 +398,7 @@ export default function InfluencerMarketing() {
               },
             ].map((section) => (
               <div key={section.group} className="mb-6">
-                <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>{section.group}</h3>
+                <h3 className="font-bold text-[18px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>{section.group}</h3>
                 <div className="space-y-3">
                   {section.items.map((item) => (
                     <div key={item} className="flex items-start gap-3">
@@ -409,7 +413,7 @@ export default function InfluencerMarketing() {
               </div>
             ))}
 
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
                   <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
@@ -563,10 +567,10 @@ export default function InfluencerMarketing() {
             ].map((card, i) => (
               <FadeIn key={card.title} direction="up" delay={i * 0.07}>
               <div
-                className="p-8 h-full"
+                className="p-8 h-full text-center md:text-left"
                 style={{ backgroundColor: card.dark ? "#000000" : "#f4f4f4" }}
               >
-                {card.icon}
+                <div className="flex justify-center md:justify-start">{card.icon}</div>
                 <h3 className="font-bold text-[17px] mb-3" style={{ color: card.dark ? "#ffffff" : "#000000" }}>{card.title}</h3>
                 <p className="text-[14px] leading-relaxed" style={{ color: card.dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{card.desc}</p>
               </div>

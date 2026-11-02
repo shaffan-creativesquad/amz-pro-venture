@@ -10,7 +10,7 @@ const stats = [
   { target: 33, prefix: "", suffix: "%", label: "Average Sales Increase", display: (n: number) => String(n) },
 ];
 
-function CountUp({ target, prefix, suffix, display }: { target: number; prefix: string; suffix: string; display: (n: number) => string }) {
+function CountUp({ target, prefix, suffix, display, delay = 0 }: { target: number; prefix: string; suffix: string; display: (n: number) => string; delay?: number }) {
   const [count, setCount] = useState(0);
   const ref = useRef<HTMLSpanElement>(null);
   const started = useRef(false);
@@ -20,26 +20,28 @@ function CountUp({ target, prefix, suffix, display }: { target: number; prefix: 
       ([entry]) => {
         if (entry.isIntersecting && !started.current) {
           started.current = true;
-          const duration = 1800;
-          const steps = 60;
-          const increment = target / steps;
-          let current = 0;
-          const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-              setCount(target);
-              clearInterval(timer);
-            } else {
-              setCount(Math.floor(current));
-            }
-          }, duration / steps);
+          setTimeout(() => {
+            const duration = 2000;
+            const steps = 80;
+            const increment = target / steps;
+            let current = 0;
+            const timer = setInterval(() => {
+              current += increment;
+              if (current >= target) {
+                setCount(target);
+                clearInterval(timer);
+              } else {
+                setCount(Math.floor(current));
+              }
+            }, duration / steps);
+          }, delay);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 }
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, [target]);
+  }, [target, delay]);
 
   return (
     <span ref={ref} className="font-bold text-[28px] relative z-10" style={{ color: "#000000" }}>
@@ -56,7 +58,7 @@ export default function StatsCounter() {
           <div className="relative flex items-center justify-center" style={{ width: "160px", height: "160px" }}>
             <div className="absolute inset-0 rounded-full" style={{ border: "2px solid #e5e7eb" }} />
             <div className="absolute rounded-full" style={{ inset: "10px", border: "2px solid #ff9900" }} />
-            <CountUp target={stat.target} prefix={stat.prefix} suffix={stat.suffix} display={stat.display} />
+            <CountUp target={stat.target} prefix={stat.prefix} suffix={stat.suffix} display={stat.display} delay={i * 150 + 600} />
           </div>
           <p className="text-[#67768e] text-[15px] text-center">{stat.label}</p>
         </motion.div>

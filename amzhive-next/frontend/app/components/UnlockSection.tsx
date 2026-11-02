@@ -24,7 +24,7 @@ export default function UnlockSection() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
-          className="flex-1"
+          className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start"
         >
           {/* Badge */}
           <div className="inline-flex items-center mb-6 overflow-hidden rounded-sm">
@@ -47,7 +47,7 @@ export default function UnlockSection() {
           </p>
 
           {/* Links row */}
-          <div className="flex items-center gap-3 mb-8 text-sm font-semibold">
+          <div className="flex items-center gap-3 mb-8 text-sm font-semibold justify-center lg:justify-start">
             <Link href="/amazon-influencer-marketing-service" className="text-[#ff9900] hover:underline transition-colors">
               Marketing
             </Link>
@@ -58,7 +58,7 @@ export default function UnlockSection() {
           </div>
 
           {/* Buttons */}
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
             <Link
               href="/about-us"
               className="group relative inline-flex items-center gap-2 bg-black text-white text-sm font-semibold px-6 py-3 rounded-md overflow-hidden transition-colors duration-300"

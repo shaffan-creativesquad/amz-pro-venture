@@ -88,7 +88,7 @@ export default function ShopifyStoreCreationManagement() {
             </FadeIn>
 
             <FadeIn direction="left" className="flex-1">
-              <h2 className="font-bold leading-tight mb-8" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-8 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why You Need an Expert Shopify Store <span style={{ color: "#ff9900" }}>Management Service</span>
               </h2>
 
@@ -185,8 +185,8 @@ export default function ShopifyStoreCreationManagement() {
               },
             ].map((item, i) => (
               <FadeIn key={item.title} delay={i * 0.07} direction="up">
-                <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
-                  {item.icon}
+                <div className="bg-white p-6 border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
+                  <div className="flex justify-center md:justify-start">{item.icon}</div>
                   <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
@@ -236,8 +236,8 @@ export default function ShopifyStoreCreationManagement() {
               const dark = i % 2 === 1;
               return (
                 <FadeIn key={item.title} delay={i * 0.1} direction="up">
-                  <div className="p-8 flex flex-col h-full" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5 flex-shrink-0" style={{ backgroundColor: "#ff9900" }}>
+                  <div className="p-8 flex flex-col h-full text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
+                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5 flex-shrink-0 self-center md:self-start" style={{ backgroundColor: "#ff9900" }}>
                       {item.icon}
                     </div>
                     <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
@@ -264,10 +264,10 @@ export default function ShopifyStoreCreationManagement() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-16 items-center">
 
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What We Need From You to <span style={{ color: "#ff9900" }}>Provide the Best Results</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               To manage your Shopify store for the best results, we&apos;ll need you to provide the following:
             </p>
             <div className="space-y-5 mb-8">
@@ -308,10 +308,10 @@ export default function ShopifyStoreCreationManagement() {
           </FadeIn>
 
           <FadeIn direction="left" className="flex-1">
-            <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Who This Service <span style={{ color: "#ff9900" }}>is For</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               Our Shopify store management services provide the crucial support needed to run a high-performing store.
             </p>
             <div className="space-y-5 mb-10">
@@ -343,7 +343,7 @@ export default function ShopifyStoreCreationManagement() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-              <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Don&apos;t Risk Your Shopify Sales<br />With an Unoptimized Store
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mx-auto mb-8">

@@ -75,6 +75,11 @@ export default function Navbar() {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
   const isServiceActive = mounted && allServiceHrefs.some((href) => pathname === href);
   const isHomeActive = mounted && pathname === "/";
   const isAboutActive = mounted && pathname === "/about-us";
@@ -92,7 +97,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className="bg-white border-b border-gray-100 relative w-full max-w-full">
+    <header className="bg-white border-b border-gray-100 md:sticky md:top-0 md:z-50 w-full max-w-full">
       <div className="w-full px-4 sm:px-6 md:px-10 flex items-center justify-between h-[70px] sm:h-[80px] md:h-[90px]">
         {/* Logo */}
         <Link href="/" className="flex-shrink-0">
@@ -312,7 +317,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-xl">
+        <div className="md:hidden bg-white border-t border-gray-100 shadow-xl overflow-y-auto max-h-[calc(100vh-70px)]">
           <nav className="max-w-[1247px] mx-auto px-5 py-4">
             <ul className="space-y-1">
               <li>

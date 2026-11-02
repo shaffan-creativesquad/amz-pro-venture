@@ -67,19 +67,21 @@ export default function FAQSection() {
       <div className="max-w-[1140px] mx-auto px-10 flex flex-col lg:flex-row gap-14">
 
         {/* Left */}
-        <div className="lg:w-[480px] flex-shrink-0">
-          <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "45px", color: "#000000" }}>
+        <div className="lg:w-[480px] flex-shrink-0 text-center lg:text-left">
+          <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 5vw, 45px)", color: "#000000" }}>
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
             Got questions about our Walmart Listing Creation and Optimization service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
           </p>
-          <a href="/contact-us" className="svc-btn">
-            <span className="svc-btn-inner">
-              <span className="svc-btn-top">Lets Talk</span>
-              <span className="svc-btn-bottom">Lets Talk</span>
-            </span>
-          </a>
+          <div className="flex justify-center lg:justify-start">
+            <a href="/contact-us" className="svc-btn">
+              <span className="svc-btn-inner">
+                <span className="svc-btn-top">Lets Talk</span>
+                <span className="svc-btn-bottom">Lets Talk</span>
+              </span>
+            </a>
+          </div>
         </div>
 
         {/* Right — Accordion */}

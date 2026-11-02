@@ -49,13 +49,13 @@ export default function HeroSection() {
     <section className="overflow-hidden" style={{ backgroundImage: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
       <div className="max-w-[1659px] mx-auto px-5 md:px-10 pt-10 md:pt-14 pb-0 flex flex-col lg:flex-row items-center gap-10">
         {/* LEFT */}
-        <div className="flex-1 pb-14">
+        <div className="flex-1 pb-14 text-center lg:text-left flex flex-col items-center lg:items-start">
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="flex flex-wrap sm:inline-flex items-center mb-6 overflow-hidden rounded-sm max-w-full"
+            className="flex flex-wrap items-center mb-6 overflow-hidden rounded-sm max-w-full"
           >
             <span className="bg-[#ff9900] text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2">Marketing &amp; eCommerce</span>
             <span className="bg-black text-white text-xs sm:text-sm font-semibold px-3 sm:px-4 py-1.5 sm:py-2">Web Design Agency</span>
@@ -90,7 +90,7 @@ export default function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="flex items-center gap-3 mb-8 text-sm font-semibold"
+            className="flex items-center gap-3 mb-8 text-sm font-semibold justify-center lg:justify-start"
           >
             <Link href="/amazon-influencer-marketing-service" className="text-[#ff9900] hover:underline transition-colors">
               Marketing
@@ -106,7 +106,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex flex-wrap gap-3"
+            className="flex flex-wrap gap-3 justify-center lg:justify-start"
           >
             <Link
               href="#"
