@@ -16,7 +16,7 @@ export default function PolicyViolationResolution() {
 
       {/* Hero Section */}
       <FadeIn><section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
           <FadeIn>
@@ -38,7 +38,7 @@ export default function PolicyViolationResolution() {
 
           {/* Description */}
           <FadeIn delay={0.3}>
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
             Policy violations on Amazon can put your entire business at risk; one flag can lead to ASIN removals, listing suppression, or even full account suspension.
           </p>
           </FadeIn>
@@ -77,7 +77,7 @@ export default function PolicyViolationResolution() {
       </section></FadeIn>
 
       {/* Spacer */}
-      <div className="bg-white pt-[180px]" />
+      <div className="bg-white pt-[80px] sm:pt-[140px] lg:pt-[200px]" />
 
       <PartnersBar />
 

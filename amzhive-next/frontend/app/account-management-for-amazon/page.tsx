@@ -140,7 +140,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
 
 
@@ -174,7 +174,7 @@ export default function AccountManagementForAmazon() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center lg:text-left">
 
             Running a successful Amazon store demands constant attention — from account health and listing optimization to PPC campaigns and customer service. Our Amazon Account Management experts take full ownership of your seller account so you can focus on growing your business while we handle the day-to-day operations.
 
@@ -216,7 +216,7 @@ export default function AccountManagementForAmazon() {
 
           <FadeIn direction="right" className="flex-1">
 
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
               <span className="text-[#000000]">Struggling to Manage Your </span>
 
@@ -224,7 +224,7 @@ export default function AccountManagementForAmazon() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[18px] mb-8">Optimize your seller account for maximum sales and visibility, while ensuring strong account health and full policy compliance.</p>
+            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">Optimize your seller account for maximum sales and visibility, while ensuring strong account health and full policy compliance.</p>
 
             <div className="space-y-5">
 
@@ -286,7 +286,7 @@ export default function AccountManagementForAmazon() {
 
             <h2
 
-              className="font-bold leading-tight mb-10"
+              className="font-bold leading-tight mb-10 text-center lg:text-left"
 
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
 
@@ -598,7 +598,7 @@ export default function AccountManagementForAmazon() {
 
       {/* Plans & Pricing Intro */}
 
-      <section className="w-full bg-white py-20">
+      <section className="w-full bg-white py-10 lg:py-20">
 
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
 
@@ -608,7 +608,7 @@ export default function AccountManagementForAmazon() {
 
           </FadeIn>
 
-          <FadeIn direction="left" className="flex-1 px-10 py-10">
+          <FadeIn direction="left" className="flex-1 px-4 py-6 lg:px-10 lg:py-10 text-center lg:text-left">
 
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
@@ -620,7 +620,7 @@ export default function AccountManagementForAmazon() {
 
             <p className="text-[#ff9900] font-semibold text-[16px] mb-4">Flexible Monthly Management Plans</p>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mx-auto lg:mx-0">
 
               We offer <strong className="text-[#000000]">tailored management packages</strong> designed to fit your store size and goals — from startups to established brands scaling to seven figures.
 
@@ -636,7 +636,7 @@ export default function AccountManagementForAmazon() {
 
       {/* Plans & Pricing Cards */}
 
-      <section className="w-full py-20 bg-white">
+      <section className="w-full py-10 lg:py-20 bg-white">
 
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -788,7 +788,7 @@ export default function AccountManagementForAmazon() {
 
 
 
-            <FadeIn direction="left" className="flex-1 space-y-8">
+            <FadeIn direction="left" className="flex-1 space-y-8 text-center lg:text-left">
 
               <div>
 
@@ -806,7 +806,7 @@ export default function AccountManagementForAmazon() {
 
               </div>
 
-              <div>
+              <div className="flex justify-center lg:justify-start">
 
                 <a href="/contact-us" className="svc-btn svc-btn-pink">
 
@@ -930,7 +930,7 @@ export default function AccountManagementForAmazon() {
 
               ))}
 
-              <div className="pt-2">
+              <div className="pt-2 flex justify-center lg:justify-start">
 
                 <a href="/contact-us" className="svc-btn">
 
@@ -1102,7 +1102,7 @@ export default function AccountManagementForAmazon() {
 
           >
 
-            <div>
+            <div className="text-center lg:text-left">
 
               <h2 className="font-bold text-[32px] mb-2" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#ffffff" }}>
 
@@ -1114,7 +1114,7 @@ export default function AccountManagementForAmazon() {
 
             </div>
 
-            <div className="flex items-center gap-4 flex-shrink-0">
+            <div className="flex items-center justify-center lg:justify-start gap-4 flex-shrink-0">
 
               <a href="/contact-us" className="svc-btn svc-btn-hover-white">
 

@@ -69,7 +69,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
           <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
@@ -86,7 +86,7 @@ export default function AmazonAccountSuspended() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
             Get your suspended Amazon listings back quickly, effectively, and with full compliance, so you can start selling again with confidence.
           </p>
 
@@ -102,9 +102,11 @@ export default function AmazonAccountSuspended() {
             ))}
           </div>
 
-          <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors mb-6" style={{ padding: "14px 28px" }}>
-            REINSTATE MY AMAZON LISTING ?
-          </a>
+          <div className="flex justify-center lg:justify-start mb-6">
+            <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors" style={{ padding: "14px 28px" }}>
+              REINSTATE MY AMAZON LISTING ?
+            </a>
+          </div>
 
           {/* Hero Image */}
           <div className="w-full max-w-[700px] relative z-10 mb-[-60px] sm:mb-[-120px] lg:mb-[-180px] self-center">
@@ -130,11 +132,11 @@ export default function AmazonAccountSuspended() {
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
         <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
               <span className="text-[#000000]">We Resolve A Complete Range of </span>
               <span className="text-[#ff9900]">Amazon ASIN Suspensions</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] mb-8">As a trusted Amazon ASIN reinstatement service provider, AMZ Pro Venture helps sellers recover listings suspended for a wide range of violations. Here are the most common issues we handle:</p>
+            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">As a trusted Amazon ASIN reinstatement service provider, AMZ Pro Venture helps sellers recover listings suspended for a wide range of violations. Here are the most common issues we handle:</p>
             <div className="space-y-4">
               {[
                 { title: "Product Authenticity or Counterfeit Claims:", desc: "Claims of fake or misrepresented products." },
@@ -154,7 +156,7 @@ export default function AmazonAccountSuspended() {
                 </div>
               ))}
             </div>
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
                   <span className="svc-btn-top">TALK TO A REINSTATEMENT EXPERT ?</span>
@@ -274,7 +276,7 @@ export default function AmazonAccountSuspended() {
             ))}
           </div>
 
-          <p className="text-[#000000] text-[15px] leading-relaxed mb-10">
+          <p className="text-[#000000] text-[15px] leading-relaxed mb-10 text-center lg:text-left">
             <strong>Important Note:</strong> While AMZ Pro Venture specializes in both account and ASIN reinstatement, this service specifically focuses on Amazon listing and ASIN reinstatement.
           </p>
 
@@ -297,7 +299,7 @@ export default function AmazonAccountSuspended() {
             <Image src="/document.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
           </FadeIn>
           <FadeIn direction="left" className="flex-1 px-10 py-10">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
               <span className="text-[#000000]">What We Need From You to Deliver the </span>
               <span className="text-[#ff9900]">Best Results</span>
             </h2>
@@ -319,15 +321,17 @@ export default function AmazonAccountSuspended() {
                 </div>
               ))}
             </div>
-            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
               <strong className="text-[#000000]">Important:</strong> We do not create or fake documentation. All information must be genuine and seller-provided. Don&apos;t worry, we&apos;ll guide you through the entire process of documentation.
             </p>
-            <a href="/contact-us" className="svc-btn svc-btn-pink">
-              <span className="svc-btn-inner">
-                <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
-                <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
-              </span>
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="svc-btn svc-btn-pink">
+                <span className="svc-btn-inner">
+                  <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
+                  <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
+                </span>
+              </a>
+            </div>
           </FadeIn>
         </div>
       </section>

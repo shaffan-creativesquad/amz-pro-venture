@@ -156,7 +156,7 @@ export default function Navbar() {
                               <Link
                                 key={item.href}
                                 href={item.href}
-                                className="block text-[12.5px] text-[#67768e] hover:!text-[#ff9900] leading-snug transition-colors"
+                                className={`block text-[12.5px] leading-snug transition-colors hover:!text-[#ff9900] ${pathname === item.href ? "text-[#ff9900] font-semibold" : "text-[#67768e]"}`}
                                 onClick={() => setServicesOpen(false)}
                               >
                                 {item.name}
@@ -168,7 +168,7 @@ export default function Navbar() {
                               <Link
                                 key={item.href}
                                 href={item.href}
-                                className="block text-[12.5px] text-[#67768e] hover:!text-[#ff9900] leading-snug transition-colors"
+                                className={`block text-[12.5px] leading-snug transition-colors hover:!text-[#ff9900] ${pathname === item.href ? "text-[#ff9900] font-semibold" : "text-[#67768e]"}`}
                                 onClick={() => setServicesOpen(false)}
                               >
                                 {item.name}
@@ -376,7 +376,7 @@ export default function Navbar() {
                               <li key={item.href}>
                                 <Link
                                   href={item.href}
-                                  className="block px-3 py-1.5 text-sm text-[#67768e] hover:!text-[#ff9900] hover:bg-[#fff8f0] rounded-lg transition-colors"
+                                  className={`block px-3 py-1.5 text-sm hover:!text-[#ff9900] hover:bg-[#fff8f0] rounded-lg transition-colors ${pathname === item.href ? "text-[#ff9900] bg-[#fff8f0] font-semibold" : "text-[#67768e]"}`}
                                   onClick={() => setMobileOpen(false)}
                                 >
                                   {item.name}

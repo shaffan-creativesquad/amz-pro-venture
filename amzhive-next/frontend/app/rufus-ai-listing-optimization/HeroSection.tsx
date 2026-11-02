@@ -18,14 +18,14 @@ export default function HeroSection() {
 
         <motion.h1
           variants={itm}
-          className="font-bold leading-tight mb-6 uppercase"
+          className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
           Need Optimized Amazon<br />
           Listings For <span style={{ color: "#ff9900" }}>More Sales?</span>
         </motion.h1>
 
-        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8">
+        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
           Your product is great, but if your listing doesn&apos;t convert, you&apos;re leaving money on the table. We help brands craft high-converting Amazon listings that boost visibility, drive more clicks, and turn browsers into buyers.
         </motion.p>
 
@@ -46,14 +46,15 @@ export default function HeroSection() {
           ))}
         </motion.div>
 
-        <motion.a
-          variants={itm}
-          href="/contact-us"
-          className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-full hover:bg-black transition-colors"
-          style={{ padding: "14px 32px" }}
-        >
-          OPTIMIZE MY AMAZON LISTINGS →
-        </motion.a>
+        <motion.div variants={itm} className="flex justify-center lg:justify-start">
+          <a
+            href="/contact-us"
+            className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors"
+            style={{ padding: "12px 24px" }}
+          >
+            OPTIMIZE MY AMAZON LISTINGS →
+          </a>
+        </motion.div>
 
       </motion.div>
     </section>

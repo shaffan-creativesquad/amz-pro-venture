@@ -138,7 +138,7 @@ export default function AmazonAccountSuspended() {
 
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-start text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
 
 
@@ -172,7 +172,7 @@ export default function AmazonAccountSuspended() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center lg:text-left">
 
             A suspended Amazon account can bring your business to a halt overnight. Our suspension reinstatement experts have helped hundreds of sellers get back online fast — with proven appeal strategies, detailed Plans of Action, and direct Seller Support escalation.
 
@@ -212,7 +212,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Spacer */}
 
-      <div className="bg-white pt-[240px]" />
+      <div className="bg-white pt-[80px] sm:pt-[140px] lg:pt-[200px]" />
 
 
 
@@ -228,7 +228,7 @@ export default function AmazonAccountSuspended() {
 
           <FadeIn direction="right" className="flex-1">
 
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
               <span className="text-[#000000]">Struggling to Reinstate </span>
 
@@ -236,7 +236,7 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[18px] mb-8">Get back to selling faster with dedicated expert support that understands Amazon&apos;s policies inside and out. We handle reinstatements for:</p>
+            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">Get back to selling faster with dedicated expert support that understands Amazon&apos;s policies inside and out. We handle reinstatements for:</p>
 
             <div className="space-y-5">
 
@@ -272,7 +272,7 @@ export default function AmazonAccountSuspended() {
 
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center lg:justify-start">
 
               <a href="/contact-us" className="svc-btn svc-btn-pink">
 
@@ -314,7 +314,7 @@ export default function AmazonAccountSuspended() {
 
             <h2
 
-              className="font-bold leading-tight mb-10"
+              className="font-bold leading-tight mb-10 text-center lg:text-left"
 
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
 
@@ -680,7 +680,7 @@ export default function AmazonAccountSuspended() {
 
       {/* What We Need From You */}
 
-      <section className="w-full bg-white py-20">
+      <section className="w-full bg-white py-10 lg:py-20">
 
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
 
@@ -690,9 +690,9 @@ export default function AmazonAccountSuspended() {
 
           </FadeIn>
 
-          <FadeIn direction="left" className="flex-1 px-10 py-10">
+          <FadeIn direction="left" className="flex-1 px-4 py-6 lg:px-10 lg:py-10">
 
-            <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
               <span className="text-[#000000]">What We Need </span>
 
@@ -700,9 +700,9 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] mb-8">To begin the process, you&apos;ll need to provide:</p>
+            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">To begin the process, you&apos;ll need to provide:</p>
 
-            <div className="space-y-5 mb-8">
+            <div className="space-y-5 mb-8 flex flex-col items-center lg:items-start">
 
               {[
 
@@ -734,12 +734,13 @@ export default function AmazonAccountSuspended() {
 
             </div>
 
-            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
 
               <strong className="text-[#000000]">Important:</strong> AMZ Pro Venture does not create or fabricate documents. Invoices, purchase orders, or product images must come directly from the seller. We&apos;ll guide you on exactly what&apos;s needed and help ensure it&apos;s submission-ready.
 
             </p>
 
+            <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
 
               <span className="svc-btn-inner">
@@ -751,6 +752,7 @@ export default function AmazonAccountSuspended() {
               </span>
 
             </a>
+            </div>
 
           </FadeIn>
 
@@ -762,7 +764,7 @@ export default function AmazonAccountSuspended() {
 
       {/* We Resolve Full Range Section */}
 
-      <section className="w-full py-20 bg-white">
+      <section className="w-full py-10 lg:py-20 bg-white">
 
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
@@ -1000,7 +1002,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Downtime CTA Section */}
 
-      <section className="w-full bg-white py-20">
+      <section className="w-full bg-white py-10 lg:py-20">
 
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 

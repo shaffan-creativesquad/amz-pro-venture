@@ -136,7 +136,7 @@ export default function ServicesSection() {
         const isEven = i % 2 === 0;
 
         const content = (
-          <div className="flex flex-col justify-center gap-5 h-full px-6 py-10 md:px-16 md:py-20">
+          <div className="flex flex-col justify-center gap-5 h-full px-6 py-10 md:px-16 md:py-20 text-center md:text-left">
             <h2
               className="font-bold leading-tight"
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3.5vw, 36px)", color: "#000000" }}
@@ -153,7 +153,7 @@ export default function ServicesSection() {
               </p>
             ))}
             {service.bullets && service.bullets.length > 0 && (
-              <ul className="flex flex-col gap-2" style={{ paddingLeft: "0", listStyle: "none" }}>
+              <ul className="flex flex-col gap-2 text-left" style={{ paddingLeft: "0", listStyle: "none" }}>
                 {service.bullets.map((b, j) => (
                   <li key={j} className="flex items-start gap-2" style={{ fontSize: "16px", color: "#67768e", lineHeight: "1.6" }}>
                     <span style={{ color: "#000000", marginTop: "2px", flexShrink: 0 }}>•</span>
@@ -163,7 +163,7 @@ export default function ServicesSection() {
               </ul>
             )}
             {service.bulletItems && service.bulletItems.length > 0 && (
-              <ul className="flex flex-col gap-4" style={{ paddingLeft: "0", listStyle: "none" }}>
+              <ul className="flex flex-col gap-4 text-left" style={{ paddingLeft: "0", listStyle: "none" }}>
                 {service.bulletItems.map((b, j) => (
                   <li key={j} className="flex items-start gap-3">
                     <svg className="flex-shrink-0 mt-1" width="20" height="20" viewBox="0 0 20 20" fill="none">

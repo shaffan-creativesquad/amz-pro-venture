@@ -148,15 +148,17 @@ export default function RufusAIListingOptimization() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What Is Amazon Listing <span style={{ color: "#ff9900" }}>Optimization?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
               Amazon listing optimization is the process of improving your product listings, both front and back end, to rank higher in search results, attract more views, and drive conversions. It directly impacts your visibility, traffic, and sales performance on Amazon.
             </p>
-            <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              OPTIMIZE MY AMAZON LISTINGS ?
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
+                OPTIMIZE MY AMAZON LISTINGS ?
+              </a>
+            </div>
           </FadeIn>
           <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/banner-image.webp" alt="What Is Amazon Listing Optimization" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
@@ -281,14 +283,14 @@ export default function RufusAIListingOptimization() {
         <section key={i} className="w-full py-20 bg-white">
           <div className={`max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col gap-14 items-center ${row.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
             <FadeIn direction={row.reverse ? "left" : "right"} className="flex-1">
-              <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
                 {row.heading}
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[540px]" style={{ marginBottom: row.desc2 ? "16px" : "32px" }}>{row.desc}</p>
-              {row.desc2 && <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[540px]">{row.desc2}</p>}
-              {(row as {quote?: string}).quote && <p className="text-[#000000] text-[16px] leading-relaxed mb-8 max-w-[540px] font-semibold">{(row as {quote?: string}).quote}</p>}
+              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[540px] text-center lg:text-left mx-auto lg:mx-0" style={{ marginBottom: row.desc2 ? "16px" : "32px" }}>{row.desc}</p>
+              {row.desc2 && <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">{row.desc2}</p>}
+              {(row as {quote?: string}).quote && <p className="text-[#000000] text-[16px] leading-relaxed mb-8 max-w-[540px] font-semibold text-center lg:text-left mx-auto lg:mx-0">{(row as {quote?: string}).quote}</p>}
               {row.bullets.length > 0 && (
-                <div className="space-y-4 mb-10">
+                <div className="space-y-4 mb-10 flex flex-col items-center lg:items-start">
                   {row.bullets.map((b) => (
                     <div key={b} className="flex items-center gap-3">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -300,12 +302,14 @@ export default function RufusAIListingOptimization() {
                   ))}
                 </div>
               )}
-              <a href="/contact-us" className="svc-btn svc-btn-pink">
-                <span className="svc-btn-inner">
-                  <span className="svc-btn-top">{row.btn}</span>
-                  <span className="svc-btn-bottom">{row.btn}</span>
-                </span>
-              </a>
+              <div className="flex justify-center lg:justify-start">
+                <a href="/contact-us" className="svc-btn svc-btn-pink">
+                  <span className="svc-btn-inner">
+                    <span className="svc-btn-top">{row.btn}</span>
+                    <span className="svc-btn-bottom">{row.btn}</span>
+                  </span>
+                </a>
+              </div>
             </FadeIn>
             <FadeIn direction={row.reverse ? "right" : "left"} className="flex-shrink-0 w-full lg:w-[500px]">
               <Image src={row.image} alt={row.alt} width={500} height={420} unoptimized className="w-full h-auto object-contain" />

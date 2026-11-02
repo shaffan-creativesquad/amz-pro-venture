@@ -185,10 +185,10 @@ export default function AmazonAccountSuspended() {
       <section className="w-full py-20 bg-white">
         <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Why Most Sellers Struggle With <span style={{ color: "#ff9900" }}>Amazon PPC</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[560px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
               Amazon PPC isn&apos;t set-and-forget; it&apos;s complex, data-heavy, and constantly changing. Most sellers waste thousands trying to figure it out. Here&apos;s why Amazon ads often fail:
             </p>
             <div className="space-y-4 mb-10">
@@ -208,9 +208,11 @@ export default function AmazonAccountSuspended() {
                 </div>
               ))}
             </div>
-            <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-              OPTIMIZE MY AMAZON PPC ?
-            </a>
+            <div className="flex justify-center lg:justify-start">
+              <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
+                OPTIMIZE MY AMAZON PPC ?
+              </a>
+            </div>
           </FadeIn>
           <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
             <Image src="/Why-Most-Sellers-Struggle-With-Amazon-PPC.webp" alt="Why Sellers Struggle With Amazon PPC" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
@@ -312,11 +314,11 @@ export default function AmazonAccountSuspended() {
       <section className="w-full bg-white py-20">
         <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-14">
           <FadeIn direction="right" className="flex-1">
-            <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
               <span className="text-[#000000]">Smarter Keyword Strategies for </span>
               <span className="text-[#ff9900]">Smarter Ad Spend</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px]">
+            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
               Not all keywords perform the same, and that&apos;s exactly why we test, track, and optimize across every match type to uncover what truly drives results.
             </p>
             <div className="space-y-6">
@@ -362,12 +364,12 @@ export default function AmazonAccountSuspended() {
 
           <div className="flex-1">
             <FadeIn>
-              <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Level Up Your Performance With <span style={{ color: "#ff9900" }}>Powerful Add-Ons</span>
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[620px]">
+              <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[620px] text-center lg:text-left">
                 Give your Amazon PPC campaigns the extra support they need with optional add-ons, designed to increase visibility, conversions, and finally. From high-converting copy to data-driven strategies, these additions help you grow in a rounded marketplace.
               </p>
             </FadeIn>
