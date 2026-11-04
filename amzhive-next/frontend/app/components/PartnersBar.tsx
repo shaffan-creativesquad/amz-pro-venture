@@ -20,16 +20,15 @@ export default function PartnersBar() {
           {partners.map((p) => (
             <div
               key={p.alt}
-              className="border border-[#f0a04b] rounded-2xl flex items-center justify-center px-5 py-3"
-              style={{ minWidth: "140px" }}
+              className="flex items-center justify-center px-3 py-2"
             >
               <Image
                 src={p.src}
                 alt={p.alt}
-                width={150}
-                height={65}
+                width={180}
+                height={80}
                 unoptimized
-                className="h-14 w-auto object-contain"
+                className="h-20 w-auto object-contain"
               />
             </div>
           ))}

@@ -29,7 +29,7 @@ export default function UnlockSection() {
           {/* Badge */}
           <div className="inline-flex items-center mb-6 overflow-hidden rounded-sm">
             <span className="bg-[#ff9900] text-white text-sm font-semibold px-4 py-2">THE E-COMMERCE</span>
-            <span className="bg-black text-white text-sm font-semibold px-4 py-2">WEB DESIGN EXPERTS</span>
+            <span className="bg-black text-white text-sm font-semibold px-4 py-2">GROWTH EXPERTS</span>
           </div>
 
           {/* Heading */}
@@ -37,13 +37,13 @@ export default function UnlockSection() {
             className="font-bold leading-tight mb-6"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 45px)" }}
           >
-            <span className="text-[#000000]">Unlocking </span>
-            <span className="text-[#ff9900]">the Power of Online<br />Growth</span>
+            <span className="text-[#000000]">We Turn Online Stores Into </span>
+            <span className="text-[#ff9900]">Serious Revenue</span>
           </h2>
 
           {/* Paragraph */}
           <p className="text-black text-[16px] leading-relaxed mb-8 max-w-[560px]">
-            AMZ Pro Venture stands as your premier digital marketing and web design agency, specializing in WooCommerce and Shopify e-commerce solutions tailored for exponential growth. Based in the vibrant heart of Miami, Florida, our team comprises seasoned designers, developers, and marketing aficionados, poised to elevate your online presence to unprecedented heights.
+            AMZ ProVenture is a full-service ecommerce growth agency. Our team includes experienced designers, developers, marketplace strategists and ad specialists. We know WooCommerce, Shopify and Amazon inside out, and everything we do comes back to the same goal: more sales, better margins and customers who keep coming back.
           </p>
 
           {/* Links row */}

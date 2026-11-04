@@ -140,15 +140,15 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center text-center">
 
 
 
           {/* Label */}
 
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center">
 
-            Account Management for Amazon
+            Amazon Account Management
 
           </p>
 
@@ -164,9 +164,9 @@ export default function AccountManagementForAmazon() {
 
           >
 
-            Full-Service Amazon{" "}
+            Your Amazon Account,{" "}
 
-            <span style={{ color: "#ff9900" }}>Account Management.</span>
+            <span style={{ color: "#ff9900" }}>Looked After Like It&apos;s Our Own.</span>
 
           </h1>
 
@@ -174,9 +174,9 @@ export default function AccountManagementForAmazon() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center lg:text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center">
 
-            Running a successful Amazon store demands constant attention — from account health and listing optimization to PPC campaigns and customer service. Our Amazon Account Management experts take full ownership of your seller account so you can focus on growing your business while we handle the day-to-day operations.
+            Running an Amazon store never really stops. There&apos;s account health to check, listings to fix, ads to adjust, buyers to answer and new policies to keep up with. Our Amazon account management services handle all of it for you, so you can get back to the parts of the business you actually enjoy.
 
           </p>
 
@@ -218,27 +218,27 @@ export default function AccountManagementForAmazon() {
 
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
-              <span className="text-[#000000]">Struggling to Manage Your </span>
+              <span className="text-[#000000]">Spending More Time in Seller Central </span>
 
-              <span className="text-[#ff9900]">Amazon Seller Account?</span>
+              <span className="text-[#ff9900]">Than on Your Business?</span>
 
             </h2>
 
-            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">Optimize your seller account for maximum sales and visibility, while ensuring strong account health and full policy compliance.</p>
+            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">Good Amazon seller account management keeps your products easy to find, your sales growing and your account free from the warnings no seller wants to get.</p>
 
             <div className="space-y-5">
 
               {[
 
-                "Strategic oversight to drive sales",
+                "A clear sales plan, reviewed with you every month",
 
-                "Brand management for stronger visibility",
+                "Branding that helps your products stand out in search",
 
-                "Streamlined inventory and listing operations",
+                "Listings and inventory that stay accurate and up to date",
 
-                "Proactive account health management",
+                "Account health checked often, so small issues stay small",
 
-                "Amazon Policy compliance",
+                "Everything done the way Amazon's rules require",
 
               ].map((item) => (
 
@@ -264,7 +264,7 @@ export default function AccountManagementForAmazon() {
 
           <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[500px]">
 
-            <Image src="/second-01-scaled.png" alt="Who Is This For" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
+            <Image src="/Seller-Central-Account-Creation.png" alt="Who Is This For" width={500} height={420} unoptimized className="w-full h-auto object-contain" />
 
           </FadeIn>
 
@@ -276,13 +276,33 @@ export default function AccountManagementForAmazon() {
 
       {/* Why Choose Us Section */}
 
-      <section className="bg-white py-20 w-full max-w-[1659px] mx-auto">
+      <section className="bg-white py-20 w-full">
 
-        <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
 
 
-          <FadeIn direction="right" className="flex-1">
+          <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[630px]">
+
+            <Image
+
+              src="/Amazon-3-01-scaled.png"
+
+              alt="Amazon Account Management"
+
+              width={630}
+
+              height={520}
+
+              unoptimized
+
+              className="w-full h-auto object-contain"
+
+            />
+
+          </FadeIn>
+
+          <FadeIn direction="left" className="flex-1">
 
             <h2
 
@@ -292,9 +312,9 @@ export default function AccountManagementForAmazon() {
 
             >
 
-              <span className="text-[#ff9900]">Why Choose Our </span>
+              <span className="text-[#000000]">Why Sellers Hand Us the Keys to </span>
 
-              <span className="text-[#000000]">Amazon Account<br />Management Services?</span>
+              <span className="text-[#ff9900]">Their Amazon Accounts</span>
 
             </h2>
 
@@ -306,33 +326,33 @@ export default function AccountManagementForAmazon() {
 
                 {
 
-                  title: "Dedicated Account Managers",
+                  title: "One Manager, Start to Finish",
 
-                  desc: "A dedicated expert manages your account full-time — monitoring performance, resolving issues, and driving growth.",
-
-                },
-
-                {
-
-                  title: "Listing Optimization & SEO",
-
-                  desc: "We craft keyword-rich titles, bullet points, and A+ content that rank higher and convert better.",
+                  desc: "You work with one account manager who knows your store well. They watch your numbers, fix problems as they come up and keep things moving forward. You never have to explain your account to someone new.",
 
                 },
 
                 {
 
-                  title: "Account Health Monitoring",
+                  title: "Listings That Get Found and Get Bought",
 
-                  desc: "We proactively track your seller metrics, address policy violations, and keep your account in top standing.",
+                  desc: "We write your titles, bullet points and A+ content using the words your customers actually type into Amazon. That helps your products show up higher and gives shoppers a reason to buy once they click through.",
 
                 },
 
                 {
 
-                  title: "PPC & Advertising Management",
+                  title: "Account Health, Checked Every Day",
 
-                  desc: "Our Amazon PPC specialists manage your ad campaigns to maximize ROI and reduce wasted ad spend.",
+                  desc: "We closely monitor your seller metrics and handle policy flags right away. Your account stays in good standing, so you won't be surprised by unexpected notices.",
+
+                },
+
+                {
+
+                  title: "Ads That Earn Their Spend",
+
+                  desc: "Our PPC team has one job: get you more sales from the same budget. We cut the clicks that go nowhere and put your money behind the ads that sell.",
 
                 },
 
@@ -364,26 +384,6 @@ export default function AccountManagementForAmazon() {
 
           </FadeIn>
 
-          <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[630px]">
-
-            <Image
-
-              src="/Amazon-3-01-scaled.png"
-
-              alt="Amazon Account Management"
-
-              width={630}
-
-              height={520}
-
-              unoptimized
-
-              className="w-full h-auto object-contain"
-
-            />
-
-          </FadeIn>
-
 
 
         </div>
@@ -410,9 +410,9 @@ export default function AccountManagementForAmazon() {
 
             >
 
-              <span className="text-[#000000]">Built for Sellers Who Want to </span>
+              <span className="text-[#000000]">For Sellers Who Want to </span>
 
-              <span className="text-[#ff9900]">Thrive, Not Just Survive</span>
+              <span className="text-[#ff9900]">Grow, Not Just Get By</span>
 
             </h2>
 
@@ -422,7 +422,7 @@ export default function AccountManagementForAmazon() {
 
             <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[620px] mx-auto">
 
-              We&apos;re not here to maintain, we&apos;re here to multiply. If you&apos;re aiming for real scale, you&apos;re in the right place.
+              Keeping the lights on isn&apos;t enough. If you want your store to grow, our Amazon store management agency team will help you get there.
 
             </p>
 
@@ -436,9 +436,9 @@ export default function AccountManagementForAmazon() {
 
               {
 
-                title: "New Sellers Launching with Confidence",
+                title: "Launching Your First Products",
 
-                desc: "Set your brand up for success from day one with expert guidance, optimized listings, and a winning ad strategy.",
+                desc: "Get your listings set up properly from the start, with advice from people who've done it many times and an ad plan that gets you noticed early.",
 
                 icon: (
 
@@ -464,9 +464,9 @@ export default function AccountManagementForAmazon() {
 
               {
 
-                title: "Busy Entrepreneurs Who Need a Trusted Partner",
+                title: "Owners Short on Time",
 
-                desc: "Offload the complexity of Amazon PPC and account management and gain back time to focus on your business.",
+                desc: "Pass the PPC and daily account work to us, and take your evenings and weekends back.",
 
                 icon: (
 
@@ -496,9 +496,9 @@ export default function AccountManagementForAmazon() {
 
               {
 
-                title: "Established Brands Ready to Expand",
+                title: "Brands Ready to Scale",
 
-                desc: "Whether you're launching new ASINs, entering new marketplaces, or optimizing underperforming SKUs, we help you scale with precision.",
+                desc: "Adding new ASINs, moving into new marketplaces or stuck with SKUs that won't sell? We'll give you a clear plan to grow.",
 
                 icon: (
 
@@ -522,9 +522,9 @@ export default function AccountManagementForAmazon() {
 
               {
 
-                title: "Internal Teams Seeking Expert Support & Clarity",
+                title: "In-House Teams Needing Backup",
 
-                desc: "Get the strategic insight, systems, and execution your team needs to boost performance and drive sustainable growth.",
+                desc: "Your team gets the strategy, tools and extra help it needs to hit its targets.",
 
                 icon: (
 
@@ -604,7 +604,7 @@ export default function AccountManagementForAmazon() {
 
           <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
 
-            <Image src="/first-01-scaled.png" alt="Account Management Plans" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
+            <Image src="/Feature-Amazon-Store.webp" alt="Account Management Plans" width={800} height={600} unoptimized className="w-full h-auto object-contain" style={{ maxWidth: "75%", margin: "0 auto", display: "block" }} />
 
           </FadeIn>
 
@@ -612,17 +612,17 @@ export default function AccountManagementForAmazon() {
 
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
-              <span className="text-[#ff9900]">Account Management </span>
+              <span className="text-[#ff9900]">A Plan Built </span>
 
-              <span className="text-[#000000]">Plans &amp;<br />Pricing</span>
+              <span className="text-[#000000]">Around Your Store</span>
 
             </h2>
 
-            <p className="text-[#ff9900] font-semibold text-[16px] mb-4">Flexible Monthly Management Plans</p>
+            <p className="text-[#ff9900] font-semibold text-[16px] mb-4">Monthly Plans That Fit Your Business</p>
 
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mx-auto lg:mx-0">
 
-              We offer <strong className="text-[#000000]">tailored management packages</strong> designed to fit your store size and goals — from startups to established brands scaling to seven figures.
+              Every store is different, so we don&apos;t sell one-size-fits-all packages. We put your plan together based on how many products you sell, what your sales goals are and where you want the brand to be next. It works the same whether you&apos;re brand new or close to seven figures.
 
             </p>
 
@@ -644,15 +644,15 @@ export default function AccountManagementForAmazon() {
 
           <div className="text-center mb-10">
 
-            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 5vw, 52px)" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 5vw, 52px)" }}>
 
-              <span className="text-[#ff9900]">Account Management </span>
+              <span className="text-[#000000]">Everything Your Account </span>
 
-              <span className="text-[#000000]">X AMZ Pro Venture</span>
+              <span className="text-[#ff9900]">Needs in One Place</span>
 
             </h2>
 
-            <p className="text-[#000000] font-semibold text-[18px] mb-6">Full-Service Amazon Management — Monthly Retainer</p>
+            <p className="text-[#000000] font-semibold text-[18px] mb-6">Support from a full-service Amazon agency, on a simple monthly retainer.</p>
 
             <a href="/contact-us" className="svc-btn">
 
@@ -674,15 +674,15 @@ export default function AccountManagementForAmazon() {
 
             {[
 
-              { title: "Complete Listing Management", desc: "Full creation, optimization, and maintenance of all your product listings." },
+              { title: "Complete Listing Management", desc: "We create, improve and look after every listing in your catalog." },
 
-              { title: "Dedicated Account Manager", desc: "A single point of contact who knows your account inside and out." },
+              { title: "Dedicated Account Manager", desc: "One person to talk to who knows your account well." },
 
-              { title: "PPC & Ad Management", desc: "Data-driven ad campaigns that lower ACoS and boost revenue." },
+              { title: "PPC and Ad Management", desc: "Campaigns guided by your data to lower ACoS and grow sales." },
 
-              { title: "Brand Registry Support", desc: "Full assistance with Amazon Brand Registry, A+ content, and Brand Store." },
+              { title: "Brand Registry Support", desc: "Help with Brand Registry, A+ Content and your Brand Store." },
 
-              { title: "Multi-Marketplace Expansion", desc: "Expand your reach to Amazon US, UK, CA, AE, and more." },
+              { title: "Multi-Marketplace Expansion", desc: "Sell on Amazon US, UK, CA, AE and more." },
 
             ].map((item, i) => (
 
@@ -764,13 +764,13 @@ export default function AccountManagementForAmazon() {
 
             <h2 className="font-bold mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
 
-              Level Up With Vital Add-Ons
+              Add Extra Help When You Need It
 
             </h2>
 
             <p className="text-[#67768e] text-[16px] max-w-[580px] mx-auto">
 
-              Our add-ons are built to provide you with the additional support your Amazon account needs to level-up.
+              Pick the add-ons that cover what your account is missing.
 
             </p>
 
@@ -794,7 +794,7 @@ export default function AccountManagementForAmazon() {
 
                 <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Pay-Per-Click (PPC) Campaign Management</h3>
 
-                <p className="text-[#67768e] text-[16px] leading-relaxed">Our experts craft and manage targeted ad campaigns to maximize your advertising budget and drive more sales.</p>
+                <p className="text-[#67768e] text-[16px] leading-relaxed">We plan and run ad campaigns that get more out of every dollar you spend and bring in more sales.</p>
 
               </div>
 
@@ -802,7 +802,7 @@ export default function AccountManagementForAmazon() {
 
                 <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Customer Support Management</h3>
 
-                <p className="text-[#67768e] text-[16px] leading-relaxed">We handle buyer-seller interactions, respond to reviews, and address concerns quickly to strengthen your brand&apos;s reputation and customer trust.</p>
+                <p className="text-[#67768e] text-[16px] leading-relaxed">We reply to buyer messages, respond to reviews and sort out problems fast, so customers stay happy and your reputation stays strong.</p>
 
               </div>
 
@@ -812,9 +812,9 @@ export default function AccountManagementForAmazon() {
 
                   <span className="svc-btn-inner">
 
-                    <span className="svc-btn-top">Get Add-Ons</span>
+                    <span className="svc-btn-top">Explore Add-Ons</span>
 
-                    <span className="svc-btn-bottom">Get Add-Ons</span>
+                    <span className="svc-btn-bottom">Explore Add-Ons</span>
 
                   </span>
 
@@ -846,13 +846,13 @@ export default function AccountManagementForAmazon() {
 
             <h2 className="font-bold mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
 
-              Additional Support That Sets Us Apart
+              The Small Things That Make a Big Difference
 
             </h2>
 
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto leading-relaxed">
 
-              While others focus on the big picture, we drive deeper to ensure nothing slips through the cracks. Here&apos;s how we go above and beyond to support your success.
+              Strategy is important, but most problems on Amazon start with something small. Being a full-service Amazon agency means we take care of those details too, so nothing gets missed.
 
             </p>
 
@@ -868,9 +868,9 @@ export default function AccountManagementForAmazon() {
 
                 {
 
-                  title: "Auto & Catalog Backup",
+                  title: "Ad and Catalog Backups",
 
-                  desc: "Your data, always protected. We maintain regular backups of your ad campaigns and catalog, giving you continuity should we ever need to restore systems or revert to a previous data state.",
+                  desc: "We back up your campaigns and catalog regularly. If anything needs to be restored, we already have it.",
 
                 },
 
@@ -878,7 +878,7 @@ export default function AccountManagementForAmazon() {
 
                   title: "Amazon Case Log Management",
 
-                  desc: "Working with Seller Support? We handle all case submissions, escalations, and resolutions at Amazon on your behalf, increasing the velocity of outcomes.",
+                  desc: "Dealing with Seller Support takes hours. We open cases, follow up, escalate when needed and push for quicker answers.",
 
                 },
 
@@ -886,7 +886,7 @@ export default function AccountManagementForAmazon() {
 
                   title: "Bi-Weekly Client Calls",
 
-                  desc: "No surprises, no guesswork. We establish a regular bi-weekly communication cadence so you&apos;re always informed, aligned, and can make every decision with confidence.",
+                  desc: "Every two weeks we go over your results and what&apos;s next, so you always know where things stand.",
 
                 },
 
@@ -894,15 +894,15 @@ export default function AccountManagementForAmazon() {
 
                   title: "Predictive Search Recommendations",
 
-                  desc: "We proactively surface keyword and listing insights to help you stay ahead of competitors and capture more organic traffic before trends shift.",
+                  desc: "We spot keyword and listing opportunities early, helping you gain more organic traffic ahead of your competitors.",
 
                 },
 
                 {
 
-                  title: "Expert Seller Central Assistance",
+                  title: "Hands-On Seller Central Help",
 
-                  desc: "From account setup to ongoing operations, our team provides hands-on Seller Central support to keep your account healthy and performing at its best.",
+                  desc: "From setup to daily management, our team works with you in Seller Central to keep everything organized.",
 
                 },
 
@@ -936,9 +936,9 @@ export default function AccountManagementForAmazon() {
 
                   <span className="svc-btn-inner">
 
-                    <span className="svc-btn-top">Build a Free Checklist</span>
+                    <span className="svc-btn-top">Get Your Free Account Checklist</span>
 
-                    <span className="svc-btn-bottom">Build a Free Checklist</span>
+                    <span className="svc-btn-bottom">Get Your Free Account Checklist</span>
 
                   </span>
 
@@ -1106,11 +1106,11 @@ export default function AccountManagementForAmazon() {
 
               <h2 className="font-bold text-[32px] mb-2" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#ffffff" }}>
 
-                Ready to Grow Your Amazon Store?
+                Ready for an Amazon Store That Runs Itself?
 
               </h2>
 
-              <p className="text-white/90 text-[16px]">Let our experts manage your account while you focus on scaling your brand.</p>
+              <p className="text-white/90 text-[16px]">Let our Amazon seller account management team take care of the daily work while you focus on growing your brand.</p>
 
             </div>
 

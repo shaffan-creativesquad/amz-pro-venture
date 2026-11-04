@@ -1,7 +1,11 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const stats = [
   {
     value: "400+",
-    label: "Completed Projects",
+    label: "Projects Completed",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
         <rect x="2" y="7" width="20" height="14" rx="2" />
@@ -13,7 +17,7 @@ const stats = [
   },
   {
     value: "350+",
-    label: "Successful Stores Created & Deployed",
+    label: "Stores Created and Deployed",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
@@ -23,7 +27,7 @@ const stats = [
   },
   {
     value: "100%",
-    label: "Satisfaction Or Refund",
+    label: "Satisfaction Guaranteed or Refunded",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
         <circle cx="12" cy="12" r="10" />
@@ -33,7 +37,7 @@ const stats = [
   },
   {
     value: "10+",
-    label: "Years of Industry Experience",
+    label: "Years of Client Partnerships",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -41,9 +45,6 @@ const stats = [
     ),
   },
 ];
-
-"use client";
-import { motion } from "framer-motion";
 
 export default function StatsSection() {
   return (

@@ -1,0 +1,114 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { motion } from "framer-motion";
+
+const challenges = [
+  "9 campaigns generated zero impressions.",
+  "Wrong campaign objectives selected (traffic and messenger instead of lead generation).",
+  "No separation between top, prospecting and retargeting audiences.",
+  "Different freelancers managing campaigns with no consistent strategy or accountability.",
+  "No scalable system for testing, optimizing, or scaling lead generation.",
+];
+
+export default function ChallengeSection() {
+  return (
+    <section className="w-full bg-white py-20">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-24 items-center">
+
+        {/* LEFT: Image */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.65 }}
+          className="flex-shrink-0 w-full lg:w-[460px]"
+        >
+          <div className="rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/Problem-3-1024x1024.webp"
+              alt="3 Years, 13 Facebook Campaigns, Only 42 Total Leads"
+              width={460}
+              height={460}
+              unoptimized
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        </motion.div>
+
+        {/* RIGHT: Content */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.65, delay: 0.1 }}
+          className="flex-1"
+        >
+          <h2
+            className="font-bold leading-tight mb-3"
+            style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 48px)", color: "#000000" }}
+          >
+            The Challenge
+          </h2>
+
+          <p className="text-[#ff9900] font-bold text-[15px] uppercase tracking-wide mb-5">
+            3 Years of Self-Managed Ads With No Real System
+          </p>
+
+          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+            On the surface, the business had been &quot;running ads&quot; for years. But underneath, the account lacked structure, a targeting strategy, and a proven lead generation framework.
+          </p>
+
+          <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+            Between 2023 and 2026, they launched <strong className="text-[#000000]">13 different Facebook campaigns</strong> and generated only <strong className="text-[#000000]">42 total leads</strong> from across 9 of these campaigns. 4 campaigns generated a single impression.
+          </p>
+
+          <p className="text-[#000000] font-bold text-[16px] mb-5">
+            The core issues included:
+          </p>
+
+          <ul className="space-y-3 mb-6">
+            {challenges.map((item) => (
+              <li key={item} className="flex items-start gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 mt-0.5 w-5 h-5" fill="none">
+                  <circle cx="12" cy="12" r="12" fill="#ff9900" />
+                  <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                <span className="text-[#67768e] text-[15px] leading-relaxed">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+            The whole account generated <strong className="text-[#000000]">1 lead every 26 days</strong> with no reliable acquisition system in place.
+          </p>
+
+          <Link
+            href="/book-a-call"
+            className="group relative inline-flex items-center gap-2 bg-black text-white text-sm font-bold uppercase tracking-wider px-7 py-4 rounded-md overflow-hidden transition-colors duration-300"
+          >
+            <span className="absolute inset-0 bg-[#ff9900] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+            <span className="relative z-10 flex items-center gap-2 overflow-hidden h-[1.2em]">
+              <span className="flex items-center gap-2 transition-transform duration-300 group-hover:-translate-y-full">
+                Let&apos;s Discuss Your Requirements
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 21 12" fill="none">
+                  <path d="M1 5.5L19.5809 5.50003" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M14.6914 11.5L20.0002 6L14.6914 0.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+              <span className="flex items-center gap-2 absolute top-full transition-transform duration-300 group-hover:-translate-y-full">
+                Let&apos;s Discuss Your Requirements
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 21 12" fill="none">
+                  <path d="M1 5.5L19.5809 5.50003" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M14.6914 11.5L20.0002 6L14.6914 0.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </span>
+          </Link>
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}

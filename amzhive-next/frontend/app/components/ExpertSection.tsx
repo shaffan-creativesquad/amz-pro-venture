@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { TrendingUp } from "lucide-react";
 
 const stats = [
   {
     number: "$1,557,809",
-    label: "Over Spent On Google & Facebook Ads",
+    label: "Managed Across Google & Facebook Ads",
     icon: <TrendingUp className="w-8 h-8" />,
   },
   {
@@ -29,7 +30,7 @@ const stats = [
   },
   {
     number: "350+",
-    label: "Successful Stores Created. Deployed",
+    label: "Stores Created and Deployed",
     icon: (
       <svg viewBox="0 0 616 512" xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" fill="currentColor">
         <path d="M602 118.6L537.1 15C531.3 5.7 521 0 510 0H106C95 0 84.7 5.7 78.9 15L14 118.6c-33.5 53.5-3.8 127.9 58.8 136.4 4.5.6 9.1.9 13.7.9 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18 20.1 44.3 33.1 73.8 33.1 29.6 0 55.8-13 73.8-33.1 18.1 20.1 44.3 33.1 73.8 33.1 4.7 0 9.2-.3 13.7-.9 62.8-8.4 92.6-82.8 59-136.4zM529.5 288c-10 0-19.9-1.5-29.5-3.8V384H116v-99.8c-9.6 2.2-19.5 3.8-29.5 3.8-6 0-12.1-.4-18-1.2-5.6-.8-11.1-2.1-16.4-3.6V480c0 17.7 14.3 32 32 32h448c17.7 0 32-14.3 32-32V283.2c-5.4 1.6-10.8 2.9-16.4 3.6-6.1.8-12.1 1.2-18.2 1.2z" />
@@ -38,7 +39,7 @@ const stats = [
   },
   {
     number: "100%",
-    label: "Satisfaction Guaranteed / Refund",
+    label: "Satisfaction Guaranteed or Refunded",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8" fill="none">
         <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -48,7 +49,7 @@ const stats = [
   },
   {
     number: "10+",
-    label: "Years of Client Relationship",
+    label: "Years of Client Partnerships",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-8 h-8" fill="none">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -59,7 +60,11 @@ const stats = [
   },
 ];
 
-const tags = ["WooCommerce Agency", "Shopify Agency", "Social Media Marketing Agency"];
+const tags = [
+  { label: "TikTok Shop", href: "/tiktok-shop" },
+  { label: "Shopify Agency", href: "/shopify-store-management-services" },
+  { label: "Amazon Marketing Agency", href: "/account-management-for-amazon" },
+];
 
 export default function ExpertSection() {
   return (
@@ -75,27 +80,29 @@ export default function ExpertSection() {
           className="flex-1 text-center lg:text-left"
         >
           <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 45px)" }}>
-            <span className="text-[#000000]">You&apos;ve Got Business, </span>
-            <span className="text-[#ff9900]">Speak with an Expert!</span>
+            <span className="text-[#000000]">You&apos;ve Got Business. </span>
+            <span className="text-[#ff9900]">Speak With an Expert.</span>
           </h2>
 
           <div className="text-black text-[18px] leading-relaxed space-y-4 mb-8">
             <p>
-              <strong className="text-[#000000]">At AMZ Pro Venture,</strong> we&apos;re more than just a eCommerce agency – we&apos;re your partners in accelerating growth. With over <strong className="text-[#000000]">10 years of expertise</strong> specializing primarily as e-commerce web designers, we&apos;ve earned a stellar reputation for crafting brands and crafting websites using cutting-edge technologies including <strong className="text-[#000000]">Shopify, WooCommerce, WordPress, Adobe Commerce/Magento, and BigCommerce.</strong>
+              <strong className="text-[#000000]">AMZ ProVenture</strong> is not your typical ecommerce agency. Serious sellers call us when sales flatten out or a lot is riding on the next move. For more than <strong className="text-[#000000]">10 years</strong>, we&apos;ve built stores on <strong className="text-[#000000]">Shopify, WooCommerce, WordPress, Adobe Commerce/Magento</strong> and BigCommerce that look the part and sell.
             </p>
             <p>
-              But a stunning website is just the beginning. That&apos;s why we&apos;ve evolved into a full-service digital marketing agency, equipped to deliver comprehensive <strong className="text-[#000000]">social media marketing</strong> campaigns, targeted <strong className="text-[#000000]">e-CRM email communications,</strong> strategic <strong className="text-[#000000]">search engine marketing,</strong> and impactful paid advertising across social media platforms, <strong className="text-[#000000]">pay-per-click (PPC),</strong> and programmatic display ads. Plus, our expertise in <strong className="text-[#000000]">CRO (conversion rate optimization)</strong> ensures that every visitor converts into a valued customer.
+              A great store is where the work starts. As an experienced <strong className="text-[#000000]">Amazon marketing agency</strong>, we run social media campaigns, e-CRM email, search engine marketing, PPC and programmatic display ads. Each one brings in buyers who are ready to purchase, and conversion rate optimization makes sure more of them check out.
             </p>
             <p>
-              We&apos;re eagerly awaiting the opportunity to collaborate with ambitious companies like yours. Our commitment is to become your trusted <strong className="text-[#000000]">e-commerce web design partner agency,</strong> guiding you through every step of your digital journey, from initial design and development to scaling your business with our proven digital marketing strategies. Let&apos;s embark on this journey together and unlock your full potential.
+              As your <strong className="text-[#000000]">Amazon seller agency</strong>, we also look after what you&apos;ve built. We keep a close eye on account health, reinstatements, listings and inventory every day, so problems get caught early. You tell us where you want the business to go, and we&apos;ll get it there.
             </p>
           </div>
 
           {/* Tags */}
           <div className="flex flex-wrap items-center gap-0 justify-center lg:justify-start">
             {tags.map((tag, i) => (
-              <span key={tag} className="flex items-center">
-                <span className="text-[#ff9900] text-sm font-medium">{tag}</span>
+              <span key={tag.label} className="flex items-center">
+                <Link href={tag.href} className="text-[#ff9900] text-sm font-medium hover:underline transition-all">
+                  {tag.label}
+                </Link>
                 {i < tags.length - 1 && <span className="text-[#ff9900] mx-4">|</span>}
               </span>
             ))}

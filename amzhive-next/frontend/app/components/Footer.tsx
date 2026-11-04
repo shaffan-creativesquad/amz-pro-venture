@@ -2,129 +2,191 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import InfoBar from "./InfoBar";
 
-function ScrollToTop() {
-  return (
-    <button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      className="w-10 h-10 rounded-full bg-[#ff9900] flex items-center justify-center text-white hover:bg-[#c0144a] transition-colors flex-shrink-0"
-      aria-label="Scroll to top"
-    >
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M18 15l-6-6-6 6" />
+const navLinks = [
+  { label: "Home",            href: "/" },
+  { label: "Company",         href: "/about-us" },
+  { label: "Become a Client", href: "/contact-us" },
+  { label: "Privacy Policy",  href: "/privacy-policy" },
+  { label: "Refund Policy",   href: "/refund-policy" },
+  { label: "Terms",           href: "/terms-condition" },
+];
+
+const contactItems = [
+  {
+    href: "tel:+18022096796",
+    text: "+1 (802) 209-6796",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
       </svg>
-    </button>
-  );
-}
+    ),
+  },
+  {
+    href: "mailto:info@amzproventure.com",
+    text: "info@amzproventure.com",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+    ),
+  },
+  {
+    href: null,
+    text: "Herndon, VA 20171",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+    ),
+  },
+];
 
+const socialLinks = [
+  {
+    label: "Facebook",
+    href: "#",
+    icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
+  },
+  {
+    label: "Instagram",
+    href: "#",
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5"/>
+        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+      </svg>
+    ),
+  },
+];
+
+const paymentIcons = [
+  { src: "/visa.svg",       alt: "Visa"       },
+  { src: "/mastercard.svg", alt: "Mastercard" },
+  { src: "/stripe.svg",     alt: "Stripe"     },
+  { src: "/paypal.svg",     alt: "PayPal"     },
+  { src: "/pay.svg",        alt: "Apple Pay"  },
+];
 
 export default function Footer() {
   return (
-    <footer className="w-full">
-      <InfoBar />
+    <footer className="w-full relative overflow-hidden" style={{ backgroundColor: "#FFB217" }}>
 
-      {/* Main footer */}
-      <div className="bg-white py-14" style={{ borderTop: "2px solid #bfbfbf" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 grid grid-cols-1 sm:grid-cols-3 gap-10">
+      {/* Main content */}
+      <div className="relative z-10">
+        <div className="max-w-[1140px] mx-auto px-6 lg:px-10 pt-14 pb-10 flex flex-col items-center gap-10">
 
           {/* Logo */}
-          <div className="flex justify-center sm:justify-start">
-            <Link href="/">
-              <Image src="/amz-logo-without-background.png" alt="AMZ Pro Venture" width={220} height={70} className="h-16 w-auto" unoptimized />
-            </Link>
-          </div>
+          <Link href="/">
+            <Image
+              src="/amz-logo-without-background.png"
+              alt="AMZ Pro Venture"
+              width={200}
+              height={64}
+              unoptimized
+              className="h-14 w-auto"
+            />
+          </Link>
 
-          {/* Company */}
-          <div className="text-center sm:text-left">
-            <h4 className="text-[#000000] font-bold text-base mb-5">Company</h4>
-            <ul className="space-y-3">
-              <li><Link href="/" className="text-[#ff9900] text-sm hover:underline transition-colors">Home</Link></li>
-              <li><Link href="/about-us" className="text-[#67768e] text-sm hover:text-[#ff9900] transition-colors">About Us</Link></li>
-              <li><Link href="/contact-us" className="text-[#67768e] text-sm hover:text-[#ff9900] transition-colors">Contact Us</Link></li>
-            </ul>
-          </div>
+          {/* Nav links */}
+          <nav className="flex flex-wrap justify-center gap-x-8 gap-y-3">
+            {navLinks.map(({ label, href }) => (
+              <Link
+                key={label}
+                href={href}
+                className="text-black/80 text-[13px] font-semibold uppercase tracking-wider hover:text-white transition-colors whitespace-nowrap"
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
 
-          {/* Follow */}
-          <div className="text-center sm:text-left">
-            <h4 className="text-[#000000] font-bold text-base mb-5">Follow</h4>
-            <div className="flex items-center gap-3 justify-center sm:justify-start">
-              {[
-                {
-                  label: "Facebook",
-                  href: "#",
-                  icon: (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                    </svg>
-                  ),
-                },
-                {
-                  label: "Instagram",
-                  href: "#",
-                  icon: (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                    </svg>
-                  ),
-                },
-                {
-                  label: "LinkedIn",
-                  href: "#",
-                  icon: (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                      <rect x="2" y="9" width="4" height="12"/>
-                      <circle cx="4" cy="4" r="2"/>
-                    </svg>
-                  ),
-                },
-                {
-                  label: "TikTok",
-                  href: "#",
-                  icon: (
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.87a8.22 8.22 0 0 0 4.8 1.54V7a4.85 4.85 0 0 1-1.03-.31z"/>
-                    </svg>
-                  ),
-                },
-              ].map(({ label, href, icon }) => (
-                <Link
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  className="w-9 h-9 rounded-full flex items-center justify-center text-white transition-colors"
-                  style={{ backgroundColor: "#000000" }}
-                  onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#ff9900")}
-                  onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#000000")}
-                >
-                  {icon}
+          {/* Contact items */}
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
+            {contactItems.map((item) =>
+              item.href ? (
+                <Link key={item.text} href={item.href} className="flex items-center gap-3 group">
+                  <div className="w-9 h-9 rounded-full bg-black flex items-center justify-center flex-shrink-0 group-hover:bg-white transition-colors">
+                    {item.icon}
+                  </div>
+                  <span className="text-black/80 text-[13px] font-medium group-hover:text-black transition-colors">
+                    {item.text}
+                  </span>
                 </Link>
-              ))}
-            </div>
+              ) : (
+                <div key={item.text} className="flex items-center gap-3">
+                  <div className="w-9 h-9 rounded-full bg-black flex items-center justify-center flex-shrink-0">
+                    {item.icon}
+                  </div>
+                  <span className="text-black/80 text-[13px] font-medium">{item.text}</span>
+                </div>
+              )
+            )}
           </div>
 
         </div>
-      </div>
 
-      {/* Gradient line */}
-      <div className="w-full">
-        <Image src="/Line-3.png" alt="" width={1440} height={6} className="w-full h-auto" unoptimized />
-      </div>
+        {/* Divider */}
+        <div className="w-full" style={{ borderTop: "1px solid rgba(0,0,0,0.15)" }} />
 
-      {/* Bottom bar */}
-      <div className="bg-white py-4">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[#000000] text-sm">Copyright 2026 AMZ Pro Venture</p>
-          <div className="flex items-center gap-2 sm:gap-4">
-            <Link href="/privacy-policy" className="text-[#000000] text-[9px] sm:text-sm hover:text-[#ff9900] transition-colors whitespace-nowrap">Privacy Policy</Link>
-            <span className="text-[#bfbfbf] text-[9px] sm:text-sm">|</span>
-            <Link href="/terms-condition" className="text-[#000000] text-[9px] sm:text-sm hover:text-[#ff9900] transition-colors whitespace-nowrap">Terms &amp; Condition</Link>
-            <span className="text-[#bfbfbf] text-[9px] sm:text-sm">|</span>
-            <Link href="/refund-policy" className="text-[#000000] text-[9px] sm:text-sm hover:text-[#ff9900] transition-colors whitespace-nowrap">Refund policy</Link>
+        {/* Bottom bar */}
+        <div className="max-w-[1140px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
+
+          {/* Social icons */}
+          <div className="flex items-center gap-3">
+            {socialLinks.map(({ label, href, icon }) => (
+              <Link
+                key={label}
+                href={href}
+                aria-label={label}
+                className="w-8 h-8 rounded-full border border-black/30 flex items-center justify-center text-black hover:bg-black hover:border-black hover:text-white transition-colors"
+              >
+                {icon}
+              </Link>
+            ))}
           </div>
+
+          {/* Copyright */}
+          <p className="text-black/70 text-[13px] text-center font-medium">
+            © 2026 AMZ <span className="text-black font-bold">ProVenture</span> | All rights reserved
+          </p>
+
+          {/* Payment icons */}
+          <div className="flex items-center gap-5">
+            {paymentIcons.map(({ src, alt }) => (
+              <Image
+                key={alt}
+                src={src}
+                alt={alt}
+                width={36}
+                height={22}
+                unoptimized
+                className="h-5 w-auto brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+              />
+            ))}
+          </div>
+
+        </div>
+
+        {/* Large watermark text */}
+        <div className="w-full overflow-hidden" style={{ marginBottom: "-8px" }}>
+          <p
+            className="text-center font-black leading-none select-none whitespace-nowrap"
+            style={{
+              fontSize: "clamp(80px, 14vw, 200px)",
+              fontFamily: "var(--font-poppins), Poppins, sans-serif",
+              letterSpacing: "-0.02em",
+              background: "linear-gradient(180deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.05) 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            AMZProVenture
+          </p>
         </div>
       </div>
 

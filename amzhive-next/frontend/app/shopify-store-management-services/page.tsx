@@ -5,6 +5,11 @@ import PartnersBar from "../components/PartnersBar";
 import Image from "next/image";
 import FAQSection from "./FAQSection";
 import HeroSection from "./HeroSection";
+import ChallengeVsSolutionSection from "./ChallengeVsSolutionSection";
+import BusinessModelsSection from "./BusinessModelsSection";
+import GrowthSolutionsSection from "./GrowthSolutionsSection";
+import SuccessStoriesSection from "./SuccessStoriesSection";
+import ROICalculatorSection from "./ROICalculatorSection";
 import FadeIn from "../components/FadeIn";
 
 export const metadata = {
@@ -196,68 +201,13 @@ export default function ShopifyStoreCreationManagement() {
         </div>
       </section>
 
-      {/* Why Count on Us for Your Shopify Store Management */}
-      <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
-          <FadeIn>
-            <h2 className="text-center font-bold leading-tight mb-14" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Why Count on Us for Your Shopify <span style={{ color: "#ff9900" }}>Store Management</span>
-            </h2>
-          </FadeIn>
+      <ChallengeVsSolutionSection />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 mb-10">
-            {[
-              {
-                title: "Expertise in Shopify E-commerce Management",
-                desc: "Our team delivers tailored strategies, from SEO to app integrations, ensuring your store thrives in a competitive market.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 22V12h6v10" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-              },
-              {
-                title: "Proven Shopify Sales Optimization",
-                desc: "We drive conversions with user journey enhancements, maximizing your ROI.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M18 20V10M12 20V4M6 20v-6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-              },
-              {
-                title: "Comprehensive Shopify Store Maintenance Services",
-                desc: "From broken link fixes to payment and tax setups, we keep your store technically sound and compliant.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 12l2 2 4-4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-              },
-              {
-                title: "Customized Shopify Store Growth Solutions",
-                desc: "We craft personalized roadmaps for startups, scaling businesses, and retail veterans to achieve sustainable growth.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26A7 7 0 0112 2z" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M9 21h6" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>,
-              },
-              {
-                title: "Data-Driven Performance Tracking",
-                desc: "Our analytics and reporting provide actionable insights, ensuring continuous optimization for long-term success.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-6 h-6"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>,
-              },
-            ].map((item, i) => {
-              const dark = i % 2 === 1;
-              return (
-                <FadeIn key={item.title} delay={i * 0.1} direction="up">
-                  <div className="p-8 flex flex-col h-full text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
-                    <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5 flex-shrink-0 self-center md:self-start" style={{ backgroundColor: "#ff9900" }}>
-                      {item.icon}
-                    </div>
-                    <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
-                    <p className="text-[14px] leading-relaxed" style={{ color: dark ? "#94a3b8" : "#67768e" }}>{item.desc}</p>
-                  </div>
-                </FadeIn>
-              );
-            })}
-          </div>
+      <BusinessModelsSection />
 
-          <FadeIn delay={0.2}>
-            <div className="flex justify-center">
-              <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>
-                GET SHOPIFY STORE MANAGEMENT ?
-              </a>
-            </div>
-          </FadeIn>
-
-        </div>
-      </section>
+      <GrowthSolutionsSection />
+      <SuccessStoriesSection />
+      <ROICalculatorSection />
 
       {/* What We Need From You */}
       <section className="w-full py-20 bg-white">
@@ -343,7 +293,7 @@ export default function ShopifyStoreCreationManagement() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
-              <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
+              <h2 className="font-bold leading-tight mb-5 text-center" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Don&apos;t Risk Your Shopify Sales<br />With an Unoptimized Store
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mx-auto mb-8">

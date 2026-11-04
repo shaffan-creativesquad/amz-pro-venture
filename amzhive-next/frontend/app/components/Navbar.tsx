@@ -27,39 +27,25 @@ const amazonCol2 = [
 ];
 
 
-const walmart = [
-  { name: "AI-Powered Account Management", href: "/walmart-account-management" },
-  { name: "AI-Optimized Listing Creation", href: "/walmart-listing-creation" },
-  { name: "Ads Management", href: "/walmart-ads-management" },
-];
-
-const ebay = [
-  { name: "AI-Powered Account Management", href: "/ebay-account-management" },
-];
-
-const etsy = [
-  { name: "AI-Powered Account Management", href: "/etsy-account-management" },
-];
-
 const shopify = [
   { name: "AI-Powered Store Creation & Management", href: "/shopify-store-management-services" },
+];
+
+const tiktok = [
+  { name: "TikTok Shop", href: "/tiktok-shop" },
 ];
 
 const allServiceHrefs = [
   ...amazonCol1,
   ...amazonCol2,
-  ...walmart,
-  ...ebay,
-  ...etsy,
   ...shopify,
+  ...tiktok,
 ].map((s) => s.href);
 
 const mobileSections = [
   { label: "Amazon", items: [...amazonCol1, ...amazonCol2] },
-  { label: "Walmart", items: walmart },
-  { label: "eBay", items: ebay },
-  { label: "Etsy", items: etsy },
   { label: "Shopify", items: shopify },
+  { label: "TikTok", items: tiktok },
 ];
 
 export default function Navbar() {
@@ -84,6 +70,7 @@ export default function Navbar() {
   const isHomeActive = mounted && pathname === "/";
   const isAboutActive = mounted && pathname === "/about-us";
   const isBlogsActive = mounted && (pathname === "/blogs" || pathname?.startsWith("/blogs/"));
+  const isCaseStudiesActive = mounted && (pathname === "/case-studies" || pathname?.startsWith("/case-studies/"));
   const isContactActive = mounted && pathname === "/contact-us";
 
   useEffect(() => {
@@ -186,52 +173,10 @@ export default function Navbar() {
                       {/* Divider */}
                       <div className="w-px bg-gray-200 flex-shrink-0 mx-0" />
 
-                      {/* Walmart + eBay + Etsy */}
+                      {/* Shopify + TikTok */}
                       <div className="flex-[1.1] px-8">
-                        <p className="font-bold text-[13px] text-[#000000] mb-2 mt-3">Walmart</p>
-                        <div className="space-y-1 mb-3">
-                          {walmart.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              className="block text-[12.5px] text-[#67768e] hover:!text-[#ff9900] leading-snug transition-colors"
-                              onClick={() => setServicesOpen(false)}
-                            >
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-
-                        <p className="font-bold text-[13px] text-[#000000] mb-2 mt-3">eBay</p>
-                        <div className="space-y-1 mb-3">
-                          {ebay.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              className="block text-[12.5px] text-[#67768e] hover:!text-[#ff9900] leading-snug transition-colors"
-                              onClick={() => setServicesOpen(false)}
-                            >
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-
-                        <p className="font-bold text-[13px] text-[#000000] mb-2 mt-3">Etsy</p>
-                        <div className="space-y-1 mb-3">
-                          {etsy.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              className="block text-[12.5px] text-[#67768e] hover:!text-[#ff9900] leading-snug transition-colors"
-                              onClick={() => setServicesOpen(false)}
-                            >
-                              {item.name}
-                            </Link>
-                          ))}
-                        </div>
-
                         <p className="font-bold text-[13px] text-[#000000] mb-2 mt-3">Shopify</p>
-                        <div className="space-y-1">
+                        <div className="space-y-1 mb-4">
                           {shopify.map((item) => (
                             <Link
                               key={item.href}
@@ -243,8 +188,20 @@ export default function Navbar() {
                             </Link>
                           ))}
                         </div>
+                        <p className="font-bold text-[13px] text-[#000000] mb-2">TikTok</p>
+                        <div className="space-y-1">
+                          {tiktok.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              className="block text-[12.5px] text-[#67768e] hover:!text-[#ff9900] leading-snug transition-colors"
+                              onClick={() => setServicesOpen(false)}
+                            >
+                              {item.name}
+                            </Link>
+                          ))}
+                        </div>
                       </div>
-
 
                     </div>
                   </div>
@@ -263,12 +220,12 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/blogs"
+                  href="/case-studies"
                   className={`px-4 py-2 text-sm font-semibold transition-colors hover:!text-[#ff9900] ${
-                    isBlogsActive ? "text-[#ff9900]" : "text-[#000000]"
+                    isCaseStudiesActive ? "text-[#ff9900]" : "text-[#000000]"
                   }`}
                 >
-                  BLOGS
+                  CASE STUDIES
                 </Link>
               </li>
               <li>
@@ -409,13 +366,13 @@ export default function Navbar() {
               </li>
               <li>
                 <Link
-                  href="/blogs"
+                  href="/case-studies"
                   className={`block px-3 py-2.5 font-semibold hover:!text-[#ff9900] hover:bg-[#fff8f0] rounded-lg transition-colors ${
-                    isBlogsActive ? "text-[#ff9900]" : "text-[#000000]"
+                    isCaseStudiesActive ? "text-[#ff9900]" : "text-[#000000]"
                   }`}
                   onClick={() => setMobileOpen(false)}
                 >
-                  BLOGS
+                  CASE STUDIES
                 </Link>
               </li>
               <li>

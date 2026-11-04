@@ -138,13 +138,13 @@ export default function AmazonAccountSuspended() {
 
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center text-center">
 
 
 
           {/* Label */}
 
-          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center lg:text-left">
+          <p className="text-white/70 text-sm font-medium mb-4 tracking-wide text-center">
 
             Amazon Account Suspended
 
@@ -162,9 +162,9 @@ export default function AmazonAccountSuspended() {
 
           >
 
-            Amazon Account{" "}
+            Suspended Today.{" "}
 
-            <span style={{ color: "#ff9900" }}>Suspension Recovery.</span>
+            <span style={{ color: "#ff9900" }}>Back to Selling Sooner Than You Think.</span>
 
           </h1>
 
@@ -172,9 +172,9 @@ export default function AmazonAccountSuspended() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center lg:text-left">
+          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center">
 
-            A suspended Amazon account can bring your business to a halt overnight. Our suspension reinstatement experts have helped hundreds of sellers get back online fast — with proven appeal strategies, detailed Plans of Action, and direct Seller Support escalation.
+            &apos;Your Amazon account has been suspended&apos; in your inbox can bring your whole business to a standstill. Sales stop, funds get held, and every day you&apos;re offline is going to hurt your rankings. Our reinstatement team has helped hundreds of sellers get back online with appeals that actually get read, a proper Amazon plan of action, and direct follow-up with Seller Support until your case is resolved.
 
           </p>
 
@@ -230,13 +230,13 @@ export default function AmazonAccountSuspended() {
 
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
-              <span className="text-[#000000]">Struggling to Reinstate </span>
+              <span className="text-[#000000]">Stuck Trying to Get Your </span>
 
-              <span className="text-[#ff9900]">Amazon Account?</span>
+              <span className="text-[#ff9900]">Amazon Account Back?</span>
 
             </h2>
 
-            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">Get back to selling faster with dedicated expert support that understands Amazon&apos;s policies inside and out. We handle reinstatements for:</p>
+            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">An Amazon account reinstatement comes down to one thing: showing Amazon you understand what went wrong and have fixed it. That&apos;s exactly where we come in. We handle reinstatements for:</p>
 
             <div className="space-y-5">
 
@@ -304,7 +304,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Why Choose Us Section */}
 
-      <section className="bg-white py-20 w-full max-w-[1659px] mx-auto">
+      <section className="bg-white py-20 w-full max-w-[1140px] mx-auto">
 
         <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
@@ -320,9 +320,9 @@ export default function AmazonAccountSuspended() {
 
             >
 
-              <span className="text-[#ff9900]">Why Choose Our </span>
+              <span className="text-[#000000]">Why Sellers Call Us When </span>
 
-              <span className="text-[#000000]">Amazon Suspension<br />Recovery Service?</span>
+              <span className="text-[#ff9900]">Amazon Shuts Them Down</span>
 
             </h2>
 
@@ -334,33 +334,33 @@ export default function AmazonAccountSuspended() {
 
                 {
 
-                  title: "Proven Reinstatement Track Record",
+                  title: "A Record That Speaks for Itself",
 
-                  desc: "We have successfully reinstated hundreds of suspended accounts across all suspension types — performance, policy, and verification.",
-
-                },
-
-                {
-
-                  title: "Expert Plan of Action Writing",
-
-                  desc: "Our specialists craft compelling, Amazon-compliant Plans of Action that address root causes and satisfy Seller Performance teams.",
+                  desc: "We've helped hundreds of sellers get reinstated after performance, policy, and verification suspensions. Whatever caused yours, we've likely handled it before.",
 
                 },
 
                 {
 
-                  title: "Fast Turnaround",
+                  title: "Plans of Action That Get Approved",
 
-                  desc: "We understand every day suspended means lost revenue. Our team moves quickly to submit your appeal and follow up with Amazon.",
+                  desc: "A weak appeal can make things worse. Our specialists write each Amazon plan of action around the real root cause, in the language Seller Performance teams expect to see.",
 
                 },
 
                 {
 
-                  title: "End-to-End Case Management",
+                  title: "We Move Fast",
 
-                  desc: "From initial diagnosis to final reinstatement, we handle all communication with Amazon Seller Support on your behalf.",
+                  desc: "Every day suspended is money lost. We get to work right away, submit your appeal quickly, and keep following up with Amazon so your case doesn't sit in a queue.",
+
+                },
+
+                {
+
+                  title: "One Team From Start to Finish",
+
+                  desc: "From the first review of your notice to the day you're selling again, we handle every message with Amazon for you. You'll always know where your case stands.",
 
                 },
 
@@ -436,15 +436,15 @@ export default function AmazonAccountSuspended() {
 
           >
 
-            <span className="text-[#000000]">What&apos;s Included in Our </span>
+            <span className="text-[#000000]">Everything Your Appeal Needs, </span>
 
-            <span className="text-[#ff9900]">Reinstatement Service Package</span>
+            <span className="text-[#ff9900]">Handled by One Team</span>
 
           </h2>
 
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
 
-            We deliver end-to-end reinstatement support built on deep experience and Amazon-approved strategy.
+            Full Amazon account reinstatement support, built on years of hands-on experience and a clear understanding of how Amazon reviews appeals.
 
           </p>
 
@@ -456,9 +456,9 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Suspension Review & Classification",
+                title: "Suspension Review and Diagnosis",
 
-                desc: "Amazon is the world's largest online marketplace, and we help you make the most of it. At AMZ Pro Venture, our team provides practical, reliable Amazon services that support your business growth and help you manage the platform with confidence.",
+                desc: "We read your notice line by line, figure out exactly why Amazon took action, and identify the real issue.",
 
                 icon: (
 
@@ -480,9 +480,9 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Tailored Reinstatement Eligibility Assessment",
+                title: "Honest Eligibility Check",
 
-                desc: "Not every case is reinstatable. We assess your specific situation and confirm if a viable reinstatement path exists.",
+                desc: "Not every account can be saved, and we'll tell you straight. We look at your situation and confirm whether a realistic path back exists before you spend a cent on the wrong move.",
 
                 icon: (
 
@@ -526,9 +526,9 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Amazon-Compliant Plan of Action (POA)",
+                title: "Amazon-Compliant Plan of Action",
 
-                desc: "We craft a custom, strategic POA that aligns with Amazon's internal policies and includes all required elements: Root Cause, Corrective Actions, and Preventive Measures.",
+                desc: "We write a custom POA that covers everything Amazon looks for: the root cause, the corrective actions you've taken, and the preventive steps that stop it from happening again.",
 
                 icon: (
 
@@ -546,9 +546,9 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Required Documentation Guidance & Review",
+                title: "Document Guidance and Review",
 
-                desc: "We guide you on what Amazon expects (invoices, compliance certificates, etc.), help you compile them, and review everything to ensure it meets Amazon's standards.",
+                desc: "We tell you which documents Amazon expects, help you organize them, and check everything before it's sent.",
 
                 icon: (
 
@@ -568,9 +568,9 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Appeal Submission & Escalation Management",
+                title: "Appeal Submission and Escalation",
 
-                desc: "We submit your appeal directly and handle all communication with Amazon, including escalations if the first appeal is rejected.",
+                desc: "We submit your Amazon suspension appeal and handle all communication with Amazon, including escalation if the first appeal doesn't go through.",
 
                 icon: (
 
@@ -602,9 +602,9 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Post-Reinstatement Compliance Support",
+                title: "Support After Reinstatement",
 
-                desc: "Once you're reinstated, we provide best-practice guidance to help you avoid repeat violations and keep your account in good standing.",
+                desc: "Once you're back, we share practical steps to keep your account healthy and avoid another suspension.",
 
                 icon: (
 
@@ -700,19 +700,19 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">To begin the process, you&apos;ll need to provide:</p>
+            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">To start working on your case, we&apos;ll need:</p>
 
             <div className="space-y-5 mb-8 flex flex-col items-center lg:items-start">
 
               {[
 
-                "Child Access to Seller Central",
+                "User access to your Seller Central account",
 
-                "Amazon Suspension Notices",
+                "Your Amazon suspension notices",
 
-                "History of Previous Appeals",
+                "A record of any previous appeals",
 
-                "Required Documentation",
+                "The documents Amazon has asked for",
 
               ].map((item) => (
 
@@ -736,7 +736,7 @@ export default function AmazonAccountSuspended() {
 
             <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
 
-              <strong className="text-[#000000]">Important:</strong> AMZ Pro Venture does not create or fabricate documents. Invoices, purchase orders, or product images must come directly from the seller. We&apos;ll guide you on exactly what&apos;s needed and help ensure it&apos;s submission-ready.
+              <strong className="text-[#000000]">Important:</strong> AMZ ProVenture never creates or alters documents. Invoices, purchase orders, and product images must come directly from you. We&apos;ll tell you exactly what&apos;s needed and make sure it&apos;s ready to submit.
 
             </p>
 
@@ -774,15 +774,15 @@ export default function AmazonAccountSuspended() {
 
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
-              <span className="text-[#000000]">We Resolve the Full Range of </span>
+              <span className="text-[#000000]">Whatever Got You Suspended, </span>
 
-              <span className="text-[#ff9900]">Amazon Seller Suspensions</span>
+              <span className="text-[#ff9900]">We&apos;ve Seen It Before</span>
 
             </h2>
 
             <p className="text-[#67768e] text-[16px] max-w-[700px] mx-auto">
 
-              As a certified Amazon partner, AMZ Pro Venture helps resolve a wide range of suspension types by identifying the root cause and crafting tailored, compliant POAs.
+              As a certified Amazon partner, AMZ ProVenture handles a wide range of suspensions by finding the root cause and building an Amazon suspension appeal that fits your exact case.
 
             </p>
 
@@ -1012,13 +1012,13 @@ export default function AmazonAccountSuspended() {
 
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
 
-              Don&apos;t Let Downtime Destroy<br />Your Momentum
+              Every Day Offline Costs You<br />More Than Sales
 
             </h2>
 
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[520px] mx-auto mb-8">
 
-              Every hour your account is suspended, you&apos;re losing visibility, sales, and customer trust. The appeal process is complex, and delays can cost you thousands.
+              While your Amazon account suspension sits there, your rankings slip, reviews stall, and competitors pick up your customers. Appeals are tricky, and one wrong submission can set you back weeks.
 
             </p>
 
@@ -1060,13 +1060,13 @@ export default function AmazonAccountSuspended() {
 
             <h2 className="font-bold mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
 
-              Additional Support That Sets Us Apart
+              The Extra Care That Keeps You Selling
 
             </h2>
 
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto leading-relaxed">
 
-              While others focus on the big picture, we drive deeper to ensure nothing slips through the cracks. Here&apos;s how we go above and beyond to support your success.
+              Getting reinstated is step one. Staying reinstated is where the details matter, so we watch what most agencies forget.
 
             </p>
 
@@ -1084,41 +1084,41 @@ export default function AmazonAccountSuspended() {
 
                 {
 
-                  title: "Auto & Catalog Backup",
+                  title: "Ad and Catalog Backups",
 
-                  desc: "Your data, always protected. We maintain regular backups of your ad campaigns and catalog, giving you continuity should we ever need to restore systems or revert to a previous data state.",
-
-                },
-
-                {
-
-                  title: "Amazon Case Log Management",
-
-                  desc: "Working with Seller Support? We handle all case submissions, escalations, and resolutions at Amazon on your behalf, increasing the velocity of outcomes.",
+                  desc: "We save regular copies of your campaigns and catalog, so if anything needs restoring after a suspension, you won't lose anything.",
 
                 },
 
                 {
 
-                  title: "Bi-Weekly Client Calls",
+                  title: "Case Log Management",
 
-                  desc: "No surprises, no guesswork. We establish a regular bi-weekly communication cadence so you&apos;re always informed, aligned, and can make every decision with confidence.",
-
-                },
-
-                {
-
-                  title: "Predictive Search Recommendations",
-
-                  desc: "We proactively surface keyword and listing insights to help you stay ahead of competitors and capture more organic traffic before trends shift.",
+                  desc: "We track every case you open with Seller Support, follow up when replies go quiet, and escalate when needed so answers come faster.",
 
                 },
 
                 {
 
-                  title: "Expert Seller Central Assistance",
+                  title: "Calls Every Two Weeks",
 
-                  desc: "From account setup to ongoing operations, our team provides hands-on Seller Central support to keep your account healthy and performing at its best.",
+                  desc: "Regular check-ins keep you updated on your account, what we&apos;re working on, and what&apos;s coming next.",
+
+                },
+
+                {
+
+                  title: "Early Keyword Insights",
+
+                  desc: "We flag search and listing trends early, helping you win back visibility and organic traffic once you&apos;re live again.",
+
+                },
+
+                {
+
+                  title: "Seller Central Support",
+
+                  desc: "Our team stays close to your Seller Central account, helping with setup questions and day-to-day issues before they turn into bigger problems.",
 
                 },
 
@@ -1322,11 +1322,11 @@ export default function AmazonAccountSuspended() {
 
               <h2 className="font-bold text-[32px] mb-2" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#ffffff" }}>
 
-                Get Your Amazon Account Reinstated Today
+                Get Back to Selling Starting Today
 
               </h2>
 
-              <p className="text-white/90 text-[16px]">Every day suspended is revenue lost. Let our reinstatement experts get you back selling as fast as possible.</p>
+              <p className="text-white/90 text-[16px]">Every day suspended is revenue lost. Let our reinstatement team handle your Amazon suspension appeal and get your store live again as quickly as possible.</p>
 
             </div>
 
