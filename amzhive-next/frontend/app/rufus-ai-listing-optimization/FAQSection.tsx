@@ -7,27 +7,27 @@ import { useState } from "react";
 const faqs = [
   {
     question: "Can you create listings from scratch?",
-    answer: "Absolutely! Whether you’re launching your very first product or expanding your existing catalog, we specialize in building fully optimized, high-converting listings from the ground up, tailored to your specific goals and target audience.",
+    answer: "Yes. If you’re launching a new product or adding more products to your store, we can write the listing from scratch. We’ll handle the title, description, bullet points, and keywords to help shoppers understand what you’re selling.",
   },
   {
     question: "Will my product rank higher after optimization?",
-    answer: "Yes, listing optimization is fundamental for improving your product’s indexing and keyword relevance, which are crucial factors for organic ranking on Amazon. While final ranking also depends on sales velocity, positive reviews, and advertising efforts, our optimization lays the strongest possible foundation for superior visibility and future growth.",
+    answer: "We aim to improve your product’s ranking by using the right keywords and making the listing more helpful to shoppers. But rankings can also depend on how many other sellers you’re competing with, your reviews, and your sales history.",
   },
   {
     question: "Do you offer A+ Content and image design?",
-    answer: "Yes, we do! High-quality A+ Content and professional image design are essential for conversion. These services are available as powerful add-ons to our core listing optimization, or they can be included in our comprehensive service bundles like Account Management or our dedicated Design Bundle, giving you flexible options.",
+    answer: "Yes. Every optimization includes 6 listing images, and A+ Content creation is available as an add-on to strengthen your brand story and conversions.",
   },
   {
     question: "Can you run A/B testing for my listings?",
-    answer: "For brands enrolled in Amazon’s Brand Registry, we absolutely can! We provide expert support with A/B testing for your titles, images, and A+ Content. This allows us to continuously refine your listings based on real shopper behavior, ensuring maximum performance.",
+    answer: "Yes. For brand-registered sellers, we can test elements like titles and main images using Amazon’s experiment tools to find which version sells better.",
   },
   {
-    question: "How quickly will I see results after my listing is optimized?",
-    answer: "While significant ranking improvements can take time as Amazon’s algorithm adjusts to new data, you can often see immediate benefits in terms of improved content quality, better visibility for targeted keywords, and enhanced conversion potential. We’ll start tracking key metrics right away, and consistent optimization leads to sustained growth.",
+    question: "When can I expect to see a difference after optimization?",
+    answer: "Many sellers notice changes in clicks and conversions within a few weeks. Ranking improvements usually build over time as Amazon picks up stronger sales and engagement.",
   },
   {
     question: "What makes your listing optimization service different from others?",
-    answer: "Our unique edge lies in our exclusive Rufus AI Image & SEO Audit, which future-proofs your listings against Amazon’s evolving AI, combined with our proven, data-driven 6-phase process that has delivered over 700 high-converting listings. We don’t just tweak; we transform, focusing on both front-end aesthetics and backend algorithms to ensure your listing not only ranks but also genuinely converts.",
+    answer: "We combine real keyword data, Amazon listing copywriting, and Rufus AI listing optimization in one service. Every listing is built for your product and audience, not from a template.",
   },
 ];
 
@@ -44,13 +44,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon Listing Optimization service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon listing optimization services? We have the answers. If you don&apos;t find what you&apos;re looking for, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

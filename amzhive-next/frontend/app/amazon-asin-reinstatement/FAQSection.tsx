@@ -6,28 +6,28 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How long does Amazon ASIN reinstatement typically take?",
-    answer: "The timeframe for Amazon ASIN reinstatement can vary significantly. Some straightforward cases might resolve in a few days, while others can take several weeks, depending on the complexity of the violation, Amazon’s specific requirements, and their current review queue. Our team works with urgency to submit effective appeals quickly and minimize your listing’s downtime, because we understand every minute offline impacts your sales and rank.",
+    question: "How long does Amazon ASIN reinstatement usually take?",
+    answer: "It varies from case to case. A straightforward issue can be resolved in a few days, whereas others can take a few weeks depending on the complexity of the violation, what Amazon asks for, and how busy their review team is. We'll move quickly to submit a strong appeal and get you back online as soon as possible, since every day offline hurts your sales and rankings.",
   },
   {
-    question: "Can you help me reinstate my listing if I don’t have all the required documents?",
-    answer: "Unfortunately, Amazon ASIN reinstatement relies heavily on complete and verifiable documentation. While our Amazon listing experts will provide precise guidance on exactly what Amazon requires (such as invoices, COAs, LOAs, or MSDS), we can only proceed if proper and genuine documentation is available from your side. We’ll advise you during the initial assessment if your documentation is insufficient, as Amazon does not accept incomplete or fabricated paperwork.",
+    question: "Can you help reinstate my listing if I don't have all the required documents?",
+    answer: "We can still review your case and tell you exactly what's missing. In many situations, there are other ways to show Amazon what they need, such as different supporting documents or a supplier letter. We'll guide you on what to get, but all documents must be genuine and come from you.",
   },
   {
     question: "Can you guarantee Amazon ASIN reinstatement?",
-    answer: "No service, including ours, can offer a 100% guarantee for ASIN reinstatement, as the final approval rests solely with Amazon. However, as a dedicated Amazon ASIN reinstatement service provider, we significantly increase your chances of success. Our proven process, deep understanding of Amazon’s policies, custom-crafted Plans of Action (POAs), and strategic follow-ups are designed to maximize your listing’s opportunity for reinstatement.",
+    answer: "No one can vouch for it, as Amazon always makes the final decision. What we can promise is a thorough review, a properly constructed appeal, and a free re-appeal if the first appeal is rejected and the case is still valid. If we don't believe your case has any real merit, we'll let you know before you submit an appeal.",
   },
   {
-    question: "Can you handle multiple Amazon ASIN suspensions at once?",
-    answer: "Yes, we can certainly handle cases involving multiple Amazon ASIN suspended listings. While each ASIN is treated with individual focus to address its specific suspension reason, our team can manage these cases concurrently to streamline the resolution process for your entire catalog. We’ll discuss the most efficient strategy for your situation during your initial assessment.",
+    question: "Can you deal with multiple ASIN suspensions at the same time?",
+    answer: "Yes. We sort the suspended ASINs by issue, tackle the most urgent ones first, and prepare the right appeal for each. That way, nothing gets missed, and your listings come back as quickly as possible.",
   },
   {
-    question: "What are the most common causes for an Amazon ASIN suspension?",
-    answer: "An Amazon ASIN suspension can be triggered by various issues. Common causes include product authenticity complaints, \"used sold as new\" claims, intellectual property infringement (trademark or copyright), product safety concerns, restricted product violations, and detail page policy violations (e.g., incorrect titles or images). Our Amazon listing experts are skilled at diagnosing the precise reason your ASIN was suspended.",
+    question: "What are the most common causes of an ASIN suspension?",
+    answer: "The most common causes are authenticity or counterfeit claims, IP complaints, safety reports, condition complaints, listing policy issues, and unapproved health claims. A suppressed listing on Amazon can also come from smaller problems, like missing details or images that don't meet Amazon's rules.",
   },
   {
-    question: "What is the role of a Plan of Action (POA) in ASIN reinstatement?",
-    answer: "A Plan of Action (POA) is a critical document required by Amazon for ASIN reinstatement. It’s your opportunity to explain to Amazon the root cause of the suspension, detail the immediate corrective actions you’ve taken to resolve the issue, and outline the preventative measures you’ve implemented to ensure the violation won’t recur. Our service specializes in drafting custom, compliant POAs that effectively communicate your commitment to policy adherence.",
+    question: "What role does a Plan of Action (POA) play in ASIN reinstatement?",
+    answer: "A Plan of Action (POA) tells Amazon what went wrong, how you've fixed it, and what you'll do to avoid the same problem in the future. It helps Amazon understand your response and plays an important role in getting your ASIN reinstated.",
   },
 ];
 
@@ -44,13 +44,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon ASIN Reinstatement service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon ASIN reinstatement service? Here are the ones sellers ask most. If yours isn&apos;t here, reach out anytime.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

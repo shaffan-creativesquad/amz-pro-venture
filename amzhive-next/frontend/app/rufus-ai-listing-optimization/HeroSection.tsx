@@ -21,17 +21,17 @@ export default function HeroSection() {
           className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
-          Need Optimized Amazon<br />
-          Listings For <span style={{ color: "#ff9900" }}>More Sales?</span>
+          Need Better Amazon Listings<br />
+          That Drive <span style={{ color: "#ff9900" }}>More Sales?</span>
         </motion.h1>
 
-        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
-          Your product is great, but if your listing doesn&apos;t convert, you&apos;re leaving money on the table. We help brands craft high-converting Amazon listings that boost visibility, drive more clicks, and turn browsers into buyers.
+        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[640px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
+          A good product can still get overlooked if its listing doesn&apos;t give shoppers a reason to buy. We improve your Amazon listings with better copy, keywords, and product details so customers can find your products, understand what you&apos;re offering, and feel more confident about buying. We also use Rufus AI listing optimization to help your listings keep up with how shoppers search on Amazon.
         </motion.p>
 
         <motion.div variants={itm} className="space-y-4 mb-10">
           {[
-            "Strategic keyword & competitor analysis",
+            "Smart keyword and competitor analysis",
             "SEO-optimized titles, bullet points, and descriptions",
             "High-quality, optimized listing images",
             "Rufus AI image audit",
@@ -52,7 +52,7 @@ export default function HeroSection() {
             className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors"
             style={{ padding: "12px 24px" }}
           >
-            OPTIMIZE MY AMAZON LISTINGS →
+            Optimize My Amazon Listings
           </a>
         </motion.div>
 

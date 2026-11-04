@@ -21,20 +21,20 @@ export default function HeroSection() {
           className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
-          STRUGGLING TO RECOVER<br />
-          <span style={{ color: "#ff9900" }}>AMAZON FBA FUNDS?</span>
+          Recover Amazon FBA Funds<br />
+          <span style={{ color: "#ff9900" }}>You&apos;re Owed</span>
         </motion.h1>
 
         <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
-          We audit your Amazon FBA account, pinpoint the discrepancies, and recover the reimbursements you&apos;re owed, fast.
+          Our FBA reimbursement services audit your Amazon account, find the discrepancies, and recover the money you&apos;re owed quickly.
         </motion.p>
 
         <motion.div variants={itm} className="space-y-4 mb-10">
           {[
-            "Comprehensive FBA auditing",
+            "Thorough FBA auditing",
             "Accurate claim documentation",
-            "End-to-end claim management",
-            "Fast, reliable fund recovery",
+            "Full claim management from start to finish",
+            "Quick, reliable fund recovery",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -52,7 +52,7 @@ export default function HeroSection() {
             className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors"
             style={{ padding: "12px 24px" }}
           >
-            RECOVER FBA FUNDS NOW →
+            Recover My FBA Funds
           </a>
         </motion.div>
 

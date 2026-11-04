@@ -81,21 +81,21 @@ export default function FBAInventoryAudit() {
             className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
-            Are Stockouts Hurting<br />Your Amazon{" "}
-            <span style={{ color: "#ff9900" }}>FBA Sales?</span>
+            Never Let Stockouts Slow<br />Your Amazon{" "}
+            <span style={{ color: "#ff9900" }}>FBA Sales</span>
           </h1>
 
           {/* Description */}
           <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
-            Amazon FBA inventory management is key to running a successful Amazon business. We help you with:
+            Smart FBA inventory management is the key to running a profitable Amazon business. We help you with:
           </p>
 
           <div className="space-y-3 mb-8">
             {[
-              "Comprehensive Inventory Audit",
-              "Inventory Health Management",
-              "AI-Powered Demand Forecasting",
-              "Overstock & Aged Inventory Solutions",
+              "Complete inventory audits",
+              "Inventory health management",
+              "AI-powered demand forecasting",
+              "Fixes for overstock and aged inventory",
             ].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -140,16 +140,16 @@ export default function FBAInventoryAudit() {
           {/* Left — text */}
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
-              What Is <span style={{ color: "#ff9900" }}>FBA Inventory Audit<br />&amp; Forecasting?</span>
+              What Is an <span style={{ color: "#ff9900" }}>FBA Inventory Audit<br />and Forecast?</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
-              Amazon inventory auditing is the process of reviewing and analyzing your FBA stock to spot problems and opportunities. It covers things like excess or stranded inventory, slow movers, items at risk of going out of stock, and overall inventory health.
+              An FBA inventory audit is a close review of your stock in Amazon's warehouses to find problems and opportunities. It covers excess or stranded inventory, slow sellers, items nearing sell-out, and your overall inventory health.
             </p>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
-              Amazon inventory forecasting is about predicting how much stock you&apos;ll need in the future. This prediction is based on data, such as past sales, seasonality, trends, and supplier lead times.
+              Amazon FBA inventory forecasting helps you work out how much stock you'll need and when. It uses your past sales, seasonal changes, current trends, and supplier delivery times to estimate future demand.
             </p>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
-              Deep audits and accurate forecasting help you avoid stockouts, costly overage fees, and maintain healthy cash flows. So, you&apos;re always ready to provide your customers with what they order.
+              Regular audits and better stock forecasts help you avoid stockouts and extra storage fees. They also help you manage your money while making sure you have enough stock to fulfill orders.
             </p>
             <div className="flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
@@ -176,10 +176,10 @@ export default function FBAInventoryAudit() {
           <div className="flex flex-col lg:flex-row gap-14 items-center mb-14">
             <FadeIn direction="right" className="flex-1">
               <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-                Why You Need an Expert Amazon <span style={{ color: "#ff9900" }}>Inventory Management Service</span>
+                Why Your Business Needs an Expert <span style={{ color: "#ff9900" }}>Amazon Inventory Service</span>
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
-                Poor inventory performance damages your Amazon business on multiple fronts. Overstocking and stockouts kill ranking, drain storage costs, tie up capital, and damage customer trust. Here&apos;s why you need an expert Amazon inventory optimization service:
+                Poor inventory planning hurts your Amazon business in many ways. Too much stock or too little drags down rankings, drives up storage costs, ties up cash, and costs you customer trust. Here's why expert inventory help matters:
               </p>
             </FadeIn>
             <FadeIn direction="left" className="flex-shrink-0 w-full lg:w-[480px]">
@@ -190,28 +190,28 @@ export default function FBAInventoryAudit() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {[
               {
-                title: "Protect Rankings",
-                desc: "Running out of stock doesn't just mean missed sales; it damages your hard-earned rankings. Expert Amazon inventory management helps your products maintain visibility and product rankings.",
+                title: "Protect Your Rankings",
+                desc: "Running out of stock costs you more than just lost sales. It damages the rankings you've worked so hard to build. Expert FBA inventory management is what keeps your products in stock and ranking well.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" className="w-11 h-11 flex-shrink-0"><circle cx="22" cy="22" r="22" fill="#ff9900"/><path d="M22 11l2.8 6.5 7 .6-5.2 4.6 1.6 6.8L22 26l-6.2 3.5 1.6-6.8-5.2-4.6 7-.6z" fill="#fff"/></svg>,
               },
               {
-                title: "Cut Down Storage Fees",
-                desc: "Overstocking racks up long-term storage and aged inventory fees that erode your margins. Experts identify slow movers, excess stock, and when to liquidate, so you can avoid unnecessary costs.",
+                title: "Lower Storage Fees",
+                desc: "Overstocking leads to long term storage and aged inventory fees which will eat into your margins. The experts will identify the slow movers and the excess stock and know when to get rid of it so you don't end up with those extra costs.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" className="w-11 h-11 flex-shrink-0"><circle cx="22" cy="22" r="22" fill="#ff9900"/><rect x="11" y="19" width="22" height="14" rx="2" fill="none" stroke="#fff" strokeWidth="2"/><path d="M11 24h22" stroke="#fff" strokeWidth="1.5"/><path d="M17 19v-3a5 5 0 0110 0v3" stroke="#fff" strokeWidth="2" fill="none" strokeLinecap="round"/><path d="M19 28h6" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>,
               },
               {
-                title: "Improve Cash Flow",
-                desc: "Tied-up inventory means locked-up money, leading to cash availability problems. Accurate forecasting keeps your cash flow healthy, not drifting in a sea of excess stock.",
+                title: "Healthier Cash Flow",
+                desc: "Stock sitting still is money you can't use. Accurate forecasting is what keeps your cash moving rather than being tied up in excess stock.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" className="w-11 h-11 flex-shrink-0"><circle cx="22" cy="22" r="22" fill="#ff9900"/><circle cx="22" cy="22" r="8" stroke="#fff" strokeWidth="2" fill="none"/><path d="M22 18v4l3 2" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M22 12v2M22 30v2M12 22h2M30 22h2" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/></svg>,
               },
               {
                 title: "Customer Trust",
-                desc: "Customers expect fast and reliable delivery. Stockouts damage your reputation and ratings. Staying in-stock builds trust and keeps reviews positive.",
+                desc: "Shoppers want fast and reliable delivery. Stockouts will damage your ratings and your reputation, whereas being in stock will build trust and lead to positive reviews.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" className="w-11 h-11 flex-shrink-0"><circle cx="22" cy="22" r="22" fill="#ff9900"/><circle cx="22" cy="17" r="5" fill="#fff"/><path d="M13 35c0-5 4-9 9-9s9 4 9 9" fill="#fff"/></svg>,
               },
               {
-                title: "Scaling Safety",
-                desc: "Sustainable growth can't happen without data-backed, smart forecasting and restocking decisions. Proper inventory management lets you scale confidently without drowning in stock problems.",
+                title: "Grow Safely",
+                desc: "Lasting growth requires intelligent, data driven forecasting and restock decisions. The right inventory plan enables you to scale with confidence and not get buried in stock issues.",
                 icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" className="w-11 h-11 flex-shrink-0"><circle cx="22" cy="22" r="22" fill="#ff9900"/><path d="M13 32V26M18 32V20M23 32V17M28 32V12M33 32V18" stroke="#fff" strokeWidth="2.5" strokeLinecap="round"/></svg>,
               },
             ].map((item, i) => (
@@ -247,10 +247,10 @@ export default function FBAInventoryAudit() {
           <FadeIn direction="up">
           <div className="text-center mb-12">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              What&apos;s Included in Our Monthly Amazon FBA<br />Inventory Audit &amp; Forecasting Service
+              What's Included in Our Monthly FBA<br />Inventory Audit and Forecasting Service
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
-              Our Amazon seller inventory solutions ensure you always have the right products in the right quantities at the right times. Here&apos;s what&apos;s included in your monthly subscription plan.
+              Our Amazon inventory service makes sure you always have the right products, in the right amounts, at the right time. Here's what your monthly plan includes:
             </p>
           </div>
           </FadeIn>
@@ -258,12 +258,12 @@ export default function FBAInventoryAudit() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
             {[
               {
-                title: "Comprehensive Inventory Audit",
+                title: "Full Inventory Audit",
                 items: [
-                  "FBA inventory levels for all your SKUs",
+                  "FBA stock levels for every SKU",
                   "Items that are overstocked, understocked, or at risk",
-                  "Top health metrics by SKU",
-                  "Recommendations for restocking, returns, disposal or price adjustments",
+                  "Key health metrics by SKU",
+                  "Advice on restocking, returns, disposal, or price changes",
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -277,12 +277,12 @@ export default function FBAInventoryAudit() {
                 ),
               },
               {
-                title: "Demand Forecasting & Restock Planning",
+                title: "Demand Forecasting and Restock Planning",
                 items: [
-                  "AI-powered demand analytics based on seasonality, velocity and growth trends",
-                  "Lead time and supplier delivery compatibility included",
-                  "Restock recommendations with quantity and timing",
-                  "Minimum order point (MOP) with safety stock strategy",
+                  "AI-powered demand analysis based on seasonality, sales speed, and growth trends",
+                  "Supplier lead times and delivery schedules built in",
+                  "Restock advice with exact quantities and timing",
+                  "Minimum order point (MOP) with a safety stock plan",
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -299,12 +299,12 @@ export default function FBAInventoryAudit() {
                 ),
               },
               {
-                title: "Cash Flow & Cost Optimization",
+                title: "Cash Flow and Cost Savings",
                 items: [
-                  "Forecasting avoidable holding costs, FBA fees, storage fees, and more",
-                  "Analysis of excess inventory to free up cash",
-                  "Insights on the financial impact of rebalancing or reducing inventory",
-                  "Prioritization planning for which products to avoid that hurt ROI",
+                  "Forecasts of avoidable holding costs, FBA fees, storage fees, and more",
+                  "Excess inventory analysis to free up cash",
+                  "Insights on the financial impact of rebalancing or reducing stock",
+                  "Priority planning for products that hurt your ROI",
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -315,12 +315,12 @@ export default function FBAInventoryAudit() {
                 ),
               },
               {
-                title: "Ongoing Monitoring & Monthly Reporting",
+                title: "Ongoing Monitoring and Monthly Reports",
                 items: [
-                  "Monthly inventory health trends, restock suggestions, forecast accuracy report",
-                  "Regular alerts for low inventory levels, aging stock or ongoing issues",
-                  "Comparison with an optimizer report to improve performance",
-                  "Corrective actions taken each month for better performance",
+                  "Monthly inventory health trends, restock suggestions, and forecast accuracy report.",
+                  "Regular alerts for low stock, aging inventory, or other issues",
+                  "Performance tracking to help improve your Amazon IPI score",
+                  "Corrective actions every month for better results",
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -368,16 +368,16 @@ export default function FBAInventoryAudit() {
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
           <FadeIn direction="right" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
-              What We Need From You?
+              Two Simple Things to Get Started
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
-              To deliver our services with the best results, we need you to provide us with the following things:
+              To get you the best results, we'll need you to share the following:
             </p>
 
             <div className="space-y-4 mb-6">
               {[
-                "Amazon Seller Central account access",
-                "Data regarding the current inventory in your warehouse",
+                "Access to your Amazon Seller Central account",
+                "Details of the current stock in your warehouse",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="flex-shrink-0 w-5 h-5 mt-0.5">
@@ -390,7 +390,7 @@ export default function FBAInventoryAudit() {
             </div>
 
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
-              You&apos;ll get guidance every step of the way to ensure a seamless collaboration. If anything else is needed for optimum results, we&apos;ll inform you duly for timely management.
+              We'll guide you through every step to keep things running smoothly. If anything else would help us get better results, we'll let you know right away.
             </p>
 
             <div className="flex justify-center lg:justify-start">
@@ -414,10 +414,10 @@ export default function FBAInventoryAudit() {
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
-              Take Control of Your Amazon FBA Inventory
+              Keep Your Amazon FBA Stock Under Control
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
-              Poor inventory planning is drowning in quicksand; it kills the sales momentum, drains your capital, and damages rankings. With our Inventory Audit &amp; Forecasting Service, you can avoid it by confidently knowing what you have, what to order, and when to order.
+              Poor inventory planning feels like sinking in quicksand. It slows sales, drains capital, and hurts rankings. With our FBA inventory audit and forecasting service, you'll know exactly what you have, what to order, and when to order it.
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">

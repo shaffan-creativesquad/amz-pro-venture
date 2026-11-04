@@ -7,39 +7,39 @@ import { useState } from "react";
 const faqs = [
   {
     question: "How does your reimbursement service work?",
-    answer: "We take the complexity out of FBA reimbursements! Our process starts with a thorough audit of your FBA data (up to 18 months back). We then identify all eligible discrepancies, gather the necessary evidence, and file the claims directly with Amazon on your behalf. Finally, we meticulously manage each claim until funds are successfully returned to your account.",
+    answer: "We make FBA reimbursements simple. First, we audit your FBA data, going back up to 18 months. Then we find every eligible discrepancy, gather the evidence, and file claims with Amazon. We manage each claim until the money is back in your account.",
   },
   {
-    question: "What types of FBA issues qualify for reimbursement?",
-    answer: "We’re experts at finding and recovering funds for a wide range of FBA errors. This includes, but isn’t limited to: lost or damaged inventory (inbound, in-warehouse, or during transfers), overcharged fees (like pick & pack, storage), incorrect returns processing, lost removal orders, unused shipping charges, and many other common (and uncommon) discrepancies. Our deep auditing process constantly discovers new opportunities.",
+    question: "Which FBA issues qualify for reimbursement?",
+    answer: "Common ones include lost or damaged inventory, inbound shipment discrepancies, wrongly disposed stock, lost removal orders, customer returns that never came back, and fee overcharges from incorrect dimensions or weights.",
   },
   {
-    question: "How far back can you audit my data?",
-    answer: "We can audit your Amazon FBA data for up to 18 months to identify historical discrepancies. However, it’s crucial to note that Amazon has recently shortened its filing window for most fulfillment center-related issues to just 60 days. This makes our proactive monitoring and rapid claim filing even more vital to ensure you don’t miss out on eligible reimbursements.",
+    question: "How far back can you review my account?",
+    answer: "We can review up to 18 months of data. However, Amazon now allows only 60 days for most fulfillment center claims, so starting early helps you recover as much as possible.",
   },
   {
-    question: "How long do reimbursements typically take to process?",
-    answer: "While each case can vary depending on Amazon’s internal review times, most claims we file are typically resolved and reimbursed within 1 to 4 weeks after submission. We actively monitor and follow up on all claims to ensure the fastest possible resolution for you.",
+    question: "How long does it take to get reimbursed?",
+    answer: "Our audit takes 3–5 business days after we get access. After we file claims, Amazon's response time varies, but many reimbursements arrive within a few weeks.",
   },
   {
-    question: "Is my Amazon account safe when you access it?",
-    answer: "Absolutely. Your account security is our top priority. We only request secure, limited \"child permissions\" through Amazon Seller Central, specifically tailored to the data we need for auditing and claim filing. This ensures we don’t have full access to your account, and all our actions are fully compliant with Amazon’s strict policies.",
+    question: "Is my Amazon account safe with you?",
+    answer: "Yes. We only work through secure child user permissions, never your main login, and every claim follows Amazon's policies to protect your account health.",
   },
   {
-    question: "Do I need to be involved after setup, or do you handle everything?",
-    answer: "Very little involvement is needed from your side! Once you grant us secure access and provide any initial required documents (like invoices for lost shipments), we handle the entire reimbursement process end-to-end. We’ll notify you of major updates, but you won’t need to file anything yourself. We take care of all the complex paperwork and follow up with Amazon.",
+    question: "Will I need to stay involved after setup?",
+    answer: "Very little. Once we have access, we handle the audit, filing, and follow-ups. We'll only reach out if we need a document from you, like an invoice.",
   },
   {
-    question: "What happens if Amazon previously denied a claim that I filed?",
-    answer: "Don’t worry! We specialize in identifying and resolving previously denied or overlooked claims. We will review any past denied claims you’ve shared. If it was filed incorrectly, we can often refile it with the correct documentation and approach. Our expertise frequently leads to the approval of claims that were initially rejected.",
+    question: "What if Amazon already denied a claim I filed?",
+    answer: "We can often help. We review the denied claim, identify what was missing, and reopen it with stronger evidence when eligible.",
   },
   {
-    question: "What is the initial $99 audit fee for?",
-    answer: "The $99 one-time fee provides you with a comprehensive, in-depth audit of your entire 18-month FBA account history. This includes detailed reporting of all potential discrepancies we find, regardless of whether you choose to proceed with claims filing. It’s an investment in understanding your account’s recovery potential upfront. We only proceed with filing claims if we find valid opportunities worth pursuing.",
+    question: "What does the $99 audit fee cover?",
+    answer: "It covers a full review of your account history, a detailed report of what we find, and filing for all valid claims. We only move forward if we find claims worth pursuing.",
   },
   {
-    question: "How do I track the progress of my reimbursement claims?",
-    answer: "Once you’re onboarded, you’ll gain access to your personalized claims dashboard. This intuitive portal allows you to track the real-time status of every claim we’ve filed on your behalf, giving you full transparency and peace of mind.",
+    question: "How can I check on my claims?",
+    answer: "You'll have your own claims dashboard showing submitted claims, status updates, and recovered amounts in real time. Your specialist is also available if you have questions.",
   },
 ];
 
@@ -56,13 +56,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon reimbursement claims service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our FBA reimbursement services? You&apos;ll find the answers here. If not, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

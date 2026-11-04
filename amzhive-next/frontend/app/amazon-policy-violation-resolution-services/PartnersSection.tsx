@@ -1,7 +1,7 @@
 ﻿const cards = [
   {
-    title: "Amazon-Specific Expertise",
-    text: "We live and breathe Amazon policies. Our team understands the nuances, the hidden triggers, and what Amazon's performance team truly looks for in a resolution. You get highly specialized insight, not generic advice.",
+    title: "We Know How Amazon Works",
+    text: "We handle Amazon policy issues every day, so we understand what can trigger a warning and what Amazon looks for when reviewing an appeal. We take the time to understand your situation and help you put together a response that fits your case, not a generic template.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="28" height="28">
         <path fill="white" d="M116.57,7.35c6.71,6.94,13,14.31,20.32,20.6,2.81,2.43,7.75,3.28,11.73,3.31,7.77.07,14.83,0,13,11.8,5.94,0,10.68-.05,15.43,0,18.91.21,31.43,10.74,32.27,29.5,1,22.61.54,45.3.08,67.94-.06,3.1-3.78,6.14-5.81,9.2-2.1-3.36-5.93-6.68-6-10.1-.58-20.78-.21-41.59-.33-62.38-.1-17.87-15.36-28.61-31.85-22.2-1.91.74-3.34,4.31-3.86,6.81-2.46,11.74-7.72,16.64-19.65,16.74-19.68.18-39.36.06-59,0-21.69,0-24.49-2.19-29.64-24-4.92,0-10.1-.35-15.21.06-11.75,1-18.81,7.46-18.89,19.26q-.49,75.75,0,151.51c.09,13.26,7.63,19.71,21.74,19.85,24.51.25,49-.16,73.52.34,3.78.08,7.49,3.56,11.22,5.47-3.73,1.93-7.42,5.45-11.2,5.53-22.64.53-45.34-.51-67.94.51C28,258,14.9,251.73,7.35,234.7V65.3c8.73-21.24,26.46-24.4,46.83-21.92C53.85,32.58,59.61,31,67.82,31.2c4.18.1,9.28-1.29,12.44-3.87,7.39-6.06,13.86-13.25,20.71-20ZM67.74,43c-.2,3.56-.38,6.08-.49,8.6-.65,14.95-.13,15.51,15.22,15.53,18.19,0,36.38-.26,54.56.12,9.26.19,14.28-2.68,13.05-12.76-.43-3.56-.38-7.17-.58-11.49-4.79,0-8.83-.25-12.82.06-6.18.48-10.06-1.72-10.91-8.17-1.32-10.14-7.93-15.36-17.32-15.46-9.55-.1-16,5.66-17.61,15.38-1,6.51-4.4,8.78-10.64,8.25C76.52,42.71,72.8,43,67.74,43Z"/>
@@ -13,8 +13,8 @@
     ),
   },
   {
-    title: "Proactive & Preventive Approach",
-    text: "We don't just put out fires. Our process focuses on identifying and mitigating risks before they escalate. We empower you to build resilient compliance systems that protect against future flags.",
+    title: "We Help You Avoid Repeat Problems",
+    text: "Getting a warning fixed is one thing. Making sure the same issue doesn't happen again is just as important. We help you understand what went wrong and what changes you need to make to keep your account in good standing.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="28" height="28">
         <path fill="white" d="M163.55,281.88H144.78c-4.06,0-8.54-1-9.23,5.25-.1.89-3.37,2.44-3.7,2.13a71,71,0,0,1-6.09-7.39c-1.17,0-3.37-.14-5.53,0-5,.4-7-1.77-6.61-6.77,2.61-34.45-8.17-64.7-27.86-92.66-10.59-15-18.86-31.36-21.47-50.24-6-43.26,26.8-88.16,70.27-95.35,56.88-9.4,105.05,31.95,103.82,89.31-.37,17-7.54,31.83-15.82,46.24-8.9,15.46-18.23,30.71-26.34,46.58-8.53,16.73-7.83,35.22-7.32,53.36.2,7-1.61,10.41-9.13,9.64-1.78-.18-4,.94-5.55,2.1-1.88,1.39-3.25,3.46-4.83,5.24Zm-12.5-60c9.64,0,19.28.18,28.91-.13,2.35-.08,5.81-1.09,6.79-2.8,11.42-20,23.17-39.91,33.31-60.58,5-10.12,9.17-21.7,9.61-32.78,2.07-51.53-43.42-89.79-94.15-80.38-39.68,7.36-68.05,46.91-62.63,87,2.24,16.58,10.75,30.33,18.86,44.37,7.82,13.53,15.08,27.39,23,40.88a9.54,9.54,0,0,0,6.61,4.19C131.21,222.18,141.13,221.91,151.05,221.92ZM180,255.3H121.51c.35,6.17.67,11.79,1,17.62H180Zm-58.47-9.44h59.24c.64-5.07,1.25-9.87,1.91-15.16H119.16C120,236,120.73,240.74,121.53,245.86Z"/>
@@ -31,8 +31,8 @@
     ),
   },
   {
-    title: "Addressing Root Causes",
-    text: "Many appeals fail because they don't address the core problem. We're forensic in our analysis, digging deep to uncover the true root cause, which is key to Amazon approving your Plan of Action.",
+    title: "We Look at What Actually Went Wrong",
+    text: "Sending an appeal without fixing the real problem rarely helps. We look into what caused the violation, whether it's a listing issue, a supplier problem, or an intellectual property complaint. Then we help you prepare a Plan of Action that explains what happened and how you'll prevent it from happening again.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="28" height="28">
         <path fill="white" d="M152.87,234.62c-3.12,3.16-6.16,6.27-9.24,9.33-2.51,2.5-3.73,2.54-6.17.11q-9.45-9.36-18.81-18.79c-2.12-2.13-2.09-3.51,0-5.66,2.89-2.94,5.78-5.87,8.76-8.71,1.1-1.05,1.29-1.86.48-3.22a72,72,0,0,1-8.6-21.74c-.4-1.86-1.2-2.39-3-2.33-4.35.13-8.7.06-13.06,0-3,0-4-1-4.06-3.93q0-13.53,0-27.07c0-2.74,1-3.74,3.69-3.77,4.83-.05,9.66,0,14.49,0,1.21,0,2-.1,2.43-1.56a79.21,79.21,0,0,1,10.75-24c-2.85-2.86-5.67-5.71-8.49-8.55-1.28-1.29-2.61-2.53-3.85-3.86-1.4-1.5-1.54-3.15,0-4.65q9.93-10,20-20c1.62-1.59,3.21-1.42,5,.31,3.73,3.66,7.46,7.31,11.08,11.07,1.12,1.16,1.93,1.43,3.4.55a70.53,70.53,0,0,1,20.17-8.11,2.22,2.22,0,0,0,2-2.61c-.08-4.59-.05-9.18,0-13.77,0-3.09.93-4,3.95-4q13.41,0,26.83,0c3,0,4,1,4,4,0,4.67.06,9.34,0,14a2.07,2.07,0,0,0,1.9,2.4,74.24,74.24,0,0,1,20.8,8.43,2.05,2.05,0,0,0,3-.41c3.28-3.43,6.67-6.75,10-10.11,2.35-2.34,3.72-2.4,6-.12q9.42,9.38,18.79,18.81c2.22,2.23,2.2,3.58,0,5.83-3.18,3.21-6.34,6.42-9.6,9.54-1.15,1.1-1.46,1.89-.5,3.38a73.39,73.39,0,0,1,9.35,21.43c.4,1.5,1,2,2.56,2,4.27-.11,8.55-.05,12.82,0,3,0,3.88.87,3.9,3.81q.06,13.66,0,27.31c0,2.65-1.09,3.63-3.85,3.65-4.66,0-9.32,0-13.87,0-1.65,5-3.1,9.8-4.89,14.49a62.69,62.69,0,0,1-4.36,9c-.92,1.58-.69,2.44.54,3.6,2.76,2.61,5.42,5.32,8.07,8,2,2,2,3.43,0,5.48q-9.63,9.67-19.31,19.29c-1.73,1.72-3.37,1.71-5.17,0-2.71-2.65-5.41-5.34-8-8.07a1.75,1.75,0,0,0-2.63-.29,76.83,76.83,0,0,1-23.65,10.15c-1.41.34-1.93.91-1.89,2.39.1,4.12,0,8.23,0,12.35,0,3.16-.93,4.1-4.09,4.11H183.84c-3.35,0-4.1-.73-4.12-4,0-4.11.06-8.23-.07-12.34,0-.78-.7-2.07-1.31-2.23A86.67,86.67,0,0,1,153.81,235,5.65,5.65,0,0,0,152.87,234.62Zm89-68.23a46.23,46.23,0,1,0-46.4,46.08A46.32,46.32,0,0,0,241.9,166.39Z"/>
@@ -55,10 +55,10 @@ export default function PartnersSection() {
             className="font-bold leading-tight mb-4"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 3.5vw, 40px)", color: "#000000" }}
           >
-            Why AMZ Pro Venture Is Your Amazon Account&apos;s <span style={{ color: "#ff9900" }}>Best Defense</span>
+            Why Sellers Trust AMZ ProVenture to <span style={{ color: "#ff9900" }}>Protect Their Accounts.</span>
           </h2>
           <p style={{ fontSize: "16px", color: "#67768e", lineHeight: "1.7", maxWidth: "680px", margin: "0 auto" }}>
-            When your Amazon business is on the line, you need clear, confident action. AMZ Pro Venture offers more than just resolution; we provide peace of mind.
+            When your Amazon business is on the line, you need someone who knows exactly what to do next. AMZ ProVenture brings clear answers, quick action, and the reassurance that your account is in good hands.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export default function PartnersSection() {
           className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors"
           style={{ padding: "14px 32px" }}
         >
-          RESOLVE POLICY VIOLATIONS NOW →
+          RESOLVE POLICY VIOLATIONS NOW
         </a>
 
       </div>

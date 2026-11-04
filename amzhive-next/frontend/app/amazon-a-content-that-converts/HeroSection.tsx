@@ -21,20 +21,20 @@ export default function HeroSection() {
           className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
-          ARE YOU MISSING OUT ON 20% MORE<br />
-          SALES DUE TO <span style={{ color: "#ff9900" }}>WEAK A+ CONTENT?</span>
+          Unlock Up to 20% More Sales<br />
+          With <span style={{ color: "#ff9900" }}>Better A+ Content</span>
         </motion.h1>
 
         <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
-          Turn browsers into buyers with professionally designed A+ content that builds trust and tells your story.
+          Turn browsers into buyers with our Amazon A+ content services, professionally designed to build trust and tell your brand&apos;s story.
         </motion.p>
 
         <motion.div variants={itm} className="space-y-4 mb-10">
           {[
-            "Increase conversion rates",
-            "Highlight key product features & benefits",
-            "Improve visibility and search ranking",
-            "Build trust and unique brand identity",
+            "Lift your conversion rates.",
+            "Show off key features and benefits.",
+            "Boost visibility and search rankings.",
+            "Build trust and a memorable brand identity.",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -52,7 +52,7 @@ export default function HeroSection() {
             className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[10px] rounded-full hover:bg-black transition-colors"
             style={{ padding: "11px 22px" }}
           >
-            GET MY FREE A+ CONTENT GRADING →
+            Get My Free A+ Content Review
           </a>
         </motion.div>
 

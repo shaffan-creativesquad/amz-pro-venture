@@ -81,22 +81,22 @@ export default function ProductHuntingAndSourcing() {
             className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
-            Looking for the Best Products  
+            Find the Product That Builds
             <br />
-            <span style={{ color: "#ff9900" }}>to Buy and Resell on Amazon?</span>
+            <span style={{ color: "#ff9900" }}>Your Amazon Business</span>
           </h1>
 
           {/* Description */}
           <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
-            Our data-driven Amazon FBA product hunting and sourcing services help you uncover high-demand, low-competition private label products to scale your Amazon business.
+            Picking the wrong product is the most expensive mistake an Amazon seller can make. Our Amazon product research services dig through real sales data to find high-demand, low-competition products, then line up reliable suppliers so you can launch with confidence.
           </p>
 
           <div className="space-y-3 mb-8">
             {[
-              "Data-driven Amazon product research",
-              "Supplier sourcing, verification, and negotiation",
+              "Product research built on real Amazon data",
+              "Supplier sourcing, checks, and price negotiation",
               "Sample and quality check support",
-              "Branding & Private Label Setup",
+              "Branding and private label setup",
             ].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -141,13 +141,13 @@ export default function ProductHuntingAndSourcing() {
           {/* Left — text */}
           <div className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
-              What Is Amazon FBA  <span style={{ color: "#ff9900" }}> Product Hunting and Sourcing?</span>
+              Product Hunting and Sourcing, <span style={{ color: "#ff9900" }}>Explained Simply</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
-              Amazon product hunting means finding “winning” products to sell on your Amazon store. These products have high demand, low competition, and good profit potential. Finding the right products involves factors like sales history, market trends, seasonal demand, and margins, using research tools and manual research. 
+              Amazon product hunting is the search for products worth selling— the ones with strong demand, manageable competition, and healthy profit margins. Finding them means looking closely at sales history, market trends, seasonal demand, and margins, using both research tools and hands-on analysis. 
             </p>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
-             Once the best product is selected, product sourcing comes next. It involves finding trustworthy suppliers or manufacturers to supply the products at the best prices.
+             Once you choose the right product, sourcing comes next. Product sourcing for Amazon FBA means finding trustworthy suppliers or manufacturers who can deliver good quality at the right cost, so your margins hold up once you start selling.
             </p>
             
             <div className="flex justify-center lg:justify-start">
@@ -175,19 +175,19 @@ export default function ProductHuntingAndSourcing() {
           <div className="flex flex-col lg:flex-row gap-14 items-center">
             <div className="flex-1">
               <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-                Why Expert Product Hunting and Sourcing <span style={{ color: "#ff9900" }}>is Crucial for Amazon</span>
+                One Wrong Product Can <span style={{ color: "#ff9900" }}>Cost You Months</span>
               </h2>
               <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
-                Product hunting and Sourcing are the backbone of your Amazon business. Without expert research and sourcing, you might be putting your entire business at risk. Here&apos;s how going solo can hurt you:
+                Your product and your supplier are the foundation of your Amazon business. Get either one wrong and everything built on top of it struggles. Here's what often happens when sellers go it alone:
               </p>
               <div className="space-y-3 mb-8">
                 {[
-                  "Losing profit margins by picking saturated products with little margins",
-                  "Dealing with unreliable suppliers and poor-quality stock",
-                  "Overpaying the supplier due to weak negotiation or hidden fees",
-                  "Delays and costly suspensions due to compliance issues",
-                  "Inventory storage issues due to low demand and weak sell-through rate",
-                  "Wasting advertising budget on unprofitable products",
+                  "Picking crowded products with thin profit margins",
+                  "Getting stuck with unreliable suppliers and poor-quality stock",
+                  "Overpaying because of weak negotiation or hidden fees",
+                  "Delays and suspensions caused by compliance problems",
+                  "Stock piling up in storage because demand is low.",
+                  "Ad budget wasted on products that were never going to profit.",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="flex-shrink-0 w-5 h-5 mt-0.5">
@@ -222,21 +222,21 @@ export default function ProductHuntingAndSourcing() {
 
           <div className="text-center mb-12">
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              What’s Included in Our Amazon <br />Product Hunting &amp; Sourcing Service
+              Everything You Need From<br />Idea to Inventory
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
-              Our private label Amazon product hunting and sourcing covers everything you need to build a steady business with strong margins. Here’s what you get when you partner with us:
+              Our private label hunting and sourcing service covers every step of building a steady business with strong margins. Here's what you get when you work with us:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
             {[
               {
-                title: "Amazon FBA Product Research That Finds Winners",
+                title: "Research That Finds Winners",
                 items: [
-                  "We research products that fit your budget and category goals.",
-                  "Each option is analyzed for demand, competition, profit margins, and seasonality. We ensure",
-                  "You’ll receive clear reports with product opportunities tailored to you."
+                  "We look for products that fit your budget and category goals.",
+                  "We check each option for demand, competition, profit margins, and seasonality.",
+                  "You get clear reports showing the opportunities that suit you best."
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -248,9 +248,9 @@ export default function ProductHuntingAndSourcing() {
               {
                 title: "Trusted Supplier Sourcing",
                 items: [
-                  "Our Amazon product sourcing analysis includes vetting multiple manufacturers to ensure reliability and fair pricing.",
-                  "Negotiate the best costs and minimum order quantities (MOQs) to maintain healthy margins.",
-                  "We confirm compliance with certifications, like FDA, CE, and RoHS, to ensure you’re always market-ready.",
+                  "We vet several manufacturers to make sure they're reliable and fairly priced.",
+                  "We negotiate costs and minimum order quantities (MOQs) to protect your margins.",
+                  "We confirm the certifications you need, like FDA, CE, or RoHS, so you're ready to sell",
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -280,11 +280,11 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
               {
-                title: "Samples & Quality Assurance",
+                title: "Samples and Quality Checks",
                 items: [
-                  "We make sure you get samples before you commit, with thorough testing and inspection included.",
-                  "Our team gives you honest feedback on quality with recommendations for improvements.",
-                  "We ensure every shipment meets your standards before it ever reaches customers."
+                  "You get samples before you commit, with testing and inspection included.",
+                  "Our team gives honest feedback on quality and suggests improvements.",
+                  "We make sure shipments meet your standards before they reach customers."
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -294,11 +294,11 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
               {
-                title: "Branding & Private Label Support",
+                title: "Branding and Private Label Support",
                 items: [
-                  "We help you stand out with custom packaging and logo design for private label branding.",
-                  "You’ll receive guidance on trademarking and Amazon Brand Registry to protect your brand.",
-                  "We provide strategies to position your product differently from competitors and capture attention."
+                  "Custom packaging and logo design so your brand stands out",
+                  "Guidance on trademarks and Amazon Brand Registry to protect your brand",
+                  "Positioning advice to set your product apart from competitors"
                 ],
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-12 h-12 mb-4">
@@ -345,18 +345,18 @@ export default function ProductHuntingAndSourcing() {
 
           <div className="text-center mb-14">
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Why Count on Us for Amazon Inventory <br />Optimization Service
+              How We Find Products<br />Worth Selling
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
-              We provide proactive management and solutions to keep your Amazon FBA inventory at its optimum, without the fear of overstocking, stockouts, or costly overstorage fees. Here’s why we stand out:
+              We take the guesswork out of choosing what to sell so that you can spend your budget on products with a real chance of success. Here's what makes our approach different:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
             {[
               {
-                title: "Proactive, Not Reactive",
-                desc: "Instead of scrambling to fix problems after they happen, our service keeps you ahead of the curve. By monitoring inventory levels for better Amazon FBA stock management, you’ll never get caught off guard by storage issues and costly FBA surprises.",
+                title: "We Plan Ahead",
+                desc: "We look past today's trends to see whether a product will still sell in six months. That means checking demand patterns, seasonality, and competition before you invest a cent.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-9 h-9">
                     <polygon fill="#ff9900" points="187.68 33.96 172.56 8.76 162.52 30.3 170.18 35.35 170.02 54.17 180.08 54.17 180.34 34.12 187.68 33.96"/>
@@ -372,8 +372,8 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
               {
-                title: "Data-Driven Accuracy",
-                desc: "Every forecast is powered by real data based on sales velocity, historical performance, and seasonality patterns. This ensures smarter, more accurate predictions that help you order the right amount of stock at the right time and prevent Amazon overstocking.",
+                title: "Data Backs Every Pick",
+                desc: "Every recommendation is based on real numbers, like sales velocity, past performance, and market size. You get products chosen on evidence, not hunches.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-9 h-9">
                     <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#ff9900" strokeWidth="2" strokeLinejoin="round"/>
@@ -382,8 +382,8 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
               {
-                title: "Get Complete Control",
-                desc: "With constant monitoring, monthly reports, and actionable insights, you don’t have to stress over the details. You stay in control with clear visibility, while we handle the complexities, giving you more time to focus on growing your business.",
+                title: "You Stay in Control",
+                desc: "We share clear reports and walk you through every option. You make the final call while we handle the research and supplier legwork.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-9 h-9">
                     <path fill="#ff9900" d="M144.32,8.76c3.32,6.33-1.47,17.76,4.28,21.73,5.04,3.48,19.56,5.93,25.73,10.32l15.69-13.74,21.16,22.45c-3.9,7.83-13.98,9.96-11.37,19.75.53,1.99,9.66,22.33,10.67,23.1,4.52,3.47,14.13,1.79,19.62,2.18v30.94c-5.59-.49-12.06.75-17.49-.09-8.79-1.36-10.68-7.95-21.54-.41-3.22,2.23-2.54,6.91-7.45,2.6-1.93-1.69,1.32-6.71,1.49-9.83,4.61-88.14-119.22-81.13-111.09-.01,2.38,23.73,22.37,41.83,44.64,47.48l14.4,26.36c-1.45,1.35-11.84-4.01-14.86-4.13-3.48-.14-5.51,1.47-10.5.74-8.09-1.19-15.53-6.79-23.08-9.33-4.9.43-12.18,14.79-17.61,12.1l-19.63-19.95c3.49-8.35,14.69-9.76,11.91-20.23-.37-1.38-8.74-20.59-9.39-21.57-5.34-8.06-15.87-.1-22.31-5.82v-28.83c7.03-.29,14.54,1.25,21.03-2.18,1.3-4.92,11.44-23.37,11.46-26.66.04-7.28-15.41-12.6-11.48-18.32,4.52-6.58,15.32-13.56,20.48-20.32l15.69,13.74c6.17-4.39,20.69-6.84,25.73-10.32,5.49-3.79,1.89-15.61,2.88-21.73h30.94Z"/>
@@ -393,8 +393,8 @@ export default function ProductHuntingAndSourcing() {
                 ),
               },
               {
-                title: "Advanced Automation Tools",
-                desc: "Our hybrid approach combines AI and automation with expert human oversight. We use the latest and most effective Amazon inventory management and automation software, like Jungle Scout, Helium 10, and RestockPro. These tools help us ensure accuracy and streamline the inventory management process.",
+                title: "The Right Tools, Plus Real People",
+                desc: "We use trusted research tools like Jungle Scout and Helium 10, and our team reviews every result. Smart software finds the options, and experienced people decide which ones are worth your money.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-9 h-9">
                     <path fill="#ff9900" d="M149.51,9.39v75.64c-84.04,7.36-84.4,122.62,0,129.94v75.64c-23.63,5.2-11.61-23.44-25.21-30.06-16.58-8.07-18.33,17.68-30.06,17.74-2.36.01-21.39-10.3-23.46-12.8-6.61-7.97,7.44-23.49,4.12-31.04-7.43-16.9-25.68.48-35.04-.82-5.75-.8-14.56-19.73-16.38-25.5.12-5.7,16.36-15.39,18.44-20.36.87-2.09-1.67-12.8-2.73-14.34-1.63-2.37-25.21-2.52-28.38-8.86-1.95-3.9-1.81-26.99.8-30.28,3.79-4.69,26.14-5.62,27.58-7.72,1.06-1.55,3.6-12.25,2.73-14.34-2.08-4.97-18.32-14.66-18.44-20.36,1.82-5.89,11.42-25.68,17.54-25.37,7.9.4,19.97,9.13,26.96,5.95,17.93-8.16-5.38-28.9,2.89-37.85,2.18-2.36,20.95-12.89,23.36-12.88,11.72.06,13.47,25.81,30.06,17.74,13.6-6.62,1.58-35.27,25.21-30.06Z"/>
@@ -435,17 +435,17 @@ export default function ProductHuntingAndSourcing() {
         <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
           <div className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
-              Why Sellers Trust AMZ Pro Venture for Amazon Product Hunting & Sourcing
+              Why Sellers Trust AMZ ProVenture to Find Their Next Product
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
-              Product hunting for Amazon is more than just acquiring products to sell on your store. It’s about building a strong brand and a reliable relationship with your suppliers.
+              Finding a product is only half the job. The real goal is building a strong brand with suppliers you can count on for years.
             </p>
 
             <div className="space-y-4 mb-6">
               {[
-                { bold: "Data-Backed Product Research for Amazon", rest: " : We don’t rely on guesswork. We use advanced tools like Helium 10 and Jungle Scout to analyze trends, sales velocity, seasonality, and competition. This enables us to identify products with true long-term potential." },
-                { bold: "Verified Supplier Network", rest: ": We work directly with vetted manufacturers and suppliers across the globe. We ensure that you get the best prices, quality, and reliable shipping timelines." },
-                { bold: "Compliance & Risk Protection", rest: ": Every step of the Amazon product sourcing process requires legal and Amazon compliance, certifications, and import/export laws. We ensure proper compliance to protect your brand from suspensions or costly mistakes." },
+                { bold: "Research You Can Rely On", rest: ": We never guess. Using tools like Helium 10 and Jungle Scout, we study trends, sales velocity, seasonality, and competition to find winning Amazon products with real long-term potential." },
+                { bold: "A Vetted Supplier Network", rest: ": We work directly with vetted manufacturers and suppliers worldwide, so you get fair prices, quality products, and dependable shipping times." },
+                { bold: "Compliance and Risk Protection", rest: ": Every product needs the right certifications and has to meet Amazon's rules and import laws. We make sure everything is in order, protecting your brand from suspensions and costly mistakes." },
               ].map((item) => (
                 <div key={item.bold} className="flex items-start gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="flex-shrink-0 w-5 h-5 mt-0.5">
@@ -485,17 +485,17 @@ export default function ProductHuntingAndSourcing() {
           {/* Right — content */}
           <div className="flex-1 px-10 lg:px-16 py-16">
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              Is This Service <span style={{ color: "#ff9900" }}>Right for You?</span>
+              Is This Service <span style={{ color: "#ff9900" }}>a Good Fit?</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
-              Our Amazon private label hunting and sourcing services are designed for sellers who want to thrive on Amazon. Our services are an ideal fit for:
+              Our Amazon product research services are built for sellers who want to grow on Amazon the right way. They're a great fit for:
             </p>
             <div className="space-y-4 mb-8">
               {[
                 "New sellers launching their first private label product",
-                "Busy entrepreneurs who don't have time for in-depth research & supplier vetting",
-                "Established sellers expanding into new categories or marketplaces",
-                "Agencies or teams needing expert support for sourcing and compliance",
+                "Busy owners without time for deep research and supplier checks",
+                "Established sellers moving into new categories or marketplaces",
+                "Agencies or teams that need expert help with sourcing and compliance",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="flex-shrink-0 w-5 h-5 mt-0.5">
@@ -526,16 +526,16 @@ export default function ProductHuntingAndSourcing() {
           {/* Left — content */}
           <div className="flex-1 px-10 lg:px-16 py-16">
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
-              What We Need From You <span style={{ color: "#ff9900" }}>For Ideal Results</span>
+              A Few Details to <span style={{ color: "#ff9900" }}>Get Started</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
-              The stronger the input and collaboration, the better the results. Here&apos;s what we&apos;ll need from you to deliver the best results:
+              The more we know about your goals, the better your results. Here's what we'll need from you:
             </p>
             <div className="space-y-4 mb-5">
               {[
                 "Your budget range for product investment",
-                "Marketplaces you're looking to target (Amazon US, UK, EU, etc.)",
-                "The product category you want to choose",
+                "The marketplaces you want to sell in (Amazon US, UK, EU, and so on)",
+                "The product category you're interested in",
                 "Branding guidelines (optional)",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
@@ -548,7 +548,7 @@ export default function ProductHuntingAndSourcing() {
               ))}
             </div>
             <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
-              Don&apos;t have a category in mind? No problem, we&apos;ll help you pick the best category.
+              Not sure which category to choose? No problem. We'll help you find the one that best fits your budget and goals.
             </p>
             <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
@@ -573,10 +573,10 @@ export default function ProductHuntingAndSourcing() {
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
-              Outperform Your Competition <br />With the Winning Products
+              Your Next Best Seller <br />Is Out There
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
-              Every day you wait is an opportunity lost. Move fast and secure the products that customers are demanding now.
+              Every week you wait, someone else could launch the product you should be selling. Let's find your winning products on Amazon and get them to market first.
             </p>
             <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink">

@@ -81,17 +81,17 @@ export default function AmazonAccountSuspended() {
             className="font-bold leading-tight mb-6"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
-            Losing Revenue Due to{" "}
-            <span style={{ color: "#ff9900" }}>Suspended Listings?</span>
+            Get Your Suspended{" "}
+            <span style={{ color: "#ff9900" }}>ASIN Back Fast.</span>
           </h1>
 
           {/* Description */}
           <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
-            Get your suspended Amazon listings back quickly, effectively, and with full compliance, so you can start selling again with confidence.
+            An Amazon listing removed without warning can wipe out sales overnight. Our Amazon ASIN reinstatement team finds the cause, fixes it properly, and gets your product selling again fast.
           </p>
 
           <div className="space-y-3 mb-8">
-            {["Fast & reliable listing recovery", "Support for all major suspension types", "Deep policy & compliance expertise", "One free re-appeal included"].map((item) => (
+            {["Quick, dependable listing recovery", "Help with every major suspension type.", "Deep knowledge of Amazon policy and compliance", "One free re-appeal included"].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
@@ -104,7 +104,7 @@ export default function AmazonAccountSuspended() {
 
           <div className="flex justify-center lg:justify-start mb-6">
             <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[14px] rounded-[6px] hover:bg-black transition-colors" style={{ padding: "14px 28px" }}>
-              REINSTATE MY AMAZON LISTING ?
+              REINSTATE MY AMAZON LISTING
             </a>
           </div>
 
@@ -133,19 +133,19 @@ export default function AmazonAccountSuspended() {
         <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
-              <span className="text-[#000000]">We Resolve A Complete Range of </span>
-              <span className="text-[#ff9900]">Amazon ASIN Suspensions</span>
+              <span className="text-[#000000]">Whatever Took Your ASIN Down,</span><br />
+              <span className="text-[#ff9900]">We Can Fix It.</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">As a trusted Amazon ASIN reinstatement service provider, AMZ Pro Venture helps sellers recover listings suspended for a wide range of violations. Here are the most common issues we handle:</p>
+            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">AMZ ProVenture helps sellers recover listings taken down for all sorts of reasons, whether it&apos;s a fully suspended ASIN or a suppressed listing on Amazon. These are the issues we see most:</p>
             <div className="space-y-4">
               {[
-                { title: "Product Authenticity or Counterfeit Claims:", desc: "Claims of fake or misrepresented products." },
-                { title: "Restricted Product or Compliance Violations:", desc: "Listings flagged for prohibited items or missing documentation." },
-                { title: "Product Safety Complaints:", desc: "Reports related to health risks, safety hazards, or injury claims." },
-                { title: "Listing Policy Violations:", desc: "Title, bullet points, images, or descriptions not following Amazon guidelines." },
-                { title: "Intellectual Property or Infringement Complaints:", desc: "Trademark or copyright issues, often requiring retraction from the rights owner." },
-                { title: "Used Sold as New / Condition Complaints:", desc: "Buyers report receiving items that appear used or not as described." },
-                { title: "Unapproved Medical or Ingredient Claims:", desc: "Listings flagged for unsupported health claims or banned substances." },
+                { title: "Authenticity or Counterfeit Claims:", desc: "Reports that a product is fake or not as advertised." },
+                { title: "Restricted Product or Compliance Flags:", desc: "Listings flagged for prohibited items or missing paperwork." },
+                { title: "Product Safety Complaints:", desc: "Reports about health risks, safety hazards, or injuries." },
+                { title: "Listing Policy Violations:", desc: "Titles, bullet points, images, or descriptions that break Amazon's rules." },
+                { title: "IP or Infringement Complaints:", desc: "Trademark or copyright issues, often needing a retraction from the rights owner." },
+                { title: "Used Sold as New or Condition Complaints:", desc: "Buyers saying items arrived used or not as described." },
+                { title: "Unapproved Medical or Ingredient Claims:", desc: "Listings flagged for unsupported health claims or banned ingredients." },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-3">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 mt-1 w-5 h-5" fill="none">
@@ -159,8 +159,8 @@ export default function AmazonAccountSuspended() {
             <div className="mt-8 flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">TALK TO A REINSTATEMENT EXPERT ?</span>
-                  <span className="svc-btn-bottom">TALK TO A REINSTATEMENT EXPERT ?</span>
+                  <span className="svc-btn-top">Talk to a Reinstatement Expert</span>
+                  <span className="svc-btn-bottom">Talk to a Reinstatement Expert</span>
                 </span>
               </a>
             </div>
@@ -180,21 +180,21 @@ export default function AmazonAccountSuspended() {
             className="text-center font-bold mb-4"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
           >
-            <span className="text-[#000000]">Why Amazon Sellers Count on Us For </span>
-            <span className="text-[#ff9900]">Listing/ASIN Reinstatement</span>
+            <span className="text-[#000000]">Why Sellers Trust AMZ ProVenture to </span>
+            <span className="text-[#ff9900]">Restore Their Listings</span>
           </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
-            As a leading Amazon seller reinstatement service in the USA, AMZ Pro Venture has helped hundreds of sellers recover their suspended listings with speed, precision, and proven expertise.
+            AMZ ProVenture has helped hundreds of sellers across the USA bring suspended listings back to life, quickly and with the care each case needs.
           </p>
           </FadeIn>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               {
-                title: "500+ Successful Listing/ASIN Reinstatements",
-                desc: "Trusted by sellers across categories for fast, reliable Amazon ASIN reinstatement.",
+                title: "500+ Listings Reinstated",
+                desc: "Sellers across many categories trust us for fast, reliable Amazon ASIN reinstatement.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-10 h-10 mb-5">
                     <path fill="#ff9900" d="M118.49,172.82c5.94-6.45,11.62-11.32,15.72-17.29,11.7-17,18-36.22,20-56.72.49-5.13,2.72-6.62,7.34-7,14.23-1.2,23.67,3.84,26.3,18.12s2,29.1,2.79,43.69a41.65,41.65,0,0,1-.58,5.64c2.47.15,4.7.41,6.92.41,13.78,0,27.55,0,41.32-.18,8.47-.1,16.48.66,21.18,9.11,3.76,6.77,2.57,15-3.35,24,9.3,10.77,9.64,19.63,1.17,30.46,11.3,12.56,7.9,29.89-7,34,.66,5.15,2.14,10.3,1.79,15.32-.58,8.27-6.11,14.7-14.27,14.68q-50.31-.08-100.6-1.82c-6.66-.23-13.19-3.85-20.23-6.05-2.09,7.73-8.19,9.32-16,9.16-17-.34-34.08,0-51.12-.12-10.3,0-13.78-3.58-13.79-13.95q0-50.77,0-101.54c0-10.1,3.76-13.68,14.1-13.7q25.21,0,50.42,0C112,159.09,113.65,160.23,118.49,172.82Z"/>
@@ -205,8 +205,8 @@ export default function AmazonAccountSuspended() {
                 ),
               },
               {
-                title: "Deep Knowledge of Amazon Policies",
-                desc: "Our team understands Amazon's evolving rules and appeal process inside and out.",
+                title: "We Know Amazon's Rules",
+                desc: "Amazon's policies keep changing. Our team follows every update and knows the appeal process inside and out.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-10 h-10 mb-5">
                     <path fill="#ff9900" d="M160,270.3H30.47c-7.64,0-11.82-4.14-11.82-11.66q0-121.23,0-242.48c0-7.59,4.13-11.71,11.75-11.71h182.1c7.63,0,11.8,4,11.81,11.67q.06,57.5,0,115c0,.63-.1,1.26-.15,1.93H210.71V18.53h-178v238h3q56.76,0,113.54,0a3.67,3.67,0,0,1,3.88,2.26C155.14,262.58,157.53,266.19,160,270.3Z"/>
@@ -228,8 +228,8 @@ export default function AmazonAccountSuspended() {
                 ),
               },
               {
-                title: "Custom, Policy-Aligned Action Plans",
-                desc: "No copy-paste templates. Every case gets a tailored Plan of Action based on real root cause analysis.",
+                title: "No Copy-Paste Appeals",
+                desc: "Every case gets its own Plan of Action, based on a real review of what caused the suspension.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-5">
                     <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" fill="#ff9900"/>
@@ -238,8 +238,8 @@ export default function AmazonAccountSuspended() {
                 ),
               },
               {
-                title: "Fast Response & Clear Communication",
-                desc: "We act quickly, keep you informed, and support you through every step of the reinstatement process.",
+                title: "Quick Replies, Clear Updates",
+                desc: "We move fast, keep you informed, and stay with you through every step until your listing is back.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-5">
                     <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke="#ff9900" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -250,7 +250,7 @@ export default function AmazonAccountSuspended() {
               },
               {
                 title: "Free Re-Appeal Included",
-                desc: "If the first appeal is denied, we will revise and resubmit at no extra cost, because your success is our priority.",
+                desc: "If Amazon denies your first ASIN suspension appeal, we revise it and resubmit it at no extra cost.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-10 h-10 mb-5">
                     <path fill="#ff9900" d="M215.67,115.69c-.47-4.82-.84-8.56-1.32-13.45-12.62,0-24.86-.51-37,.16-9.91.54-14.07-2.78-13.55-13.05.63-12.24.15-24.53.15-37.73H49.73V270.06H213.31c7.54-19-8-42.12,13.79-60.08,0,23.59.3,44.86-.44,66.1-.08,2.28-6.17,6.15-9.55,6.24-22.29.57-44.59.3-66.89.3-33.84,0-67.68-.21-101.51.14-8.41.09-11.65-2.57-11.5-11.19.65-38,1.14-76,1.15-114,0-35.32-.33-70.65-1.24-105.95-.27-10.81,3.5-13.91,14-13.77,37.29.5,74.59-.08,111.88.49,5.39.09,11.86,3,15.88,6.67C192.7,57.73,205.7,71.41,219,84.76,231.55,97.39,231,103.49,215.67,115.69ZM200.09,88.77,177,65.71V88.77Z"/>
@@ -277,7 +277,7 @@ export default function AmazonAccountSuspended() {
           </div>
 
           <p className="text-[#000000] text-[15px] leading-relaxed mb-10 text-center lg:text-left">
-            <strong>Important Note:</strong> While AMZ Pro Venture specializes in both account and ASIN reinstatement, this service specifically focuses on Amazon listing and ASIN reinstatement.
+            <strong>Important Note:</strong> AMZ ProVenture handles both account and ASIN reinstatement, but this service focuses only on Amazon listing and ASIN reinstatement.
           </p>
 
           <div className="flex justify-center">
@@ -300,8 +300,8 @@ export default function AmazonAccountSuspended() {
           </FadeIn>
           <FadeIn direction="left" className="flex-1 px-10 py-10">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
-              <span className="text-[#000000]">What We Need From You to Deliver the </span>
-              <span className="text-[#ff9900]">Best Results</span>
+              <span className="text-[#000000]">Get These Few Things Ready, and </span>
+              <span className="text-[#ff9900]">We&apos;ll Handle Everything Else</span>
             </h2>
             <div className="space-y-4 mb-8">
               {[
@@ -309,8 +309,8 @@ export default function AmazonAccountSuspended() {
                 "Invoices from your supplier or brand",
                 "Letter of Authorization (if applicable)",
                 "Product and packaging images (if requested)",
-                "Any Amazon communication related to the issue",
-                "Completed reinstatement intake questionnaire",
+                "Any messages from Amazon about the issue",
+                "A completed reinstatement intake questionnaire",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-4">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -322,13 +322,13 @@ export default function AmazonAccountSuspended() {
               ))}
             </div>
             <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
-              <strong className="text-[#000000]">Important:</strong> We do not create or fake documentation. All information must be genuine and seller-provided. Don&apos;t worry, we&apos;ll guide you through the entire process of documentation.
+              <strong className="text-[#000000]">Important:</strong> We never create or fake documents. Everything must be genuine and come from you. Don&apos;t worry, we&apos;ll walk you through exactly what&apos;s needed.
             </p>
             <div className="flex justify-center lg:justify-start">
               <a href="/contact-us" className="svc-btn svc-btn-pink">
                 <span className="svc-btn-inner">
-                  <span className="svc-btn-top">BOOK A FREE CONSULTATION ?</span>
-                  <span className="svc-btn-bottom">BOOK A FREE CONSULTATION ?</span>
+                  <span className="svc-btn-top">Book a Free Consultation</span>
+                  <span className="svc-btn-bottom">Book a Free Consultation</span>
                 </span>
               </a>
             </div>
@@ -386,11 +386,11 @@ export default function AmazonAccountSuspended() {
           <FadeIn direction="up">
           <div className="text-center mb-10">
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
-              <span className="text-[#000000]">Our Listing & ASIN </span>
-              <span className="text-[#ff9900]">Reinstatement Process</span>
+              <span className="text-[#000000]">Our Simple Process to </span>
+              <span className="text-[#ff9900]">Restore ASINs</span>
             </h2>
             <p className="text-[#67768e] text-[16px] max-w-[700px] mx-auto">
-              Dealing with Amazon ASIN suspension isn&apos;t just about submitting a form; it requires strategy, documentation, and a deep understanding of Amazon&apos;s policies. At AMZ Pro Venture, we follow a clear, proven process to maximize your chances of reinstatement while keeping you informed every step of the way.
+              When Amazon removes an ASIN, sending an appeal isn&apos;t always enough to get it back. First, you need to know what went wrong and what Amazon expects. We help you sort out the issue, prepare your appeal, and respond to Amazon. We&apos;ll also keep you in the loop throughout.
             </p>
           </div>
           </FadeIn>
@@ -398,9 +398,9 @@ export default function AmazonAccountSuspended() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
             {[
               {
-                title: "Initial Case Assessment & Documentation",
-                items: ["We begin by reviewing your suspended ASIN and Amazon's performance notifications to assess reinstatement potential. If we see a strong chance of success, we proceed.",
-                   "Once accepted, we guide you in gathering the required documents, like invoices, authorization letters, or certifications, for a compliant appeal."],
+                title: "Case Review and Documents",
+                items: ["We review your suspended ASIN and Amazon's notifications to assess your chances of reinstatement. If the case is strong, we move forward.",
+                   "Then we help you gather the documents needed, like invoices, authorization letters, or certifications, for a compliant appeal."],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -411,9 +411,9 @@ export default function AmazonAccountSuspended() {
                 ),
               },
               {
-                title: "Plan of Action (POA) Creation",
-                items: ["Our team drafts a custom, case-specific POA that directly addresses Amazon's concerns.",
-                  "We ensure that the plan is aligned with Amazon's policies and structured to meet their expectations for reinstatement.",],
+                title: "Plan of Action (POA)",
+                items: ["We write a custom POA that speaks directly to Amazon's concerns about your listing.",
+                  "Every plan follows Amazon's policies and follows the structure their reviewers expect.",],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -424,7 +424,7 @@ export default function AmazonAccountSuspended() {
               },
               {
                 title: "Submission & Tracking",
-                items: ["We submit your appeal via the appropriate Seller Central channel or escalate it when needed.", "Our team closely monitors the appeal's progress, communicates with Amazon, and keeps you updated throughout."],
+                items: ["We submit your appeal through the right Seller Central channel, or escalate it when needed.", "We track its progress closely, communicate with Amazon on your behalf, and keep you updated throughout."],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -435,7 +435,7 @@ export default function AmazonAccountSuspended() {
               },
               {
                 title: "Free One-Time Re-Appeal",
-                items: ["If the first appeal is denied but the case is still valid, we revise the POA based on Amazon's feedback and resubmit, at no additional cost."],
+                items: ["If Amazon denies the first appeal but the case is still valid, we update the POA based on their feedback and resubmit at no extra cost."],
                 note: null,
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" className="w-10 h-10 mb-1">
@@ -481,15 +481,15 @@ export default function AmazonAccountSuspended() {
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
-              Let&apos;s Get Your Listing Back Online
+              Ready to Start Selling <span style={{ color: "#ff9900" }}>That Product Again?</span>
             </h2>
             <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
-              If your product has been taken down, don&apos;t wait. Start with our ASIN reinstatement, and we&apos;ll guide you through every step of getting reinstated quickly, confidently, and compliantly.
+              If Amazon has taken down your product, don&apos;t wait it out. Start your Amazon ASIN reinstatement with us, and we&apos;ll guide you through every step of getting it back quickly and the right way.
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">REINSTATE MY AMAZON LISTING ?</span>
-                <span className="svc-btn-bottom">REINSTATE MY AMAZON LISTING ?</span>
+                <span className="svc-btn-top">Reinstate My Amazon Listing</span>
+                <span className="svc-btn-bottom">Reinstate My Amazon Listing</span>
               </span>
             </a>
           </div>

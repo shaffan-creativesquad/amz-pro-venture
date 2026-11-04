@@ -31,22 +31,22 @@ export default function PolicyViolationResolution() {
             className="font-bold leading-tight mb-6"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 5vw, 48px)", color: "#ffffff" }}
           >
-            Want to Resolve Amazon{" "}
-            <span style={{ color: "#ff9900" }}>Violations Fast?</span>
+            Fix Amazon Policy Violations{" "}
+            <span style={{ color: "#ff9900" }}>Before They Become Suspensions.</span>
           </h1>
           </FadeIn>
 
           {/* Description */}
           <FadeIn delay={0.3}>
           <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
-            Policy violations on Amazon can put your entire business at risk; one flag can lead to ASIN removals, listing suppression, or even full account suspension.
+            Getting a policy warning from Amazon can be stressful, especially when it starts affecting your listings or sales. A violation can lead to removed products, suppressed listings, or even account suspension. We help you understand what went wrong, fix the issue, and get your account back on track before things get worse.
           </p>
           </FadeIn>
 
           <p className="text-white/80 font-semibold text-[16px] mb-4">We help you:</p>
 
           <div className="space-y-3 mb-12">
-            {["Detect violations early", "Prevent suspensions before they happen", "Protect against future violations"].map((item) => (
+            {["Catch violations before they do damage.", "Stop suspensions before they start.", "Keep your account protected going forward."].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
@@ -91,17 +91,17 @@ export default function PolicyViolationResolution() {
             className="font-bold leading-tight mb-5"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 42px)", color: "#000000" }}
           >
-            Violations Don&apos;t Age Well.<br />Resolve Them Today.
+            Violations Only Get Worse<br />When You Wait.
           </h2>
           <p style={{ fontSize: "16px", color: "#67768e", lineHeight: "1.7", marginBottom: "32px" }}>
-            Get a <strong style={{ color: "#000000" }}>Free Amazon Account Assessment</strong> to resolve violations before they turn into suspensions.
+            Get a <strong style={{ color: "#000000" }}>Free Amazon Account Assessment</strong> and clear your violations before they turn into a suspension.
           </p>
           <a
             href="/contact-us"
             className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors"
             style={{ padding: "14px 32px" }}
           >
-            GET ACCOUNT ASSESSMENT ?
+            GET ACCOUNT ASSESSMENT
           </a>
         </div>
       </section></FadeIn>

@@ -174,7 +174,7 @@ export default function AmazonAccountSuspended() {
 
           <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center">
 
-            &apos;Your Amazon account has been suspended&apos; in your inbox can bring your whole business to a standstill. Sales stop, funds get held, and every day you&apos;re offline is going to hurt your rankings. Our reinstatement team has helped hundreds of sellers get back online with appeals that actually get read, a proper Amazon plan of action, and direct follow-up with Seller Support until your case is resolved.
+        &apos;Your Amazon account has been suspended&apos; in your inbox can bring your whole business to a standstill. Sales stop, funds get held, and every day you&apos;re offline is going to hurt your rankings. Our reinstatement team has helped hundreds of sellers get back online with appeals that actually get read, a proper Amazon plan of action, and direct follow-up with Seller Support until your case is resolved.
 
           </p>
 
@@ -242,7 +242,7 @@ export default function AmazonAccountSuspended() {
 
               {[
 
-                "Intellectual property & trademark complaints",
+                "Intellectual property and trademark complaints",
 
                 "Product authenticity or safety issues",
 
@@ -250,7 +250,7 @@ export default function AmazonAccountSuspended() {
 
                 "Section 3 or terms of service breaches",
 
-                "All other types of account suspensions",
+                "Any other type of account suspension",
 
               ].map((item) => (
 
@@ -278,9 +278,9 @@ export default function AmazonAccountSuspended() {
 
                 <span className="svc-btn-inner">
 
-                  <span className="svc-btn-top">Get Amazon Account Assessment Now</span>
+                  <span className="svc-btn-top">Get Your Account Assessment</span>
 
-                  <span className="svc-btn-bottom">Get Amazon Account Assessment Now</span>
+                  <span className="svc-btn-bottom">Get Your Account Assessment</span>
 
                 </span>
 
@@ -304,9 +304,9 @@ export default function AmazonAccountSuspended() {
 
       {/* Why Choose Us Section */}
 
-      <section className="bg-white py-20 w-full max-w-[1140px] mx-auto">
+      <section className="bg-white py-20 w-full">
 
-        <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
 
 
@@ -696,7 +696,7 @@ export default function AmazonAccountSuspended() {
 
               <span className="text-[#000000]">What We Need </span>
 
-              <span className="text-[#ff9900]">from You</span>
+              <span className="text-[#ff9900]">to Get Started</span>
 
             </h2>
 
@@ -766,13 +766,13 @@ export default function AmazonAccountSuspended() {
 
       <section className="w-full py-10 lg:py-20 bg-white">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
           <div className="text-center mb-10">
 
-            <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-4 text-center" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
 
               <span className="text-[#000000]">Whatever Got You Suspended, </span>
 
@@ -796,7 +796,7 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Customer Service Performance Suspensions",
+                title: "Customer Service Performance",
 
                 items: ["Negative Feedback", "A-to-Z Guarantee Claims", "Chargeback Claims"],
 
@@ -830,7 +830,7 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Policy Compliance & Violation Suspensions",
+                title: "Policy and Compliance Violations",
 
                 items: ["Product Authenticity Complaints", "Product Condition Complaints", "Intellectual Property (IP) Complaints", "Listing Policy Violations", "Restricted Product Issues", "Counterfeit Accusations", "Linked or Related Account Suspensions"],
 
@@ -850,7 +850,7 @@ export default function AmazonAccountSuspended() {
 
               {
 
-                title: "Shipping & Fulfillment Suspensions",
+                title: "Shipping and Fulfillment",
 
                 items: ["Late Shipment Rate", "Valid Tracking Rate", "Pre-Fulfillment Cancel Rate"],
 
@@ -891,9 +891,6 @@ export default function AmazonAccountSuspended() {
                 title: "Section 3 Suspensions",
 
                 items: ["Operating Multiple Seller Accounts", "Breach of Amazon's Terms or Illegal Activity"],
-
-                note: "For permanently suspended or counterfeit-related accounts, we proceed only if the seller provides the required documentation.",
-
                 icon: (
 
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" className="w-10 h-10 mb-1">
@@ -1010,7 +1007,7 @@ export default function AmazonAccountSuspended() {
 
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
 
-            <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
+            <h2 className="font-bold leading-tight mb-5 text-center" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
 
               Every Day Offline Costs You<br />More Than Sales
 
@@ -1022,14 +1019,14 @@ export default function AmazonAccountSuspended() {
 
             </p>
 
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink">
 
               <span className="svc-btn-inner">
 
-                <span className="svc-btn-top">Get Amazon Account Assessment Now ?</span>
+                <span className="svc-btn-top">Get Your Free Account Assessment</span>
 
-                <span className="svc-btn-bottom">Get Amazon Account Assessment Now ?</span>
+                <span className="svc-btn-bottom">Get Your Free Account Assessment</span>
 
               </span>
 
@@ -1102,7 +1099,7 @@ export default function AmazonAccountSuspended() {
 
                   title: "Calls Every Two Weeks",
 
-                  desc: "Regular check-ins keep you updated on your account, what we&apos;re working on, and what&apos;s coming next.",
+                  desc: "Regular check-ins keep you updated on your account, what we're working on, and what's coming next.",
 
                 },
 
@@ -1110,7 +1107,7 @@ export default function AmazonAccountSuspended() {
 
                   title: "Early Keyword Insights",
 
-                  desc: "We flag search and listing trends early, helping you win back visibility and organic traffic once you&apos;re live again.",
+                  desc: "We flag search and listing trends early, helping you win back visibility and organic traffic once you're live again.",
 
                 },
 

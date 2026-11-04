@@ -44,13 +44,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon PPC Management service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon PPC management services? Here are the ones sellers ask most. If yours isn&apos;t here, reach out.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

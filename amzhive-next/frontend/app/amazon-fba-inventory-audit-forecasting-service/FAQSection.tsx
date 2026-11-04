@@ -7,43 +7,43 @@ import { useState } from "react";
 const faqs = [
   {
     question: "What is Amazon FBA inventory management?",
-    answer: "Amazon FBA inventory management involves tracking and optimizing your stock in Amazon's warehouses to meet customer demand. It includes auditing inventory, forecasting future needs, and managing stock levels to avoid issues like stockouts or overstocking. This ensures your products are available, rankings are protected, and costs are minimized.",
+    answer: "FBA inventory management is all about tracking and managing your inventory in the FBA warehouses to match demand. It's about auditing your inventory, forecasting your future needs and managing your stock levels to avoid both stockouts and overstocking. The aim is to keep your stock available, your rankings protected and your costs as low as possible.",
   },
   {
-    question: "How often will I receive inventory reports?",
-    answer: "You will receive a detailed inventory audit & forecast once a month, along with alerts if urgent action is required. The reports provide comprehensive overviews of your inventory performance, such as health, stock status, risk, and opportunities. Forecast and restock recommendations include updated order quantities and timing suggestions to keep your FBA account balanced.",
+    question: "How often will I get inventory reports?",
+    answer: "You'll get a full report every month on inventory health, restock recommendations and forecast accuracy, plus alerts when something requires immediate attention.",
   },
   {
-    question: "Can you guarantee I'll never run out of stock?",
-    answer: "We provide highly accurate forecasts and recommendations, but actual restocking depends on supplier lead times, purchase decisions, and logistics. Our role is to give you the data and guidance needed to minimize risk.",
+    question: "Can you promise I'll never run out of stock?",
+    answer: "No one can guarantee that of course, given that supplier delays and sudden demand spikes are completely out of our control. We mitigate that risk through the use of safety stock and early warnings.",
   },
   {
     question: "What if my sales are seasonal?",
-    answer: "Our forecasts adjust for seasonality and sales spikes, such as the Q4 holiday rush and Prime Day. We recommend sharing past seasonal sales data for maximum accuracy.",
+    answer: "That's where Amazon FBA inventory forecasting really comes into its own. We look at your historical seasonal patterns and plan your restocks well in advance so you're fully stocked up for the busy periods and have no stock left over in the lulls.",
   },
   {
-    question: "Do you place purchase orders on my behalf?",
-    answer: "Yes, we can help you navigate this issue by identifying the root cause and guiding you on the proper steps to resolve issues related to the linked account suspension.",
+    question: "Do you place purchase orders for me?",
+    answer: "No you stay in control of your orders. We tell you precisely what to reorder, how much and when so you can order from your suppliers with complete confidence.",
   },
   {
-    question: "What if I sell new products without much history?",
-    answer: "For new ASINs, we use competitor data, category trends, and early sales velocity to provide forecasts. Accuracy improves as more data becomes available.",
+    question: "What if I sell new products with little sales history?",
+    answer: "We can still forecast them using the same products, category trends and early sales data and then of course tune the plan as the real numbers come in.",
   },
   {
-    question: "Is this service automated or human-managed?",
-    answer: "We take a hybrid approach. We integrate AI automation with expert oversight and recommendations from our team. This balance helps us maintain accuracy and provide quick results.",
+    question: "Is this service automated or managed by people?",
+    answer: "Both. The AI tools look at the data and our team then go through it all and turn it into clear, actionable advice.",
   },
   {
-    question: "How to avoid stockouts with Amazon inventory tools?",
-    answer: "Using AI-powered tools like Jungle Scout or Helium 10, you can forecast demand based on sales trends, seasonality, and lead times. These tools provide restock alerts and safety stock calculations to ensure you reorder products on time, preventing stockouts and maintaining sales momentum.",
+    question: "How can I avoid stockouts using Amazon's inventory tools?",
+    answer: "Amazon's restock reports and alerts are a decent starting point, but they don't always take into account supplier lead times or promotions. We superimpose our own forecasting for restock timing on top of those.",
   },
   {
-    question: "How to optimize Amazon inventory for better sales?",
-    answer: "Optimize inventory by conducting regular audits to identify overstocked or slow-moving items, using AI-driven forecasting for accurate restocking, and monitoring sales trends. This keeps your products in stock, reduces storage fees, and boosts rankings, leading to better sales and customer trust.",
+    question: "How can I optimize Amazon inventory to boost sales?",
+    answer: "Keep best sellers in stock, clear slow movers, avoid long-term storage fees, and maintain a healthy Amazon IPI score to protect storage capacity for top products.",
   },
   {
-    question: "What are the costs of Amazon inventory management solutions?",
-    answer: "The cost of our Amazon FBA Inventory Audit & Forecasting Service varies based on your subscription plan. We provide customized solutions to help you manage inventory effectively and reduce unnecessary expenses.",
+    question: "How much do Amazon inventory management solutions cost?",
+    answer: "It depends on your number of SKUs and the support you need. Contact us for a free consultation, and we'll suggest a monthly plan that fits your store.",
   },
 ];
 
@@ -60,13 +60,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon FBA Inventory Audit &amp; Forecasting service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our FBA inventory audit and forecasting service? You&apos;ll find the answers here. If not, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

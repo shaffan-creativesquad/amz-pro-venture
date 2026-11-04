@@ -21,21 +21,21 @@ export default function HeroSection() {
           className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
-          Full-Service <span style={{ color: "#ff9900" }}>Amazon PPC</span><br />
-          <span style={{ color: "#ff9900" }}>Campaign</span> Management
+          <span style={{ color: "#ff9900" }}>Amazon PPC</span><br />
+          That Turns Clicks Into Profit
         </motion.h1>
 
         <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
-          We build and manage high-performing PPC campaigns that grow your sales, cut wasted spend, and keep you ahead of the competition.
+          We manage your Amazon ads, from setting up campaigns to tracking what&apos;s working and what isn&apos;t. The goal is to drive more sales, avoid paying for clicks that don&apos;t convert, and help your products reach the right shoppers.
         </motion.p>
 
         <motion.div variants={itm} className="space-y-4 mb-10 flex flex-col items-center lg:items-start">
           {[
-            "Increase brand awareness",
-            "Smart keyword targeting",
-            "Eliminate wasted ad spend",
-            "Reach high-intent buyers",
-            "Scale profitably",
+            "Build stronger brand awareness.",
+            "Target the keywords that actually sell",
+            "Stop paying for clicks that go nowhere.",
+            "Reach shoppers ready to buy",
+            "Grow while keeping profit healthy.",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
@@ -53,7 +53,7 @@ export default function HeroSection() {
             className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[11px] rounded-full hover:bg-black transition-colors"
             style={{ padding: "12px 24px" }}
           >
-            GET YOUR FREE AMAZON PPC AUDIT →
+            Get Your Free Amazon PPC Audit
           </a>
         </motion.div>
 

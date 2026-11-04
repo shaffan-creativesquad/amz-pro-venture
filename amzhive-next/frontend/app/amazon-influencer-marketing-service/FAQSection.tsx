@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 
@@ -6,44 +6,44 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "How do I know if my product qualifies for the Creator Connections?",
-    answer: "We'll verify your product's eligibility during the onboarding process. Generally, products listed under an active Amazon seller account in good standing, with Brand Registry enrollment, and sufficient inventory are good candidates. Certain restricted product categories (e.g., highly regulated items, adult products) may be ineligible.",
+    question: "How do I know if my product qualifies for Creator Connections?",
+    answer: "We check your product's eligibility as part of the onboarding process. In most cases, any product that's listed under an active Amazon seller account (in good standing), with Brand Registry and sufficient inventory, will be eligible. Some categories simply aren't eligible (highly regulated products, adult products, for example).",
   },
   {
-    question: "What is Brand Registry, and why is it important for influencer marketing?",
-    answer: "Amazon Brand Registry is a program that helps brand owners protect their intellectual property and brand identity on Amazon. It is required for participating in Amazon's Creator Connections program, which is our primary method for seamless influencer partnerships. Brand Registry also gives you access to enhanced brand content (A+ Content), Storefronts, and crucial analytics that benefit influencer campaigns.",
+    question: "What is Brand Registry, and why does it matter for influencer marketing?",
+    answer: "Brand Registry is Amazon's program that verifies you own your brand. It gives you access to a range of tools, including A+ Content, Brand Stores, and improved brand protection. For creator campaigns, it helps your listings look more credible and gives you access to a wider range of promotion options, which is why we recommend it.",
   },
   {
     question: "Are influencer campaigns guaranteed to drive sales?",
-    answer: "While influencer content significantly boosts visibility, trust, and targeted traffic, guaranteed sales are not something any marketing strategy can promise. Conversions ultimately depend on several factors, including your product's market fit, competitiveness, customer reviews, pricing, and overall listing quality. Our strategic targeting and optimization efforts are designed to maximize your ROI and increase the likelihood of sales.",
+    answer: "No one can guarantee sales, as it depends on your product, your pricing, your reviews, and how the audience responds. We do a very careful selection of creators, we guide the content, and we're always looking at the data to improve the campaign, so we're always trying to give you the best possible chance of strong results.",
   },
   {
-    question: "What kind of return on investment (ROI) can I expect from influencer marketing?",
-    answer: "ROI can vary widely based on your niche, product, influencer tier, and campaign goals. However, the benefits extend beyond direct sales to include increased brand awareness, improved organic rankings, valuable social proof (user-generated content), and richer customer insights. We provide clear reporting on campaign performance to help you track these metrics and understand your value.",
+    question: "What kind of return on investment (ROI) can I expect?",
+    answer: "ROI depends heavily on the product, niche, and budget. Some products will see a quick uplift in sales; others will take a bit longer to show the full effect through improved rankings, more reviews, and greater brand awareness. We monitor performance on a monthly basis and provide you with full reports so you always know what your campaign is driving.",
   },
   {
-    question: "How does AMZ Pro Venture select the right influencers for my product?",
-    answer: "Our process involves a rigorous selection. We consider factors such as the influencer's niche relevance, audience demographics, engagement rates, content quality, authenticity, and past performance with similar products. We leverage our vetted network and advanced tools to identify creators whose audience is genuinely interested in what you sell, ensuring maximum impact for your campaign.",
+    question: "How does AMZ ProVenture choose the right influencers for my product?",
+    answer: "We look at each creator's niche, their audience, their engagement and the quality of their content rather than just their follower count. We then match them to your product and your target buyer so the people who are watching are the people most likely to buy.",
   },
   {
     question: "Is Amazon PPC included in this service?",
-    answer: "No, our service for the Amazon Influencer Marketing is separate from Amazon PPC management. However, we highly recommend running Amazon PPC campaigns concurrently with your influencer promotions. The external traffic and boosted sales from influencers can significantly enhance your PPC performance and improve overall product visibility and ranking on Amazon.",
+    answer: "No, PPC is a separate service. Many brands combine the two, as creator traffic and PPC support each other well. We'd be more than happy to go through whether PPC would be of any use to you in achieving your objectives.",
   },
   {
     question: "Can influencer campaigns support new product launches?",
-    answer: "Absolutely! Influencer campaigns are a powerful tool for generating early buzz, building initial trust, and driving momentum around new product listings. They can help gather early reviews, create social proof, and signal to Amazon's algorithm that your new product is relevant and in demand, giving it a strong start.",
+    answer: "Yes, and launches are one of the best times to use them. Creator content is a great way to drive early sales, reviews, and visibility for a new product, which can make a massive difference in how quickly it starts to rank.",
   },
   {
-    question: "What is \"Creator Connections,\" and how does AMZ Pro Venture use it?",
-    answer: "Creator Connections is Amazon's marketplace service that streamlines the process for sellers to find and collaborate with Amazon-approved influencers. AMZ Pro Venture leverages this platform to efficiently manage influencer outreach, secure collaborations, track product samples, and monitor campaign performance directly within the Amazon ecosystem, ensuring a smooth and compliant process for your brand.",
+    question: "What is Creator Connections, and how does AMZ ProVenture use it?",
+    answer: "Creator Connections is Amazon's program for linking brands with Amazon Creators through bonus-commission campaigns. We handle the full setup inside the platform, choose the right products and commission levels, and manage the campaign so it reaches the right creators and keeps performing.",
   },
   {
     question: "Do I need to provide free product samples to influencers?",
-    answer: "Yes, providing free product samples is a standard and essential component of influencer marketing. Influencers need to experience your product firsthand to create authentic and compelling content. We will coordinate the sample delivery process for you.",
+    answer: "In many cases, yes. Creators usually need the product in hand to make honest, high-quality content. We'll tell you which creators need samples, and we coordinate the approvals and shipping with you.",
   },
   {
     question: "What if an influencer doesn't deliver content, or performance is low?",
-    answer: "While we vet our influencer network and aim for high performance, outcomes can vary. Our ongoing monthly campaign management includes monitoring influencer communication and content delivery. We strive to work with reliable influencers and optimize strategies as needed to improve results. Performance is dependent on multiple factors, and we provide transparent reporting on all campaign activities.",
+    answer: "We stay in close contact with every creator and follow up quickly if content is late. If a creator doesn't deliver or results are weak, we adjust the plan, shift focus to better-performing creators, and keep the campaign moving in the right direction.",
   },
 ];
 
@@ -60,13 +60,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon Influencer Marketing service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon influencer marketing service? Here are the ones we hear most. If yours isn&apos;t here, reach out.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

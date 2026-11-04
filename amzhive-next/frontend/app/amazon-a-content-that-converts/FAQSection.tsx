@@ -6,36 +6,36 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Can you create A+ Content for multiple ASINs?",
-    answer: "Yes! We frequently work with brands managing extensive catalogs. We offer custom packages specifically designed for multi-ASIN setups and parent-child listings, ensuring a cohesive and optimized look across all your products.",
+    question: "Do you create A+ Content for brands with many ASINs?",
+    answer: "Yes. We often work with brands that manage large catalogs. We offer custom packages for multi-ASIN setups and parent-child listings, so all your products share a consistent, polished look.",
   },
   {
-    question: "Can you design Premium A+ Content?",
-    answer: "Absolutely! If your brand is eligible for Premium A+ Content (a great opportunity for enhanced visuals and interactivity), we have the expertise to design and implement richer layouts, engaging video modules, and interactive carousels at an additional cost, maximizing your brand’s presence.",
+    question: "Do you offer Premium A+ Content design?",
+    answer: "Yes. We design Amazon Premium A+ Content for eligible brands, using advanced modules like carousels, hotspots, videos, and comparison charts.",
   },
   {
-    question: "Can I use the same A+ Content across multiple products?",
-    answer: "While you can use similar A+ content across variations and related ASINs for brand consistency, we generally recommend tailoring content for optimal performance. Specific product features and unique selling points resonate more when highlighted directly within each A+ module. We can advise on the best strategy for your catalog.",
+    question: "Can one A+ Content design be used on several products?",
+    answer: "Yes, you can use the same A+ Content for similar products. But if the products have different features or appeal to different buyers, it’s better to create separate content that fits each one.",
   },
   {
-    question: "What if I don’t have professional brand visuals or lifestyle images?",
-    answer: "No problem! While we typically work with client-provided assets, we understand that not every brand has a full library. We can assist in creating the necessary graphics and visual assets as an add-on service, or we can provide recommendations for trusted photography partners to ensure your A+ Content looks its best.",
+    question: "What if I don’t have professional photos or lifestyle images?",
+    answer: "That’s fine. We can create lifestyle visuals, infographics, and branded graphics using your product photos or samples, so your A+ Content still looks polished.",
   },
   {
-    question: "How long does the A+ Content design process typically take?",
-    answer: "Our standard delivery for A+ Content is typically 5-7 business days from the time we receive all necessary content and images from you. We prioritize efficiency without compromising on quality.",
+    question: "How long does the A+ Content design process take?",
+    answer: "Timing depends on how many modules and products are involved. We’ll share a clear timeline after reviewing your listing, and we’ll keep you updated at every stage.",
   },
   {
-    question: "How does your service use Amazon’s Rufus AI for A+ Content?",
-    answer: "Rufus AI analyzes both text and images to understand product content better. Our service specifically optimizes your A+ Content visuals (infographics, lifestyle shots) and hidden metadata to be highly \"AI-friendly.\" This ensures Rufus can accurately interpret your product’s key attributes, leading to better indexing, higher visibility, and improved search relevance for your listings.",
+    question: "How do you design A+ Content for Amazon’s Rufus AI?",
+    answer: "We make sure your product details, images, and text are easy to understand. We also add relevant keywords and descriptive alt text so Rufus can better understand your product and what it offers.",
   },
   {
     question: "Will A+ Content increase my sales and conversion rate?",
-    answer: "Yes, definitely! As Amazon states, Basic A+ Content can increase sales by up to 8%, and well-implemented Premium A+ Content can boost sales by up to 20%. By providing clearer information, compelling visuals, and building stronger brand trust, A+ Content directly helps convert hesitant shoppers into confident buyers.",
+    answer: "Yes, because when customers have a clear picture of what the product offers and can get their questions answered, they tend to feel more confident buying it. Amazon claims sales have increased by up to 8% for Basic A+ Content and 20% for Premium A+.",
   },
   {
-    question: "Can you update my existing A+ Content, or do you only create new?",
-    answer: "We do both! We can conduct an audit of your existing A+ Content to identify areas for improvement and then redesign or enhance modules to boost performance. Whether it’s a refresh or a complete overhaul, we ensure your A+ Content is optimized.",
+    question: "Can you improve my current A+ Content, or only create new content?",
+    answer: "Both. We can audit and refresh your existing A+ Content, or build brand-new modules from scratch, depending on what your listing needs.",
   },
 ];
 
@@ -52,13 +52,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Amazon A+ Content service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon A+ content services? You&apos;ll find the answers here. If not, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>
