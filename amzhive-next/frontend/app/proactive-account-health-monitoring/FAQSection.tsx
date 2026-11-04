@@ -6,44 +6,44 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Do I need this service if my account is healthy now?",
-    answer: "Absolutely, yes. Proactive account health management is your best defense against future issues. While your account may be healthy today, Amazon's policies, algorithms, and enforcement can change rapidly. Most suspensions are preventable with early detection and swift action. Our 24/7 monitoring system and expert team allow us to catch subtle issues, address minor warnings, and implement preventive measures before they escalate into costly problems, giving you a significant edge over reactive chaos and ensuring uninterrupted business operations.",
+    question: "Do I need this service if my account is healthy right now?",
+    answer: "Yes. Even a healthy account can change quite rapidly as Amazon continually updates its policies and enforcement. Most suspensions can be prevented with early detection and our 24/7 monitoring is designed to pick up the early warning signs before they escalate into major issues. That way your account remains in good standing and your business can keep running.",
   },
   {
-    question: "What if I have already received a violation notice or my account is at risk?",
-    answer: "If you've already received a violation notice or your account health dashboard shows a \"risk of deactivation,\" it's critical to act immediately. We'll prioritize an in-depth investigation into the specific violation, conduct a thorough root cause analysis, and advise on the best course of action. If a Plan of Action (POA) or specific documentation is required by Amazon, our experts will guide you through the process and help draft a clear, Amazon-compliant POA designed for effective resolution.",
+    question: "What if I've already received a violation notice or my account is at risk?",
+    answer: "That\'s the right time to get started. We\'ll look at the notice, establish the cause and respond promptly (with a Plan of Action if required) to safeguard your account.",
   },
   {
     question: "Is this a one-time fix or an ongoing service?",
-    answer: "Amazon Account Health Monitoring and Optimization is an ongoing, monthly subscription-based service. Account health isn't a one-time fix; it requires continuous vigilance. Amazon's metrics and policies are dynamic, and customer actions (A-Z claims, feedback) can impact your standing at any moment. Our service provides 24/7 proactive monitoring, real-time alert detection, weekly reporting, and continuous strategic adjustments to ensure your account remains compliant, protected, and optimized for long-term growth without interruptions.",
+    answer: "It\'s an ongoing monthly service. Your account health changes daily, so continuous monitoring is what keeps it protected.",
   },
   {
-    question: "Do you guarantee that my account won't be suspended?",
-    answer: "While no service can guarantee 100% immunity from suspension (as ultimate control rests with Amazon and factors like product quality or seller compliance with all Amazon's terms are paramount), we can confidently say we significantly lower your risk of suspension. Our proactive 24/7 monitoring, rapid response to violations, expert root cause analysis, and strategic Plan of Action drafting are designed to identify and address threats early, drastically reducing the likelihood of deactivation and protecting your business lifeline.",
+    question: "Can you guarantee my account won\'t be suspended?",
+    answer: "No one can guarantee that, since Amazon makes the final decisions. We greatly reduce your risk by spotting issues early and acting fast to prevent Amazon suspension.",
   },
   {
     question: "Can this service be combined with your other Amazon services?",
-    answer: "Absolutely! Our Account Health Monitoring & Optimization service is designed to be highly complementary and even more effective when integrated with our other Amazon services. For instance — Listing Optimization ensures your product content is compliant and high-converting, reducing potential policy flags. PPC Management prevents ad disapprovals and ensures your ad spend drives traffic to healthy, compliant listings. Account Reinstatement: if an issue does lead to deactivation, our reinstatement team can act swiftly to get you back online, and then our monitoring service will help prevent future issues. This integrated approach provides comprehensive support for your entire Amazon ecosystem.",
+    answer: "Yes. It works alongside our Reinstatement, PPC, and Listing Optimization services, giving you one team for complete account support.",
   },
   {
-    question: "What type of information/access do you need from me?",
-    answer: "To deliver the best results, we require Child Access to your Seller Central account with specific permissions for performance and case logs. If Amazon requests documentation for a specific violation, such as invoices or certifications, you will need to provide these. Don't worry, our team will clearly guide you through exactly what's needed and ensure your information remains secure. We do not create compliance documents like invoices or certifications ourselves.",
+    question: "What information or access do you need from me?",
+    answer: "Child access to Seller Central with performance and case permissions, any recent notices or alerts, and compliance documents if they\'re needed.",
   },
   {
     question: "How quickly do you respond to new violations or alerts?",
-    answer: "Our system is designed for real-time flag detection and immediate action. As soon as a new warning, notice, or critical metric deviation appears on your Account Health Dashboard, our team is alerted. This allows us to begin interpreting the notice and initiating a proactive response, including drafting a Plan of Action if applicable, typically within hours of detection, ensuring swift resolution before issues escalate.",
+    answer: "We\'re monitoring 24/7 and acting as soon as a new flag comes in so we deal with issues before they\'ve had a chance to get out of hand.",
   },
   {
-    question: "How do you handle A-Z Claims or negative customer feedback?",
-    answer: "As part of our service, we actively monitor and manage Amazon-specific scenarios that impact account health. This includes tracking your Order Defect Rate (ODR) for A-Z claims and negative feedback. We will appeal eligible A-Z claims on your behalf (as per Amazon's guidelines) and submit feedback removal requests when they fall within Amazon's policy criteria, helping to maintain your key performance metrics and protect your seller rating.",
+    question: "How do you handle A-to-Z claims or negative feedback?",
+    answer: "We appeal eligible A-to-Z claims, request removal of the feedback where permitted under Amazon policy and monitor the trends that impact your Amazon seller performance metrics.",
   },
   {
-    question: "What kind of reports will I receive?",
-    answer: "Transparency is key. You'll receive weekly Account Health Reports that provide a detailed snapshot of your current metrics, key risk areas, and a summary of all active policy cases. These reports include performance snapshots, actionable next steps, and performance trend summaries for critical metrics like ODR, LSR, and VTR, keeping you fully informed about your account's status and ongoing improvements.",
+    question: "What kind of reports will I get?",
+    answer: "You\'ll get weekly Account Health reports which will include performance snapshots, any changes to your Amazon Account Health Rating and clear next steps.",
   },
   {
-    question: "What makes AMZ Pro Venture's Account Health service stand out from others?",
-    answer: "Our service is distinguished by its Compliance-Centric, Proactive by Design, and Strategic Growth Partner approach. We speak Amazon's language, leverage 24/7 real-time monitoring to catch issues before they escalate, and go beyond surface fixes with root cause analysis. We aim to keep you ahead of Amazon's enforcement curve, allowing you to focus on scaling your business while we manage the compliance and backend complexities, ensuring your account stays healthy, active, and profitable.",
+    question: "What makes AMZ ProVenture\'s Account Health service different?",
+    answer: "We combine 24/7 monitoring, root cause fixes, and long-term compliance planning in one service, so you\'re protected today and prepared for what\'s ahead.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our Proactive Account Health Monitoring service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon account health monitoring service? You'll find the answers here. If not, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">

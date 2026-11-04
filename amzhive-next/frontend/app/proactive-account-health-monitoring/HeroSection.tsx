@@ -21,20 +21,20 @@ export default function HeroSection() {
           className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4.5vw, 58px)", color: "#000000" }}
         >
-          Is Your Amazon Account <br />
-          <span style={{ color: "#ff9900" }}>Health at Risk?</span>
+          Is Your Amazon Account Health <br />
+          <span style={{ color: "#ff9900" }}>in Danger?</span>
         </motion.h1>
 
         <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
-          Protect, preserve, and grow your Amazon business with 24/7 compliance support.
+          Protect, maintain, and grow your Amazon business with 24/7 Amazon account health monitoring and compliance support.
         </motion.p>
 
         <motion.div variants={itm} className="space-y-4 mb-10">
           {[
-            "Stay alert with 24/7 performance monitoring",
-            "Proactively handle violations",
-            "Fix root causes, not just the surface",
-            "Stay compliant and future-proof",
+            "Stay on top of issues with 24/7 performance tracking.",
+            "Handle violations before they grow.",
+            "Get lasting fixes instead of quick patches",
+            "Stay compliant and ready for what's next.",
           ].map((item) => (
             <div key={item} className="flex items-center gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="flex-shrink-0 w-[22px] h-[22px]" fill="none">
