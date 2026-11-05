@@ -1,0 +1,15 @@
+{
+  "name": "amz-pro-venture-app",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
+  "scripts": {
+    "heroku-prebuild": "cd amzhive-next && npm install --include=optional",
+    "heroku-postbuild": "cd amzhive-next && npm run build",
+    "build": "cd amzhive-next && npm run build",
+    "start": "cd amzhive-next && npm run start"
+  }
+}
