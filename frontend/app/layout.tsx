@@ -42,34 +42,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${plusJakartaSans.variable} ${poppins.variable} overflow-x-clip max-w-full`}>
-      <head>
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              html, body, :root, * {
-                scrollbar-width: thin !important;
-                scrollbar-color: #ff9900 #f1f3f5 !important;
-              }
-              ::-webkit-scrollbar {
-                width: 12px !important;
-                height: 12px !important;
-              }
-              ::-webkit-scrollbar-track {
-                background: #f1f3f5 !important;
-              }
-              ::-webkit-scrollbar-thumb {
-                background-color: #ff9900 !important;
-                border-radius: 9999px !important;
-                border: 2px solid #f1f3f5 !important;
-              }
-              ::-webkit-scrollbar-thumb:hover {
-                background-color: #e68a00 !important;
-              }
-            `,
-          }}
-        />
-      </head>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${plusJakartaSans.variable} ${poppins.variable} overflow-x-clip max-w-full`}
+    >
       <body className="min-h-full flex flex-col antialiased overflow-x-clip max-w-full w-full">
         <ScrollAnimations />
         {children}
