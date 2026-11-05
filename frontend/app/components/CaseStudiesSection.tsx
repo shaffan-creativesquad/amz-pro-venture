@@ -109,14 +109,15 @@ export default function CaseStudiesSection() {
           transition={{ duration: 0.65, delay: 0.1 }}
           className="w-full lg:max-w-[720px] min-w-0"
         >
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3">
 
             {/* Prev arrow */}
             <button
               onClick={prev}
-              className="flex-shrink-0 w-10 h-10 rounded-full bg-[#ff9900] text-white flex items-center justify-center hover:bg-black transition-colors shadow-md"
+              aria-label="Previous case study"
+              className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#ff9900] text-white flex items-center justify-center hover:bg-black transition-colors shadow-md"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="sm:w-[18px] sm:h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M15 18l-6-6 6-6" />
               </svg>
             </button>
@@ -131,17 +132,19 @@ export default function CaseStudiesSection() {
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: dir > 0 ? "-55%" : "55%", opacity: 0 }}
                   transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-                  className="grid grid-cols-2 gap-4 items-stretch"
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch"
                 >
                   {visible.map((c, i) => (
                     <Link
                       href={c.href}
                       key={i}
-                      className="group flex flex-col h-full rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                      className={`group flex-col h-full rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 ${
+                        i === 1 ? "hidden sm:flex" : "flex"
+                      }`}
                       style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.13)" }}
                     >
                       {/* Image + overlay */}
-                      <div className="relative w-full flex-1" style={{ minHeight: "320px" }}>
+                      <div className="relative w-full flex-1 min-h-[340px] sm:min-h-[320px]">
                         <Image
                           src={c.img}
                           alt={c.desc}
@@ -150,8 +153,8 @@ export default function CaseStudiesSection() {
                           className="object-cover object-top"
                         />
                         {/* Bottom overlay text */}
-                        <div className="absolute mx-4 px-4 py-3 rounded-lg" style={{ bottom: "16px", left: 0, right: 0, background: "rgba(0,0,0,0.55)" }}>
-                          <p className="text-white text-[13px] font-semibold leading-snug">{c.desc}</p>
+                        <div className="absolute mx-3 sm:mx-4 px-4 py-3 rounded-lg" style={{ bottom: "16px", left: 0, right: 0, background: "rgba(0,0,0,0.55)" }}>
+                          <p className="text-white text-[13px] sm:text-[14px] font-semibold leading-snug">{c.desc}</p>
                         </div>
                       </div>
 
@@ -166,9 +169,10 @@ export default function CaseStudiesSection() {
             {/* Next arrow */}
             <button
               onClick={next}
-              className="flex-shrink-0 w-10 h-10 rounded-full bg-[#ff9900] text-white flex items-center justify-center hover:bg-black transition-colors shadow-md"
+              aria-label="Next case study"
+              className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#ff9900] text-white flex items-center justify-center hover:bg-black transition-colors shadow-md"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="sm:w-[18px] sm:h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M9 18l6-6-6-6" />
               </svg>
             </button>
