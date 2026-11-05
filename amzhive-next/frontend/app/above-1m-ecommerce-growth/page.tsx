@@ -6,8 +6,8 @@ import FadeIn from "../components/FadeIn";
 import GrowthAuditForm from "./GrowthAuditForm";
 
 export const metadata = {
-  title: "Above $1M Ecommerce Growth | AMZ Pro Venture",
-  description: "Scale your ecommerce business above $1M with AMZ Pro Venture's expert growth strategies, account management, and data-driven optimization services.",
+  title: "Grow Your Brand to a Million a Month | AMZ Pro Venture",
+  description: "When e-commerce growth stalls, we find the leaks, rebuild what's broken, and add the sales channels that help you break through the $1M revenue ceiling.",
 };
 
 export default function Above1MEcommerceGrowth() {
@@ -70,7 +70,7 @@ export default function Above1MEcommerceGrowth() {
 
           {/* Top Tag */}
           <span className="inline-block mb-6 text-[12px] font-semibold uppercase tracking-widest border border-white/20 rounded-full px-5 py-2" style={{ color: "#ff9900" }}>
-            For Brands Stuck Between $200K – $800K/mo
+            For Brands Stuck Between $200K – $800K/Mo
           </span>
 
           {/* Heading */}
@@ -78,7 +78,7 @@ export default function Above1MEcommerceGrowth() {
             className="font-bold leading-tight mb-6 uppercase text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(36px, 5vw, 64px)", color: "#ffffff" }}
           >
-            SCALE YOUR BRAND{" "}
+            GROW YOUR BRAND{" "}
             <svg className="inline-block align-middle" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style={{ width: "0.85em", height: "0.95em" }}>
               <defs>
                 <clipPath id="cup-clip2">
@@ -133,7 +133,7 @@ export default function Above1MEcommerceGrowth() {
 
           {/* Description */}
           <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-10">
-            If your e-commerce growth has stalled, the problem isn&apos;t the market, it&apos;s the system underneath it. We find the leaks, rebuild what&apos;s broken, and add the sales channels that break the $1M Revenue ceiling.
+            When e-commerce growth stalls, the market is rarely the problem. The system behind your brand is. As an Amazon growth agency, we find the leaks, rebuild what’s broken, and add the sales channels that help you break through the $1M revenue ceiling.
           </p>
 
           {/* Platform Logos */}
@@ -176,10 +176,10 @@ export default function Above1MEcommerceGrowth() {
               <div className="flex-1 p-12 border-b lg:border-b-0 lg:border-r border-gray-100">
                 <p className="text-[12px] font-bold uppercase tracking-widest mb-4" style={{ color: "#ff9900" }}>$1 Million Growth Audit</p>
                 <h2 className="font-bold leading-tight mb-5 uppercase" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(24px, 3vw, 36px)", color: "#000000" }}>
-                  Find Out What&apos;s Standing Between Your E-Commerce Brand And $1M A Month
+                  Discover What’s Keeping Your Brand From $1M a Month
                 </h2>
                 <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
-                  We score your business across the most critical levers that separate $1M brands from stuck ones. You&apos;ll see exactly which one is costing you the most revenue right now.
+                  We score your business across the key levers that separate $1M brands from stalled ones. You’ll see exactly which gap is costing you the most revenue right now, and where to start fixing it.
                 </p>
                 <div>
                   <div className="flex justify-between items-center mb-2">
@@ -206,13 +206,13 @@ export default function Above1MEcommerceGrowth() {
       <section id="revenue-leaks" className="bg-white pt-10 md:pt-[160px] pb-20 w-full">
         <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
 
-          <FadeIn direction="up"><p className="text-center text-[12px] font-bold uppercase tracking-widest mb-4" style={{ color: "#ff9900" }}>What&apos;s Quietly Draining Your Revenue</p></FadeIn>
+          <FadeIn direction="up"><p className="text-center text-[12px] font-bold uppercase tracking-widest mb-4" style={{ color: "#ff9900" }}>What’s Quietly Draining Your Revenue</p></FadeIn>
           <FadeIn direction="up" delay={0.08}>
           <h2
             className="text-center font-bold mb-2 uppercase"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 50px)", color: "#000000" }}
           >
-            There&apos;s a Reason You&apos;re Stuck Below 7 Figures
+            Why Your Brand Hasn’t Crossed 7 Figures Yet
           </h2>
           <div className="flex justify-center mb-6">
             <div className="h-[3px] w-24 rounded-full" style={{ backgroundColor: "#ff9900" }} />
@@ -220,7 +220,7 @@ export default function Above1MEcommerceGrowth() {
           </FadeIn>
           <FadeIn direction="up" delay={0.14}>
           <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
-            Growth doesn&apos;t die from one big failure. It leaks away through a handful of small ones. If these feel familiar, the problem isn&apos;t effort. It&apos;s the system underneath.
+            Growth rarely collapses from one big mistake. It slips away through a handful of small ones. If these sound familiar, the issue isn’t effort. It’s the system underneath.
           </p>
           </FadeIn>
 
@@ -228,43 +228,43 @@ export default function Above1MEcommerceGrowth() {
             <div className="grid grid-cols-1 md:grid-cols-2">
             {[
               {
-                title: "Profit Disappearing Behind Rising Ad Costs",
-                desc: "Sales and revenue look fine, but real margins are weak. Ad costs creep up every month while your top line stays flat. We rebuild ad accounts around what you keep, not what you spend.",
+                title: "Rising Ad Costs, Shrinking Profit",
+                desc: "Sales may look good, but little profit is left after expenses. Ad costs keep going up, while sales stay about the same. We focus on getting more out of your ad spend, so you keep more of what you earn.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#ff9900" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                 ),
               },
               {
                 title: "One Platform, One Point of Failure",
-                desc: "If Amazon is your whole business, Amazon's next policy change is your whole risk. We move part of your revenue onto channels you actually control.",
+                desc: "If Amazon is your entire business, one policy change puts everything at risk. We shift part of your revenue onto channels you actually control",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#ff9900" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M8.46 8.46a5 5 0 0 0 0 7.07"/></svg>
                 ),
               },
               {
-                title: "Listing Suspensions Keep Showing Up",
-                desc: "One flagged listing can take down the product carrying most of your sales, with no notice. We monitor account health before it becomes a crisis, and fix it fast when it doesn't wait.",
+                title: "Listing Suspensions That Keep Returning",
+                desc: "One flagged listing can take down the product driving most of your sales, without warning. We watch your account health closely and act fast when issues appear.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#ff9900" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
                 ),
               },
               {
-                title: "Customers Buy Once and Disappear",
-                desc: "Every sale that never repeats means you're paying full acquisition cost: that's renting sales, not building a brand. We build retention systems that turn one-time buyers into repeat customers.",
+                title: "One-Time Buyers Who Never Return",
+                desc: "Every customer who doesn’t come back means paying full acquisition cost again. We build retention systems that turn first-time buyers into loyal repeat customers.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#ff9900" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 ),
               },
               {
-                title: "Traffic That Isn't Turning Into Growth",
-                desc: "You're getting clicks, but the customer count isn't moving. Something between the ad and the checkout is leaking. We find it and close it.",
+                title: "Traffic That Doesn’t Convert",
+                desc: "The clicks are coming in, but your customer count isn’t growing. Something between the ad and checkout is leaking. We find it and fix it.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#ff9900" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                 ),
               },
               {
-                title: "Thin Margins Baked Into the Business",
-                desc: "Sometimes the problem is in the math: what a customer is worth on their first order versus what it costs to win them. When that gap is too narrow, scaling makes the cash problem worse.",
+                title: "Margins Too Thin to Scale",
+                desc: "Sometimes, the numbers just don't add up. You may be spending more to get a customer than you earn from their first order. When that happens, growing your business can put even more pressure on your cash flow.",
                 icon: (
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#ff9900" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 1 0 0 7h5a3.5 3.5 0 1 0 0 7H6"/></svg>
                 ),
@@ -289,8 +289,8 @@ export default function Above1MEcommerceGrowth() {
           <div className="flex justify-center">
             <a href="/contact-us" className="svc-btn svc-btn-pink" style={{ borderRadius: "9999px", padding: "14px 40px" }}>
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">SHOW ME MY REVENUE LEAKS ?</span>
-                <span className="svc-btn-bottom">SHOW ME MY REVENUE LEAKS ?</span>
+                <span className="svc-btn-top">Show Me My Revenue Leaks</span>
+                <span className="svc-btn-bottom">Show Me My Revenue Leaks</span>
               </span>
             </a>
           </div>
@@ -307,16 +307,16 @@ export default function Above1MEcommerceGrowth() {
           <FadeIn direction="up">
           <div className="text-center mb-16">
             <span className="inline-block mb-5 text-[11px] font-bold uppercase tracking-widest border rounded-full px-5 py-2" style={{ color: "#ff9900", borderColor: "rgba(233,28,89,0.3)" }}>
-              One Team, One System, One Channel
+              One Team, One System, Every Channel
             </span>
             <h2
               className="font-bold leading-tight mb-5 uppercase"
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(32px, 4vw, 56px)", color: "#ffffff" }}
             >
-              $1 Million Roadmap™
+              Your $1M Roadmap™
             </h2>
             <p className="text-white/55 text-[16px] max-w-[600px] mx-auto leading-relaxed">
-              One team, one system, every channel. Built to take your brand from a stubborn plateau to dominating your niche.
+              One team and one proven system across every channel, built to move your brand from a stubborn plateau to leading its niche through focused Amazon brand scaling.
             </p>
           </div>
           </FadeIn>
@@ -332,9 +332,9 @@ export default function Above1MEcommerceGrowth() {
                   title: "Foundation",
                   subtitle: "Brand Clarity",
                   bullets: [
-                    "Amazon listing fully optimized for search and conversion",
-                    "PPC campaigns structured around margin, not vanity metrics",
-                    "Account health locked down and monitored daily",
+                    "Amazon listings fully optimized for search and conversion.",
+                    "PPC campaigns built around margin, not vanity metrics",
+                    "Account health secured and monitored daily.",
                   ],
                 },
                 {
@@ -342,9 +342,9 @@ export default function Above1MEcommerceGrowth() {
                   title: "Expansion",
                   subtitle: "New Marketplaces",
                   bullets: [
-                    "Add Walmart, eBay, and TikTok Shop without extra overhead",
+                    "Launch on Walmart, eBay, and TikTok Shop without extra overhead.",
                     "Multi-channel inventory sync so nothing oversells",
-                    "Platform-specific listing optimization for each channel",
+                    "Listings optimized for each platform",
                   ],
                 },
                 {
@@ -352,9 +352,9 @@ export default function Above1MEcommerceGrowth() {
                   title: "Ownership",
                   subtitle: "Your Own Website",
                   bullets: [
-                    "Shopify store built and connected to your Amazon catalog",
-                    "Email and SMS flows that bring customers back without ad spend",
-                    "You own the customer relationship, not the marketplace",
+                    "Shopify store built and connected to your Amazon catalog.",
+                    "Email and SMS flows that bring customers back without ad spend.",
+                    "You own the customer relationship, not the marketplace.",
                   ],
                 },
                 {
@@ -362,9 +362,9 @@ export default function Above1MEcommerceGrowth() {
                   title: "Domination",
                   subtitle: "Your Own Name",
                   bullets: [
-                    "Brand registry, trademark, and A+ content locked in",
+                    "Brand Registry, trademark, and A+ Content secured",
                     "Influencer and content channels driving organic discovery",
-                    "Revenue no algorithm change can take away overnight",
+                    "Revenue that no algorithm change can take away overnight",
                   ],
                 },
               ].map((item, i) => (
@@ -422,8 +422,8 @@ export default function Above1MEcommerceGrowth() {
               </div>
               <a href="/contact-us" className="svc-btn svc-btn-pink svc-btn-hover-white mt-8 w-full" style={{ textAlign: "center" }}>
                 <span className="svc-btn-inner" style={{ textAlign: "center" }}>
-                  <span className="svc-btn-top">START MY ROADMAP ?</span>
-                  <span className="svc-btn-bottom" style={{ left: 0, right: 0, textAlign: "center" }}>START MY ROADMAP ?</span>
+                  <span className="svc-btn-top">Start My Roadmap</span>
+                  <span className="svc-btn-bottom" style={{ left: 0, right: 0, textAlign: "center" }}>Start My Roadmap</span>
                 </span>
               </a>
             </FadeIn>
@@ -442,7 +442,7 @@ export default function Above1MEcommerceGrowth() {
               className="font-black leading-tight mb-6 uppercase text-center lg:text-left"
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 3.5vw, 54px)", color: "#000000" }}
             >
-              ONLY SELLING ON AMAZON =<br />
+              Selling Only on Amazon =<br />
               <span style={{
                 color: "#ff9900",
                 textDecoration: "underline",
@@ -450,17 +450,17 @@ export default function Above1MEcommerceGrowth() {
                 textDecorationColor: "#000000",
                 textDecorationThickness: "3px",
                 textUnderlineOffset: "8px",
-              }}>ALL EGGS IN ONE BASKET…</span>
-              <span className="block mt-3">A BEAUTIFUL WAY TO LOSE EVERYTHING AT ONCE.</span>
+              }}>Every Egg in One Basket…</span>
+              <span className="block mt-3">One Bump and They All Crack at Once.</span>
             </h2>
             <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 max-w-[480px] text-center lg:text-left mx-auto lg:mx-0">
-              We move your products onto other marketplaces, your own DTC store, and TikTok Shop, so one rough day on Amazon stays a tough day instead of the whole story.
+              We expand your products onto other marketplaces, your own DTC store, and TikTok Shop, so one rough day on Amazon stays just that- not the end of your story. It’s the safest way to scale your Amazon business into a lasting 7-figure Amazon brand.
             </p>
             <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn svc-btn-pink" style={{ borderRadius: "9999px", padding: "14px 40px" }}>
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">TRY MULTI-CHANNEL NOW ?</span>
-                <span className="svc-btn-bottom">TRY MULTI-CHANNEL NOW ?</span>
+                <span className="svc-btn-top">Go Multi-Channel Now</span>
+                <span className="svc-btn-bottom">Go Multi-Channel Now</span>
               </span>
             </a>
             </div>

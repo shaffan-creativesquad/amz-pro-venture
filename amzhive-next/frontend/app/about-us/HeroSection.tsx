@@ -26,8 +26,8 @@ export default function HeroSection() {
               className="font-bold leading-tight mb-8"
               style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 50px)", color: "#000000" }}
             >
-              The eCommerce Growth Agency That Gets Your Products{" "}
-              <span style={{ color: "#ff9900" }}>Seen, Clicked &amp; Sold</span>
+              We Build E-Commerce Websites and Grow Brands {" "}
+              <span style={{ color: "#ff9900" }}>Across Every Channel That Matters</span>
             </h1>
 
             <Link

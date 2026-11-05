@@ -6,6 +6,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import ExpertSection from "./components/ExpertSection";
 import CaseStudiesSection from "./components/CaseStudiesSection";
 import UnlockSection from "./components/UnlockSection";
+import FAQSection from "./components/FAQSection";
 import Footer from "./components/Footer";
 import Link from "next/link";
 import StatsCounter from "./amazon-influencer-marketing-service/StatsCounter";
@@ -61,6 +62,7 @@ export default function Home() {
 
       <CaseStudiesSection />
       <UnlockSection />
+      <FAQSection />
       <ConsultationSection />
       <Footer />
     </main>

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import HeroAnimation from "./HeroAnimation";
 
 function ArrowIcon() {
   return (
@@ -131,14 +130,23 @@ export default function HeroSection() {
           </motion.div>
         </div>
 
-        {/* RIGHT: GIF + Stats Cards */}
+        {/* RIGHT: Hero Image + Stats Cards */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3 }}
           className="flex-shrink-0 w-full lg:w-[680px] flex flex-col items-center max-w-full"
         >
-          <HeroAnimation />
+          <div className="w-full mb-6 relative flex justify-center">
+            <Image
+              src="/AMZ ProVenture Passive Income Team.png"
+              alt="AMZ ProVenture Passive Income Team"
+              width={1446}
+              height={1088}
+              priority
+              className="w-full h-auto object-contain rounded-2xl"
+            />
+          </div>
           {/* Stats Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full pb-10">
             {stats.map((s, i) => (

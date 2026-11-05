@@ -14,6 +14,7 @@ import BestPartnerSection from "./BestPartnerSection";
 import ComparisonSection from "./ComparisonSection";
 import StepByStepSection from "./StepByStepSection";
 import TestimonialsSection from "./TestimonialsSection";
+import FAQSection from "./FAQSection";
 
 export default function TikTokShop() {
   return (
@@ -33,6 +34,7 @@ export default function TikTokShop() {
       <ComparisonSection />
       <StepByStepSection />
       <TestimonialsSection />
+      <FAQSection />
       <Footer />
     </main>
   );

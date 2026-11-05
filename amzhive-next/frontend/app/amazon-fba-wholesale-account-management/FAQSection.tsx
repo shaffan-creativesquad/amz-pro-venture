@@ -1,49 +1,48 @@
 "use client";
 
 import { motion } from "framer-motion";
-
 import { useState } from "react";
 
 const faqs = [
   {
     question: "Is this service for private label sellers?",
-    answer: "No, this service is specifically designed for Amazon FBA wholesale sellers who list products under existing ASINs. Our expertise lies in managing the unique complexities of wholesale operations, including inventory, pricing, and account health for established brands. We do not provide services for creating new private label listings or product development under this specific management plan.",
+    answer: "No. This is specifically for Amazon FBA wholesale sellers who are going to be listing under existing ASINs. We take care of the inventory, the pricing and the account health issues that come with wholesale, we don't do private label under this service at all.",
   },
   {
     question: "Do I need to own the brand to use this service?",
-    answer: "No, you do not need to own the brand. This service is created precisely for wholesale sellers who operate without brand ownership. We focus on optimizing your ability to sell established, trusted brands by leveraging existing product listings and brand recognition on Amazon.",
+    answer: "No. The wholesale sellers will be reselling an established brand under an existing ASIN. You'll need valid invoices from the supplier (and brand approval where required by Amazon).",
   },
   {
     question: "Will you handle sourcing and supplier negotiation?",
-    answer: "This core management service focuses on the efficient operation and growth of your already sourced products on Amazon. While sourcing and supplier negotiations are not included in the standard management plan, they can absolutely be provided as a separate, specialized add-on service upon request. We understand the importance of a strong supply chain for wholesale success.",
+    answer: "Not part of the core plan. Amazon wholesale sourcing and supplier negotiation is an add-on that sellers can opt into if they'd like assistance in finding and securing new products.",
   },
   {
     question: "Do you offer reinstatement support if my account is suspended?",
-    answer: "This Amazon FBA Wholesale Seller Account Management service is designed for active, operating accounts to maintain their health and performance. If your account unfortunately faces a suspension, we offer a separate, dedicated Amazon Account Reinstatement Service with specialized expertise to help you get back to selling.",
+    answer: "Full account reinstatement is a separate service. This plan includes up to one appeal per month to deal with any violations prior to them becoming a problem.",
   },
   {
     question: "What is Amazon brand ungating?",
-    answer: "Amazon brand ungating is the process of gaining approval from Amazon to sell products from specific brands or within restricted categories. Since 2016, Amazon has significantly expanded its list of restricted brands and categories. To sell a gated product, you need Amazon's explicit permission. Our Amazon ungating service streamlines this process, helping you submit the correct documentation to get approved faster.",
+    answer: "Ungating is getting Amazon's approval to sell in restricted brands or categories. It generally requires you to provide invoices and other documentation to prove that your products are genuine and properly sourced.",
   },
   {
-    question: "How long does it take for Amazon to ungate a brand or category?",
-    answer: "The ungating process time can vary depending on Amazon's review queues and the specific brand or category. Typically, when handled by our Amazon ungating service, the process often completes within 1 to 3 business days after we've submitted your documents. While some cases can take a few weeks if Amazon requires additional information, having a good selling history and providing all the requested documents efficiently can significantly affect the time duration.",
+    question: "How long does it take Amazon to ungate a brand or category?",
+    answer: "Most requests are handled within 24-72 hours, though timing ultimately depends on Amazon's review.",
   },
   {
-    question: "What is your pricing model for FBA Wholesale Account Management?",
-    answer: "Our pricing for FBA Wholesale Account Management is typically structured as a monthly retainer, which varies based on the scope of services needed and your sales volume. We'll discuss your specific business needs during our free consultation call to provide a custom quote that aligns with your goals.",
+    question: "What is the FBA Wholesale Account Management price?",
+    answer: "Pricing is based on the size of your catalog and the level of support you require. Book in for a free consultation and we'll recommend the right plan for your business.",
   },
   {
-    question: "How do you ensure my inventory doesn't run out or become excessive?",
-    answer: "We utilize a data-driven approach to inventory management and forecasting. Our team uses advanced tools and analytics to provide AI-driven restock recommendations, monitor your Inventory Performance Index (IPI) score, and proactively help with removal orders or stranded inventory. Our goal is to optimize your inventory levels to avoid stockouts while minimizing costly storage fees.",
+    question: "How do you keep my stock from either running out or piling up?",
+    answer: "We use sales data and AI-assisted forecasting to time restocks, monitor your IPI score, and act early on slow movers or stranded stock.",
   },
   {
-    question: "Do you manage FBA shipments to Amazon warehouses?",
-    answer: "No. While we handle inventory forecasting and replenishment recommendations, the physical preparation and shipment of products to Amazon FBA warehouses are managed by the seller or their designated prep center.",
+    question: "Do you manage FBA shipments to the Amazon warehouses?",
+    answer: "We'll assist with your replenishment planning and help put together your shipment plans; you or your logistics partner then handles the actual shipping.",
   },
   {
-    question: "Do you handle customer service or customer returns for my wholesale products?",
-    answer: "For products fulfilled via Amazon FBA, Amazon handles the direct customer service and manages customer returns as part of their FBA service. Our management plan focuses on the operational aspects of your wholesale business within Seller Central, ensuring your listings, inventory, and account health are optimized for success.",
+    question: "Do you deal with customer service or returns on the wholesale products?",
+    answer: "With FBA Amazon manage most of the customer service and returns. We monitor return trends and feedback and step in if anything comes up that could impact your account health.",
   },
 ];
 
@@ -60,13 +59,13 @@ export default function FAQSection() {
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
           <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
-            Got questions about our FBA Wholesale Account Management service? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
+            Have questions about our Amazon wholesale account management? You&apos;ll find clear answers below. If not, our team is happy to help.
           </p>
           <div className="flex justify-center lg:justify-start">
             <a href="/contact-us" className="svc-btn">
               <span className="svc-btn-inner">
-                <span className="svc-btn-top">Lets Talk</span>
-                <span className="svc-btn-bottom">Lets Talk</span>
+                <span className="svc-btn-top">Let&apos;s Talk</span>
+                <span className="svc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>

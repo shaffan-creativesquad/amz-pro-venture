@@ -15,16 +15,17 @@ export default function AboutSection() {
           viewport={{ once: true }} transition={{ duration: 0.55 }}
         >
           <p className="text-[#374151] text-[15px] leading-relaxed">
-            We&apos;re a team of eCommerce and digital marketing professionals who&apos;ve spent 15+ years helping sellers grow smarter across Amazon, Walmart, Shopify, and beyond.
+            Working with AMZ ProVenture gives you more than a team of specialists. You get people who have worked side by side since 2012, sharing the same values and the same standards. When we take on a project, your goals become ours, and we treat them that way.
           </p>
           <p className="text-[#374151] text-[15px] leading-relaxed">
-            Whether you&apos;re launching your first product or managing a 7-figure ad budget, we&apos;ve been in the trenches with sellers just like you, navigating Amazon&apos;s ever-changing rules, chasing ROAS targets, fixing surprise suspensions, and scaling across platforms like Walmart and Shopify.
+            We know exactly who we are and what we do best. We’re not a faceless giant passing you between departments. We’re a focused Amazon agency that gives every client real attention, honest advice and a team that genuinely cares how the project turns out.
           </p>
           <p className="text-[#374151] text-[15px] leading-relaxed">
-            We combine real marketplace experience with smart digital marketing and AI-powered tools to help you move faster, spend smarter, and grow stronger. But more than anything, we&apos;re hands-on partners who treat your business like our own.
+            It starts with a conversation. Our ecommerce consultants want to understand your business, your challenges and where you want to take it. From there, our specialists take over the details and keep you informed at every stage, so you always know what’s happening and why.
           </p>
           <p className="text-[#374151] text-[15px] leading-relaxed">
-            From PPC and SEO to listing optimization, reinstatement, and strategy, we&apos;re here to help you <strong className="text-[#000000]">launch, sell, and scale with confidence.</strong>
+            Years of building and growing online stores have taught us that no two projects are alike. Whatever your brand needs, our Amazon seller experts follow the same proven three-stage approach: Create, Develop, Grow.
+
           </p>
         </motion.div>
 

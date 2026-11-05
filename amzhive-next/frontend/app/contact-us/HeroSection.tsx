@@ -15,14 +15,13 @@ export default function HeroSection() {
         <motion.h1 className="font-bold leading-tight mb-6"
           style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4vw, 45px)", color: "#000000" }}
           initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
-          AMZ Pro Venture doors are always open{" "}
-          <span style={{ color: "#ff9900" }}>to new faces, existing clients and old friends,</span>
-          {" "}so come and say hey... don't be shy!
+          New Brands, Long-Time Clients and Old Friends {" "}
+          <span style={{ color: "#ff9900" }}>Are Always Welcome Here.</span>
         </motion.h1>
 
         <motion.p className="leading-relaxed w-full" style={{ fontSize: "16px", color: "#000000", lineHeight: "1.7" }}
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.35 }}>
-          Pop in to visit the team in our Herndon, Lewisville or Miami offices, check up on your project progress in real time, or just say stop by to say hello and join for a brew or a cold drink. Or perhaps, get in touch to arrange a screen share call. See our contact information below, and feel free to drop by at any time. Alternatively, if you are considering sending a new project brief to get a full quote or if you wish to arrange a discovery briefing session, please complete this form.
+Ready to hire an Amazon agency, or just want an honest opinion on where your store stands? Get in touch. You can book a free Amazon consultation, ask for a free Shopify consultation, or send us a project brief for a full quote. A real person from our team will get back to you.
         </motion.p>
 
       </div>

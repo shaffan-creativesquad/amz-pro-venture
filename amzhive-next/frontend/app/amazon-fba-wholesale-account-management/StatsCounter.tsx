@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 const stats = [
   { target: 1200, prefix: "", suffix: "+", label: "Accounts Managed", display: (n: number) => n.toLocaleString() },
-  { target: 20, prefix: "$", suffix: "M+", label: "Managed in Revenue", display: (n: number) => String(n) },
+  { target: 20, prefix: "$", suffix: "M+", label: "Revenue Managed", display: (n: number) => String(n) },
   { target: 33, prefix: "", suffix: "%", label: "Average Sales Increase", display: (n: number) => String(n) },
 ];
 

@@ -5,24 +5,24 @@ import { motion } from "framer-motion";
 
 const items = [
   {
-    title: "Strong Creative Input",
-    body: "We are innovative thinkers, bringing creativity to fulfil your project vision",
+    title: "01 — Strong Creative Input",
+    body: "We bring ideas to the table, not just execution. From store design to ad creative, every piece is shaped to catch attention, build trust and give shoppers a reason to choose your brand.",
   },
   {
-    title: "Efficiency",
-    body: "Our process ensures a streamlined project journey.",
+    title: "02 — Efficiency",
+    body: "Your time matters, and so does your budget. We work with clear timelines, lean processes and no wasted steps, so projects move quickly without cutting corners.",
   },
   {
-    title: "Dedication",
-    body: "You can trust you have a committed team at AMZ Pro Venture.",
+    title: "03 — Dedication",
+    body: "We treat your store like it’s our own. Our team stays close to your numbers, answers when you need us and keeps pushing until the results show up.",
   },
   {
-    title: "Tech Confidence",
-    body: "We bring strong technical skill and experience to every project.",
+    title: "04 — Tech Confidence",
+    body: "Shopify, WooCommerce, Magento, Amazon Seller Central, Vendor Central: we know these platforms inside out. Whatever your setup, we handle the technical side so you don’t have to.",
   },
   {
-    title: "Problem Solvers",
-    body: "We love the challenge of overcoming creative or technical obstacles.",
+    title: "05 — Problem Solvers",
+    body: "A suspended account, stalled sales, ads that won’t convert: we’ve seen it before. Our Amazon seller experts dig into the root cause and fix it properly, so the same issue doesn’t come back.",
   },
 ];
 
@@ -95,13 +95,13 @@ export default function ProcessSection() {
             Our Process
           </h2>
           <p style={{ fontSize: "16px", color: "#000000", lineHeight: "1.7" }}>
-            We take the time to understand your business goals, and to complete market and competitor research to help identify the marketing channels and strategies that will work best for you. Having gathered assets and prepped your online presence, we launch your strategy constantly monitoring progress and enhancing activity.
+            Every project starts with listening. We learn your business goals, then research your market and competitors to find the channels and strategies that will work best for you. Once your assets are ready and your online presence is in shape, we launch, track progress closely and keep improving.
           </p>
           <div>
             <a href="/contact-us" className="proc-btn">
               <span className="proc-btn-inner">
-                <span className="proc-btn-top">LETS TALK</span>
-                <span className="proc-btn-bottom">LETS TALK</span>
+                <span className="proc-btn-top">Let&apos;s Talk</span>
+                <span className="proc-btn-bottom">Let&apos;s Talk</span>
               </span>
             </a>
           </div>
