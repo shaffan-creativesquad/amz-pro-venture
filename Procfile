@@ -1,1 +1,1 @@
-web: cd amzhive-next && npm run start
+web: npm run start

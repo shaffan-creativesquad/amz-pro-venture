@@ -1,15 +1,31 @@
 {
-  "name": "amz-pro-venture-app",
+  "name": "amz-pro-venture",
   "version": "1.0.0",
   "private": true,
   "engines": {
     "node": "20.x",
     "npm": "10.x"
   },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "heroku-prebuild": "cd amzhive-next && npm install --include=optional",
-    "heroku-postbuild": "cd amzhive-next && npm run build",
-    "build": "cd amzhive-next && npm run build",
-    "start": "cd amzhive-next && npm run start"
+    "dev": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:all": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "build": "npm run build --workspace=frontend",
+    "start": "concurrently \"npm run start --workspace=backend\" \"npm run start --workspace=frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "optionalDependencies": {
+    "lightningcss-linux-x64-gnu": "1.32.0",
+    "lightningcss-linux-arm64-gnu": "1.32.0",
+    "@tailwindcss/oxide-linux-x64-gnu": "*",
+    "@tailwindcss/oxide-linux-x64-musl": "*",
+    "@tailwindcss/oxide-linux-arm64-gnu": "*",
+    "@tailwindcss/oxide-linux-arm64-musl": "*"
   }
 }
