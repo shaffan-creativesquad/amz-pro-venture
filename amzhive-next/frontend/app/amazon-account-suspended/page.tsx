@@ -903,7 +903,7 @@ export default function AmazonAccountSuspended() {
 
               },
 
-            ].map((card, i) => (
+            ].map((card: { title: string; items: string[]; note?: string | null; icon?: React.ReactNode }, i) => (
 
               <FadeIn key={card.title} delay={i * 0.08} direction="up">
 
