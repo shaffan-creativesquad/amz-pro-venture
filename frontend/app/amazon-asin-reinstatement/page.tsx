@@ -69,7 +69,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
           <p className="text-white/70 text-sm font-medium mb-4 tracking-wide">
@@ -130,7 +130,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Who Is This For? */}
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
               <span className="text-[#000000]">Whatever Took Your ASIN Down,</span><br />
@@ -173,7 +173,7 @@ export default function AmazonAccountSuspended() {
 
       {/* What's Included Section */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
           <h2
@@ -294,7 +294,7 @@ export default function AmazonAccountSuspended() {
 
       {/* What We Need From You */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
+        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center gap-0">
           <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
             <Image src="/document.webp" alt="What We Need from You" width={800} height={600} unoptimized className="w-full h-auto object-contain" />
           </FadeIn>
@@ -338,7 +338,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Trusted By Stats Section */}
       <section className="w-full bg-white py-14">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-12" style={{ backgroundColor: "#f4f4f4" }}>
 
             <h2 className="text-center font-bold mb-10" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3.5vw, 36px)", color: "#000000" }}>
@@ -381,7 +381,7 @@ export default function AmazonAccountSuspended() {
 
       {/* We Resolve Full Range Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
           <div className="text-center mb-10">
@@ -477,7 +477,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>

@@ -69,7 +69,7 @@ export default function WalmartAdsManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Heading */}
           <h1
@@ -130,7 +130,7 @@ export default function WalmartAdsManagement() {
 
       {/* Why Walmart Ads Matter More Than Ever */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <div className="flex-shrink-0 w-full lg:w-[45%]">
@@ -181,7 +181,7 @@ export default function WalmartAdsManagement() {
 
       {/* Why Most Sellers Struggle With Walmart Ads */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <div className="flex-1">
@@ -230,7 +230,7 @@ export default function WalmartAdsManagement() {
 
       {/* Complete Walmart Ads Management */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
@@ -364,7 +364,7 @@ export default function WalmartAdsManagement() {
 
       {/* What We Need From You To Get Started */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             {/* Left — image placeholder */}
@@ -426,7 +426,7 @@ export default function WalmartAdsManagement() {
 
       {/* What We Need From You to Deliver the Best Results */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <div className="flex-shrink-0 w-full lg:w-[45%]">
@@ -485,7 +485,7 @@ export default function WalmartAdsManagement() {
 
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Stop Letting Your Walmart Ad<br />Spend Go to Waste Without ROI

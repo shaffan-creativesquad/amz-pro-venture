@@ -24,7 +24,7 @@ export default function HeroSection() {
       }}
     >
       {/* Hero content */}
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 md:pt-24 pb-10 flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 md:pt-24 pb-10 flex flex-col lg:flex-row items-center gap-12">
 
         {/* LEFT */}
         <motion.div
@@ -81,7 +81,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.65, delay: 0.3 }}
-        className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pb-10"
+        className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pb-10"
       >
         <div style={{ borderTop: "1px solid #f0e8df" }} className="pt-8 flex flex-col items-center gap-6">
           <span className="text-[13px] font-black uppercase tracking-[0.2em] text-[#000000]">

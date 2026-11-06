@@ -275,7 +275,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-xl overflow-y-auto max-h-[calc(100vh-70px)]">
-          <nav className="max-w-[1247px] mx-auto px-5 py-4">
+          <nav className="max-w-[1280px] mx-auto px-5 py-4">
             <ul className="space-y-1">
               <li>
                 <Link

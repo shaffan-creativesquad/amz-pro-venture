@@ -79,7 +79,7 @@ export default function ProcessSection() {
         .proc-btn:hover .proc-btn-bottom { transform: translateY(-100%); }
       `}</style>
 
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-14 md:py-20 flex flex-col md:flex-row gap-10 md:gap-20">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-14 md:py-20 flex flex-col md:flex-row gap-10 md:gap-20">
         {/* Left */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

@@ -69,7 +69,7 @@ export default function EtsyAccountManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Heading */}
           <h1
@@ -129,7 +129,7 @@ export default function EtsyAccountManagement() {
 
       {/* Why Top Etsy Sellers Trust AMZ Pro Venture */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-12">
             <FadeIn direction="up">
@@ -191,7 +191,7 @@ export default function EtsyAccountManagement() {
 
       {/* What You Risk Without Expert Etsy Management */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
@@ -245,7 +245,7 @@ export default function EtsyAccountManagement() {
 
       {/* What's Included in Our Monthly Etsy Account Management Plan */}
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-14">
             <FadeIn direction="up">
@@ -372,7 +372,7 @@ export default function EtsyAccountManagement() {
 
       {/* Built for Etsy Sellers Who Want to Thrive */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="text-center mb-12">
             <FadeIn direction="up">
@@ -429,7 +429,7 @@ export default function EtsyAccountManagement() {
 
       {/* What We Need From You to Deliver the Best Results */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
 
             <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[45%]">
@@ -488,7 +488,7 @@ export default function EtsyAccountManagement() {
 
       {/* Stats Section */}
       <section className="w-full py-16 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-14" style={{ backgroundColor: "#f4f4f4" }}>
 
             <h2 className="font-bold text-center mb-12" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(24px,3vw,38px)", color: "#000000" }}>
@@ -526,7 +526,7 @@ export default function EtsyAccountManagement() {
 
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>

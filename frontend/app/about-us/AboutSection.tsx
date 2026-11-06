@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function AboutSection() {
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10">
 
         {/* Text content */}
         <motion.div

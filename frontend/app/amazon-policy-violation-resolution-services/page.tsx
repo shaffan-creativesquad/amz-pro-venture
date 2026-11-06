@@ -16,7 +16,7 @@ export default function PolicyViolationResolution() {
 
       {/* Hero Section */}
       <FadeIn><section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Label */}
           <FadeIn>

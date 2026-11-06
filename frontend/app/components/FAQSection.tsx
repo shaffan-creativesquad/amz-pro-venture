@@ -71,10 +71,10 @@ export default function FAQSection() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
-      className="w-full py-20"
+      className="w-full pt-6 pb-20 lg:py-20"
       style={{ backgroundColor: "#f4f4f4" }}
     >
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-14">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-14">
         {/* Left */}
         <div className="lg:w-[440px] flex-shrink-0 text-center lg:text-left">
           <h2

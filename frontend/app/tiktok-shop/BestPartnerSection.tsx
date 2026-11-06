@@ -25,7 +25,7 @@ const features = [
 export default function BestPartnerSection() {
   return (
     <section className="w-full py-20 bg-white">
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
 
           {/* LEFT — text */}

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="w-full" style={{ backgroundColor: "#e2e2e2" }}>
-      <div className="max-w-[1440px] mx-auto px-5 md:px-10 pt-10 md:pt-16 pb-10 md:pb-16 flex flex-col items-center md:items-start text-center md:text-left">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10 pt-10 md:pt-16 pb-10 md:pb-16 flex flex-col items-center md:items-start text-center md:text-left">
 
         <motion.p className="font-medium mb-4 tracking-wide" style={{ fontSize: "16px", color: "#000000" }}
           initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.1 }}>

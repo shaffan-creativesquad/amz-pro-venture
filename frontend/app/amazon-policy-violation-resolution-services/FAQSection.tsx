@@ -82,7 +82,7 @@ export default function FAQSection() {
         .svc-btn:hover .svc-btn-bottom { transform: translateY(-100%); }
       `}</style>
 
-      <div className="max-w-[1140px] mx-auto px-10 flex flex-col lg:flex-row gap-14">
+      <div className="max-w-[1280px] mx-auto px-10 flex flex-col lg:flex-row gap-14">
 
         {/* Left */}
         <div className="lg:w-[480px] flex-shrink-0 text-center lg:text-left">

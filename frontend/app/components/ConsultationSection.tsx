@@ -50,21 +50,21 @@ export default function ConsultationSection() {
       <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 py-24 flex flex-col lg:flex-row items-center gap-16">
 
         {/* LEFT */}
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col items-center lg:items-start">
           <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 mb-6" style={{ background: "rgba(255,153,0,0.15)", border: "1px solid rgba(255,153,0,0.3)" }}>
             <span className="w-1.5 h-1.5 rounded-full" style={{ background: "#ff9900" }} />
             <span className="text-[11px] font-bold uppercase tracking-widest" style={{ color: "#ff9900" }}>Consultation</span>
           </div>
 
           <h2
-            className="font-bold leading-tight mb-8"
+            className="font-bold leading-tight mb-8 text-center lg:text-left"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 4vw, 48px)", color: "#000000" }}
           >
             Boost Your Marketplace &amp;<br />
             <span style={{ color: "#ff9900" }}>Ecommerce Performance</span>
           </h2>
 
-          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[460px]">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[460px] text-center lg:text-left">
             Book a strategy session with our experts and walk away with a clear action plan tailored to your business.
           </p>
 
@@ -85,22 +85,6 @@ export default function ConsultationSection() {
             ))}
           </div>
 
-          <div className="flex items-center gap-6 mt-10 pt-10" style={{ borderTop: "1px solid #e5e7eb" }}>
-            <div className="text-center">
-              <p className="font-bold text-[22px]" style={{ color: "#000000" }}>1,200+</p>
-              <p className="text-[12px]" style={{ color: "#67768e" }}>Sellers Helped</p>
-            </div>
-            <div className="w-px h-10 bg-gray-200" />
-            <div className="text-center">
-              <p className="font-bold text-[22px]" style={{ color: "#000000" }}>$20M+</p>
-              <p className="text-[12px]" style={{ color: "#67768e" }}>Revenue Managed</p>
-            </div>
-            <div className="w-px h-10 bg-gray-200" />
-            <div className="text-center">
-              <p className="font-bold text-[22px]" style={{ color: "#000000" }}>100%</p>
-              <p className="text-[12px]" style={{ color: "#67768e" }}>No Obligation</p>
-            </div>
-          </div>
         </div>
 
         {/* RIGHT — form card */}

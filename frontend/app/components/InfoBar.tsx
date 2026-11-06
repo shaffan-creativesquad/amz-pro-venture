@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function InfoBar() {
   return (
     <section className="w-full bg-white border-t border-b border-gray-100 py-8">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-6">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-center justify-between gap-6">
 
         <motion.p
           initial={{ opacity: 0, x: -30 }}

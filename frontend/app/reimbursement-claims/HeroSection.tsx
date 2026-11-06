@@ -14,7 +14,7 @@ const itm = {
 export default function HeroSection() {
   return (
     <section className="w-full" style={{ backgroundColor: "#f7f7f7" }}>
-      <motion.div className="max-w-[1440px] mx-auto px-10 pt-16 pb-16" variants={ctr} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }}>
+      <motion.div className="max-w-[1280px] mx-auto px-10 pt-16 pb-16" variants={ctr} initial="hidden" whileInView="show" viewport={{ once: true, margin: "-80px" }}>
 
         <motion.h1
           variants={itm}

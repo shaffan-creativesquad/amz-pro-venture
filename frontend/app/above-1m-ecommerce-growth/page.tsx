@@ -204,7 +204,7 @@ export default function Above1MEcommerceGrowth() {
 
       {/* Revenue Leaks Section */}
       <section id="revenue-leaks" className="bg-white pt-10 md:pt-[160px] pb-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up"><p className="text-center text-[12px] font-bold uppercase tracking-widest mb-4" style={{ color: "#ff9900" }}>What’s Quietly Draining Your Revenue</p></FadeIn>
           <FadeIn direction="up" delay={0.08}>
@@ -301,7 +301,7 @@ export default function Above1MEcommerceGrowth() {
 
       {/* $1 Million Roadmap Section */}
       <section id="roadmap" className="w-full py-24" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           {/* Header */}
           <FadeIn direction="up">

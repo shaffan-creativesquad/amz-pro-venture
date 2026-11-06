@@ -23,7 +23,7 @@ const stats = [
 export default function StatsSection() {
   return (
     <section className="w-full py-16" style={{ backgroundColor: "#000000" }}>
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10">
 
         <motion.p
           className="text-white font-bold text-[14px] mb-10"

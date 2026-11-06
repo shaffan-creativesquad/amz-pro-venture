@@ -86,7 +86,7 @@ const steps = [
 export default function StepByStepSection() {
   return (
     <section className="w-full py-20" style={{ backgroundColor: "#fff8f0" }}>
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10">
 
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

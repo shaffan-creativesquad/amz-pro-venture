@@ -73,7 +73,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* Why A+ Content Section */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {[
@@ -136,7 +136,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* What's Included in Our A+ Content Service */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left */}
           <FadeIn direction="right" className="flex-1">
@@ -205,7 +205,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* Add-Ons Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — image */}
           <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[480px]">
@@ -254,7 +254,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* Premium A+ Content Design Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left */}
           <FadeIn direction="right" className="flex-1">
@@ -307,7 +307,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* Why Upgrade to Premium A+ Content Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           {/* Left — image */}
           <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[500px]">
@@ -356,7 +356,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* Why Top Amazon Brands Trust AMZ Pro Venture Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
             <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
@@ -439,7 +439,7 @@ export default function AmazonAContentThatConverts() {
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>

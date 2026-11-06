@@ -67,8 +67,8 @@ export default function CaseStudiesSection() {
   const visible = [cases[index % total], cases[(index + 1) % total]];
 
   return (
-    <section className="w-full bg-white py-20">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-20 items-center">
+    <section className="w-full bg-white pt-20 pb-6 lg:py-20">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-20 items-center">
 
         {/* LEFT */}
         <motion.div
@@ -78,7 +78,7 @@ export default function CaseStudiesSection() {
           transition={{ duration: 0.65 }}
           className="flex-shrink-0 w-full lg:w-[420px] text-center lg:text-left flex flex-col items-center lg:items-start"
         >
-          <p className="text-[#ff9900] text-xs font-bold uppercase tracking-widest mb-4">Case Studies</p>
+          {/* <p className="text-[#ff9900] text-xs font-bold uppercase tracking-widest mb-4">Case Studies</p> */}
           <h2
             className="font-bold leading-tight mb-5"
             style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 3.2vw, 38px)" }}
@@ -131,13 +131,13 @@ export default function CaseStudiesSection() {
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: dir > 0 ? "-55%" : "55%", opacity: 0 }}
                   transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-                  className="grid grid-cols-2 gap-4 items-stretch"
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch"
                 >
                   {visible.map((c, i) => (
                     <Link
                       href={c.href}
                       key={i}
-                      className="group flex flex-col h-full rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                      className={`group flex flex-col h-full rounded-2xl overflow-hidden hover:shadow-2xl transition-shadow duration-300${i === 1 ? " hidden sm:flex" : ""}`}
                       style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.13)" }}
                     >
                       {/* Image + overlay */}
@@ -188,6 +188,23 @@ export default function CaseStudiesSection() {
                 }}
               />
             ))}
+          </div>
+
+          {/* Mobile-only CTA */}
+          <div className="flex justify-center mt-6 sm:hidden">
+            <Link
+              href="/case-studies"
+              className="group relative inline-flex items-center gap-2 bg-black text-white text-sm font-semibold px-6 py-3 rounded-md overflow-hidden transition-colors duration-300"
+            >
+              <span className="absolute inset-0 bg-[#ff9900] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+              <span className="relative z-10 flex items-center gap-2">
+                EXPLORE ALL CASE STUDIES
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 21 12" fill="none">
+                  <path d="M1 5.5L19.5809 5.50003" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M14.6914 11.5L20.0002 6L14.6914 0.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </Link>
           </div>
         </motion.div>
 

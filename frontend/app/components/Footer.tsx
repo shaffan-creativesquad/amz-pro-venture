@@ -47,12 +47,12 @@ const contactItems = [
 const socialLinks = [
   {
     label: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/share/1KLMYdP4Rj/",
     icon: <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>,
   },
   {
     label: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/amzproventure?dlrf=YWZyb29meHVzdnR3",
     icon: (
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <rect x="2" y="2" width="20" height="20" rx="5"/>
@@ -64,11 +64,11 @@ const socialLinks = [
 ];
 
 const paymentIcons = [
-  { src: "/visa.svg",       alt: "Visa"       },
-  { src: "/mastercard.svg", alt: "Mastercard" },
-  { src: "/stripe.svg",     alt: "Stripe"     },
-  { src: "/paypal.svg",     alt: "PayPal"     },
-  { src: "/pay.svg",        alt: "Apple Pay"  },
+  { src: "/VISA-logo.png",  alt: "Visa",       colored: true  },
+  { src: "/ma_symbol_opt_45_1x.png", alt: "Mastercard", colored: true  },
+  { src: "/Stripe-logo.png", alt: "Stripe",     colored: true  },
+  { src: "/PayPal-Symbol.png", alt: "PayPal",   colored: true  },
+  { src: "/amazonpay-secondary-logo-rgb_clr.svg", alt: "Apple Pay", colored: true },
 ];
 
 export default function Footer() {
@@ -77,7 +77,7 @@ export default function Footer() {
 
       {/* Main content */}
       <div className="relative z-10">
-        <div className="max-w-[1140px] mx-auto px-6 lg:px-10 pt-14 pb-10 flex flex-col items-center gap-10">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 pt-14 pb-10 flex flex-col items-center gap-10">
 
           {/* Logo */}
           <Link href="/">
@@ -133,7 +133,7 @@ export default function Footer() {
         <div className="w-full" style={{ borderTop: "1px solid rgba(0,0,0,0.15)" }} />
 
         {/* Bottom bar */}
-        <div className="max-w-[1140px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-[1280px] mx-auto px-6 lg:px-10 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
 
           {/* Social icons */}
           <div className="flex items-center gap-3">
@@ -141,6 +141,8 @@ export default function Footer() {
               <Link
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={label}
                 className="w-8 h-8 rounded-full border border-black/30 flex items-center justify-center text-black hover:bg-black hover:border-black hover:text-white transition-colors"
               >
@@ -150,13 +152,13 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <p className="text-black/70 text-[13px] text-center font-medium">
+          <p className="text-black/70 text-[12px] sm:text-[13px] text-center font-medium">
             © 2026 AMZ <span className="text-black font-bold">ProVenture</span> | All rights reserved
           </p>
 
           {/* Payment icons */}
-          <div className="flex items-center gap-5">
-            {paymentIcons.map(({ src, alt }) => (
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5">
+            {paymentIcons.map(({ src, alt, colored }) => (
               <Image
                 key={alt}
                 src={src}
@@ -164,7 +166,7 @@ export default function Footer() {
                 width={36}
                 height={22}
                 unoptimized
-                className="h-5 w-auto brightness-0 opacity-70 hover:opacity-100 transition-opacity"
+                className={`h-4 sm:h-5 w-auto${colored ? "" : " brightness-0"}`}
               />
             ))}
           </div>
@@ -172,7 +174,7 @@ export default function Footer() {
         </div>
 
         {/* Large watermark text */}
-        <div className="w-full overflow-hidden" style={{ marginBottom: "-8px" }}>
+        <div className="hidden lg:block w-full overflow-hidden" style={{ marginBottom: "-8px" }}>
           <p
             className="text-center font-black leading-none select-none whitespace-nowrap"
             style={{

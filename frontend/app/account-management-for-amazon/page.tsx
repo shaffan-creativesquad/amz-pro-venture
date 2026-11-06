@@ -140,7 +140,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center text-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center text-center">
 
 
 
@@ -212,7 +212,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
 
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
           <FadeIn direction="right" className="flex-1">
 
@@ -278,7 +278,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="bg-white py-20 w-full">
 
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
 
 
@@ -308,7 +308,7 @@ export default function AccountManagementForAmazon() {
 
               className="font-bold leading-tight mb-10 text-center lg:text-left"
 
-              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3vw, 34px)" }}
 
             >
 
@@ -370,9 +370,9 @@ export default function AccountManagementForAmazon() {
 
                   <div>
 
-                    <h3 className="text-[#000000] font-bold text-[24px] mb-1">{item.title}</h3>
+                    <h3 className="text-[#000000] font-bold text-[17px] mb-1">{item.title}</h3>
 
-                    <p className="text-[#67768e] text-[18px] leading-relaxed">{item.desc}</p>
+                    <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
 
                   </div>
 
@@ -396,7 +396,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="bg-white py-20 w-full">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -600,7 +600,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full bg-white py-10 lg:py-20">
 
-        <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
+        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center gap-0">
 
           <FadeIn direction="right" className="flex-shrink-0 w-full lg:w-[50%]">
 
@@ -638,7 +638,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full py-10 lg:py-20 bg-white">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -756,7 +756,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full bg-white py-20">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -838,7 +838,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -970,7 +970,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full bg-white py-14">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="rounded-2xl px-10 py-12" style={{ backgroundColor: "#f4f4f4" }}>
 
@@ -1090,7 +1090,7 @@ export default function AccountManagementForAmazon() {
 
       <section className="w-full bg-white py-10">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
 

@@ -114,7 +114,7 @@ export default function FAQSection() {
       className="w-full py-20"
       style={{ backgroundColor: "#f4f4f4" }}
     >
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-14">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10 flex flex-col lg:flex-row gap-14">
         {/* Left */}
         <div className="lg:w-[440px] flex-shrink-0 text-center lg:text-left">
           <h2

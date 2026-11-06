@@ -69,7 +69,7 @@ export default function FBAWholesaleManagement() {
 
       {/* Hero Section */}
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
           {/* Heading */}
           <h1
@@ -130,7 +130,7 @@ export default function FBAWholesaleManagement() {
 
       {/* Why Amazon Wholesale Section */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
           <h2
@@ -254,7 +254,7 @@ export default function FBAWholesaleManagement() {
 
       {/* What's Included Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
             Inside Our FBA Wholesale <span style={{ color: "#ff9900" }}>Account Management Plan</span>
@@ -366,7 +366,7 @@ export default function FBAWholesaleManagement() {
 
       {/* Ungating Service Section */}
       <section className="w-full py-20" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
             <Image src="/Expand-Your-Product-Range-with-Brand-Category-Approvals-1536x1536.webp" alt="Get Approved for Restricted Amazon Brands" width={700} height={700} unoptimized className="w-full h-auto object-contain" />
           </FadeIn>
@@ -410,7 +410,7 @@ export default function FBAWholesaleManagement() {
 
       {/* Who This Service Is For */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Built for Established <span style={{ color: "#ff9900" }}>Wholesale Sellers</span>
@@ -453,7 +453,7 @@ export default function FBAWholesaleManagement() {
 
       {/* Trusted By Stats Section */}
       <section className="w-full bg-white py-14">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <div className="rounded-2xl px-10 py-12" style={{ backgroundColor: "#f4f4f4" }}>
 
             <h2 className="text-center font-bold mb-10" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3.5vw, 36px)", color: "#000000" }}>
@@ -492,7 +492,7 @@ export default function FBAWholesaleManagement() {
 
       {/* CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
           <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>

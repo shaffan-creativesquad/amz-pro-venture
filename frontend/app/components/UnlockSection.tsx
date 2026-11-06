@@ -1,8 +1,23 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
-import ExpensesCard from "./ExpensesCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards, Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import "swiper/css/navigation";
+
+const sliderImages = [
+  { src: "/WhatsApp Image 2026-11-06 at 7.48.20 PM.jpeg", alt: "Slide 1" },
+  { src: "/WhatsApp Image 2026-11-06 at 7.22.39 PM.jpeg", alt: "Slide 2" },
+  { src: "/WhatsApp Image 2026-11-06 at 7.24.01 PM.jpeg", alt: "Slide 3" },
+  { src: "/WhatsApp Image 2026-11-06 at 7.26.22 PM.jpeg", alt: "Slide 4" },
+  { src: "/WhatsApp Image 2026-11-06 at 7.27.42 PM.jpeg", alt: "Slide 5" },
+  { src: "/WhatsApp Image 2026-11-06 at 7.30.05 PM.jpeg", alt: "Slide 6" },
+  { src: "/WhatsApp Image 2026-11-06 at 7.31.20 PM.jpeg", alt: "Slide 7" },
+];
 
 function ArrowIcon() {
   return (
@@ -15,8 +30,8 @@ function ArrowIcon() {
 
 export default function UnlockSection() {
   return (
-    <section className="py-20 w-full" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+    <section className="pt-6 pb-6 lg:py-20 w-full" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
         {/* LEFT */}
         <motion.div
@@ -26,6 +41,24 @@ export default function UnlockSection() {
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1] }}
           className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start"
         >
+          {/* Mobile-only slider */}
+          <div className="block lg:hidden w-full max-w-[300px] mx-auto mb-8">
+            <Swiper
+              effect="cards"
+              grabCursor={true}
+              modules={[EffectCards, Autoplay]}
+              autoplay={{ delay: 2500, disableOnInteraction: false }}
+              speed={800}
+              className="w-full"
+            >
+              {sliderImages.map((img, i) => (
+                <SwiperSlide key={i} className="rounded-2xl overflow-hidden shadow-xl">
+                  <Image src={img.src} alt={img.alt} width={600} height={500} className="w-full h-auto object-cover" unoptimized />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center mb-6 overflow-hidden rounded-sm">
             <span className="bg-[#ff9900] text-white text-sm font-semibold px-4 py-2">THE E-COMMERCE</span>
@@ -80,15 +113,53 @@ export default function UnlockSection() {
           </div>
         </motion.div>
 
-        {/* RIGHT: Chart GIF */}
+        {/* RIGHT: Swiper Effect Cards */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.65, ease: [0.25, 0.1, 0.25, 1], delay: 0.1 }}
-          className="flex-shrink-0 w-full max-w-[480px] mx-auto lg:mx-0 lg:max-w-none lg:w-[580px]"
+          className="hidden lg:flex flex-col flex-shrink-0 w-full max-w-[300px] mx-auto lg:mx-0"
         >
-          <ExpensesCard />
+          <Swiper
+            effect="cards"
+            grabCursor={true}
+            modules={[EffectCards, Autoplay, Navigation]}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            speed={800}
+            navigation={{
+              nextEl: ".swiper-next-btn",
+              prevEl: ".swiper-prev-btn",
+            }}
+            className="w-full"
+          >
+            {sliderImages.map((img, i) => (
+              <SwiperSlide key={i} className="rounded-2xl overflow-hidden shadow-xl">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  width={600}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                  unoptimized
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          {/* Navigation buttons */}
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <button className="swiper-prev-btn w-11 h-11 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#ff9900] transition-colors duration-300 disabled:opacity-30">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button className="swiper-next-btn w-11 h-11 rounded-full bg-black text-white flex items-center justify-center hover:bg-[#ff9900] transition-colors duration-300 disabled:opacity-30">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
         </motion.div>
 
       </div>

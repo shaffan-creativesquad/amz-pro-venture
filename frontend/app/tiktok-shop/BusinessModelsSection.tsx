@@ -29,7 +29,7 @@ const models = [
 export default function BusinessModelsSection() {
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10">
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

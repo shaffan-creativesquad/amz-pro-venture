@@ -62,14 +62,14 @@ const stats = [
 
 const tags = [
   { label: "TikTok Shop", href: "/tiktok-shop" },
-  { label: "Shopify Agency", href: "/shopify-store-management-services" },
-  { label: "Amazon Marketing Agency", href: "/account-management-for-amazon" },
+  { label: "Shopify", href: "/shopify-store-management-services" },
+  { label: "Amazon", href: "/account-management-for-amazon" },
 ];
 
 export default function ExpertSection() {
   return (
-    <section className="py-20 w-full" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-start">
+    <section className="pt-6 pb-6 lg:py-20 w-full" style={{ background: "linear-gradient(180deg, #FFFFFF 0%, #fff8f0 100%)" }}>
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-start">
 
         {/* LEFT */}
         <motion.div
@@ -96,6 +96,23 @@ export default function ExpertSection() {
             </p>
           </div>
 
+          {/* CTA Button */}
+          <div className="flex justify-center lg:justify-start mb-8">
+            <Link
+              href="/contact-us"
+              className="group relative inline-flex items-center gap-2 bg-black text-white text-sm font-semibold px-6 py-3 rounded-md overflow-hidden transition-colors duration-300"
+            >
+              <span className="absolute inset-0 bg-[#ff9900] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
+              <span className="relative z-10 flex items-center gap-2">
+                SPEAK WITH AN EXPERT
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12" fill="none">
+                  <path d="M1 5.5L19.5809 5.50003" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M14.6914 11.5L20.0002 6L14.6914 0.5" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </span>
+            </Link>
+          </div>
+
           {/* Tags */}
           <div className="flex flex-wrap items-center gap-0 justify-center lg:justify-start">
             {tags.map((tag, i) => (
@@ -110,7 +127,7 @@ export default function ExpertSection() {
         </motion.div>
 
         {/* RIGHT: Stats grid */}
-        <div className="flex-shrink-0 lg:w-[420px] grid grid-cols-2 gap-4">
+        <div className="hidden lg:grid flex-shrink-0 lg:w-[420px] grid-cols-2 gap-4">
           {stats.map((s, i) => (
             <motion.div
               key={i}

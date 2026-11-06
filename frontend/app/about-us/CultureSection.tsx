@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function CultureSection() {
   return (
     <section className="w-full" style={{ backgroundColor: "#000000" }}>
-      <div className="max-w-[1440px] mx-auto px-6 md:px-10 py-14 md:py-20 flex flex-col md:flex-row gap-8 md:gap-16 items-center">
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-14 md:py-20 flex flex-col md:flex-row gap-8 md:gap-16 items-center">
 
         {/* Left */}
         <motion.div className="w-full md:w-1/2 flex flex-col gap-6 text-center md:text-left items-center md:items-start"

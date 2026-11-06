@@ -13,7 +13,7 @@ export default function HeroSection() {
         className="w-full overflow-hidden"
         style={{ background: "linear-gradient(135deg, #ffd9b3 0%, #ffe8cc 50%, #fff3e6 100%)" }}
       >
-        <div className="max-w-[1440px] mx-auto px-5 md:px-10 pt-14 pb-0 flex flex-col lg:flex-row items-center gap-10">
+        <div className="max-w-[1280px] mx-auto px-5 md:px-10 pt-14 pb-0 flex flex-col lg:flex-row items-center gap-10">
 
           {/* LEFT */}
           <motion.div

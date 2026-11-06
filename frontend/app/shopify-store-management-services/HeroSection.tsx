@@ -16,7 +16,7 @@ export default function HeroSection() {
   return (
     <section className="w-full" style={{ backgroundColor: "#f7f7f7" }}>
       <motion.div
-        className="max-w-[1440px] mx-auto px-6 sm:px-10 py-16 flex flex-col lg:flex-row items-center justify-between gap-12"
+        className="max-w-[1280px] mx-auto px-6 sm:px-10 py-16 flex flex-col lg:flex-row items-center justify-between gap-12"
         variants={ctr}
         initial="hidden"
         whileInView="show"
@@ -70,7 +70,7 @@ export default function HeroSection() {
           className="flex-1 w-full max-w-[550px] lg:max-w-[620px] flex items-center justify-center"
         >
           <Image
-            src="/Layer 1.png"
+            src="/2.png"
             alt="Shopify Store Management"
             width={1785}
             height={1619}

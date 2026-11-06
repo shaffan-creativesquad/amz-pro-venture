@@ -21,7 +21,7 @@ export default function AnnouncementBar() {
 
   return (
     <div className="bg-black text-white py-2 px-3 sm:px-4 border-b border-white/10 overflow-hidden w-full max-w-full">
-      <div className="max-w-[1247px] mx-auto flex items-center justify-between gap-2">
+      <div className="max-w-[1280px] mx-auto flex items-center justify-between gap-2">
         {/* Left: 24/7 Support */}
         <Link
           href="/contact-us"
@@ -51,16 +51,22 @@ export default function AnnouncementBar() {
 
         {/* Right: Social icons */}
         <div className="hidden sm:flex items-center gap-2 flex-shrink-0">
-          <span
-            aria-hidden="true"
+          <Link
+            href="https://www.facebook.com/share/1KLMYdP4Rj/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
             className="w-[35px] h-[35px] flex items-center justify-center rounded-full border border-white/40 hover:border-white hover:text-white transition-colors"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
-          </span>
-          <span
-            aria-hidden="true"
+          </Link>
+          <Link
+            href="https://www.instagram.com/amzproventure?dlrf=YWZyb29meHVzdnR3"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
             className="w-[35px] h-[35px] flex items-center justify-center rounded-full border border-white/40 hover:border-white hover:text-white transition-colors"
           >
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -68,7 +74,7 @@ export default function AnnouncementBar() {
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
             </svg>
-          </span>
+          </Link>
         </div>
       </div>
     </div>

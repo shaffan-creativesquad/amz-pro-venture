@@ -16,7 +16,7 @@ const solutions = [
 export default function StrategySolutionSection() {
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-24 items-center">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-24 items-center">
 
         {/* LEFT: Content */}
         <motion.div

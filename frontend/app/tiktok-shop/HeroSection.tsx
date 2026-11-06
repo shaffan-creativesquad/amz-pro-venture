@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="w-full bg-white">
-      <div className="max-w-[1440px] mx-auto px-5 md:px-10 py-16 flex flex-col lg:flex-row items-center gap-12">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10 py-16 flex flex-col lg:flex-row items-center gap-12">
 
         {/* LEFT */}
         <motion.div

@@ -140,7 +140,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full overflow-visible" style={{ backgroundColor: "#000000" }}>
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 pt-16 pb-0 flex flex-col items-center lg:items-start text-center lg:text-left">
 
 
 
@@ -272,7 +272,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full py-20 bg-white">
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
 
 
 
@@ -332,7 +332,7 @@ export default function InfluencerMarketing() {
 
       <section className="bg-white py-20 w-full">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -482,7 +482,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -728,7 +728,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full bg-white py-20">
 
-        <div className="max-w-[1659px] mx-auto flex flex-col lg:flex-row items-center gap-0">
+        <div className="max-w-[1280px] mx-auto flex flex-col lg:flex-row items-center gap-0">
 
           <FadeIn direction="right" className="flex-1 px-10 py-10">
 
@@ -862,7 +862,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full bg-white py-14">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <div className="rounded-2xl px-10 py-12" style={{ backgroundColor: "#f4f4f4" }}>
 
@@ -948,7 +948,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full py-20" style={{ backgroundColor: "#f4f4f4" }}>
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
 
 
@@ -1186,7 +1186,7 @@ export default function InfluencerMarketing() {
 
       <section className="w-full bg-white py-20">
 
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
 

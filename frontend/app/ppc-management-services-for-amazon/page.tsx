@@ -73,7 +73,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Why Amazon Sellers Trust Us */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn>
             <h2
@@ -183,7 +183,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Why Most Sellers Struggle Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Why Your Amazon Ads <span style={{ color: "#ff9900" }}>Aren&apos;t Paying Off</span>
@@ -222,7 +222,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Complete Amazon Advertising Management Services */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn>
             <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Hands-On Amazon Ads Management<br /><span style={{ color: "#ff9900" }}>That Keeps Every Campaign Moving Forward</span>
@@ -312,7 +312,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Smarter Keyword Strategies Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-14">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row items-center gap-14">
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
               <span className="text-[#000000]">The Right Keywords, </span>
@@ -360,7 +360,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Level Up Add-Ons Section */}
       <section className="w-full py-20" style={{ backgroundColor: "#f7f7f7" }}>
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-start">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-start">
 
           <div className="flex-1">
             <FadeIn>
@@ -427,7 +427,7 @@ export default function AmazonAccountSuspended() {
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>

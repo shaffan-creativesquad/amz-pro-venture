@@ -73,7 +73,7 @@ export default function RufusAIListingOptimization() {
 
       {/* Why Listing Optimization Section */}
       <section className="bg-white py-20 w-full">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
 
           <FadeIn direction="up">
             <h2
@@ -146,7 +146,7 @@ export default function RufusAIListingOptimization() {
 
       {/* What Is Amazon Listing Optimization Section */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1659px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-14 items-center">
           <FadeIn direction="right" className="flex-1">
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What Is Amazon Listing <span style={{ color: "#ff9900" }}>Optimization?</span>
@@ -168,7 +168,7 @@ export default function RufusAIListingOptimization() {
 
       {/* What's Included in Our Amazon Listing Optimization Service */}
       <section className="w-full py-20 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <h2 className="text-center font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What&apos;s Included in Our<br /><span style={{ color: "#ff9900" }}>Amazon Listing Optimization Service</span>
@@ -281,7 +281,7 @@ export default function RufusAIListingOptimization() {
         },
       ].map((row, i) => (
         <section key={i} className="w-full py-20 bg-white">
-          <div className={`max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col gap-14 items-center ${row.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+          <div className={`max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col gap-14 items-center ${row.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
             <FadeIn direction={row.reverse ? "left" : "right"} className="flex-1">
               <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
                 {row.heading}
@@ -320,7 +320,7 @@ export default function RufusAIListingOptimization() {
 
       {/* Downtime CTA Section */}
       <section className="w-full bg-white py-20">
-        <div className="max-w-[1140px] mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
           <FadeIn direction="up">
             <div className="rounded-2xl px-10 py-16 text-center" style={{ backgroundColor: "#f4f4f4" }}>
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>

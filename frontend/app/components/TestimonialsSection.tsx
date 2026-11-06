@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -9,19 +9,19 @@ const reviews = [
     name: "Rita Lee",
     time: "2 years ago",
     color: "#E97C3A",
-    text: "I recommend this company they have diligently worked with me to get my store launched ….so far it has been a great experience with my project manager Anna",
+    text: "I recommend AMZ ProVenture — they have diligently worked with me to get my store launched. So far it has been a great experience with my project manager.",
   },
   {
     name: "Marie LaCrue",
     time: "2 years ago",
     color: "#7B68EE",
-    text: "AMZ Pro Venture has went over and beyond my expectations. They work with you very well. Their communication, patience, quality and most of all they are determined to meet the deadline. Love working with Royce Matthew and Anna & the team.",
+    text: "AMZ ProVenture has went over and beyond my expectations. They work with you very well. Their communication, patience, quality and most of all they are determined to meet the deadline. Love working with the team.",
   },
   {
     name: "Anthony Jones",
     time: "2 years ago",
     color: "#4A90D9",
-    text: "The experience with the AMC company has been fantastic thus far Anna my web developer is very informative and keeps me up-to-date on every project that she's implementing…",
+    text: "The experience with AMZ ProVenture has been fantastic thus far. My web developer is very informative and keeps me up-to-date on every project that she's implementing…",
   },
   {
     name: "Fred Filter",
@@ -33,7 +33,7 @@ const reviews = [
     name: "Saravanan Krishnan",
     time: "3 years ago",
     color: "#4A90D9",
-    text: "Their service and timeline is great. Mr Matthew Soloman Sr E commerce Consultant guided me very well. His knowledge and guidance helped to take correct decision.",
+    text: "Their service and timeline is great. AMZ ProVenture's E-commerce Consultant guided me very well. Their knowledge and guidance helped me take the correct decisions.",
   },
 ];
 
@@ -82,12 +82,22 @@ export default function TestimonialsSection() {
   const prevPhone = () => setPhoneIndex((i) => (i - 1 + phoneImages.length) % phoneImages.length);
   const nextPhone = () => setPhoneIndex((i) => (i + 1) % phoneImages.length);
 
+  useEffect(() => {
+    const reviewTimer = setInterval(() => nextReview(), 3000);
+    return () => clearInterval(reviewTimer);
+  }, []);
+
+  useEffect(() => {
+    const phoneTimer = setInterval(() => nextPhone(), 3500);
+    return () => clearInterval(phoneTimer);
+  }, []);
+
   const visibleReviews = [reviews[reviewIndex], reviews[(reviewIndex + 1) % reviews.length]];
   const visiblePhones = [phoneImages[phoneIndex], phoneImages[(phoneIndex + 1) % phoneImages.length]];
 
   return (
     <section className="bg-white py-16">
-      <div className="max-w-[1247px] mx-auto px-4 sm:px-6 lg:px-10">
+      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-10">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -168,6 +178,7 @@ export default function TestimonialsSection() {
               <Image src="/1-5.png" alt="Shopify Reviews" width={180} height={50} className="h-16 w-auto object-contain" unoptimized />
               <Image src="/2-6.png" alt="Sitejabber" width={150} height={50} className="h-16 w-auto object-contain" unoptimized />
             </div>
+
           </motion.div>
 
           {/* RIGHT: Phone images */}

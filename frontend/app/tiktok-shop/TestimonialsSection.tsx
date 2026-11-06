@@ -68,7 +68,7 @@ export default function TestimonialsSection() {
 
   return (
     <section className="w-full py-20 bg-white overflow-hidden">
-      <div className="max-w-[1140px] mx-auto px-5 md:px-10 mb-12">
+      <div className="max-w-[1280px] mx-auto px-5 md:px-10 mb-12">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

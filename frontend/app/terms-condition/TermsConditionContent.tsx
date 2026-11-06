@@ -152,7 +152,7 @@ export default function TermsConditionContent() {
     <>
       {/* Hero */}
       <section className="w-full" style={{ backgroundColor: "#e2e2e2" }}>
-        <div className="max-w-[1440px] mx-auto px-5 md:px-10 pt-10 md:pt-16 pb-10 md:pb-16">
+        <div className="max-w-[1280px] mx-auto px-5 md:px-10 pt-10 md:pt-16 pb-10 md:pb-16">
           <motion.p
             className="font-medium mb-4 tracking-wide"
             style={{ fontSize: "16px", color: "#000000" }}
