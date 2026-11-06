@@ -38,12 +38,12 @@ export default function PolicyViolationResolution() {
 
           {/* Description */}
           <FadeIn delay={0.3}>
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
             Getting a policy warning from Amazon can be stressful, especially when it starts affecting your listings or sales. A violation can lead to removed products, suppressed listings, or even account suspension. We help you understand what went wrong, fix the issue, and get your account back on track before things get worse.
           </p>
           </FadeIn>
 
-          <p className="text-white/80 font-semibold text-[16px] mb-4">We help you:</p>
+          <p className="text-white/80 font-semibold text-[15px] mb-4">We help you:</p>
 
           <div className="space-y-3 mb-12">
             {["Catch violations before they do damage.", "Stop suspensions before they start.", "Keep your account protected going forward."].map((item) => (
@@ -52,7 +52,7 @@ export default function PolicyViolationResolution() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>

@@ -81,7 +81,7 @@ export default function ProactiveAccountHealthMonitoring() {
             </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-14">
               Your Amazon business is only as strong as your account health. A healthy account helps prevent Amazon suspension before it happens, and it also helps you:
             </p>
           </FadeIn>
@@ -118,7 +118,7 @@ export default function ProactiveAccountHealthMonitoring() {
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
                 <div className="text-center md:text-left">
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -147,7 +147,7 @@ export default function ProactiveAccountHealthMonitoring() {
             </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[760px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[760px] mx-auto mb-14">
               Our 360° monitoring system builds a safety net around your account. From real-time alerts to expert fixes, here's what your monthly plan includes:
             </p>
           </FadeIn>
@@ -200,7 +200,7 @@ export default function ProactiveAccountHealthMonitoring() {
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
                 <div className="p-8 h-full text-center md:text-left" style={{ backgroundColor: item.dark ? "#000000" : "#ffffff" }}>
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[17px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed mb-4" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
                   <div className="space-y-2 text-left">
                     {item.bullets.map((b) => (
@@ -246,7 +246,7 @@ export default function ProactiveAccountHealthMonitoring() {
               What We Need From You to <span style={{ color: "#ff9900" }}>Get the Best Results</span>
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               In order to begin, we first require some information about your business. This will help us to determine your requirements and provide the appropriate assistance.
             </p>
 
@@ -293,7 +293,7 @@ export default function ProactiveAccountHealthMonitoring() {
               Onboarding <span style={{ color: "#ff9900" }}>Checklist</span>
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               For a smooth start, please confirm the following before we begin:
             </p>
 
@@ -346,7 +346,7 @@ export default function ProactiveAccountHealthMonitoring() {
               What This Service <span style={{ color: "#ff9900" }}>Doesn't Cover</span>
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               These services are handled separately and need their own scope of work.
             </p>
 
@@ -436,7 +436,7 @@ export default function ProactiveAccountHealthMonitoring() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Act Before a <span style={{ color: "#ff9900" }}>Red Flag Appears</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
               Amazon rarely offers second chances, and small health issues can quickly grow if ignored. Protect your sales and keep your account safe.
             </p>
             <div className="flex justify-center lg:justify-start">

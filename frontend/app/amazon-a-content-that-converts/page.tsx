@@ -116,7 +116,7 @@ export default function AmazonAContentThatConverts() {
               <FadeIn key={item.title} delay={i * 0.08} direction="up">
                 <div className="p-6 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -143,7 +143,7 @@ export default function AmazonAContentThatConverts() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               What You Get With Our <span style={{ color: "#ff9900" }}>A+ Content Service</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
               Everything needed to turn your listing into a brand asset that sells.
             </p>
 
@@ -178,7 +178,7 @@ export default function AmazonAContentThatConverts() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-1" style={{ color: "#000000" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-1" style={{ color: "#000000" }}>{item.title}</h3>
                     <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ export default function AmazonAContentThatConverts() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Take Your A+ Content <span style={{ color: "#ff9900" }}>Even Further</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
               Get even more from your A+ Content with our branded add-ons.
             </p>
 
@@ -233,7 +233,7 @@ export default function AmazonAContentThatConverts() {
                 },
               ].map((item) => (
                 <div key={item.title} className="p-6 border border-gray-200" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
-                  <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -261,11 +261,11 @@ export default function AmazonAContentThatConverts() {
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
               Premium A+ Content <span style={{ color: "#ff9900" }}>Design</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
               Amazon Premium A+ content is Amazon&apos;s most advanced content format, made for brands that want to go beyond a basic listing and create a rich, engaging shopping experience that converts.
             </p>
 
-            <h3 className="font-bold text-[20px] mb-6 text-center lg:text-left" style={{ color: "#000000" }}>Key Features of Premium A+ Content</h3>
+            <h3 className="font-bold text-[18px] mb-6 text-center lg:text-left" style={{ color: "#000000" }}>Key Features of Premium A+ Content</h3>
 
             <div className="space-y-4 mb-10">
               {[
@@ -328,7 +328,7 @@ export default function AmazonAContentThatConverts() {
                 { label: "A Complete Brand Experience", desc: "Give shoppers a reason to connect with your brand, not just your product" },
               ].map((item) => (
                 <div key={item.label} className="flex items-start gap-3">
-                  <span className="text-[#ff9900] font-bold text-[18px] leading-none mt-0.5">&#10003;</span>
+                  <span className="text-[#ff9900] font-bold text-[15px] leading-none mt-0.5">&#10003;</span>
                   <p className="text-[#000000] text-[15px] leading-relaxed">
                     <span className="font-bold">{item.label}</span> – {item.desc}
                   </p>
@@ -364,7 +364,7 @@ export default function AmazonAContentThatConverts() {
             </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[720px] mx-auto mb-14">
               Our Amazon A+ content services combine Amazon best practices, buyer psychology, and smart data. We build every layout, word, and image to rank and convert.
             </p>
           </FadeIn>
@@ -393,7 +393,7 @@ export default function AmazonAContentThatConverts() {
               <FadeIn key={item.title} delay={i * 0.08} direction="up">
                 <div className="p-8 h-full" style={{ backgroundColor: item.dark ? "#000000" : "#f4f4f4" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
                 </div>
               </FadeIn>
@@ -416,7 +416,7 @@ export default function AmazonAContentThatConverts() {
               <FadeIn key={item.title} delay={i * 0.08} direction="up">
                 <div className="p-8 h-full" style={{ backgroundColor: "#f4f4f4" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -445,7 +445,7 @@ export default function AmazonAContentThatConverts() {
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
                 Great A+ Content Wins Buyers. Is Yours Ready?
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+              <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
                 Every day you wait, your listing falls further behind. In a marketplace this crowded, generic content won&apos;t hold attention, and shoppers won&apos;t wait around.
               </p>
               <a href="/contact-us" className="svc-btn svc-btn-pink">

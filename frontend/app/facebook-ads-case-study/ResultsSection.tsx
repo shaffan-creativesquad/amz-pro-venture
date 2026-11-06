@@ -63,7 +63,7 @@ export default function ResultsSection() {
             The Results
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-6">
             The transformation was immediate and measurable.
           </p>
 
@@ -81,7 +81,7 @@ export default function ResultsSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             The same niche and same advertising platform that previously generated <strong className="text-[#000000]">1 lead every 26 days</strong> was transformed into a system producing approximately <strong className="text-[#000000]">1 lead every 2.3 hours</strong>. It was the system behind the campaigns.
           </p>
 

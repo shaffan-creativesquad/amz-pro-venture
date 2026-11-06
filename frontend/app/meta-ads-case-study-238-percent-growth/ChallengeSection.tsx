@@ -51,11 +51,11 @@ export default function ChallengeSection() {
             The Challenge
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             The brand was generating sales through its Shopify store, but growth had started to plateau. With no Meta Ads campaigns in place, the business was failing to reach new audiences effectively, limiting the brand&apos;s ability to consistently attract new buyers and scale revenue.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             As a result, the business faced several challenges:
           </p>
 

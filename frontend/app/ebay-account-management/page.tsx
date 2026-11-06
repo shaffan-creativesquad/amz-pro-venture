@@ -80,7 +80,7 @@ export default function EbayAccountManagement() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
             We manage every part of your eBay business, from listings to inventory to account health, for fast, safe, and long-term growth.
           </p>
 
@@ -96,7 +96,7 @@ export default function EbayAccountManagement() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -138,7 +138,7 @@ export default function EbayAccountManagement() {
               </h2>
             </FadeIn>
             <FadeIn direction="up" delay={0.1}>
-              <p className="text-[#67768e] text-[16px] max-w-[720px] mx-auto">
+              <p className="text-[#67768e] text-[15px] max-w-[720px] mx-auto">
                 We don&apos;t just run your eBay store, we build it to win. Our approach blends strategy, optimization, and hands-on execution to deliver long-term results.
               </p>
             </FadeIn>
@@ -199,7 +199,7 @@ export default function EbayAccountManagement() {
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
                 <div className="flex flex-col h-full text-center md:text-left">
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -280,7 +280,7 @@ export default function EbayAccountManagement() {
               </h2>
             </FadeIn>
             <FadeIn direction="up" delay={0.1}>
-              <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
+              <p className="text-[#67768e] text-[15px] max-w-[740px] mx-auto">
                 Our monthly eBay Account Management plan includes everything you need to grow smart, safe, and sustainably.
               </p>
             </FadeIn>
@@ -387,7 +387,7 @@ export default function EbayAccountManagement() {
                 <FadeIn key={item.title} direction="up" delay={i * 0.08}>
                   <div className="rounded-2xl p-8 h-full text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
                     <div className="flex justify-center md:justify-start">{item.icon}</div>
-                    <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                     <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                   </div>
                 </FadeIn>
@@ -427,7 +427,7 @@ export default function EbayAccountManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 We Help You Unlock the Power of <span style={{ color: "#ff9900" }}>Top Rated Seller & Top Rated Plus</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] mb-7 text-center lg:text-left">
+              <p className="text-[#67768e] text-[15px] mb-7 text-center lg:text-left">
                 Top Rated Seller and Top Rated Plus are signs that buyers trust you. To qualify and maintain your Top Rated Seller status, we actively manage and ensure these performance metrics:
               </p>
 
@@ -475,7 +475,7 @@ export default function EbayAccountManagement() {
               </h2>
             </FadeIn>
             <FadeIn direction="up" delay={0.1}>
-              <p className="text-[#67768e] text-[16px]">
+              <p className="text-[#67768e] text-[15px]">
                 Supercharge your results with add-ons built for serious sellers.
               </p>
             </FadeIn>
@@ -496,7 +496,7 @@ export default function EbayAccountManagement() {
 
             <FadeIn direction="left" className="flex-1 space-y-10 text-center lg:text-left">
               <div>
-                <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>
+                <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>
                   eBay Ads <span style={{ color: "#ff9900" }}>(Promoted Listings)</span>
                 </h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">
@@ -504,7 +504,7 @@ export default function EbayAccountManagement() {
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>
+                <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>
                   Customer Support <span style={{ color: "#ff9900" }}>Services</span>
                 </h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">
@@ -545,7 +545,7 @@ export default function EbayAccountManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What We Need From You to Deliver <span style={{ color: "#ff9900" }}>Maximum Results</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] mb-7 text-center lg:text-left">
+              <p className="text-[#67768e] text-[15px] mb-7 text-center lg:text-left">
                 Great results start with collaboration. Here&apos;s what we&apos;ll need:
               </p>
 
@@ -592,7 +592,7 @@ export default function EbayAccountManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Don&apos;t Wait Until Sales Drop or Your Account&apos;s at Risk
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-8">
               Every day you delay expert eBay management, you&apos;re missing out on potential revenue, stronger visibility, and long-term customer trust. Your Competitors are optimizing, are you?
             </p>
             <div className="flex justify-center lg:justify-start">

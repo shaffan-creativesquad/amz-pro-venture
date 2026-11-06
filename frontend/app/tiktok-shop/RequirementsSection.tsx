@@ -87,7 +87,7 @@ export default function RequirementsSection() {
             >
               <div>{item.icon}</div>
               <h3
-                className="font-bold text-[17px]"
+                className="font-bold text-[15px]"
                 style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#000000" }}
               >
                 {item.title}

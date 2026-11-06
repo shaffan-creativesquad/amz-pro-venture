@@ -127,7 +127,7 @@ export default function FAQSection() {
           >
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             Got questions about our TikTok Shop management services? We have got the answers. If you do not find what you are looking for, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
@@ -157,9 +157,9 @@ export default function FAQSection() {
                 className="w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer focus:outline-none"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className="font-semibold text-[16px] text-[#000000]">{faq.question}</span>
+                <span className="font-semibold text-[15px] text-[#000000]">{faq.question}</span>
                 <span
-                  className="flex-shrink-0 text-[22px] font-light transition-transform duration-300 text-[#000000]"
+                  className="flex-shrink-0 text-[18px] font-light transition-transform duration-300 text-[#000000]"
                   style={{ transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}
                 >
                   +

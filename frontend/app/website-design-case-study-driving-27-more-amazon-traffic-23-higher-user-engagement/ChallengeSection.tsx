@@ -52,11 +52,11 @@ export default function ChallengeSection() {
             The Challenge
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             The existing Davis Wellness website was not effectively supporting the brand&apos;s primary objective of driving customers to its Amazon storefront. While the site provided information about the products, it lacked the structure and user experience needed to encourage visitors to take action and purchase.
           </p>
 
-          <p className="text-[#000000] font-semibold text-[16px] mb-5">
+          <p className="text-[#000000] font-semibold text-[15px] mb-5">
             As a result, the business faced several challenges:
           </p>
 
@@ -72,7 +72,7 @@ export default function ChallengeSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             To increase product sales, the brand needed a website experience designed specifically to guide users toward purchasing through Amazon.
           </p>
 

@@ -51,11 +51,11 @@ export default function ResultsSection() {
             The Results
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-5">
             Following the implementation of Meta Ads, email marketing, organic social growth, and Shopify optimization, the brand achieved significant growth.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             Performance Growth:
           </p>
 
@@ -73,7 +73,7 @@ export default function ResultsSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             By combining paid acquisition, retention marketing, organic growth, and conversion optimization, AMZ ProVenture transformed the SpeedBump Shopify store into a scalable e-commerce growth engine.
           </p>
 

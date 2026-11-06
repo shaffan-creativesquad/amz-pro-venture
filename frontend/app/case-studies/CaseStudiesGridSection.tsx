@@ -71,7 +71,7 @@ export default function CaseStudiesGridSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.55 }}
-          className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[780px] mx-auto mb-6"
+          className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[780px] mx-auto mb-6"
         >
           Explore our case studies on e-commerce, PPC, SEO, B2B, marketing, paid social, and AI to see how AMZ ProVenture helps brands succeed across every stage of the online selling journey.
         </motion.p>

@@ -56,15 +56,15 @@ export default function ChallengeSection() {
             3 Years of Self-Managed Ads With No Real System
           </p>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             On the surface, the business had been &quot;running ads&quot; for years. But underneath, the account lacked structure, a targeting strategy, and a proven lead generation framework.
           </p>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-5">
             Between 2023 and 2026, they launched <strong className="text-[#000000]">13 different Facebook campaigns</strong> and generated only <strong className="text-[#000000]">42 total leads</strong> from across 9 of these campaigns. 4 campaigns generated a single impression.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             The core issues included:
           </p>
 
@@ -80,7 +80,7 @@ export default function ChallengeSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             The whole account generated <strong className="text-[#000000]">1 lead every 26 days</strong> with no reliable acquisition system in place.
           </p>
 

@@ -58,7 +58,7 @@ export default function StrategySection() {
             The Strategy &amp; Solution
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             AMZ ProVenture implemented a complete growth framework across paid, owned, and organic channels.
           </p>
 

@@ -86,7 +86,7 @@ export default function FBAInventoryAudit() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Smart FBA inventory management is the key to running a profitable Amazon business. We help you with:
           </p>
 
@@ -102,7 +102,7 @@ export default function FBAInventoryAudit() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -142,13 +142,13 @@ export default function FBAInventoryAudit() {
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,48px)", color: "#000000" }}>
               What Is an <span style={{ color: "#ff9900" }}>FBA Inventory Audit<br />and Forecast?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
               An FBA inventory audit is a close review of your stock in Amazon's warehouses to find problems and opportunities. It covers excess or stranded inventory, slow sellers, items nearing sell-out, and your overall inventory health.
             </p>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-5 text-center lg:text-left mx-auto lg:mx-0">
               Amazon FBA inventory forecasting helps you work out how much stock you'll need and when. It uses your past sales, seasonal changes, current trends, and supplier delivery times to estimate future demand.
             </p>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
               Regular audits and better stock forecasts help you avoid stockouts and extra storage fees. They also help you manage your money while making sure you have enough stock to fulfill orders.
             </p>
             <div className="flex justify-center lg:justify-start">
@@ -178,7 +178,7 @@ export default function FBAInventoryAudit() {
               <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why Your Business Needs an Expert <span style={{ color: "#ff9900" }}>Amazon Inventory Service</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
+              <p className="text-[#67768e] text-[15px] leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
                 Poor inventory planning hurts your Amazon business in many ways. Too much stock or too little drags down rankings, drives up storage costs, ties up cash, and costs you customer trust. Here's why expert inventory help matters:
               </p>
             </FadeIn>
@@ -219,7 +219,7 @@ export default function FBAInventoryAudit() {
               <div className="flex flex-col md:flex-row items-center md:items-start gap-5 bg-white rounded-xl p-6 border border-gray-100 h-full text-center md:text-left" style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.06)" }}>
                 {item.icon}
                 <div>
-                  <h3 className="font-bold text-[16px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -249,7 +249,7 @@ export default function FBAInventoryAudit() {
             <h2 className="font-bold leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What's Included in Our Monthly FBA<br />Inventory Audit and Forecasting Service
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[680px] mx-auto">
               Our Amazon inventory service makes sure you always have the right products, in the right amounts, at the right time. Here's what your monthly plan includes:
             </p>
           </div>
@@ -334,7 +334,7 @@ export default function FBAInventoryAudit() {
               <FadeIn key={card.title} direction="up" delay={i * 0.08}>
               <div className="bg-white rounded-2xl p-8 flex flex-col gap-1 h-full">
                 <div className="flex justify-center md:justify-start">{card.icon}</div>
-                <h3 className="font-bold text-[16px] leading-snug mb-3 text-center md:text-left" style={{ color: "#000000" }}>{card.title}</h3>
+                <h3 className="font-bold text-[15px] leading-snug mb-3 text-center md:text-left" style={{ color: "#000000" }}>{card.title}</h3>
                 <div className="space-y-2.5">
                   {card.items.map((item) => (
                     <div key={item} className="flex items-start gap-3">
@@ -370,7 +370,7 @@ export default function FBAInventoryAudit() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Two Simple Things to Get Started
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               To get you the best results, we'll need you to share the following:
             </p>
 
@@ -389,7 +389,7 @@ export default function FBAInventoryAudit() {
               ))}
             </div>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               We'll guide you through every step to keep things running smoothly. If anything else would help us get better results, we'll let you know right away.
             </p>
 
@@ -416,7 +416,7 @@ export default function FBAInventoryAudit() {
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Keep Your Amazon FBA Stock Under Control
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-8">
               Poor inventory planning feels like sinking in quicksand. It slows sales, drains capital, and hurts rankings. With our FBA inventory audit and forecasting service, you'll know exactly what you have, what to order, and when to order it.
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">

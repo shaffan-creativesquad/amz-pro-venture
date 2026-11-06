@@ -33,11 +33,11 @@ export default function StrategySolutionSection() {
             The Strategy &amp; Solution
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-5">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-5">
             Instead of relying on manual updates, we implemented a real-time two-way integration designed to keep all product and inventory data consistent across every connected platform.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             The solution included:
           </p>
 
@@ -53,7 +53,7 @@ export default function StrategySolutionSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             This created a stable and fully synchronized ecosystem where product data, stock levels, and availability remained accurate in real time.
           </p>
 

@@ -13,7 +13,7 @@ export default function InfoBar() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "0px" }}
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
-          className="text-[#000000] text-base sm:text-[18px] leading-relaxed max-w-[600px] text-center lg:text-left"
+          className="text-[#000000] text-base sm:text-[15px] leading-relaxed max-w-[600px] text-center lg:text-left"
         >
           Welcome to our digital haven, where creativity meets performance, and data guides every step.
           We specialize in crafting captivating WordPress, WooCommerce, and Shopify e-commerce

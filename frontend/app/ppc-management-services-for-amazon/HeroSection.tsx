@@ -25,7 +25,7 @@ export default function HeroSection() {
           That Turns Clicks Into Profit
         </motion.h1>
 
-        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
+        <motion.p variants={itm} className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
           We manage your Amazon ads, from setting up campaigns to tracking what&apos;s working and what isn&apos;t. The goal is to drive more sales, avoid paying for clicks that don&apos;t convert, and help your products reach the right shoppers.
         </motion.p>
 
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <circle cx="12" cy="12" r="12" fill="#ff9900" />
                 <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <p className="text-[#000000] text-[16px] font-medium">{item}</p>
+              <p className="text-[#000000] text-[15px] font-medium">{item}</p>
             </div>
           ))}
         </motion.div>

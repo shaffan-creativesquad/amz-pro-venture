@@ -98,7 +98,7 @@ export default function ConsultationSection() {
                 </svg>
               </div>
               <div>
-                <p className="font-bold text-[16px]" style={{ color: "#000" }}>Get Your Consultation</p>
+                <p className="font-bold text-[15px]" style={{ color: "#000" }}>Get Your Consultation</p>
                 <p className="text-[12px]" style={{ color: "#67768e" }}>No Obligation</p>
               </div>
             </div>

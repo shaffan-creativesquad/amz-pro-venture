@@ -161,7 +161,7 @@ export default function ReimbursementClaims() {
 
           <FadeIn direction="up" delay={0.1}>
 
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-14">
 
               We recover your Amazon FBA reimbursement funds by finding missed claims and speeding up the process with Amazon.
 
@@ -213,7 +213,7 @@ export default function ReimbursementClaims() {
 
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                  <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
 
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
 
@@ -259,7 +259,7 @@ export default function ReimbursementClaims() {
 
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                  <h3 className="font-bold text-[17px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
 
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
 
@@ -317,7 +317,7 @@ export default function ReimbursementClaims() {
 
           <FadeIn direction="up" delay={0.1}>
 
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[700px] mx-auto mb-14">
 
               Our full-service approach is built to recover as much as possible while keeping your account safe and compliant.
 
@@ -367,7 +367,7 @@ export default function ReimbursementClaims() {
 
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                  <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
 
                   <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
 
@@ -445,7 +445,7 @@ export default function ReimbursementClaims() {
 
                   <div className="w-[140px] h-[140px] rounded-full flex items-center justify-center" style={{ border: "3px solid #ff9900", backgroundColor: "#ffffff" }}>
 
-                    <span className="font-bold text-[28px]" style={{ color: "#000000" }}>{stat.value}</span>
+                    <span className="font-bold text-[18px]" style={{ color: "#000000" }}>{stat.value}</span>
 
                   </div>
 
@@ -479,7 +479,7 @@ export default function ReimbursementClaims() {
 
               <p className="text-[#67768e] text-[12px] mb-4">Amazon Seller</p>
 
-              <h3 className="font-bold text-[18px] mb-1" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</h3>
+              <h3 className="font-bold text-[15px] mb-1" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</h3>
 
               <p className="text-[#67768e] text-[13px] mb-5">Book Your Strategy Call Today!</p>
 
@@ -525,7 +525,7 @@ export default function ReimbursementClaims() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">
 
               Our pricing is simple, transparent, and tied to results.
 
@@ -537,7 +537,7 @@ export default function ReimbursementClaims() {
 
               <div>
 
-                <h3 className="font-bold text-[22px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>One-Time Audit Fee: <span style={{ color: "#ff9900" }}>$99</span></h3>
+                <h3 className="font-bold text-[18px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>One-Time Audit Fee: <span style={{ color: "#ff9900" }}>$99</span></h3>
 
                 <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[500px] text-center lg:text-left mx-auto lg:mx-0">
 
@@ -549,7 +549,7 @@ export default function ReimbursementClaims() {
 
               <div>
 
-                <h3 className="font-bold text-[22px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>Success-Based Fee: <span style={{ color: "#ff9900" }}>10–15% of Recovered Amount</span></h3>
+                <h3 className="font-bold text-[18px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>Success-Based Fee: <span style={{ color: "#ff9900" }}>10–15% of Recovered Amount</span></h3>
 
                 <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[500px] text-center lg:text-left mx-auto lg:mx-0">
 
@@ -707,7 +707,7 @@ export default function ReimbursementClaims() {
 
           <FadeIn direction="up" delay={0.1}>
 
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-3">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-3">
 
               At AMZ ProVenture, we keep studying Amazon&apos;s changing FBA systems to find new types of discrepancies, going well beyond standard checks. Here are some of the key reimbursement types we recover, including lost inventory reimbursement from Amazon:
 
@@ -827,7 +827,7 @@ export default function ReimbursementClaims() {
 
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                  <h3 className="font-bold text-[16px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
 
                   <p className="text-[14px] leading-relaxed" style={{ color: item.dark ? "#cbd5e1" : "#67768e" }}>{item.desc}</p>
 
@@ -863,7 +863,7 @@ export default function ReimbursementClaims() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
 
               Amazon has cut the reimbursement claim window <span className="font-semibold text-[#000000]">from 18 months to just 60 days</span> for most fulfillment center issues. Wait too long, and that money could be gone for good.
 

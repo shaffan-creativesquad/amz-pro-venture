@@ -80,7 +80,7 @@ export default function BusinessModelsSection() {
               className="flex flex-col gap-4"
             >
               <div>{model.icon}</div>
-              <h3 className="font-bold text-[17px] leading-snug" style={{ color: "#000000" }}>
+              <h3 className="font-bold text-[15px] leading-snug" style={{ color: "#000000" }}>
                 {model.title}
               </h3>
               <p className="text-[#67768e] text-[14px] leading-relaxed">

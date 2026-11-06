@@ -84,7 +84,7 @@ export default function ExpertSection() {
             <span className="text-[#ff9900]">Speak With an Expert.</span>
           </h2>
 
-          <div className="text-black text-[18px] leading-relaxed space-y-4 mb-8">
+          <div className="text-black text-[15px] leading-relaxed space-y-4 mb-8">
             <p>
               <strong className="text-[#000000]">AMZ ProVenture</strong> is not your typical ecommerce agency. Serious sellers call us when sales flatten out or a lot is riding on the next move. For more than <strong className="text-[#000000]">10 years</strong>, we&apos;ve built stores on <strong className="text-[#000000]">Shopify, WooCommerce, WordPress, Adobe Commerce/Magento</strong> and BigCommerce that look the part and sell.
             </p>

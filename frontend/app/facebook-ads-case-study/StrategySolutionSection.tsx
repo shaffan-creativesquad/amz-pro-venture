@@ -43,11 +43,11 @@ export default function StrategySolutionSection() {
             The Strategy &amp; Solution
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             Like many successful Facebook Ads agency case studies for e-commerce and lead generation, the transformation started with rebuilding the account from the ground up around one clear objective: generating qualified leads at scale.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             Instead of managing assets broadly, we focused on campaign structure, audience segmentation, and ongoing refinement:
           </p>
 

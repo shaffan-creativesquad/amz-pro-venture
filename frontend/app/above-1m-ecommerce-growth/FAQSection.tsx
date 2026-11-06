@@ -51,7 +51,7 @@ export default function FAQSection() {
           >
             Questions Brands Ask Us Most
           </h2>
-          <p className="text-[16px]" style={{ color: "#ff9900" }}>
+          <p className="text-[15px]" style={{ color: "#ff9900" }}>
             Straight answers about what we do, how it works, and what you can expect
           </p>
         </div>
@@ -89,13 +89,13 @@ export default function FAQSection() {
                 onClick={() => setOpen(open === i ? null : i)}
               >
                 <span
-                  className="font-semibold text-[17px] leading-snug"
+                  className="font-semibold text-[15px] leading-snug"
                   style={{ color: "#000000" }}
                 >
                   {faq.question}
                 </span>
                 <span
-                  className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[18px] font-light transition-transform duration-300"
+                  className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-[15px] font-light transition-transform duration-300"
                   style={{
                     color: open === i ? "#ffffff" : "#000000",
                     backgroundColor: open === i ? "#ff9900" : "transparent",

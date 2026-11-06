@@ -80,7 +80,7 @@ export default function AmazonVendorCentralManagementServices() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[560px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[560px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             Gain efficiency, stay compliant, and protect your margins with complete Amazon Vendor Central management.
           </p>
 
@@ -96,7 +96,7 @@ export default function AmazonVendorCentralManagementServices() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -141,7 +141,7 @@ export default function AmazonVendorCentralManagementServices() {
           </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[680px] mx-auto">
             Without proper management, Amazon Vendor Central can get complicated and costly. Chargebacks, compliance issues, and stock problems can eat into your profits and slow your growth.
           </p>
           </FadeIn>
@@ -210,7 +210,7 @@ export default function AmazonVendorCentralManagementServices() {
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
               <div className="p-8 bg-white border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 <div className="flex justify-center md:justify-start">{item.icon}</div>
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
               </FadeIn>
@@ -238,7 +238,7 @@ export default function AmazonVendorCentralManagementServices() {
           </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[780px] mx-auto">
             As your Vendor Central agency, we help protect your profits, manage daily tasks, and grow your wholesale business without the usual hassle.
           </p>
           </FadeIn>
@@ -299,7 +299,7 @@ export default function AmazonVendorCentralManagementServices() {
                 <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5" style={{ backgroundColor: "#ff9900" }}>
                   {item.icon}
                 </div>
-                <h3 className="font-bold text-[18px] mb-4 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-4 leading-snug" style={{ color: item.dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                 <div className="space-y-3">
                   {item.items.map((point) => (
                     <div key={point} className="flex items-start gap-3">
@@ -337,7 +337,7 @@ export default function AmazonVendorCentralManagementServices() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What We&apos;ll Need to Get Started
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[520px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 max-w-[520px] text-center lg:text-left mx-auto lg:mx-0">
               Strong results begin with the right foundation. To keep everything smooth and efficient, please provide:
             </p>
             <div className="space-y-4 mb-6">
@@ -350,7 +350,7 @@ export default function AmazonVendorCentralManagementServices() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900"/>
                     <path d="M6 12.5l4 4 8-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <p className="text-[#000000] text-[16px]">{item}</p>
+                  <p className="text-[#000000] text-[15px]">{item}</p>
                 </div>
               ))}
             </div>
@@ -393,7 +393,7 @@ export default function AmazonVendorCentralManagementServices() {
                 </div>
                 <p className="font-bold text-[13px]" style={{ color: "#000000" }}>Linda Davis</p>
                 <p className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</p>
-                <p className="font-bold text-[16px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
+                <p className="font-bold text-[15px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
                 <p className="text-[12px]" style={{ color: "#67768e" }}>Book your strategy call today.</p>
                 <a href="/contact-us" className="svc-btn svc-btn-pink mt-1" style={{ fontSize: "12px", padding: "9px 20px" }}>
                   <span className="svc-btn-inner">
@@ -416,7 +416,7 @@ export default function AmazonVendorCentralManagementServices() {
             <h2 className="font-bold leading-tight mb-5 text-center" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Ready to Take Control of <span style={{ color: "#ff9900" }}>Vendor Central?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
               Partner with AMZ ProVenture and turn your Amazon 1P vendor services into your most profitable sales channel.
             </p>
             <div className="flex justify-center">

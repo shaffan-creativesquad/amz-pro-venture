@@ -86,7 +86,7 @@ export default function AmazonAccountSuspended() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left">
             An Amazon listing removed without warning can wipe out sales overnight. Our Amazon ASIN reinstatement team finds the cause, fixes it properly, and gets your product selling again fast.
           </p>
 
@@ -97,7 +97,7 @@ export default function AmazonAccountSuspended() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -136,7 +136,7 @@ export default function AmazonAccountSuspended() {
               <span className="text-[#000000]">Whatever Took Your ASIN Down,</span><br />
               <span className="text-[#ff9900]">We Can Fix It.</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">AMZ ProVenture helps sellers recover listings taken down for all sorts of reasons, whether it&apos;s a fully suspended ASIN or a suppressed listing on Amazon. These are the issues we see most:</p>
+            <p className="text-[#67768e] text-[15px] mb-8 text-center lg:text-left">AMZ ProVenture helps sellers recover listings taken down for all sorts of reasons, whether it&apos;s a fully suspended ASIN or a suppressed listing on Amazon. These are the issues we see most:</p>
             <div className="space-y-4">
               {[
                 { title: "Authenticity or Counterfeit Claims:", desc: "Reports that a product is fake or not as advertised." },
@@ -152,7 +152,7 @@ export default function AmazonAccountSuspended() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
                     <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  <p className="text-[#000000] text-[16px]"><strong>{item.title}</strong> {item.desc}</p>
+                  <p className="text-[#000000] text-[15px]"><strong>{item.title}</strong> {item.desc}</p>
                 </div>
               ))}
             </div>
@@ -185,7 +185,7 @@ export default function AmazonAccountSuspended() {
           </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[680px] mx-auto">
             AMZ ProVenture has helped hundreds of sellers across the USA bring suspended listings back to life, quickly and with the care each case needs.
           </p>
           </FadeIn>
@@ -269,7 +269,7 @@ export default function AmazonAccountSuspended() {
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
               <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 {item.icon}
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
               </FadeIn>
@@ -317,7 +317,7 @@ export default function AmazonAccountSuspended() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
                     <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  <p className="text-[#000000] text-[16px]">{item}</p>
+                  <p className="text-[#000000] text-[15px]">{item}</p>
                 </div>
               ))}
             </div>
@@ -364,7 +364,7 @@ export default function AmazonAccountSuspended() {
                 </div>
                 <p className="font-bold text-[13px]" style={{ color: "#000000" }}>Linda Davis</p>
                 <p className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</p>
-                <p className="font-bold text-[16px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
+                <p className="font-bold text-[15px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
                 <p className="text-[12px]" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
                 <a href="/contact-us" className="svc-btn svc-btn-pink mt-1" style={{ fontSize: "12px", padding: "9px 20px" }}>
                   <span className="svc-btn-inner">
@@ -389,7 +389,7 @@ export default function AmazonAccountSuspended() {
               <span className="text-[#000000]">Our Simple Process to </span>
               <span className="text-[#ff9900]">Restore ASINs</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[700px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[700px] mx-auto">
               When Amazon removes an ASIN, sending an appeal isn&apos;t always enough to get it back. First, you need to know what went wrong and what Amazon expects. We help you sort out the issue, prepare your appeal, and respond to Amazon. We&apos;ll also keep you in the loop throughout.
             </p>
           </div>
@@ -453,7 +453,7 @@ export default function AmazonAccountSuspended() {
                     <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 )}
-                <h3 className="font-bold text-[16px] leading-snug" style={{ color: "#ff9900" }}>{card.title}</h3>
+                <h3 className="font-bold text-[15px] leading-snug" style={{ color: "#ff9900" }}>{card.title}</h3>
                 <div className="space-y-2">
                   {card.items.map((item) => (
                     <div key={item} className="flex items-start gap-2">
@@ -483,7 +483,7 @@ export default function AmazonAccountSuspended() {
             <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Ready to Start Selling <span style={{ color: "#ff9900" }}>That Product Again?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
               If Amazon has taken down your product, don&apos;t wait it out. Start your Amazon ASIN reinstatement with us, and we&apos;ll guide you through every step of getting it back quickly and the right way.
             </p>
             <a href="/contact-us" className="svc-btn svc-btn-pink">

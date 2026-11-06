@@ -80,7 +80,7 @@ export default function EtsyAccountManagement() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
             We manage every aspect of your Etsy business, from listing creation to shop health, to ensure fast, compliant, and sustainable growth.
           </p>
 
@@ -96,7 +96,7 @@ export default function EtsyAccountManagement() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -138,7 +138,7 @@ export default function EtsyAccountManagement() {
               </h2>
             </FadeIn>
             <FadeIn direction="up" delay={0.1}>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto">
+              <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[720px] mx-auto">
                 We manage every aspect of your Etsy shop for optimum performance. Our approach is tailored specifically to the unique, creative nature of Etsy.
               </p>
             </FadeIn>
@@ -159,7 +159,7 @@ export default function EtsyAccountManagement() {
                     {i + 1}
                   </div>
                   <div>
-                    <h3 className="font-bold text-[16px] mb-1" style={{ color: "#000000" }}>{item.title}:</h3>
+                    <h3 className="font-bold text-[15px] mb-1" style={{ color: "#000000" }}>{item.title}:</h3>
                     <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ export default function EtsyAccountManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What You Risk Without Expert <span style={{ color: "#ff9900" }}>Etsy Management</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
+              <p className="text-[#67768e] text-[15px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
                 Mismanaging your Etsy shop not only hurts your revenue, but it can also damage your brand image and account standings. Here&apos;s what you risk without expert management:
               </p>
 
@@ -254,7 +254,7 @@ export default function EtsyAccountManagement() {
               </h2>
             </FadeIn>
             <FadeIn direction="up" delay={0.1}>
-              <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
+              <p className="text-[#67768e] text-[15px] max-w-[740px] mx-auto">
                 Our service offers everything you need to run a thriving Etsy shop.
               </p>
             </FadeIn>
@@ -350,7 +350,7 @@ export default function EtsyAccountManagement() {
                 <FadeIn key={item.title} direction="up" delay={i * 0.08}>
                   <div className="rounded-2xl p-8 h-full text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
                     <div className="flex justify-center md:justify-start">{item.icon}</div>
-                    <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                     <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                   </div>
                 </FadeIn>
@@ -381,7 +381,7 @@ export default function EtsyAccountManagement() {
               </h2>
             </FadeIn>
             <FadeIn direction="up" delay={0.1}>
-              <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
+              <p className="text-[#67768e] text-[15px] max-w-[680px] mx-auto">
                 Our Etsy account management services are the perfect match for you if you&apos;re looking to dominate.
               </p>
             </FadeIn>
@@ -397,7 +397,7 @@ export default function EtsyAccountManagement() {
                 { title: "Multi-channel Entrepreneurs", desc: "Leverage product catalog across Etsy, Shopify, and Amazon with seamless, integrated support." },
               ].map((item) => (
                 <div key={item.title} className="text-center lg:text-left">
-                  <h3 className="font-bold text-[20px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[18px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -447,7 +447,7 @@ export default function EtsyAccountManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What We Need from You to Deliver the <span style={{ color: "#ff9900" }}>Best Results</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] mb-7 text-center lg:text-left">
+              <p className="text-[#67768e] text-[15px] mb-7 text-center lg:text-left">
                 We&apos;re committed to helping you succeed in your Etsy journey, so to ensure smooth and effective engagement, we&apos;ll need you to provide:
               </p>
 
@@ -509,7 +509,7 @@ export default function EtsyAccountManagement() {
                 </div>
                 <p className="font-bold text-[14px] mb-0.5" style={{ color: "#000000" }}>Linda Davis</p>
                 <p className="text-[12px] mb-4" style={{ color: "#67768e" }}>Account Expert</p>
-                <p className="font-bold text-[16px] mb-1" style={{ color: "#ff9900" }}>Need Expert Advice?</p>
+                <p className="font-bold text-[15px] mb-1" style={{ color: "#ff9900" }}>Need Expert Advice?</p>
                 <p className="text-[12px] mb-4" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
                 <a href="/contact-us" className="svc-btn svc-btn-pink text-[12px]" style={{ padding: "10px 20px" }}>
                   <span className="svc-btn-inner">
@@ -532,7 +532,7 @@ export default function EtsyAccountManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Get a 15-Day Trial for Just $1 &ndash; No Commitment Needed
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
               Unmanaged accounts lead to wasted fees, suspended listings, and declining seller performance. Act now to keep your Etsy store running smoothly, protect your reputation, and utilize every sale opportunity.
             </p>
             <div className="flex justify-center lg:justify-start">

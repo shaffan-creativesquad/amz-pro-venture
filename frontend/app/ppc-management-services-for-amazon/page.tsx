@@ -85,7 +85,7 @@ export default function AmazonAccountSuspended() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+            <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[680px] mx-auto">
               As an Amazon PPC agency, AMZ ProVenture has helped hundreds of sellers get more from every ad dollar, gain visibility, and grow profitably.
             </p>
           </FadeIn>
@@ -163,7 +163,7 @@ export default function AmazonAccountSuspended() {
               <FadeIn key={item.title} delay={i * 0.09} direction="up">
                 <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -188,7 +188,7 @@ export default function AmazonAccountSuspended() {
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Why Your Amazon Ads <span style={{ color: "#ff9900" }}>Aren&apos;t Paying Off</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
               Amazon PPC isn&apos;t something you set up and then just walk away from. It&apos;s extremely detailed, data-intensive, and constantly evolving. A huge number of sellers will actually spend thousands of dollars just trying to work it out. That&apos;s where most campaigns go wrong:
             </p>
             <div className="space-y-4 mb-10">
@@ -204,7 +204,7 @@ export default function AmazonAccountSuspended() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
                     <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  <p className="text-[#000000] text-[16px]">{item}</p>
+                  <p className="text-[#000000] text-[15px]">{item}</p>
                 </div>
               ))}
             </div>
@@ -229,7 +229,7 @@ export default function AmazonAccountSuspended() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[700px] mx-auto mb-14">
               Our hands-on approach removes the guesswork from Amazon advertising and keeps you ahead of the competition. Here&apos;s what&apos;s included in your monthly management:
             </p>
           </FadeIn>
@@ -290,7 +290,7 @@ export default function AmazonAccountSuspended() {
               <FadeIn key={item.title} delay={i * 0.06} direction="up">
                 <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -318,7 +318,7 @@ export default function AmazonAccountSuspended() {
               <span className="text-[#000000]">The Right Keywords, </span>
               <span className="text-[#ff9900]">Lower ACoS, More Sales</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
               Keywords don’t all perform the same way, so we test, track, and adjust across every match type to find what drives sales and helps reduce ACoS on Amazon.
             </p>
             <div className="space-y-6">
@@ -345,7 +345,7 @@ export default function AmazonAccountSuspended() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
                     <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  <p className="text-[#000000] text-[16px] leading-relaxed">
+                  <p className="text-[#000000] text-[15px] leading-relaxed">
                     <strong>{item.title}:</strong> {item.desc}
                   </p>
                 </div>
@@ -369,7 +369,7 @@ export default function AmazonAccountSuspended() {
               </h2>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[620px] text-center lg:text-left">
+              <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[620px] text-center lg:text-left">
                 Give your PPC campaigns extra support with optional add-ons built to lift visibility and conversions. From better visuals to outside traffic, these help your ads perform at their best.
               </p>
             </FadeIn>
@@ -410,7 +410,7 @@ export default function AmazonAccountSuspended() {
                 <FadeIn key={item.title} delay={i * 0.08} direction="up">
                   <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.08)" }}>
                     {item.icon}
-                    <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                    <h3 className="font-bold text-[15px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                     <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                   </div>
                 </FadeIn>
@@ -433,7 +433,7 @@ export default function AmazonAccountSuspended() {
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
                 Level Up Your Campaigns With <span style={{ color: "#ff9900" }}>Smart Add-Ons</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+              <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
                 Start with a free Amazon PPC audit and see exactly where your budget can work harder.
               </p>
               <a href="/contact-us" className="svc-btn svc-btn-pink">

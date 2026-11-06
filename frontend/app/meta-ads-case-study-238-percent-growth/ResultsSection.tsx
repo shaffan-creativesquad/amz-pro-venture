@@ -52,7 +52,7 @@ export default function ResultsSection() {
             The Results
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-6">
             The Meta Ads campaigns generated a <strong className="text-[#000000]">5.02x Return on Ad Spend (ROAS)</strong>, meaning every $1 invested in advertising produced approximately $5.02 in revenue.
           </p>
 
@@ -70,7 +70,7 @@ export default function ResultsSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             By introducing a new paid acquisition channel and leveraging data-driven marketing, AMZ ProVenture helped transform a relatively low-traffic store into a significantly stronger revenue-generating business.
           </p>
 

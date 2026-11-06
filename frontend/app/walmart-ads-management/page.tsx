@@ -80,7 +80,7 @@ export default function WalmartAdsManagement() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
             We create and manage high-performing Walmart Ad campaigns that grow your sales, cut wasted spend, and keep you visible across the competition.
           </p>
 
@@ -97,7 +97,7 @@ export default function WalmartAdsManagement() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -141,7 +141,7 @@ export default function WalmartAdsManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why Walmart Ads Matter<br />More Than <span style={{ color: "#ff9900" }}>Ever</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
+              <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
                 Walmart&apos;s marketplace is growing fast, and so is the competition. Strategic advertising is now the key to getting noticed, winning clicks, and driving consistent sales.
               </p>
 
@@ -188,7 +188,7 @@ export default function WalmartAdsManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Why Most Sellers Struggle With Walmart Ads
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
+              <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
                 Walmart PPC management isn&apos;t set-and-forget; it&apos;s complex, data-heavy, and constantly changing. Most sellers waste thousands trying to figure it out. Here&apos;s why Walmart ads often fail:
               </p>
 
@@ -236,7 +236,7 @@ export default function WalmartAdsManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Complete Walmart Ads Management: Everything<br />You Need to <span style={{ color: "#ff9900" }}>Succeed</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[740px] mx-auto">
               Our full-service Walmart PPC management approach helps you stay ahead of the competition. Here&apos;s what&apos;s included in your monthly ads management
             </p>
           </div>
@@ -343,7 +343,7 @@ export default function WalmartAdsManagement() {
               return (
                 <div key={item.title} className="rounded-2xl p-8 text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#ffffff" }}>
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                 </div>
               );
@@ -384,7 +384,7 @@ export default function WalmartAdsManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Is AMZ Pro Venture&apos;s Walmart Ads Management Right for <span style={{ color: "#ff9900" }}>You?</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] mb-7 text-center lg:text-left">
+              <p className="text-[#67768e] text-[15px] mb-7 text-center lg:text-left">
                 You&apos;re a perfect fit if:
               </p>
 
@@ -444,7 +444,7 @@ export default function WalmartAdsManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What We Need From You to Deliver the <span style={{ color: "#ff9900" }}>Best Results</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] mb-7 text-center lg:text-left">
+              <p className="text-[#67768e] text-[15px] mb-7 text-center lg:text-left">
                 To get the most from this service, we need:
               </p>
 
@@ -490,7 +490,7 @@ export default function WalmartAdsManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Stop Letting Your Walmart Ad<br />Spend Go to Waste Without ROI
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-8">
               Without expert Walmart Ads management, your budget bleeds on low-performing campaigns while competitors take the top spots. Act now to protect your ROI, capture visibility, and turn every dollar into sales.
             </p>
             <div className="flex justify-center lg:justify-start">

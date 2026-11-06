@@ -54,11 +54,11 @@ export default function ChallengeSection() {
             The Challenge
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             Although the business was selling across multiple channels, product and inventory data were not syncing properly between WooCommerce and Walmart. This created major inconsistencies that directly impacted customer experience and sales performance.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             The core issues included:
           </p>
 
@@ -74,7 +74,7 @@ export default function ChallengeSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             The business lacked a reliable real-time synchronization system, causing inventory inaccuracies that negatively impacted both revenue and operational performance.
           </p>
 

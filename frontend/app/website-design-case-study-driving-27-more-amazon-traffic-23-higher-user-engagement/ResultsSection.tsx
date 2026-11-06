@@ -51,7 +51,7 @@ export default function ResultsSection() {
             The Results
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-6">
             The redesigned website delivered measurable improvements across key performance metrics:
           </p>
 
@@ -69,7 +69,7 @@ export default function ResultsSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             By aligning the website experience with the brand&apos;s primary sales channel, AMZ ProVenture transformed the Eleviv Wellness website into a stronger conversion asset that successfully increased qualified traffic to Amazon and improved overall customer engagement.
           </p>
 

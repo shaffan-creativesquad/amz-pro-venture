@@ -174,7 +174,7 @@ export default function AccountManagementForAmazon() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[720px] mb-12 text-center">
 
             Running an Amazon store never really stops. There&apos;s account health to check, listings to fix, ads to adjust, buyers to answer and new policies to keep up with. Our Amazon account management services handle all of it for you, so you can get back to the parts of the business you actually enjoy.
 
@@ -224,7 +224,7 @@ export default function AccountManagementForAmazon() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">Good Amazon seller account management keeps your products easy to find, your sales growing and your account free from the warnings no seller wants to get.</p>
+            <p className="text-[#67768e] text-[15px] mb-8 text-center lg:text-left">Good Amazon seller account management keeps your products easy to find, your sales growing and your account free from the warnings no seller wants to get.</p>
 
             <div className="space-y-5">
 
@@ -252,7 +252,7 @@ export default function AccountManagementForAmazon() {
 
                   </svg>
 
-                  <p className="text-[#000000] font-semibold text-[18px]">{item}</p>
+                  <p className="text-[#000000] font-semibold text-[15px]">{item}</p>
 
                 </div>
 
@@ -370,9 +370,9 @@ export default function AccountManagementForAmazon() {
 
                   <div>
 
-                    <h3 className="text-[#000000] font-bold text-[17px] mb-1">{item.title}</h3>
+                    <div className="text-[#000000] font-bold text-[15px] mb-1">{item.title}</div>
 
-                    <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
+                    <div className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</div>
 
                   </div>
 
@@ -420,7 +420,7 @@ export default function AccountManagementForAmazon() {
 
           <FadeIn direction="up" delay={0.1}>
 
-            <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[620px] mx-auto">
+            <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[620px] mx-auto">
 
               Keeping the lights on isn&apos;t enough. If you want your store to grow, our Amazon store management agency team will help you get there.
 
@@ -558,9 +558,9 @@ export default function AccountManagementForAmazon() {
 
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <div className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</div>
 
-                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                  <div className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</div>
 
                 </div>
 
@@ -618,9 +618,9 @@ export default function AccountManagementForAmazon() {
 
             </h2>
 
-            <p className="text-[#ff9900] font-semibold text-[16px] mb-4">Monthly Plans That Fit Your Business</p>
+            <p className="text-[#ff9900] font-semibold text-[15px] mb-4">Monthly Plans That Fit Your Business</p>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mx-auto lg:mx-0">
 
               Every store is different, so we don&apos;t sell one-size-fits-all packages. We put your plan together based on how many products you sell, what your sales goals are and where you want the brand to be next. It works the same whether you&apos;re brand new or close to seven figures.
 
@@ -652,7 +652,7 @@ export default function AccountManagementForAmazon() {
 
             </h2>
 
-            <p className="text-[#000000] font-semibold text-[18px] mb-6">Support from a full-service Amazon agency, on a simple monthly retainer.</p>
+            <p className="text-[#000000] font-semibold text-[15px] mb-6">Support from a full-service Amazon agency, on a simple monthly retainer.</p>
 
             <a href="/contact-us" className="svc-btn">
 
@@ -698,9 +698,9 @@ export default function AccountManagementForAmazon() {
 
                 </svg>
 
-                <h3 className="font-bold text-[16px] leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                <div className="font-bold text-[15px] leading-snug" style={{ color: "#ff9900" }}>{item.title}</div>
 
-                <p className="text-[#000000] text-[14px] leading-relaxed">{item.desc}</p>
+                <div className="text-[#000000] text-[14px] leading-relaxed">{item.desc}</div>
 
               </div>
 
@@ -768,7 +768,7 @@ export default function AccountManagementForAmazon() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] max-w-[580px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[580px] mx-auto">
 
               Pick the add-ons that cover what your account is missing.
 
@@ -792,17 +792,17 @@ export default function AccountManagementForAmazon() {
 
               <div>
 
-                <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Pay-Per-Click (PPC) Campaign Management</h3>
+                <div className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>Pay-Per-Click (PPC) Campaign Management</div>
 
-                <p className="text-[#67768e] text-[16px] leading-relaxed">We plan and run ad campaigns that get more out of every dollar you spend and bring in more sales.</p>
+                <div className="text-[#67768e] text-[15px] leading-relaxed">We plan and run ad campaigns that get more out of every dollar you spend and bring in more sales.</div>
 
               </div>
 
               <div>
 
-                <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Customer Support Management</h3>
+                <div className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>Customer Support Management</div>
 
-                <p className="text-[#67768e] text-[16px] leading-relaxed">We reply to buyer messages, respond to reviews and sort out problems fast, so customers stay happy and your reputation stays strong.</p>
+                <div className="text-[#67768e] text-[15px] leading-relaxed">We reply to buyer messages, respond to reviews and sort out problems fast, so customers stay happy and your reputation stays strong.</div>
 
               </div>
 
@@ -850,7 +850,7 @@ export default function AccountManagementForAmazon() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto leading-relaxed">
+            <p className="text-[#67768e] text-[15px] max-w-[680px] mx-auto leading-relaxed">
 
               Strategy is important, but most problems on Amazon start with something small. Being a full-service Amazon agency means we take care of those details too, so nothing gets missed.
 
@@ -920,9 +920,9 @@ export default function AccountManagementForAmazon() {
 
                   <div>
 
-                    <h3 className="font-bold text-[17px] mb-1" style={{ color: "#000000" }}>{item.title}</h3>
+                    <div className="font-bold text-[15px] mb-1" style={{ color: "#000000" }}>{item.title}</div>
 
-                    <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                    <div className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</div>
 
                   </div>
 
@@ -1010,7 +1010,7 @@ export default function AccountManagementForAmazon() {
 
                       <div className="absolute rounded-full" style={{ inset: "10px", border: "2px solid #ff9900" }} />
 
-                      <span className="font-bold text-[28px] relative z-10" style={{ color: "#000000" }}>{stat.value}</span>
+                      <span className="font-bold text-[18px] relative z-10" style={{ color: "#000000" }}>{stat.value}</span>
 
                     </div>
 
@@ -1052,7 +1052,7 @@ export default function AccountManagementForAmazon() {
 
                 <p className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</p>
 
-                <p className="font-bold text-[16px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
+                <p className="font-bold text-[15px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
 
                 <p className="text-[12px]" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
 
@@ -1110,7 +1110,7 @@ export default function AccountManagementForAmazon() {
 
               </h2>
 
-              <p className="text-white/90 text-[16px]">Let our Amazon seller account management team take care of the daily work while you focus on growing your brand.</p>
+              <p className="text-white/90 text-[15px]">Let our Amazon seller account management team take care of the daily work while you focus on growing your brand.</p>
 
             </div>
 

@@ -85,7 +85,7 @@ export default function RufusAIListingOptimization() {
             </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
+            <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[780px] mx-auto">
               Amazon&apos;s algorithm keeps changing, so ranking on page one is never luck. It takes ongoing Amazon SEO services and smart strategy. Here are the main reasons to optimize your Amazon listings:
             </p>
           </FadeIn>
@@ -126,7 +126,7 @@ export default function RufusAIListingOptimization() {
               <FadeIn key={item.title} delay={i * 0.08} direction="up">
                 <div className="p-8 bg-white border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -151,7 +151,7 @@ export default function RufusAIListingOptimization() {
             <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               What Is Amazon Listing <span style={{ color: "#ff9900" }}>Optimization?</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 max-w-[560px] text-center lg:text-left mx-auto lg:mx-0">
               Amazon listing optimization is the procedure of improving your product listings, both front-end and back-end, so they rank higher in search, attract more views, and convert better. It directly impacts your visibility, traffic, and sales on Amazon.
             </p>
             <div className="flex justify-center lg:justify-start">
@@ -175,7 +175,7 @@ export default function RufusAIListingOptimization() {
             </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[700px] mx-auto mb-14">
               Our Amazon listing optimization services are fully tailored to your product, category, and customers, designed to lift your rankings and turn traffic into revenue.
             </p>
           </FadeIn>
@@ -221,7 +221,7 @@ export default function RufusAIListingOptimization() {
               <FadeIn key={item.title} delay={i * 0.07} direction="up">
                 <div className="bg-white p-6 border border-gray-200 h-full" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
                   {item.icon}
-                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -286,9 +286,9 @@ export default function RufusAIListingOptimization() {
               <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,3.5vw,45px)", color: "#000000" }}>
                 {row.heading}
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[540px] text-center lg:text-left mx-auto lg:mx-0" style={{ marginBottom: row.desc2 ? "16px" : "32px" }}>{row.desc}</p>
-              {row.desc2 && <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">{row.desc2}</p>}
-              {(row as {quote?: string}).quote && <p className="text-[#000000] text-[16px] leading-relaxed mb-8 max-w-[540px] font-semibold text-center lg:text-left mx-auto lg:mx-0">{(row as {quote?: string}).quote}</p>}
+              <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[540px] text-center lg:text-left mx-auto lg:mx-0" style={{ marginBottom: row.desc2 ? "16px" : "32px" }}>{row.desc}</p>
+              {row.desc2 && <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 max-w-[540px] text-center lg:text-left mx-auto lg:mx-0">{row.desc2}</p>}
+              {(row as {quote?: string}).quote && <p className="text-[#000000] text-[15px] leading-relaxed mb-8 max-w-[540px] font-semibold text-center lg:text-left mx-auto lg:mx-0">{(row as {quote?: string}).quote}</p>}
               {row.bullets.length > 0 && (
                 <div className="space-y-4 mb-10 flex flex-col items-center lg:items-start">
                   {row.bullets.map((b) => (
@@ -297,7 +297,7 @@ export default function RufusAIListingOptimization() {
                         <circle cx="12" cy="12" r="12" fill="#ff9900" />
                         <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
-                      <p className="text-[#000000] text-[16px] font-medium">{b}</p>
+                      <p className="text-[#000000] text-[15px] font-medium">{b}</p>
                     </div>
                   ))}
                 </div>
@@ -326,7 +326,7 @@ export default function RufusAIListingOptimization() {
               <h2 className="font-bold leading-tight mb-5" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
                 Your Next Best Seller Starts With <span style={{ color: "#ff9900" }}>Your Listing</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+              <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
                 Top-performing listings bring in $200K+ in monthly sales. Let our Amazon listing copywriting team make your listing the next top seller.
               </p>
               <a href="/contact-us" className="svc-btn svc-btn-pink">

@@ -59,7 +59,7 @@ export default function FAQSection() {
           <h2 className="font-bold leading-tight mb-6" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px, 5vw, 45px)", color: "#000000" }}>
             Frequently Asked <span style={{ color: "#ff9900" }}>Questions</span>
           </h2>
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             Have questions about our Amazon account health monitoring service? You'll find the answers here. If not, feel free to reach out directly.
           </p>
           <div className="flex justify-center lg:justify-start">
@@ -80,8 +80,8 @@ export default function FAQSection() {
                 className="w-full flex items-center justify-between py-5 text-left gap-4"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className="font-semibold text-[16px]" style={{ color: "#000000" }}>{faq.question}</span>
-                <span className="flex-shrink-0 text-[22px] font-light transition-transform duration-300" style={{ color: "#000000", transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
+                <span className="font-semibold text-[15px]" style={{ color: "#000000" }}>{faq.question}</span>
+                <span className="flex-shrink-0 text-[18px] font-light transition-transform duration-300" style={{ color: "#000000", transform: open === i ? "rotate(45deg)" : "rotate(0deg)" }}>+</span>
               </button>
               {open === i && (
                 <p className="text-[#67768e] text-[15px] leading-relaxed pb-5">{faq.answer}</p>

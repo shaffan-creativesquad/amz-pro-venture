@@ -74,7 +74,7 @@ export default function BusinessModelsSection() {
                 />
               </div>
               <h3
-                className="font-bold text-[16px] text-[#000000] mb-3"
+                className="font-bold text-[15px] text-[#000000] mb-3"
                 style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif" }}
               >
                 {model.title}

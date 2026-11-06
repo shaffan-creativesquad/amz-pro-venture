@@ -174,7 +174,7 @@ export default function InfluencerMarketing() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[720px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
 
             Shoppers trust the creators they follow. Our Amazon influencer marketing service puts your products in front of those creators&apos; audiences, bringing you traffic that&apos;s ready to buy, not just scroll.
 
@@ -206,7 +206,7 @@ export default function InfluencerMarketing() {
 
                 </svg>
 
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
 
               </div>
 
@@ -286,7 +286,7 @@ export default function InfluencerMarketing() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-10 text-center lg:text-left mx-auto lg:mx-0">
 
               Creator Connections is Amazon&apos;s own way of linking brands with Amazon influencers, known as Creators. You pick the products you want promoted, set a bonus commission for each sale, choose how long the campaign runs, and set your budget. Once it goes live, Amazon shares it with Creators, who make videos, posts, and reviews, often featuring your product on their Amazon Influencer storefront. It&apos;s one of the simplest routes into Amazon creator marketing, and we handle the setup and management for you.
 
@@ -342,7 +342,7 @@ export default function InfluencerMarketing() {
 
           </h2></FadeIn>
 
-          <FadeIn direction="up" delay={0.1}><p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[720px] mx-auto mb-14">
+          <FadeIn direction="up" delay={0.1}><p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[720px] mx-auto mb-14">
 
             Want to stand out, earn trust quickly, and reach shoppers who are ready to buy? Amazon influencer marketing gives you a real advantage.
 
@@ -392,7 +392,7 @@ export default function InfluencerMarketing() {
 
                 <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
 
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
 
@@ -438,7 +438,7 @@ export default function InfluencerMarketing() {
 
                 <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3" style={{ color: "#000000" }}>{item.title}</h3>
 
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
 
@@ -496,7 +496,7 @@ export default function InfluencerMarketing() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] max-w-[660px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[660px] mx-auto">
 
               We&apos;re the Amazon influencer agency, so from selecting creators to running the entire campaign, we do all the hard work. You get authentic content, targeted traffic, and results you can actually track.
 
@@ -666,7 +666,7 @@ export default function InfluencerMarketing() {
 
                 <div className="flex justify-center md:justify-start">{card.icon}</div>
 
-                <h3 className="font-bold text-[16px] leading-snug mb-3 text-center md:text-left" style={{ color: "#000000" }}>{card.title}</h3>
+                <h3 className="font-bold text-[15px] leading-snug mb-3 text-center md:text-left" style={{ color: "#000000" }}>{card.title}</h3>
 
                 <div className="space-y-2.5">
 
@@ -738,7 +738,7 @@ export default function InfluencerMarketing() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
 
               For a smooth setup and a strong start, here&apos;s what we&apos;ll need from your side:
 
@@ -798,7 +798,7 @@ export default function InfluencerMarketing() {
 
               <div key={section.group} className="mb-6">
 
-                <h3 className="font-bold text-[18px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>{section.group}</h3>
+                <h3 className="font-bold text-[15px] mb-3 text-center lg:text-left" style={{ color: "#000000" }}>{section.group}</h3>
 
                 <div className="space-y-3">
 
@@ -914,7 +914,7 @@ export default function InfluencerMarketing() {
 
                 <p className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</p>
 
-                <p className="font-bold text-[16px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
+                <p className="font-bold text-[15px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
 
                 <p className="text-[12px]" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
 
@@ -962,7 +962,7 @@ export default function InfluencerMarketing() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] max-w-[660px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[660px] mx-auto">
 
               We&apos;re an Amazon Influencer Agency, and we connect your brand with creators who deliver real visibility, real engagement, and real sales. Here&apos;s why sellers work with us:
 
@@ -1144,7 +1144,7 @@ export default function InfluencerMarketing() {
 
                 <div className="flex justify-center md:justify-start">{card.icon}</div>
 
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: card.dark ? "#ffffff" : "#000000" }}>{card.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3" style={{ color: card.dark ? "#ffffff" : "#000000" }}>{card.title}</h3>
 
                 <p className="text-[14px] leading-relaxed" style={{ color: card.dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{card.desc}</p>
 
@@ -1198,7 +1198,7 @@ export default function InfluencerMarketing() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-8">
 
               Every week you wait is another week your competitors win the attention of ready-to-buy shoppers. Creator trends move fast. Let&apos;s get your campaign live before the next one passes you by.
 

@@ -190,7 +190,7 @@ export default function ServicesTabSection() {
             className="flex-1 rounded-3xl lg:rounded-l-none p-10 flex flex-col justify-center"
             style={{ backgroundColor: "#f4f4f4" }}
           >
-            <h3 className="font-bold text-[20px] mb-3" style={{ color: "#000000" }}>{tab.title}</h3>
+            <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>{tab.title}</h3>
             <p className="text-[#67768e] text-[14px] leading-relaxed mb-5">{tab.desc}</p>
             <p className="font-bold text-[14px] mb-3" style={{ color: "#000000" }}>What&apos;s Included:</p>
             <ul className="mb-6 space-y-1.5">

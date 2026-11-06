@@ -50,7 +50,7 @@ export default function StatsSection() {
               >
                 {stat.number}
               </p>
-              <p className="font-semibold text-[#ff9900] text-[16px] mb-3">{stat.label}</p>
+              <p className="font-semibold text-[#ff9900] text-[15px] mb-3">{stat.label}</p>
               <p className="text-white/90 text-[13.5px] leading-relaxed">{stat.description}</p>
             </motion.div>
           ))}

@@ -172,7 +172,7 @@ export default function AmazonAccountSuspended() {
 
           {/* Description */}
 
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[720px] mb-12 text-center">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[720px] mb-12 text-center">
 
         &apos;Your Amazon account has been suspended&apos; in your inbox can bring your whole business to a standstill. Sales stop, funds get held, and every day you&apos;re offline is going to hurt your rankings. Our reinstatement team has helped hundreds of sellers get back online with appeals that actually get read, a proper Amazon plan of action, and direct follow-up with Seller Support until your case is resolved.
 
@@ -228,7 +228,7 @@ export default function AmazonAccountSuspended() {
 
           <FadeIn direction="right" className="flex-1">
 
-            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}>
+            <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3vw, 34px)" }}>
 
               <span className="text-[#000000]">Stuck Trying to Get Your </span>
 
@@ -236,7 +236,7 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[18px] mb-8 text-center lg:text-left">An Amazon account reinstatement comes down to one thing: showing Amazon you understand what went wrong and have fixed it. That&apos;s exactly where we come in. We handle reinstatements for:</p>
+            <p className="text-[#67768e] text-[15px] mb-8 text-center lg:text-left">An Amazon account reinstatement comes down to one thing: showing Amazon you understand what went wrong and have fixed it. That&apos;s exactly where we come in. We handle reinstatements for:</p>
 
             <div className="space-y-5">
 
@@ -264,7 +264,7 @@ export default function AmazonAccountSuspended() {
 
                   </svg>
 
-                  <p className="text-[#000000] font-semibold text-[18px]">{item}</p>
+                  <p className="text-[#000000] font-semibold text-[15px]">{item}</p>
 
                 </div>
 
@@ -316,7 +316,7 @@ export default function AmazonAccountSuspended() {
 
               className="font-bold leading-tight mb-10 text-center lg:text-left"
 
-              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)" }}
+              style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(22px, 3vw, 34px)" }}
 
             >
 
@@ -378,9 +378,9 @@ export default function AmazonAccountSuspended() {
 
                   <div>
 
-                    <h3 className="text-[#000000] font-bold text-[24px] mb-1">{item.title}</h3>
+                    <div className="text-[#000000] font-bold text-[15px] mb-1">{item.title}</div>
 
-                    <p className="text-[#67768e] text-[18px] leading-relaxed">{item.desc}</p>
+                    <div className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</div>
 
                   </div>
 
@@ -442,7 +442,7 @@ export default function AmazonAccountSuspended() {
 
           </h2>
 
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[680px] mx-auto">
 
             Full Amazon account reinstatement support, built on years of hands-on experience and a clear understanding of how Amazon reviews appeals.
 
@@ -640,9 +640,9 @@ export default function AmazonAccountSuspended() {
 
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
 
-                  <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                  <div className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</div>
 
-                  <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                  <div className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</div>
 
                 </div>
 
@@ -700,7 +700,7 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] mb-8 text-center lg:text-left">To start working on your case, we&apos;ll need:</p>
+            <p className="text-[#67768e] text-[15px] mb-8 text-center lg:text-left">To start working on your case, we&apos;ll need:</p>
 
             <div className="space-y-5 mb-8 flex flex-col items-center lg:items-start">
 
@@ -726,7 +726,7 @@ export default function AmazonAccountSuspended() {
 
                   </svg>
 
-                  <p className="text-[#000000] text-[17px]">{item}</p>
+                  <p className="text-[#000000] text-[15px]">{item}</p>
 
                 </div>
 
@@ -780,7 +780,7 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] max-w-[700px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[700px] mx-auto">
 
               As a certified Amazon partner, AMZ ProVenture handles a wide range of suspensions by finding the root cause and building an Amazon suspension appeal that fits your exact case.
 
@@ -921,7 +921,7 @@ export default function AmazonAccountSuspended() {
 
                 )}
 
-                <h3 className="font-bold text-[16px] leading-snug" style={{ color: "#ff9900" }}>{card.title}</h3>
+                <div className="font-bold text-[15px] leading-snug" style={{ color: "#ff9900" }}>{card.title}</div>
 
                 <div className="space-y-2">
 
@@ -937,7 +937,7 @@ export default function AmazonAccountSuspended() {
 
                       </svg>
 
-                      <p className="text-[#000000] text-[14px]">{item}</p>
+                      <div className="text-[#000000] text-[14px]">{item}</div>
 
                     </div>
 
@@ -1013,7 +1013,7 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[520px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[520px] mx-auto mb-8">
 
               While your Amazon account suspension sits there, your rankings slip, reviews stall, and competitors pick up your customers. Appeals are tricky, and one wrong submission can set you back weeks.
 
@@ -1061,7 +1061,7 @@ export default function AmazonAccountSuspended() {
 
             </h2>
 
-            <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto leading-relaxed">
+            <p className="text-[#67768e] text-[15px] max-w-[680px] mx-auto leading-relaxed">
 
               Getting reinstated is step one. Staying reinstated is where the details matter, so we watch what most agencies forget.
 
@@ -1133,9 +1133,9 @@ export default function AmazonAccountSuspended() {
 
                   <div>
 
-                    <h3 className="font-bold text-[17px] mb-1" style={{ color: "#000000" }}>{item.title}</h3>
+                    <div className="font-bold text-[15px] mb-1" style={{ color: "#000000" }}>{item.title}</div>
 
-                    <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
+                    <div className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</div>
 
                   </div>
 
@@ -1223,7 +1223,7 @@ export default function AmazonAccountSuspended() {
 
                       <div className="absolute rounded-full" style={{ inset: "10px", border: "2px solid #ff9900" }} />
 
-                      <span className="font-bold text-[28px] relative z-10" style={{ color: "#000000" }}>{stat.value}</span>
+                      <span className="font-bold text-[18px] relative z-10" style={{ color: "#000000" }}>{stat.value}</span>
 
                     </div>
 
@@ -1261,13 +1261,13 @@ export default function AmazonAccountSuspended() {
 
                 </div>
 
-                <p className="font-bold text-[13px]" style={{ color: "#000000" }}>Linda Davis</p>
+                <div className="font-bold text-[13px]" style={{ color: "#000000" }}>Linda Davis</div>
 
-                <p className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</p>
+                <div className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</div>
 
-                <p className="font-bold text-[16px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
+                <div className="font-bold text-[15px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</div>
 
-                <p className="text-[12px]" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
+                <div className="text-[12px]" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</div>
 
                 <a href="/contact-us" className="svc-btn svc-btn-pink mt-1" style={{ fontSize: "12px", padding: "9px 20px" }}>
 
@@ -1323,7 +1323,7 @@ export default function AmazonAccountSuspended() {
 
               </h2>
 
-              <p className="text-white/90 text-[16px]">Every day suspended is revenue lost. Let our reinstatement team handle your Amazon suspension appeal and get your store live again as quickly as possible.</p>
+              <p className="text-white/90 text-[15px]">Every day suspended is revenue lost. Let our reinstatement team handle your Amazon suspension appeal and get your store live again as quickly as possible.</p>
 
             </div>
 

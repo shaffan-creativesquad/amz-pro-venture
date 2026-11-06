@@ -53,7 +53,7 @@ export default function ResultsSection() {
             The Results
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-6">
             After implementing the WooCommerce and Walmart integration, the business experienced immediate operational improvements and measurable sales growth.
           </p>
 
@@ -71,7 +71,7 @@ export default function ResultsSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             The business moved from inconsistent inventory management and declining sales to a fully automated multichannel system capable of supporting scalable eCommerce growth.
           </p>
 

@@ -50,7 +50,7 @@ export default function HeroSection() {
             and Digital Marketing
           </h1>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px]">
+          <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px]">
             Read our e-commerce and digital marketing case studies to see the real business results we achieve for our clients.
           </p>
         </motion.div>

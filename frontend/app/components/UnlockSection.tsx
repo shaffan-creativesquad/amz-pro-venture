@@ -75,7 +75,7 @@ export default function UnlockSection() {
           </h2>
 
           {/* Paragraph */}
-          <p className="text-black text-[16px] leading-relaxed mb-8 max-w-[560px]">
+          <p className="text-black text-[15px] leading-relaxed mb-8 max-w-[560px]">
             AMZ ProVenture is a full-service ecommerce growth agency. Our team includes experienced designers, developers, marketplace strategists and ad specialists. We know WooCommerce, Shopify and Amazon inside out, and everything we do comes back to the same goal: more sales, better margins and customers who keep coming back.
           </p>
 

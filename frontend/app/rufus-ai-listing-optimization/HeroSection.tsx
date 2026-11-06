@@ -25,7 +25,7 @@ export default function HeroSection() {
           That Drive <span style={{ color: "#ff9900" }}>More Sales?</span>
         </motion.h1>
 
-        <motion.p variants={itm} className="text-[#67768e] text-[16px] leading-relaxed max-w-[640px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
+        <motion.p variants={itm} className="text-[#67768e] text-[15px] leading-relaxed max-w-[640px] mb-8 text-center lg:text-left mx-auto lg:mx-0">
           A good product can still get overlooked if its listing doesn&apos;t give shoppers a reason to buy. We improve your Amazon listings with better copy, keywords, and product details so customers can find your products, understand what you&apos;re offering, and feel more confident about buying. We also use Rufus AI listing optimization to help your listings keep up with how shoppers search on Amazon.
         </motion.p>
 
@@ -41,7 +41,7 @@ export default function HeroSection() {
                 <circle cx="12" cy="12" r="12" fill="#ff9900" />
                 <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <p className="text-[#000000] text-[16px] font-medium">{item}</p>
+              <p className="text-[#000000] text-[15px] font-medium">{item}</p>
             </div>
           ))}
         </motion.div>

@@ -52,11 +52,11 @@ export default function ChallengeSection() {
             The Challenge
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             Before implementing a complete growth strategy, the brand had strong potential but lacked the systems needed to scale revenue consistently.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">Key challenges:</p>
+          <p className="text-[#000000] font-bold text-[15px] mb-5">Key challenges:</p>
 
           <ul className="space-y-3 mb-8">
             {challenges.map((item) => (

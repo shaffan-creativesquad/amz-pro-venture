@@ -66,7 +66,7 @@ export default function BestPartnerSection() {
                   </div>
                   <div>
                     <h3
-                      className="font-bold text-[16px] mb-1"
+                      className="font-bold text-[15px] mb-1"
                       style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#000000" }}
                     >
                       {f.title}

@@ -136,7 +136,7 @@ export default function ShopifyStoreCreationManagement() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <p className="text-center text-[#67768e] text-[16px] leading-relaxed max-w-[700px] mx-auto mb-14">
+            <p className="text-center text-[#67768e] text-[15px] leading-relaxed max-w-[700px] mx-auto mb-14">
               Our Shopify store growth solutions equip your store with everything needed to thrive in a competitive e-commerce landscape.
             </p>
           </FadeIn>
@@ -192,7 +192,7 @@ export default function ShopifyStoreCreationManagement() {
               <FadeIn key={item.title} delay={i * 0.07} direction="up">
                 <div className="bg-white p-6 border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.1)" }}>
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </FadeIn>
@@ -217,7 +217,7 @@ export default function ShopifyStoreCreationManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What We Need From You to <span style={{ color: "#ff9900" }}>Provide the Best Results</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               To manage your Shopify store for the best results, we&apos;ll need you to provide the following:
             </p>
             <div className="space-y-5 mb-8">
@@ -231,7 +231,7 @@ export default function ShopifyStoreCreationManagement() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900" />
                     <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                  <p className="text-[#000000] text-[16px] leading-relaxed">
+                  <p className="text-[#000000] text-[15px] leading-relaxed">
                     <span className="font-semibold">{item.title}</span> {item.desc}
                   </p>
                 </div>
@@ -261,7 +261,7 @@ export default function ShopifyStoreCreationManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Who This Service <span style={{ color: "#ff9900" }}>is For</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-8 text-center lg:text-left mx-auto lg:mx-0">
               Our Shopify store management services provide the crucial support needed to run a high-performing store.
             </p>
             <div className="space-y-5 mb-10">
@@ -296,7 +296,7 @@ export default function ShopifyStoreCreationManagement() {
               <h2 className="font-bold leading-tight mb-5 text-center" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 Don&apos;t Risk Your Shopify Sales<br />With an Unoptimized Store
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[480px] mx-auto mb-8">
+              <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[480px] mx-auto mb-8">
                 Get expert Shopify management today and watch your store grow without the stress and risk of DIY management.
               </p>
               <a href="/contact-us" className="inline-block bg-[#ff9900] text-white font-semibold uppercase tracking-wider text-[13px] rounded-full hover:bg-black transition-colors" style={{ padding: "14px 32px" }}>

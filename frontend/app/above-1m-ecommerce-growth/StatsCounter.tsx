@@ -44,7 +44,7 @@ function CountUp({ target, prefix, suffix, display, delay = 0 }: { target: numbe
   }, [target, delay]);
 
   return (
-    <span ref={ref} className="font-bold text-[28px] relative z-10" style={{ color: "#000000" }}>
+    <span ref={ref} className="font-bold text-[18px] relative z-10" style={{ color: "#000000" }}>
       {prefix}{display(count)}{suffix}
     </span>
   );

@@ -95,7 +95,7 @@ export default function ValuesSection() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
               <div className="mb-4">{value.icon}</div>
-              <h3 className="font-bold text-[16px] text-[#000000] mb-2" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif" }}>
+              <h3 className="font-bold text-[15px] text-[#000000] mb-2" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif" }}>
                 {value.title}
               </h3>
               <p className="text-[#67768e] text-[13.5px] leading-relaxed">{value.description}</p>

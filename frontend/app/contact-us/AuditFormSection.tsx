@@ -113,7 +113,7 @@ export default function AuditFormSection() {
                 <path d="M9 9h6M9 13h6M9 17h4" />
               </svg>
             </div>
-            <h2 className="text-[#000000] font-bold text-[17px]">Get your free operations audit</h2>
+            <h2 className="text-[#000000] font-bold text-[15px]">Get your free operations audit</h2>
           </div>
         </div>
 

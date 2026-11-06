@@ -52,11 +52,11 @@ export default function ChallengeSection() {
             The Challenge
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-4">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-4">
             Before engaging our Amazon listing optimization service, SpeedBump&apos;s product listings struggled to convert browsers into customers. While the products themselves had strong potential, the listings lacked the visual and communicative value needed to drive purchase decisions.
           </p>
 
-          <p className="text-[#000000] font-bold text-[16px] mb-5">
+          <p className="text-[#000000] font-bold text-[15px] mb-5">
             As a result, the brand faced several challenges:
           </p>
 

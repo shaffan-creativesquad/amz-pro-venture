@@ -80,7 +80,7 @@ export default function WalmartListingCreation() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
             Your product is great, but if your listing doesn&apos;t convert, you&apos;re leaving money on the table.
           </p>
 
@@ -96,7 +96,7 @@ export default function WalmartListingCreation() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -136,7 +136,7 @@ export default function WalmartListingCreation() {
               <h2 className="font-bold leading-tight mb-6 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What Is Walmart Listing <span style={{ color: "#ff9900" }}>Optimization?</span>
               </h2>
-              <p className="text-[#67768e] text-[16px] leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
+              <p className="text-[#67768e] text-[15px] leading-relaxed text-center lg:text-left mx-auto lg:mx-0">
                 Walmart listing optimization is the process of enhancing your product listings, both front-end and back-end, to improve your ranking in search results, attract more views, and drive conversions. It directly impacts your visibility, traffic, sales performance, and chances of winning the Walmart Buy Box.
               </p>
             </div>
@@ -157,7 +157,7 @@ export default function WalmartListingCreation() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Why Walmart Listing Optimization <span style={{ color: "#ff9900" }}>Matters</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[720px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[720px] mx-auto">
               Without optimization, your listings are invisible. Since the Walmart algorithm constantly evolves, Walmart search optimization is an ongoing strategy. We help you get there and maintain the Listing Quality score (LQS) to keep you on top.
             </p>
           </div>
@@ -215,7 +215,7 @@ export default function WalmartListingCreation() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What&apos;s Included in Our Walmart Listing Creation and <span style={{ color: "#ff9900" }}>Optimization Services</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[740px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[740px] mx-auto">
               We deliver full-scope Walmart listing creation and optimization tailored to your product, category, and customer base. Our Walmart listing strategy is designed to increase rankings and convert traffic into revenue.
             </p>
           </div>
@@ -299,7 +299,7 @@ export default function WalmartListingCreation() {
               return (
                 <div key={item.title} className="rounded-2xl p-8 text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                 </div>
               );
@@ -325,7 +325,7 @@ export default function WalmartListingCreation() {
           <h2 className="font-bold text-center leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             Need Help Setting Up Your Walmart Seller<br />Account The Right Way
           </h2>
-          <p className="text-center text-[#67768e] text-[16px] max-w-[680px] mx-auto mb-14">
+          <p className="text-center text-[#67768e] text-[15px] max-w-[680px] mx-auto mb-14">
             Want to sell to millions on Walmart.com? Setting up your Walmart Seller Central account is the first step. We guide you through the entire process, helping you meet Walmart&apos;s requirements without delays.
           </p>
 
@@ -336,7 +336,7 @@ export default function WalmartListingCreation() {
             </div>
 
             <div className="flex-1 text-center lg:text-left">
-              <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>What You&apos;ll Need</h3>
+              <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>What You&apos;ll Need</h3>
               <p className="text-[#67768e] text-[15px] mb-5">To register successfully, Walmart requires the following:</p>
               <div className="space-y-3 mb-8 text-left">
                 {[
@@ -357,7 +357,7 @@ export default function WalmartListingCreation() {
                 ))}
               </div>
 
-              <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>How We Help</h3>
+              <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>How We Help</h3>
               <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
                 You provide the documents, and we provide our expert guidance every step of the way. From documentation checks to catalog formatting and compliance prep, we make sure your account setup is smooth, accurate, and ready for approval.
               </p>
@@ -383,7 +383,7 @@ export default function WalmartListingCreation() {
           <h2 className="font-bold text-center leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             Why Partner with AMZ Pro Venture for <span style={{ color: "#ff9900" }}>Walmart Success?</span>
           </h2>
-          <p className="text-center text-[#67768e] text-[16px] max-w-[700px] mx-auto mb-12">
+          <p className="text-center text-[#67768e] text-[15px] max-w-[700px] mx-auto mb-12">
             We go beyond surface-level optimization, applying a structured, data-informed approach designed to improve visibility, increase conversions, and drive long-term growth.
           </p>
 
@@ -425,7 +425,7 @@ export default function WalmartListingCreation() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl p-8 border border-gray-200 text-center md:text-left" style={{ boxShadow: "0 4px 16px rgba(0,0,0,0.06)" }}>
                 <div className="flex justify-center md:justify-start">{item.icon}</div>
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: "#ff9900" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -462,7 +462,7 @@ export default function WalmartListingCreation() {
             ].map((item) => (
               <div key={item.title} className="rounded-2xl p-8 border border-gray-200 text-center md:text-left" style={{ boxShadow: "0 4px 16px rgba(0,0,0,0.06)" }}>
                 <div className="flex justify-center md:justify-start">{item.icon}</div>
-                <h3 className="font-bold text-[17px] mb-3" style={{ color: "#ff9900" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -502,7 +502,7 @@ export default function WalmartListingCreation() {
               <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
                 What We Need From You<br />To Get Started
               </h2>
-              <p className="text-[#67768e] text-[16px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
+              <p className="text-[#67768e] text-[15px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
                 To create your optimized Walmart listing, we will need:
               </p>
 
@@ -551,7 +551,7 @@ export default function WalmartListingCreation() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Don&apos;t Let Underperforming<br />Listings Hold You Back
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[600px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[600px] mx-auto mb-8">
               High-converting listings can generate $200K+ in monthly sales. We&apos;ll help transform your product into a top seller. Ready to unlock your listings&apos; full potential?
             </p>
             <div className="flex justify-center lg:justify-start">

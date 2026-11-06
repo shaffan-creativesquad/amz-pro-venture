@@ -38,7 +38,7 @@ export default function GrowthAuditForm() {
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <h3 className="font-bold text-[18px] mb-2" style={{ color: "#000000" }}>Request Received!</h3>
+        <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>Request Received!</h3>
         <p className="text-[#67768e] text-[14px]">We&apos;ll reach out shortly with your growth audit.</p>
       </div>
     );

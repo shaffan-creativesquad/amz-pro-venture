@@ -80,7 +80,7 @@ export default function FBAWholesaleManagement() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[560px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[560px] mb-5 text-center lg:text-left mx-auto lg:mx-0">
             A thriving FBA wholesale business takes far more than sourcing great products. From listing compliance to inventory control, our Amazon FBA wholesale management handles the complex work so you can focus on selling and scaling.
           </p>
 
@@ -97,7 +97,7 @@ export default function FBAWholesaleManagement() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -142,7 +142,7 @@ export default function FBAWholesaleManagement() {
           </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[680px] mx-auto">
             Build a six- to seven-figure Amazon business by selling brands customers already know and trust.
           </p>
           </FadeIn>
@@ -233,7 +233,7 @@ export default function FBAWholesaleManagement() {
               <FadeIn key={item.title} direction="up" delay={i * 0.08}>
               <div className="p-8 bg-white border border-gray-200 h-full text-center md:text-left" style={{ boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.5)" }}>
                 <div className="flex justify-center md:justify-start">{item.icon}</div>
-                <h3 className="font-bold text-[18px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-3 leading-snug" style={{ color: "#ff9900" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
               </div>
               </FadeIn>
@@ -261,7 +261,7 @@ export default function FBAWholesaleManagement() {
           </h2>
           </FadeIn>
           <FadeIn direction="up" delay={0.1}>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[780px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[780px] mx-auto">
             Our Amazon wholesale account management brings structure to every moving part of your store. Here’s how we keep your wholesale operation running smoothly:
           </p>
           </FadeIn>
@@ -335,7 +335,7 @@ export default function FBAWholesaleManagement() {
                 <div className="w-14 h-14 rounded-full flex items-center justify-center mb-5 mx-auto md:mx-0" style={{ backgroundColor: "#fde8ef" }}>
                   {item.icon}
                 </div>
-                <h3 className="font-bold text-[18px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                <h3 className="font-bold text-[15px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                 <p className="text-[#67768e] text-[15px] mb-4">{item.desc}</p>
                 <div className="space-y-2 text-left">
                   {item.items.map((point) => (
@@ -374,10 +374,10 @@ export default function FBAWholesaleManagement() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Get Approved for <span style={{ color: "#ff9900" }}>Restricted Amazon Brands</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               Some of the products you want to sell may need Amazon&apos;s approval first. We help you get that approval so you can start selling.
             </p>
-            <p className="font-bold text-[17px] mb-4" style={{ color: "#000000" }}>What We Handle</p>
+            <p className="font-bold text-[15px] mb-4" style={{ color: "#000000" }}>What We Handle</p>
             <div className="space-y-3 mb-6">
               {[
                 "Support with brand, category, and ASIN-level ungating",
@@ -415,7 +415,7 @@ export default function FBAWholesaleManagement() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Built for Established <span style={{ color: "#ff9900" }}>Wholesale Sellers</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-6 text-center lg:text-left mx-auto lg:mx-0">
               Our Amazon FBA wholesale management plan is designed for sellers ready to grow, not just get started
             </p>
             <div className="space-y-4 mb-6">
@@ -429,7 +429,7 @@ export default function FBAWholesaleManagement() {
                     <circle cx="12" cy="12" r="12" fill="#ff9900"/>
                     <path d="M6 12.5l4 4 8-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
-                  <p className="text-[#000000] text-[16px]">{item}</p>
+                  <p className="text-[#000000] text-[15px]">{item}</p>
                 </div>
               ))}
             </div>
@@ -475,7 +475,7 @@ export default function FBAWholesaleManagement() {
                 </div>
                 <p className="font-bold text-[13px]" style={{ color: "#000000" }}>Linda Davis</p>
                 <p className="text-[11px]" style={{ color: "#67768e" }}>Account Lead</p>
-                <p className="font-bold text-[16px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
+                <p className="font-bold text-[15px] leading-tight" style={{ color: "#ff9900" }}>Need Expert<br />Advice?</p>
                 <p className="text-[12px]" style={{ color: "#67768e" }}>Book your strategy call today.</p>
                 <a href="/contact-us" className="svc-btn svc-btn-pink mt-1" style={{ fontSize: "12px", padding: "9px 20px" }}>
                   <span className="svc-btn-inner">
@@ -498,7 +498,7 @@ export default function FBAWholesaleManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Don’t Let Account Issues <span style={{ color: "#ff9900" }}>Slow Your Wholesale Growth</span>
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[620px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[620px] mx-auto mb-8">
               Every day you wait puts more sales and your share of the Buy Box at risk. Let’s fix what’s holding your FBA wholesale business back.
             </p>
             <div className="flex justify-center lg:justify-start">

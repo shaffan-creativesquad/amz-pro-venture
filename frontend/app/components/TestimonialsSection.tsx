@@ -149,7 +149,7 @@ export default function TestimonialsSection() {
                     <div className="flex gap-0.5 mb-2">
                       {[...Array(5)].map((_, s) => <StarIcon key={s} />)}
                     </div>
-                    <p className="text-[#67768e] text-xs leading-relaxed overflow-y-auto flex-1 pr-1">{r.text}</p>
+                    <div className="text-[#67768e] text-xs leading-relaxed overflow-y-auto flex-1 pr-1">{r.text}</div>
                   </div>
                 ))}
               </div>

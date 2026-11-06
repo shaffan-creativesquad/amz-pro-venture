@@ -51,7 +51,7 @@ export default function ResultsSection() {
             The Results
           </h2>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-6">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-6">
             Following the implementation of our Amazon listing optimization service, SpeedBump experienced substantial improvements across every major performance metric:
           </p>
 
@@ -69,7 +69,7 @@ export default function ResultsSection() {
             ))}
           </ul>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-10">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-10">
             By leveraging strategic design, persuasive visual communication, and a data-driven Amazon product listing optimization approach, AMZ ProVenture helped SpeedBump dramatically increase conversions, sales, and overall marketplace performance.
           </p>
 

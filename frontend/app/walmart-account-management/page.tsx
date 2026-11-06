@@ -75,7 +75,7 @@ export default function WalmartAccountManagement() {
             Need Expert Management To<br />Grow <span style={{ color: "#ff9900" }}>Walmart Sales?</span>
           </h1>
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[620px] mb-7 text-center lg:text-left mx-auto lg:mx-0">
             We manage every part of your Walmart seller account: listings, inventory, compliance, and more, so you can grow consistently without the stress.
           </p>
           <div className="space-y-3 mb-8 text-left">
@@ -90,7 +90,7 @@ export default function WalmartAccountManagement() {
                   <circle cx="12" cy="12" r="12" fill="#ff9900" />
                   <path d="M6 12.5l4 4 8-8" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
-                <p className="text-white/80 text-[16px]">{item}</p>
+                <p className="text-white/80 text-[15px]">{item}</p>
               </div>
             ))}
           </div>
@@ -122,7 +122,7 @@ export default function WalmartAccountManagement() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               Why Top Sellers Rely on AMZ Pro Venture for Walmart Account Management
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[640px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[640px] mx-auto">
               We don&apos;t just maintain your Walmart store; we turn it into a high-performing channel. Here&apos;s what sets us apart:
             </p>
           </div>
@@ -148,7 +148,7 @@ export default function WalmartAccountManagement() {
                 },
               ].map((item) => (
                 <div key={item.title} className="text-center lg:text-left">
-                  <h3 className="font-bold text-[18px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[15px] leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -193,7 +193,7 @@ export default function WalmartAccountManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
               What You Risk With Poor Account Management
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
+            <p className="text-[#67768e] text-[15px] leading-relaxed mb-7 text-center lg:text-left mx-auto lg:mx-0">
               Running a Walmart store without expert help can lead to lost revenue and account risks. Here&apos;s what to avoid:
             </p>
             <div className="space-y-4 mb-7">
@@ -236,7 +236,7 @@ export default function WalmartAccountManagement() {
             <h2 className="font-bold leading-tight mb-4 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,42px)", color: "#000000" }}>
               Everything You Need for Walmart Success<br />in One Complete Plan
             </h2>
-            <p className="text-[#67768e] text-[16px] max-w-[680px] mx-auto">
+            <p className="text-[#67768e] text-[15px] max-w-[680px] mx-auto">
               AMZ Pro Venture handles every moving part of your Walmart account — so you can focus on growing your business, not managing the platform.
             </p>
           </div>
@@ -326,14 +326,14 @@ export default function WalmartAccountManagement() {
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             <div className="flex-1 text-center lg:text-left">
               <div className="mb-10">
-                <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Walmart PPC Management</h3>
-                <p className="text-[#67768e] text-[16px] leading-relaxed">
+                <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>Walmart PPC Management</h3>
+                <p className="text-[#67768e] text-[15px] leading-relaxed">
                   Our team sets up and manages ads that are targeted, data-backed, and focused on driving conversions.
                 </p>
               </div>
               <div className="mb-10">
-                <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>Customer Support Assistance</h3>
-                <p className="text-[#67768e] text-[16px] leading-relaxed">
+                <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>Customer Support Assistance</h3>
+                <p className="text-[#67768e] text-[15px] leading-relaxed">
                   We handle customer messages and feedback to protect your brand reputation and maintain high seller ratings.
                 </p>
               </div>
@@ -358,7 +358,7 @@ export default function WalmartAccountManagement() {
           <h2 className="font-bold text-center leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             Need Help Setting Up Your Walmart Seller<br />Account The Right Way
           </h2>
-          <p className="text-center text-[#67768e] text-[16px] max-w-[680px] mx-auto mb-14">
+          <p className="text-center text-[#67768e] text-[15px] max-w-[680px] mx-auto mb-14">
             Want to sell to millions on Walmart.com? Setting up your Walmart Seller Central account is the first step. We guide you through the entire process, helping you meet Walmart&apos;s requirements without delays.
           </p>
           <div className="flex flex-col lg:flex-row gap-16 items-center">
@@ -366,7 +366,7 @@ export default function WalmartAccountManagement() {
               <Image src="/Need-Help-Setting-Up-Your-Walmart-Seller-Account-The-Right-Way.webp" alt="Walmart Seller Account Setup" width={560} height={480} unoptimized className="w-full h-auto object-contain" />
             </div>
             <div className="flex-1 text-center lg:text-left">
-              <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>What You&apos;ll Need</h3>
+              <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>What You&apos;ll Need</h3>
               <p className="text-[#67768e] text-[15px] mb-5">To register successfully, Walmart requires the following:</p>
               <div className="space-y-3 mb-8 text-left">
                 {[
@@ -386,7 +386,7 @@ export default function WalmartAccountManagement() {
                   </div>
                 ))}
               </div>
-              <h3 className="font-bold text-[22px] mb-3" style={{ color: "#000000" }}>How We Help</h3>
+              <h3 className="font-bold text-[18px] mb-3" style={{ color: "#000000" }}>How We Help</h3>
               <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
                 You provide the documents, and we provide our expert guidance every step of the way. From documentation checks to catalog formatting and compliance prep, we make sure your account setup is smooth, accurate, and ready for approval.
               </p>
@@ -408,7 +408,7 @@ export default function WalmartAccountManagement() {
           <h2 className="font-bold text-center leading-tight mb-4" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(28px,4vw,45px)", color: "#000000" }}>
             What Sets <span style={{ color: "#ff9900" }}>AMZ Pro Venture Apart</span>
           </h2>
-          <p className="text-center text-[#67768e] text-[16px] max-w-[620px] mx-auto mb-12">
+          <p className="text-center text-[#67768e] text-[15px] max-w-[620px] mx-auto mb-12">
             We&apos;re not here to maintain, we&apos;re here to multiply. If you&apos;re aiming for real scale, you&apos;re in the right place.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -479,7 +479,7 @@ export default function WalmartAccountManagement() {
               return (
                 <div key={item.title} className="rounded-2xl p-8 text-center md:text-left" style={{ backgroundColor: dark ? "#000000" : "#f4f4f4" }}>
                   <div className="flex justify-center md:justify-start">{item.icon}</div>
-                  <h3 className="font-bold text-[17px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-3" style={{ color: dark ? "#ffffff" : "#000000" }}>{item.title}</h3>
                   <p className="text-[14px] leading-relaxed" style={{ color: dark ? "rgba(255,255,255,0.65)" : "#67768e" }}>{item.desc}</p>
                 </div>
               );
@@ -513,7 +513,7 @@ export default function WalmartAccountManagement() {
                   </svg>
                 </div>
                 <p className="text-[11px] font-semibold uppercase tracking-wide" style={{ color: "#67768e" }}>Linda Davis<br/>Account Director</p>
-                <h3 className="font-bold text-[18px] leading-snug" style={{ color: "#ff9900" }}>Need Expert Advice?</h3>
+                <h3 className="font-bold text-[15px] leading-snug" style={{ color: "#ff9900" }}>Need Expert Advice?</h3>
                 <p className="text-[12px]" style={{ color: "#67768e" }}>Book Your Strategy Call Today!</p>
                 <a href="/contact-us" className="svc-btn svc-btn-pink mt-2" style={{ fontSize: "12px" }}>
                   <span className="svc-btn-inner">
@@ -533,7 +533,7 @@ export default function WalmartAccountManagement() {
             <h2 className="font-bold leading-tight mb-5 text-center lg:text-left" style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", fontSize: "clamp(26px, 4.5vw, 45px)", color: "#000000" }}>
               Get a Free Walmart Account Audit
             </h2>
-            <p className="text-[#67768e] text-[16px] leading-relaxed max-w-[680px] mx-auto mb-8">
+            <p className="text-[#67768e] text-[15px] leading-relaxed max-w-[680px] mx-auto mb-8">
               Start your Walmart success journey with a free Walmart account audit and experience our account management expertise in action.
             </p>
             <div className="flex justify-center lg:justify-start">

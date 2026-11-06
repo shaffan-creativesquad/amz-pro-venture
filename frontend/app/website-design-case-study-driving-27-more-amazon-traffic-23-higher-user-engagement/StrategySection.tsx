@@ -43,11 +43,11 @@ export default function StrategySection() {
             The Strategy &amp; Solution
           </h2>
 
-          <p className="text-[#ff9900] font-bold text-[17px] mb-3">
+          <p className="text-[#ff9900] font-bold text-[15px] mb-3">
             Conversion-Focused Website Redesign
           </p>
 
-          <p className="text-[#67768e] text-[16px] leading-relaxed mb-8">
+          <p className="text-[#67768e] text-[15px] leading-relaxed mb-8">
             We completely redesigned the Davis Wellness landing page with a modern, user-friendly layout that guided visitors through a clear purchasing journey.
           </p>
 

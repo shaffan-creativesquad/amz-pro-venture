@@ -59,7 +59,7 @@ export default function PartnerStepsSection() {
               </div>
               <div className="p-6">
                 <h3
-                  className="font-bold text-[17px] mb-2"
+                  className="font-bold text-[15px] mb-2"
                   style={{ fontFamily: "var(--font-poppins), Poppins, sans-serif", color: "#ffffff" }}
                 >
                   {step.title}

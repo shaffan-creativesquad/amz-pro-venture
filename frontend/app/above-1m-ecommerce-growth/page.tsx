@@ -132,7 +132,7 @@ export default function Above1MEcommerceGrowth() {
           </h1>
 
           {/* Description */}
-          <p className="text-white/60 text-[16px] leading-relaxed max-w-[620px] mb-10">
+          <p className="text-white/60 text-[15px] leading-relaxed max-w-[620px] mb-10">
             When e-commerce growth stalls, the market is rarely the problem. The system behind your brand is. As an Amazon growth agency, we find the leaks, rebuild what’s broken, and add the sales channels that help you break through the $1M revenue ceiling.
           </p>
 
@@ -219,7 +219,7 @@ export default function Above1MEcommerceGrowth() {
           </div>
           </FadeIn>
           <FadeIn direction="up" delay={0.14}>
-          <p className="text-center text-[#67768e] text-[16px] mb-14 max-w-[680px] mx-auto">
+          <p className="text-center text-[#67768e] text-[15px] mb-14 max-w-[680px] mx-auto">
             Growth rarely collapses from one big mistake. It slips away through a handful of small ones. If these sound familiar, the issue isn’t effort. It’s the system underneath.
           </p>
           </FadeIn>
@@ -276,7 +276,7 @@ export default function Above1MEcommerceGrowth() {
                   {item.icon}
                 </div>
                 <div className="text-left">
-                  <h3 className="font-bold text-[16px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
+                  <h3 className="font-bold text-[15px] mb-2 leading-snug" style={{ color: "#000000" }}>{item.title}</h3>
                   <p className="text-[#67768e] text-[14px] leading-relaxed">{item.desc}</p>
                 </div>
               </div>
@@ -315,7 +315,7 @@ export default function Above1MEcommerceGrowth() {
             >
               Your $1M Roadmap™
             </h2>
-            <p className="text-white/55 text-[16px] max-w-[600px] mx-auto leading-relaxed">
+            <p className="text-white/55 text-[15px] max-w-[600px] mx-auto leading-relaxed">
               One team and one proven system across every channel, built to move your brand from a stubborn plateau to leading its niche through focused Amazon brand scaling.
             </p>
           </div>
